@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="is" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2. Skoppstuðull skopparabolta &mdash; Eðlisfræðiheimatilraunir </title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/eqt.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/datacamp-custom.css" type="text/css" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/katex-math.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/edbook.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/samstem.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+        <script src="../_static/js/eqt.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script src="https://cdn.datacamp.com/datacamp-light-latest.min.js"></script>
+        <script src="../_static/katex.min.js"></script>
+        <script src="../_static/auto-render.min.js"></script>
+        <script src="../_static/katex_autorenderer.js"></script>
+    <script src="../_static/js/theme.js"></script>
+
+<!-- hoverrole.py css code -->
+<style type="text/css">
+    a.tooltip {
+        outline: none;
+        border-bottom: thin dotted;
+        background: #ffeedd
+    }
+
+    a.tooltip strong {
+        line-height: 30px;
+    }
+
+    a.tooltip:hover {
+        text-decoration: none;
+    }
+
+    a.tooltip span {
+        z-index: 10;
+        display: none;
+        padding: 14px 20px;
+        margin-top: -30px;
+        margin-left: 12px;
+        width: 310px;
+        line-height: 16px;
+    }
+
+    a.tooltip:hover span {
+        display: inline;
+        position: absolute;
+        color: #111;
+        border: 1px solid #DCA;
+        background: #fffAF0;
+    }
+
+    .callout {
+        z-index: 20;
+        position: absolute;
+        top: 30px;
+        border: 0;
+        left: -12px;
+    }
+
+    /*CSS3*/
+    a.tooltip span {
+        border-radius: 4px;
+        box-shadow: 5px 5px 8px #CCC;
+    }
+</style>
+<!-- End hoverrole.py css code -->
+
+<style type="text/css">
+    .sagecell .CodeMirror-scroll {
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+
+    .sagecell .CodeMirror {
+        height: auto;
+    }
+
+    /* - Begin equation reference style - */
+    h6.eqno {
+        display: inline-block;
+        padding-left: 10px;
+    }
+
+    h6 .headerlink {
+        display: inline-block !important;
+    }
+
+    h6 .headerlink:after {
+        visibility: hidden !important;
+    }
+
+    h6 .headerlink:hover:after {
+        visibility: visible !important;
+    }
+
+    .eqno:hover>.headerlink:after {
+        visibility: visible !important;
+    }
+
+    table>caption>.headerlink {
+        visibility: hidden !important;
+    }
+
+    table>caption>.headerlink {
+        visibility: hidden !important;
+    }
+
+    /* - End - */
+</style>
+
+
+
+    <link rel="index" title="Atriðaskrá" href="../genindex/" />
+    <link rel="search" title="Leit" href="../search/" />
+    <link rel="next" title="3. Grunntónn vatnsflösku" href="../kafli03/" />
+    <link rel="prev" title="1. Eðlismassi pappírs" href="../kafli01/" />
+
+
+
+<!--	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
+<script type="text/javascript" src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+<script>ggbAppletId = [];</script>
+
+
+ 
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../" class="icon icon-home">
+            Eðlisfræðiheimatilraunir
+              <img src="../_static/samstem.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../kafli01/">1. Eðlismassi pappírs</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">2. Skoppstuðull skopparabolta</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#inngangur">2.1. Inngangur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#taekjabunaur">2.2. Tækjabúnaður</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#leibeiningar">2.3. Leiðbeiningar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fraei">2.4. Fræði</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#urvinnsla">2.5. Úrvinnsla</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli03/">3. Grunntónn vatnsflösku</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli04/">4. Að mæla þyngdarhröðunina</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli05/">5. Vinnulögmálið</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli06/">6. Þriðja lögmál Keplers</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ordaskra/">Orðaskrá</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../">Eðlisfræðiheimatilraunir</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><span class="section-number">2. </span>Skoppstuðull skopparabolta</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/edbook/haskoli-islands/blob/master/projects/edl_heimatilraunir/kafli02.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="skoppstuull-skopparabolta">
+<h1><span class="section-number">2. </span>Skoppstuðull skopparabolta<a class="headerlink" href="#skoppstuull-skopparabolta" title="Permalink to this heading"></a></h1>
+<section id="inngangur">
+<span id="inngangur-1"></span><h2><span class="section-number">2.1. </span>Inngangur<a class="headerlink" href="#inngangur" title="Permalink to this heading"></a></h2>
+<p>Í þessari tilraun ætlum við að ákvarða skoppstuðul skopparabolta. Takið
+eftir að skoppstuðullinn er einnig háður fletinum sem boltinn skoppar á.
+Þið getið prófað að gera þessa tilraun með mismunandi gerðum af
+skopparaboltum til að sjá hversu ólíkir skoppstuðlar boltanna eru. Þið
+getið einnig prófað að sleppa sama skopparabolta á tveim mismunandi
+flötum, t.d. á annarsvegar parketi og hinsvegar flísum.</p>
+</section>
+<section id="taekjabunaur">
+<span id="taekjabunaur-1"></span><h2><span class="section-number">2.2. </span>Tækjabúnaður<a class="headerlink" href="#taekjabunaur" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>Snjallsími með forritinu <code class="docutils literal notranslate"><span class="pre">phyphox</span></code></p></li>
+<li><p>Skopparabolti, fótbolti, handbolti, körfubolti.</p></li>
+</ul>
+</section>
+<section id="leibeiningar">
+<span id="leibeiningar-1"></span><h2><span class="section-number">2.3. </span>Leiðbeiningar<a class="headerlink" href="#leibeiningar" title="Permalink to this heading"></a></h2>
+<p>Opnið <code class="docutils literal notranslate"><span class="pre">phyphox</span></code> í símanum ykkar og veljið <code class="docutils literal notranslate"><span class="pre">(In)elastic</span> <span class="pre">collision</span></code> í
+valmyndinni. Leggið símann á jörðina þar sem þið ætlið að sleppa
+boltanum og smellið á þríhyrninginn, þ.e. <code class="docutils literal notranslate"><span class="pre">play</span></code> takkann til að hefja
+mælingu. Sleppið síðan boltanum úr einhverri hæð þannig að hann skoppi
+nálægt símanum (passið að skemma ekki símann) og þannig að fram kemur
+mæling á skjáinn. Niðurstöður mælingarinnar munu gefa ykkur
+upphafshæðina, <span class="math">\(h_0\)</span>, sem boltanum var sleppt úr og hæðirnar
+<span class="math">\(h_n\)</span> sem boltinn náði eftir að hafa skoppað <span class="math">\(n\)</span> sinnum í
+jörðina. Þið sjáið líka tímann <span class="math">\(t_n\)</span> sem leið milli
+<span class="math">\((n-1)\)</span>-ta og <span class="math">\(n\)</span>-ta skoppsins.</p>
+</section>
+<section id="fraei">
+<span id="fraei-1"></span><h2><span class="section-number">2.4. </span>Fræði<a class="headerlink" href="#fraei" title="Permalink to this heading"></a></h2>
+<p>Skoppstuðull skopparabolta er táknaður með <span class="math">\(\varepsilon\)</span> og er
+skilgreindur þannig að</p>
+<div class="math">
+\[\begin{aligned}
+    \varepsilon := \frac{v_\text{eftir}}{v_{\text{fyrir}}},
+\end{aligned}\]</div>
+<p>þar sem að <span class="math">\(v_{\text{fyrir}}\)</span> táknar hraða boltans áður en hann
+skoppar á jörðinni og <span class="math">\(v_{\text{eftir}}\)</span> táknar hraða boltans
+þegar hann hefur skoppað á jörðinni. Við getum umritað þessa jöfnu á
+eftirfarandi form</p>
+<div class="math">
+\[\begin{aligned}
+    v_\text{eftir} = \varepsilon \, v_{\text{fyrir}}.
+\end{aligned}\]</div>
+<p>Gerum ráð fyrir því að loftmótstaðan sem verkar á skopparaboltann sé
+hverfandi. Með því að nota stöðujöfnurnar getum við sýnt að
+<span class="math">\(v_\text{eftir} = \sqrt{2g \, h_\text{eftir}}\)</span> og
+<span class="math">\(v_\text{fyrir} = \sqrt{2g \, h_\text{fyrir}}\)</span> en þar með höfum
+við að:</p>
+<div class="math">
+\[\begin{aligned}
+    \varepsilon = \frac{v_\text{eftir}}{v_{\text{fyrir}}} = \sqrt{\frac{h_\text{eftir}}{h_\text{fyrir}}}.
+\end{aligned}\]</div>
+<p>Sem við getum umritað þannig að:</p>
+<div class="math">
+\[\begin{aligned}
+    h_\text{eftir} = \varepsilon^2 \, h_\text{fyrir}.
+\end{aligned}\]</div>
+</section>
+<section id="urvinnsla">
+<span id="urvinnsla-1"></span><h2><span class="section-number">2.5. </span>Úrvinnsla<a class="headerlink" href="#urvinnsla" title="Permalink to this heading"></a></h2>
+<ol class="arabic">
+<li><p>Skráið hjá ykkur hvernig skopparabolta þið eruð að vinna með.</p></li>
+<li><p>Gerið töflu með a.m.k. 8 ólíkum mælingum þar sem að þið skráið
+hæðirnar <span class="math">\(h_\text{fyrir}\)</span> og <span class="math">\(h_\text{eftir}\)</span>.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><span class="math">\(h
+_\text{fyrir} \, \, [\SI{}{cm}]\)</span></p></th>
+<th class="head"><p><span class="math">\(h
+_\text{eftir} \, \, [\SI{}{cm}]\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p>Gerið graf af <span class="math">\(h_\text{eftir}\)</span> sem fall af
+<span class="math">\(h_\text{fyrir}\)</span>. Er grafið línulegt?</p></li>
+<li><p>Ákvarðið skoppstuðul skopparaboltans.</p></li>
+</ol>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../kafli01/" class="btn btn-neutral float-left" title="1. Eðlismassi pappírs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../kafli03/" class="btn btn-neutral float-right" title="3. Grunntónn vatnsflösku" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p></p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+<script>
+    window.addEventListener("load", function () {
+        for (var i in ggbAppletId) {
+            ggbAppletId[i].inject(i);
+        }
+    });
+</script>
+
+
+ 
+
+<style>
+    /* Sidebar header (and topbar for mobile) */
+    .wy-side-nav-search,
+    .wy-nav-top {
+       /* HI: #10099F, VoN: #EB7125, orginal #01447B */
+       background: #321c4a;
+    }
+
+    /* Sidebar */
+    .wy-nav-side {
+      /* orginal #343131, HÍ grár dekkri: #EEEEEE, HÍ svartur: #262626 */
+      background: #262626;
+    }
+</style>
+
+
+</body>
+</html>
