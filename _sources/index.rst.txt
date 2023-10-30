@@ -28,20 +28,8 @@ hennar er hýst á Github, https://github.com/samstem/edbook.
   :link: undirbuningur_efn/index.html
 
 .. button::
-  :text: STÆ105G: Hagnýt stærðfræðigreining
-  :link: stae105g/index.html
-
-.. button::
-  :text: STÆ104G: Stærðfræðigreining I
-  :link: stae104g/index.html
-
-.. button::
-  :text: Valin efni í stærðfræði og reiknifræði
-  :link: https://cs.hi.is/strei/index.html
-
-.. button::
-   :text: Fyrirlestrarnótur um Python
-   :link: https://cs.hi.is/python
+  :text: Heimatilraunir í eðlisfræði
+  :link: edl_heimatilraunir/index.html
 
 .. button::
   :text: Tölfræði frá grunni
@@ -50,6 +38,10 @@ hennar er hýst á Github, https://github.com/samstem/edbook.
 .. button::
   :text: R frá grunni
   :link: R_fra_grunni/index.html
+
+.. button::
+   :text: Fyrirlestrarnótur um Python
+   :link: https://cs.hi.is/python
 
 ----------------------
 
