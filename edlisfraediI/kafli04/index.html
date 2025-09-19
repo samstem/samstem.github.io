@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="is" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>4. Hreyfing í fleiri víddum &mdash; Eðlisfræði I </title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/eqt.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/datacamp-custom.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/edbook.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/samstem.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+        <script src="../_static/js/eqt.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script src="https://cdn.datacamp.com/datacamp-light-latest.min.js"></script>
+        <script async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../_static/js/theme.js"></script>
+
+<!-- hoverrole.py css code -->
+<style type="text/css">
+    a.tooltip {
+        outline: none;
+        border-bottom: thin dotted;
+        background: #ffeedd
+    }
+
+    a.tooltip strong {
+        line-height: 30px;
+    }
+
+    a.tooltip:hover {
+        text-decoration: none;
+    }
+
+    a.tooltip span {
+        z-index: 10;
+        display: none;
+        padding: 14px 20px;
+        margin-top: -30px;
+        margin-left: 12px;
+        width: 310px;
+        line-height: 16px;
+    }
+
+    a.tooltip:hover span {
+        display: inline;
+        position: absolute;
+        color: #111;
+        border: 1px solid #DCA;
+        background: #fffAF0;
+    }
+
+    .callout {
+        z-index: 20;
+        position: absolute;
+        top: 30px;
+        border: 0;
+        left: -12px;
+    }
+
+    /*CSS3*/
+    a.tooltip span {
+        border-radius: 4px;
+        box-shadow: 5px 5px 8px #CCC;
+    }
+</style>
+<!-- End hoverrole.py css code -->
+
+<style type="text/css">
+    .sagecell .CodeMirror-scroll {
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+
+    .sagecell .CodeMirror {
+        height: auto;
+    }
+
+    /* - Begin equation reference style - */
+    h6.eqno {
+        display: inline-block;
+        padding-left: 10px;
+    }
+
+    h6 .headerlink {
+        display: inline-block !important;
+    }
+
+    h6 .headerlink:after {
+        visibility: hidden !important;
+    }
+
+    h6 .headerlink:hover:after {
+        visibility: visible !important;
+    }
+
+    .eqno:hover>.headerlink:after {
+        visibility: visible !important;
+    }
+
+    table>caption>.headerlink {
+        visibility: hidden !important;
+    }
+
+    table>caption>.headerlink {
+        visibility: hidden !important;
+    }
+
+    /* - End - */
+</style>
+
+
+
+    <link rel="index" title="Atriðaskrá" href="../genindex/" />
+    <link rel="search" title="Leit" href="../search/" />
+    <link rel="next" title="5. Tregða og núningur" href="../kafli05/" />
+    <link rel="prev" title="3. Afstæð hreyfing" href="../kafli03/" />
+
+
+
+<!--	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
+<script type="text/javascript" src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+<script>ggbAppletId = [];</script>
+
+
+ 
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../" class="icon icon-home">
+            Eðlisfræði I
+              <img src="../_static/samstem.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../kafli01/">1. Mælingar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli02/">2. Hreyfing í einni vídd</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli03/">3. Afstæð hreyfing</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">4. Hreyfing í fleiri víddum</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#jofn-hroun">4.1. Jöfn hröðun</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#jafn-hrai-i-x-stefnu">4.1.1. Jafn hraði í <em>x</em> - stefnu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#kasthreyfing">4.1.2. Kasthreyfing</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#breytilegt-hnitakerfi-polhnit">4.2. Breytilegt hnitakerfi, pólhnit</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#polhnit">4.2.1. Pólhnit*</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hringhreyfing">4.2.2. Hringhreyfing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#utleisla-a-hroun-i-hringhreyfingu-me-diffrun">4.2.3. Útleiðsla á hröðun í hringhreyfingu með diffrun*</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#daemi">4.3. Dæmi</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli05/">5. Tregða og núningur</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli06/">6. Verkan og gagnverkan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli07/">7. Notkun á lögmálum Newtons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli08/">8. Þyngdarkraftur</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli09/">9. Vinna og orka</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli10/">10. Atlag og skriðþungi</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ordaskra/">Orðaskrá</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../">Eðlisfræði I</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><span class="section-number">4. </span>Hreyfing í fleiri víddum</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/edbook/haskoli-islands/blob/master/projects/edlisfraediI/kafli04.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="hreyfing-i-fleiri-viddum">
+<h1><span class="section-number">4. </span>Hreyfing í fleiri víddum<a class="headerlink" href="#hreyfing-i-fleiri-viddum" title="Permalink to this heading"></a></h1>
+<p><a class="reference internal" href="../_images/kasthreyfing.png"><img alt="image" src="../_images/kasthreyfing.png" style="width: 100%;" /></a></p>
+<p>Eins og við höfum talað um eru færsla, hraði og hröðun vigrar. Í þessum
+kafla ætlum við að skoða hreyfingu sem er í tveimur víddum. Það að bæta
+við þriðju víddinni er einfalt mál þegar maður skilur hvernig tvær
+víddir virka. Eitt af því sem komum til með að sjá er að við getum
+skoðað hnitin hvort í sínu lagi. Í kasthreyfingu til dæmis, þá getum við
+skoðað bolta sem hefur jafna hröðun í y-stefnu (þyngdarhröðun) og jafnan
+hraða í x-stefnu (þ.e. enga hröðun). Slík hreyfing er kölluð
+kasthreyfing.</p>
+<section id="jofn-hroun">
+<h2><span class="section-number">4.1. </span>Jöfn hröðun<a class="headerlink" href="#jofn-hroun" title="Permalink to this heading"></a></h2>
+<p>Hugsum okkur að við höfum hröðun á forminu</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\vec{a}  = \left( \begin{array}{c} a_x(t)  \\ a_y (t) \end{array}\right)\end{split}\]</div>
+<p>Ef <span class="math notranslate nohighlight">\(a_x\)</span> og <span class="math notranslate nohighlight">\(a_y\)</span> eru föll af tíma þá þarf að nota
+tegurreikning til þess að finna hraða sem fall af tíma og stöðu sem fall
+af tíma.</p>
+<p>Ef <span class="math notranslate nohighlight">\(a_x\)</span> og <span class="math notranslate nohighlight">\(a_y\)</span> eru hins vegar fastar, þá gilda jöfnurnar
+úr öðrum kafla fyrir hvort hnit fyrir sig.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\vec{a}  = \left( \begin{array}{c} a_x  \\ a_y  \end{array}\right)\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{equation}
+\vec{v}(t) = \left( \begin{array}{c} v_x(t)  \\ v_y(t)  \end{array}\right) = \left( \begin{array}{c} a_x t+v_{x0} \\ a_y t+v_{y0} \end{array}\right)
+\end{equation}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{equation}
+\vec{s}(t) = \left( \begin{array}{c} x(t) \\y(t) \end{array}\right) = \left( \begin{array}{c} \frac{1}{2}a_xt^2 +v_{x0}t +x_0 \\ \frac{1}{2}a_yt^2 +v_{y0}t +y_0 \end{array}\right)
+\end{equation}\end{split}\]</div>
+<section id="jafn-hrai-i-x-stefnu">
+<h3><span class="section-number">4.1.1. </span>Jafn hraði í <em>x</em> - stefnu<a class="headerlink" href="#jafn-hrai-i-x-stefnu" title="Permalink to this heading"></a></h3>
+<p>Við getum tekið sem dæmi hreyfingu þar sem t.d. <span class="math notranslate nohighlight">\(a_x = 0\)</span> og
+<span class="math notranslate nohighlight">\(a_y =\)</span> fasti.</p>
+<p>Skoðum jöfnurnar hér að ofan í því tilfelli:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\vec{a}  = \left( \begin{array}{c} 0  \\ a_y  \end{array}\right)\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{equation}
+\vec{v}(t) = \left( \begin{array}{c} v_x(t)  \\ v_y(t)  \end{array}\right) = \left( \begin{array}{c} v_{x0} \\ a_y t+v_{y0} \end{array}\right)
+\end{equation}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{equation}
+\vec{s}(t) = \left( \begin{array}{c} x(t) \\y(t) \end{array}\right) = \left( \begin{array}{c} v_{x0}t +x_0 \\ \frac{1}{2}a_yt^2 +v_{y0}t +y_0 \end{array}\right)
+\end{equation}\end{split}\]</div>
+<p>Hér er hreyfingin bara jafn hraði í <span class="math notranslate nohighlight">\(x-\)</span>hniti og hröðuð hreyfing
+í <span class="math notranslate nohighlight">\(y-\)</span> hniti.</p>
+<p>Við getum hugsað okkur hlut sé kastað upp á ská með upphafshraða
+<span class="math notranslate nohighlight">\(\vec{v}_0  = \left( \begin{array}{c} v_{x0}  \\ v_{y0}  \end{array}\right)\)</span>
+og að á sama tíma séum við að ferðast í bíl með hraða
+<span class="math notranslate nohighlight">\(\vec{v}_B  = \left( \begin{array}{c} v_{x0}  \\ 0 \end{array}\right)\)</span>
+samsíða hlutnum. Okkur myndi þá virðast hluturinn vera bara að hreyfast
+með í <span class="math notranslate nohighlight">\(y-\)</span> stefnuna. hann myndi bara ferðast upp og niður miðað
+við okkur.</p>
+<p>Hreyfingin í <span class="math notranslate nohighlight">\(y-\)</span> stefnuna er algjörlega óháð hreyfingunni í
+<span class="math notranslate nohighlight">\(x-\)</span> stefnuna. Það eina sem tengir þær saman er að þær gerast á
+sama tíma. Þegar við reiknum dæmi, getum við alltaf reiknað
+<span class="math notranslate nohighlight">\(x -\)</span>hnit og <span class="math notranslate nohighlight">\(y-\)</span> hnit sitt í hvoru lagi og svo tengjum
+við þau bara saman með tímanum.</p>
+</section>
+<section id="kasthreyfing">
+<h3><span class="section-number">4.1.2. </span>Kasthreyfing<a class="headerlink" href="#kasthreyfing" title="Permalink to this heading"></a></h3>
+<p>Hugsum okkur að við köstum bolta upp í loft undir
+34<span class="math notranslate nohighlight">\(\ensuremath{^\circ}\)</span> horni, með hraðanum 15  m/s. Við köstum
+boltanum úr <span class="math notranslate nohighlight">\(y_0\)</span> = 1,5 m hæð og frá <span class="math notranslate nohighlight">\(x_0\)</span> = 0. Við gerum þá
+nálgun að loftmótstaða sé engin. (Stundum er gott að reikna fyrst
+einfalt dæmi og sjá hvernig það virkar. Seinna má svo bæta flóknari
+hlutum við til þess að fá nákvæmari niðurstöðu). Ef engin loftmótstaða
+er, þá er hraði boltans í x-stefnu alltaf sá sami, þ.e. hröðunin er 0,
+og hröðunin í y-stefnu er <span class="math notranslate nohighlight">\(a_y\)</span> = - 9,8 m/s<span class="math notranslate nohighlight">\(^2\)</span>. Samkvæmt
+jöfnunum hér að ofan höfum við því (við skulum sleppa að skrifa einingar
+og gera ráð fyrir að allt sé í SI einingum):</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{equation}
+\vec{v}(t) = \left( \begin{array}{c} v_{x0} \\ a_y t+v_{y0} \end{array}\right)= \left( \begin{array}{c} 15\cos(34\ensuremath{^\circ}) \\ -9,8 t+15\sin(34\ensuremath{^\circ}) \end{array}\right)
+\end{equation}\end{split}\]</div>
+<p>og:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{equation}
+\vec{s}(t) =  \left( \begin{array}{c} v_{x0}t +x_0 \\ \frac{1}{2}a_yt^2 +v_{y0}t +y_0 \end{array}\right) =  \left( \begin{array}{c} 15\cos(34\ensuremath{^\circ})t \\ \frac{1}{2}(-9,8)t^2 +15\sin(34\ensuremath{^\circ}) t + 1,5 \end{array}\right)
+\end{equation}\end{split}\]</div>
+<p>Nú höfum við allar jöfnur sem við þurfum. Við getum reiknað hversu hátt
+boltinn fer. Einkenni hæsta punkts er að <span class="math notranslate nohighlight">\(v_y\)</span> = 0. Þar er þá
+<span class="math notranslate nohighlight">\(-9,8 t+15\sin(34\ensuremath{^\circ})\)</span> = 0, og boltinn er því í
+hæsta punkti þegar <span class="math notranslate nohighlight">\(t = 15\sin(34\ensuremath{^\circ})/9,8\)</span>,s =
+0,86 s. Til þess að finna hversu hátt boltinn fór á þessum tíma setjum
+við inn í jöfnuna fyrir <span class="math notranslate nohighlight">\(y\)</span> - gildið: <span class="math notranslate nohighlight">\(h_{max}\)</span> =
+<span class="math notranslate nohighlight">\(\frac{1}{2}(-9,8)t^2 +15\sin(34\ensuremath{^\circ}) t + 1,5\)</span> =
+4,99 m. Athugið að þetta er hæð yfir jörðu miðað við að við köstum
+boltanum úr 1,5 m hæð yfir jörðu.</p>
+<p>Nú gæti verið að við vildum vita hversu langt boltinn færi í
+<span class="math notranslate nohighlight">\(x\)</span>-stefnu áður en hann lendir á jörðunni. Til þess að finna það
+skulum við fyrst finna hversu lengi boltinn er í loftinu. Þegar boltinn
+lendir á jörðinni er <span class="math notranslate nohighlight">\(y(t) = 0\)</span>. Það þýðir að
+<span class="math notranslate nohighlight">\(\frac{1}{2}(-9,8)t^2 +15\sin(34\ensuremath{^\circ}) t + 1,5 = 0\)</span>.
+Þetta er annars stigs jafna sem þarf að leysa. Með einföldum aðferðum
+sem þið þekkið fáum við lausnirnar
+<span class="math notranslate nohighlight">\(t = 1,88\,s\,\, \vee\,\, t = -0,16\,s.\)</span> Við vitum að 1,88 s er
+rétta lausnin vegna þess að tíminn líður áfram. Stærðfræðin svara hins
+vegar bara þeirri spurningu sem við settum fram: hvenær <span class="math notranslate nohighlight">\(y\)</span> -
+hnitið væri 0 fyrir þessa jöfnu. Ef við framlengjum fleygbogann
+afturábak, þá lendir hann í <span class="math notranslate nohighlight">\(y\)</span> = 0 við <span class="math notranslate nohighlight">\(t = -0,16\,s.\)</span></p>
+<p>Nú þurfum við næst að athuga hversu langt boltinn fer áður en hann
+lendir á jörðunni. Það finnum við með því að athuga hversu langt hann
+fer í x-stefnu á 1,88  s:</p>
+<p><span class="math notranslate nohighlight">\(L = v_x(1,88) = 15\cos(34\ensuremath{^\circ})\cdot 1,88\)</span> = 23,4 m.</p>
+</section>
+</section>
+<section id="breytilegt-hnitakerfi-polhnit">
+<h2><span class="section-number">4.2. </span>Breytilegt hnitakerfi, pólhnit<a class="headerlink" href="#breytilegt-hnitakerfi-polhnit" title="Permalink to this heading"></a></h2>
+<p>Stundum er heppilegt að nota hnitakerfi sem breytist með tíma. Þetta
+hljómar undarlega en í raun er það ekki svo skrítið. Hugsum okkur t.d.
+hnitakerfi sem hefur <span class="math notranslate nohighlight">\(x-\)</span>ás eftir yfirborði jarðar við
+Lækjargötu og <span class="math notranslate nohighlight">\(y-\)</span>ás beint upp. Þetta er hnitakerfi sem er á
+ferð vegna þess að jörðin er að snúast um sjálfa sig og auk þess á
+fleygiferð umhverfis sólina.</p>
+<section id="polhnit">
+<h3><span class="section-number">4.2.1. </span>Pólhnit*<a class="headerlink" href="#polhnit" title="Permalink to this heading"></a></h3>
+<p>Pólhnit, <span class="math notranslate nohighlight">\(r\)</span>, <span class="math notranslate nohighlight">\(\theta\)</span>, eru hnit sem oft eru notuð til þess
+að lýsa hlutum sem eru að fara í hring. Við getum skrifað upp tengsl
+þeirra við <span class="math notranslate nohighlight">\(x,\,y-\)</span>hnit á eftirfarandi hátt:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{equation}
+ \left( \begin{array}{c} x(t) \\y(t) \end{array}\right) = \left( \begin{array}{c} r(t)\cos(\theta(t)) \\ r(t)\sin(\theta(t)) \end{array}\right)
+\end{equation}\end{split}\]</div>
+<p>Að sjálfsögðu getum við líka einangrað <span class="math notranslate nohighlight">\(r\)</span> og <span class="math notranslate nohighlight">\(\theta\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+r(t) = \sqrt{x(t)^2 + y(t)^2}  \hspace{1 cm}  \theta(t) = \arctan(\frac{y(t)}{x(t)})
+\end{equation}\]</div>
+<p>Hnitakerfið er byggt upp af einingavigrum í stefnu <span class="math notranslate nohighlight">\(\vec{r}\)</span> og
+einingavigri í stefnu hornsins <span class="math notranslate nohighlight">\(\theta\)</span>, þ.e. hornrétt á vigurinn
+<span class="math notranslate nohighlight">\(\vec{r}\)</span>.</p>
+<p>Einingavigur í stefnu vigursins
+<span class="math notranslate nohighlight">\(\vec{r(t)} = \left( \begin{array}{c} r(t)\cos(\theta(t)) \\ r(t)\sin(\theta(t))\end{array}\right)\)</span>
+er:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\vec{e}_r(t) = \vec{r(t)}/|\vec{r(t)}| =\vec{r(t)}/r(t) =  \left( \begin{array}{c} \cos(\theta(t)) \\ \sin(\theta(t))\end{array}\right)\end{split}\]</div>
+<p>Einingavigur hornrétt á <span class="math notranslate nohighlight">\(\vec{r}\)</span>, þ.e. <span class="math notranslate nohighlight">\(\vec{e}_{\theta}\)</span> í
+stefnu hornsins er:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\vec{e}_{\theta}(t) = \hat{e}_r(t) =  \left( \begin{array}{c} -\sin(\theta(t)) \\ \cos(\theta(t))\end{array}\right)\end{split}\]</div>
+</section>
+<section id="hringhreyfing">
+<h3><span class="section-number">4.2.2. </span>Hringhreyfing<a class="headerlink" href="#hringhreyfing" title="Permalink to this heading"></a></h3>
+<p>Ef hlutur er að fara í hring þá er <span class="math notranslate nohighlight">\(r(t) = r\)</span>, fasti. Við vitum að
+ef við snúum steini í bandi þá fer steinninn í hring. Í raun erum við þá
+alltaf að breyta hreyfingu steinsins, við erum að toga hann að okkur.
+Við getum séð að hraði steinsins breytist inn að miðju hringsins.</p>
+<p><a class="reference internal" href="../_images/centripedal.png"><img alt="image1" src="../_images/centripedal.png" style="width: 3in;" /></a></p>
+<p>Hugsum okkur að hringurinn tákni feril steinsins og steinninn sé á
+jafnri ferð <span class="math notranslate nohighlight">\(v_0\)</span>. Reynum að athuga hver hröðun steinsins er þegar
+steinninn er alveg við x-ásinn. Við sjáum að hraðinn við x-ásinn er:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\vec{v}_1 =  \left( \begin{array}{c}  0\\ v_0\end{array}\right)\end{split}\]</div>
+<p>og hraðinn litlu síðar,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\vec{v}_2 =  \left( \begin{array}{c} -v_0sin(\theta) \\ v_0cos(\theta)\end{array}\right)\end{split}\]</div>
+<p>Breytingin í hraðanum er þá:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\Delta\vec{v} = \vec{v}_2 -\vec{v}_1 =  \left( \begin{array}{c} -v_0sin(\theta)-0 \\ v_0cos(\theta) -v_0\end{array}\right)\end{split}\]</div>
+<p>Nú var hugmyndin að skoða hröðun við x-ásinn. Við ætlum því að gera ráð
+fyrir að <span class="math notranslate nohighlight">\(\theta\)</span> sé mjög lítið horn. Þá er
+<span class="math notranslate nohighlight">\(\cos(\theta) \approx 1\)</span> og <span class="math notranslate nohighlight">\(\sin(\theta) \approx \theta\)</span>.
+Ef við setjum þetta inn í jöfnuna fyrir <span class="math notranslate nohighlight">\(\Delta\vec{v}\)</span> fáum við:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\Delta\vec{v}  =  \left( \begin{array}{c} -v_0\theta \\ 0\end{array}\right)\end{split}\]</div>
+<p>Bogalengdin <span class="math notranslate nohighlight">\(\Delta s\)</span> sem steinninn fer þegar hann ferðast hornið
+<span class="math notranslate nohighlight">\(\theta\)</span> er annars vegar:</p>
+<div class="math notranslate nohighlight">
+\[\Delta s = r\theta\]</div>
+<p>og hins vegar</p>
+<div class="math notranslate nohighlight">
+\[\Delta s = v_0 \Delta t\]</div>
+<p>Ef við tökum þetta tvennt saman fáum við að:</p>
+<div class="math notranslate nohighlight">
+\[\Delta t = \frac{r\theta}{v_0}\]</div>
+<p>.</p>
+<p>Við fáum því að</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\vec{a}_{\theta = 0} = \lim_{\Delta t \to 0} \frac{\Delta\vec{v}}{\Delta t} = \lim_{\theta \to 0} \frac{ \left( \begin{array}{c} -v_0\theta \\ 0\end{array}\right)}{\frac{r\theta}{v_0}} = \left( \begin{array}{c} -\frac{v^2_0}{r} \\ 0\end{array}\right)\end{split}\]</div>
+<p>Svo hröðunin í þessum punkti á hringnum hefur stefnu inn að miðju
+hringsins og stærðina <span class="math notranslate nohighlight">\(\frac{v^2_0}{r}\)</span>.</p>
+<p>Við gætum gert þetta í hvaða punkti hringsins sem væri, og því fengist
+alltaf hröðun inn að miðju hringsins með stærð <span class="math notranslate nohighlight">\(\frac{v^2_0}{r}\)</span>.</p>
+</section>
+<section id="utleisla-a-hroun-i-hringhreyfingu-me-diffrun">
+<h3><span class="section-number">4.2.3. </span>Útleiðsla á hröðun í hringhreyfingu með diffrun*<a class="headerlink" href="#utleisla-a-hroun-i-hringhreyfingu-me-diffrun" title="Permalink to this heading"></a></h3>
+<p>(Má geyma ef ekki er búið að fara í diffrun.)</p>
+<p>En við skulum nú fá almenna framsetningu og á hröðun í hringhreyfingu
+með diffrun.</p>
+<p>Hraði hlutar er diffurkvótinn af stöðunni og hröðun hlutar diffurkvóti
+hraðans. Við skulum rifja upp nokkur atriði í sambandi við diffrun:</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dt}\sin(\theta) = \cos(\theta)\]</div>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dt}\cos(\theta) = -\sin(\theta)\]</div>
+<p>Diffrun margfeldis:</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dt}(f(t)\cdot g(t)) = \frac{d}{dt}f(t) \cdot g(t) + f(t)\cdot \frac{d}{dt}g(t)\]</div>
+<p>Auk þess þurfum við að kunna svo kallaða <em>keðjureglu</em>.</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dt}f(y(t)) = \frac{d}{dy}f(y)\frac{d}{dt}y(t)\]</div>
+<p>Sem dæmi um keðjuregluna getum við tekið eftirfarandi:</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dt}25\sin(t^2 -3t +5)  = 25\cos(t^2 -3t +5)\cdot\frac{d}{dt}(t^2 -3t +5)= 25\cos(t^2 -3t +5)\cdot(2t -3)\]</div>
+<p>Ef hlutur snýst alltaf um jafnstórt horn á hverri tímaeiningu þá er
+stærðin <span class="math notranslate nohighlight">\(\omega = \frac{d\theta}{dt}\)</span> fasti og við getum skrifað
+hornið <span class="math notranslate nohighlight">\(\theta = \omega t +\phi\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dt}r\sin(\omega t+\phi)  = r\cos(\omega t+\phi)\cdot\frac{d}{dt}(\omega t+\phi) = r\cos(\omega t+\phi)\cdot \omega = \omega r\cos(\omega t+\phi)\]</div>
+<p>Ef hins vegar <span class="math notranslate nohighlight">\(\omega = \frac{d\theta}{dt}\)</span> er ekki fasti heldur
+breytilegt í tíma fáum við:</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dt}r\sin(\theta(t))  = r\cos(\theta(t))\cdot\frac{d}{dt}(\theta( t)) = \omega(t) r\cos(\theta(t))\]</div>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dt}r\cos(\theta(t))  = -r\sin(\theta(t))\cdot\frac{d}{dt}(\theta( t)) =  -\omega(t) r\sin(\theta(t))\]</div>
+<div class="minipage docutils container">
+<div class="wrapfigure docutils container">
+<p>r2in</p>
+<p><a class="reference internal" href="../_images/hringur.png"><img alt="image2" src="../_images/hringur.png" style="width: 2.3in;" /></a></p>
+</div>
+<p>Nú skulum við skoða hringhreyfingu þar sem</p>
+<p><span class="math notranslate nohighlight">\(r(t) =r\)</span>, <span class="math notranslate nohighlight">\(\omega(t) = \frac{d\theta(t)}{dt}\)</span> og
+<span class="math notranslate nohighlight">\(\alpha(t) = \frac{d\omega(t)}{dt}\)</span>:</p>
+<p>Við byrjum þá með stöðuvigur hlutar, <span class="math notranslate nohighlight">\(\vec{r}(t)\)</span> og skrifum
+hann með pólhnitum:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{equation}
+\vec{r}(t) = \left( \begin{array}{c} r\cos(\theta(t)) \\ r\sin(\theta(t))
+ \end{array}\right) = r\cdot \vec{e}_r(t)
+\end{equation}\end{split}\]</div>
+<p>Síðan finnum við hraðavigurinn:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{equation}
+\vec{v}(t) =\frac{d}{dt}\vec{r}(t) = \frac{d}{dt}\left( \begin{array}{c} r\cos(\theta(t)) \\ r\sin(\theta(t))\end{array}\right)  = \left( \begin{array}{c} -\omega(t) r\sin(\theta(t)) \\  \omega(t) r\cos(\theta(t))\end{array}\right) = \omega(t)r\cdot\vec{e}_{\theta}(t)
+\end{equation}\end{split}\]</div>
+<p>Nú getum við þá fundið hröðunarvigurinn en við þurfum að passa okkur
+því nú þarf að diffra margföldun:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{equation}
+\vec{a}(t) =\frac{d}{dt}\vec{v}(t) = \frac{d}{dt} \left( \begin{array}{c} -\omega(t)R\sin(\theta(t)) \\ \omega(t) r\cos(\theta(t))\end{array}\right) =\left( \begin{array}{c} -\alpha(t)r\sin(\theta(t))  - \omega(t)^2r\cos(\theta(t))\\ \alpha(t)r\sin(\theta(t))   -\omega(t)^2r\cos(\theta(t))\end{array}\right)
+\end{equation}\end{split}\]</div>
+</div>
+<p>Ef við skoðum nánar þessa vigra sjáum við að við getum skrifað þá:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+\vec{a}(t) = \alpha(t)r\cdot \vec{e}_{\theta}(t) - \omega^2(t)r \cdot \vec{e}_r(t)
+\end{equation}\]</div>
+<p>Í hringhreyfingu er alltaf hröðun inn að miðju hringsins, í hverjum
+punkti má rita hana:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+\vec{a}_r  = -\omega^2\vec{r} = -\frac{v^2}{r}\vec{e}_r
+\end{equation}\]</div>
+<p>Heildarhröðun hlutar sem er á hringhreyfingu hefur tvo þætti. Annar
+þátturinn er hröðun inn að miðju hringsins:
+<span class="math notranslate nohighlight">\(\vec{a}_r  = -\omega^2r\vec{e}_r\)</span> og hinn þátturinn er hröðun í
+stefnu hraðans: <span class="math notranslate nohighlight">\(\vec{a}_{\theta} = \alpha(t)r\vec{e}_{\theta}\)</span>.
+Við komum til með að nota mikið jöfnuna fyrir hröðun inn að miðju
+hringsins.</p>
+<p>Fyrst þurfum við samt að læra lögmál Newtons.</p>
+</section>
+</section>
+<section id="daemi">
+<h2><span class="section-number">4.3. </span>Dæmi<a class="headerlink" href="#daemi" title="Permalink to this heading"></a></h2>
+<p>Kjartan ferðast á sleða yfir ísilagða tjörn með jöfnum hraða, 4,0 m/s,
+beint í norður. Allt í einu kemur vindhviða og úlpan hans Kjartans tekur
+í sig vindinn þannig sleðinn fær meðalhröðun 0,12 m/s<span class="math notranslate nohighlight">\(^2\)</span> til
+vesturs í 3,0 s. Hver er hraðavigur og hver er ferð sleðans eftir þessar
+3,0 s?</p>
+<div class="line-block" id="section-1">
+<div class="line">Flugvél ferðast lárétt á jöfnum hraða, 115 m/s, í hæðinni 1050 m. Við
+veljum upp og til hægri sem jákvæðar stefnur og flugvélin flýgur til
+hægri. Nú er neyðarpakka sleppt úr flugvélinni og hann fellur til
+jarðar. Gerið ráð fyrir að loftmótstaða sé hverfandi.</div>
+<div class="line">a) Hversu lengi er pakkinn á leiðinni til jarðar?</div>
+<div class="line">b) Hversu langt frá lendingarstað er pakkanum sleppt?</div>
+<div class="line">c) Hver er hraðavigur og hver er ferð pakkans þegar hann lendir?</div>
+</div>
+<p id="section-2">Þórgunnur er að ferðast í blæjubíl sem er með blægjuna niðri. Bíllinn
+ferðast á hraðanum 25 m/s og stefnir beint í austur. Þórgunnur kastar
+lítilli málmkúlu beint upp með hraðanum 11 m/s. Hversu langt hefur
+bíllinn færst þegar hú grípur aftur kúluna í sömu hæð? Skýrið af hveru
+kúlan lendir í hendi Þórgunnar en ekki fyrir aftan bílinn!</p>
+<p id="section-3">Langstökkvari yfirgefur jörðina undir <span class="math notranslate nohighlight">\(23\ensuremath{^\circ}\)</span>
+horni við lárétt og ferðast 8,7 m lárétt áður en hann lendir aftur á
+jörðunni í sömu hæð. Finnið upphafshraðavigurinn og upphafsferð
+langstökkvarans.</p>
+<div class="line-block" id="section-4">
+<div class="line">Kalli sparkar fótbolta í átt að marki sem er í 29 m fjarlægð frá
+boltanum þar sem hann liggur á jörðinni. Kalli sparkar boltanum þannig
+að hann fer upp undir <span class="math notranslate nohighlight">\(32,0\ensuremath{^\circ}\)</span> horni við jörðu
+í átt að markinu, með ferð (tölugildi hraðavigurs) 19,0 m/s.</div>
+<div class="line">a) Hver er hraði boltans samsíða jörðu?</div>
+<div class="line">b) Í hvaða hæð grípur markmaðurinn boltann ef hann grípur boltan rétt
+við markið?</div>
+<div class="line">c) Hver er hraðavigur boltans þegar markmaðurinn grípur hann?</div>
+<div class="line">d) Hver er ferð boltans þegar markmaðurinn grípur hann?</div>
+</div>
+<p id="section-5">Steini er kastað lárétt af þaki húss A með hraða <span class="math notranslate nohighlight">\(v_0\)</span>. Öðrum
+steini er kastað af þaki húss B líka lárétt með hraða <span class="math notranslate nohighlight">\(v_0\)</span>.
+Steinninn sem kastað er af þaki A fer tvisar sinnum lengra en steinninn
+sem kastað er af þaki B. Hver er hlutfall hæðar húss A og hæðar húss B
+(<span class="math notranslate nohighlight">\(h_A/h_B\)</span>)?</p>
+<div class="line-block" id="section-6">
+<div class="line">Jónatan er að spilla tennis við Huldu. Hulda er með boltann en Jónatan
+stendur rétt við netið í 10 m fjarlægð frá Huldu. Nú slær Hulda
+boltann þannig að hann fer upp undir <span class="math notranslate nohighlight">\(50,0\ensuremath{^\circ}\)</span>
+horni með hraða 15,0 m/s. 0,30 s eftir að Hulda slær boltann byrjar
+Jónatan að hlaupa frá netinu í von um að ná að slá boltann tilbaka
+þegar hann er í hæðinni 2,10 m yfir upphafshæð (þeirri sem Hulda slær
+boltann).</div>
+<div class="line">a) Hversu langur tími líður þar til boltinn er í 2,10 m á niðurleið?</div>
+<div class="line">b) Hversu langt hefur boltinn þá farið lárétt frá Huldu?</div>
+<div class="line">c) Hversu hratt þarf Jónatan að hlaupa til að ná boltanum í þessarri
+hæð?</div>
+</div>
+<div class="line-block" id="section-7">
+<div class="line">Flugvél á að sleppa matarpakka til manna sem eru staddir á palli úti í
+sjó. Flugvélin er að fljúga niður undir <span class="math notranslate nohighlight">\(30\ensuremath{^\circ}\)</span>
+horni við lárétt á ferð 240 m/s. Þegar flugvélin er í 2400 m hæð, er
+pakkanum sleppt og hann lendir nákvæmlega á pallinum.</div>
+<div class="line">a) Hversu langur tími líður frá því pakkanum er sleppt og þar til hann
+lendir?</div>
+<div class="line">b) Hversu langt fer pakkinn í lárétta stefnu á þessum tíma?</div>
+<div class="line">c) Hvert er hornið <span class="math notranslate nohighlight">\(\alpha\)</span>?</div>
+</div>
+<p><a class="reference internal" href="../_images/flugvel.png"><img alt="image3" src="../_images/flugvel.png" style="width: 1.5in;" /></a></p>
+<p id="section-8">Vatn úr garðslöngu sem vísar upp 25<span class="math notranslate nohighlight">\(\ensuremath{^\circ}\)</span> yfir
+lárétt lendir beint á manni sem liggur í sólbaði á grasflötinni í 4,4 m
+láréttri fjarlægð frá slönguopinu. Slöngunni er haldið þannig að vatnið
+fer út í 1,4 m hæð yfir grasflötinni. Hver er ferð vatnsins þar sem það
+kemur úr slöngunni?</p>
+<p id="section-9">Lítil dolla hangir í þræði úr loftinu. Baunabyssu er skotið beint í
+sjónlínu-átt að dollunni. Um leið og skotið hleypur af slitnar þráðurinn
+og dollan byrjar að falla. Sýnið að ef gert er ráð fyrir að loftmótstaða
+sé engin muni baunin alltaf lenda á dollunni, óháð upphafshraða
+baunarinnar. (Það þarf þó að gera ráð fyrir að baunin nái x-stöðu
+dollunnar áður en dollan lendir á gólfinu!)</p>
+<p id="section-10">Riffli er skotið í átt að marki. Markið er í 91,4 m fjarlægð frá
+riffilopinu og hraði kúlu sem kemur út úr rifflinum er 42,7 m/s. Ef
+riffilinum er haldið þannig að kúlan komi úr rifflinum á móts við miðju
+marksins, undir hvaða tveimur hornum, <span class="math notranslate nohighlight">\(\theta\)</span>, er hægt að halla
+rifflinum svo að kúlan hitti nákvæmlega í mark?</p>
+<p><a class="reference internal" href="../_images/riffill.png"><img alt="image4" src="../_images/riffill.png" style="width: 3in;" /></a></p>
+<p id="section-11">Bíll ekur í beygju sem hefur beygjuradíus 45 m. Hann ekur á jafnri ferð,
+45 km/klst. Hver er hröðun bílsins?</p>
+<div class="line-block" id="section-12">
+<div class="line">Kappakstursbíll ekur eftir hringlaga braut. Brautin hefur radíus
+300 m. Bíllinn eykur ferð sína jafnt og þétt úr 20 m/s í 40 m/s á
+10 s.</div>
+<div class="line">a) Hver er þáttur hröðunar hans eftir brautinni?</div>
+<div class="line">b) Hver er hröðunarvigur hans í pólhnitum þegar hraði hans er 30 m/s?</div>
+</div>
+<div class="line-block">
+<div class="line">1) 4,01 m/s</div>
+<div class="line">2)
+a. 14,64 s,    b. 1683 m,    c. <span class="math notranslate nohighlight">\(\begin{pmatrix} 115\\-143\end{pmatrix}\)</span> m/s;    184 m/s</div>
+<div class="line">3) 56 m</div>
+<div class="line">4) 10,9 m/s; <span class="math notranslate nohighlight">\(\begin{pmatrix} 10,02\\4,25\end{pmatrix}\)</span>m/s</div>
+<div class="line">5)
+a. 16,1 m,    b. 2,25 m,    c. <span class="math notranslate nohighlight">\(\begin{pmatrix}16,1\\-7,6\end{pmatrix}\)</span> m/s,    d. 17,8 m/s</div>
+<div class="line">6) 4</div>
+<div class="line">7) a. 2,15 s    b. 20,7 m    c. 5,8 m/s</div>
+<div class="line">8) a. 13,0 s    b. 2704 m    c. 41,6<span class="math notranslate nohighlight">\(^\circ\)</span></div>
+<div class="line">9) 5,77 m/s</div>
+<div class="line">11) 14,7<span class="math notranslate nohighlight">\(^\circ\)</span></div>
+<div class="line">12) 3,47 m/s<span class="math notranslate nohighlight">\(^2\)</span> inn a miðju hrings</div>
+<div class="line">13) a. 2 m/s<span class="math notranslate nohighlight">\(^2\)</span>    b. 3 m/s<span class="math notranslate nohighlight">\(^2\)</span></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../kafli03/" class="btn btn-neutral float-left" title="3. Afstæð hreyfing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../kafli05/" class="btn btn-neutral float-right" title="5. Tregða og núningur" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p></p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+<script>
+    window.addEventListener("load", function () {
+        for (var i in ggbAppletId) {
+            ggbAppletId[i].inject(i);
+        }
+    });
+</script>
+
+
+ 
+
+<style>
+    /* Sidebar header (and topbar for mobile) */
+    .wy-side-nav-search,
+    .wy-nav-top {
+       /* HI: #10099F, VoN: #EB7125, orginal #01447B */
+       background: #321c4a;
+    }
+
+    /* Sidebar */
+    .wy-nav-side {
+      /* orginal #343131, HÍ grár dekkri: #EEEEEE, HÍ svartur: #262626 */
+      background: #262626;
+    }
+</style>
+
+
+</body>
+</html>

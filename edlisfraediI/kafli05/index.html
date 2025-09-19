@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="is" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>5. Tregða og núningur &mdash; Eðlisfræði I </title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/eqt.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/datacamp-custom.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/edbook.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/samstem.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+        <script src="../_static/js/eqt.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script src="https://cdn.datacamp.com/datacamp-light-latest.min.js"></script>
+        <script async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../_static/js/theme.js"></script>
+
+<!-- hoverrole.py css code -->
+<style type="text/css">
+    a.tooltip {
+        outline: none;
+        border-bottom: thin dotted;
+        background: #ffeedd
+    }
+
+    a.tooltip strong {
+        line-height: 30px;
+    }
+
+    a.tooltip:hover {
+        text-decoration: none;
+    }
+
+    a.tooltip span {
+        z-index: 10;
+        display: none;
+        padding: 14px 20px;
+        margin-top: -30px;
+        margin-left: 12px;
+        width: 310px;
+        line-height: 16px;
+    }
+
+    a.tooltip:hover span {
+        display: inline;
+        position: absolute;
+        color: #111;
+        border: 1px solid #DCA;
+        background: #fffAF0;
+    }
+
+    .callout {
+        z-index: 20;
+        position: absolute;
+        top: 30px;
+        border: 0;
+        left: -12px;
+    }
+
+    /*CSS3*/
+    a.tooltip span {
+        border-radius: 4px;
+        box-shadow: 5px 5px 8px #CCC;
+    }
+</style>
+<!-- End hoverrole.py css code -->
+
+<style type="text/css">
+    .sagecell .CodeMirror-scroll {
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+
+    .sagecell .CodeMirror {
+        height: auto;
+    }
+
+    /* - Begin equation reference style - */
+    h6.eqno {
+        display: inline-block;
+        padding-left: 10px;
+    }
+
+    h6 .headerlink {
+        display: inline-block !important;
+    }
+
+    h6 .headerlink:after {
+        visibility: hidden !important;
+    }
+
+    h6 .headerlink:hover:after {
+        visibility: visible !important;
+    }
+
+    .eqno:hover>.headerlink:after {
+        visibility: visible !important;
+    }
+
+    table>caption>.headerlink {
+        visibility: hidden !important;
+    }
+
+    table>caption>.headerlink {
+        visibility: hidden !important;
+    }
+
+    /* - End - */
+</style>
+
+
+
+    <link rel="index" title="Atriðaskrá" href="../genindex/" />
+    <link rel="search" title="Leit" href="../search/" />
+    <link rel="next" title="6. Verkan og gagnverkan" href="../kafli06/" />
+    <link rel="prev" title="4. Hreyfing í fleiri víddum" href="../kafli04/" />
+
+
+
+<!--	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
+<script type="text/javascript" src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+<script>ggbAppletId = [];</script>
+
+
+ 
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../" class="icon icon-home">
+            Eðlisfræði I
+              <img src="../_static/samstem.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../kafli01/">1. Mælingar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli02/">2. Hreyfing í einni vídd</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli03/">3. Afstæð hreyfing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli04/">4. Hreyfing í fleiri víddum</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">5. Tregða og núningur</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#fyrsta-logmal-newtons">5.1. Fyrsta lögmál Newtons</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#helstu-kraftar">5.1.1. Helstu kraftar</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#a-yta-ea-toga">5.2. Að ýta eða toga</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#nuningskraftur">5.3. Núningskraftur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#verkraftur">5.4. Þverkraftur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fjaurkraftur">5.5. Fjaðurkraftur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#yngdarkraftur">5.6. Þyngdarkraftur</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#anna-logmal-newtons">5.6.1. Annað lögmál Newtons</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ymislegt-um-kraftana-sem-vi-notum">5.6.2. Ýmislegt um kraftana sem við notum</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#ytikraftur-og-togkraftur">5.7. Ýtikraftur og togkraftur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#yngdarkraftur-1">5.8. Þyngdarkraftur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#verkraftur-og-nuningskraftur">5.9. Þverkraftur og núningskraftur</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#daemi">5.9.1. Dæmi</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id2">5.9.1.1. 1.</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#section-1">5.9.1.2. 2.</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#section-2">5.9.1.3. 3.</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#section-3">5.9.1.4. 4.</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#section-4">5.9.1.5. 5.</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#section-5">5.9.1.6. 6.</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#section-6">5.9.1.7. 7.</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#svor">5.9.1.8. Svör</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli06/">6. Verkan og gagnverkan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli07/">7. Notkun á lögmálum Newtons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli08/">8. Þyngdarkraftur</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli09/">9. Vinna og orka</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli10/">10. Atlag og skriðþungi</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ordaskra/">Orðaskrá</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../">Eðlisfræði I</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><span class="section-number">5. </span>Tregða og núningur</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/edbook/haskoli-islands/blob/master/projects/edlisfraediI/kafli05.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="trega-og-nuningur">
+<h1><span class="section-number">5. </span>Tregða og núningur<a class="headerlink" href="#trega-og-nuningur" title="Permalink to this heading"></a></h1>
+<p><a class="reference internal" href="../_images/steinn.png"><img alt="image" src="../_images/steinn.png" style="width: 100%;" /></a></p>
+<p>Flest okkar vita að ef við reynum að renna steini eftir gólfinu, þá
+stoppar hann eftir smá stund. Það hversu langt hann rennur fer svolítið
+eftir því hvernig gólfið er. Ef það er t.d. teppi á gólfinu þá fer hann
+mjög stutt. Ef gólfið er gróft steingólf færi hann líklega svolítið
+lengra. Ef það er dúkur eða parket fer hann enn lengra. Ef við værum
+stödd í skautahöll og renndum steininum eftir sléttu íssvellinu þá færi
+hann lengst.</p>
+<p>En hvers vegna fer steinninn mislangt?</p>
+<p>Ef steinninn væri látinn renna á óendanlega hálum fleti myndi hann þá
+bara halda áfram?</p>
+<p>Þetta, að yfirborð sé hált eða ekki hált, er nátengt því sem við köllum
+<strong>núning</strong>. Þeim mun minni núningur, þeim mun hálla er yfirborðið. Eftir
+því sem núningurinn er meiri, þeim mun fyrr stoppar steinninn.</p>
+<p>Ef við tökum allann núning í burtu, þá stoppar steinninn bara alls ekki,
+hann heldur áfram um alla eilífð.</p>
+<p>Þetta er í raun það sem Isaac Newton talar um í fyrsta lögmáli sínu. Ef
+ekkert verður til þess að breyta hraða hlutar, þá breytist hann ekki.
+Núningur breytir hraðanum en ef það er enginn núningur þá vill hluturinn
+bara halda áfram eins og hann er. Hlutur breytir ekki hraða sínum af
+sjálfsdáðum. Það þarf eitthvað utanaðkomandi að gerast!</p>
+<p>Í dæminu með steininn þá var steinninn kyrr í byrjun. Svo kom einhver og
+gaf steininum hraða <span class="math notranslate nohighlight">\(\vec{v}\)</span> og síðan eftir að steinninn var
+kominn á þann hraða þá hélt hann áfram á þessum hraða ef enginn núningur
+var, en ef um núning var að ræða þá minnkaði hraðinn smátt og smátt þar
+til hann stöðvaðist.</p>
+<p>Það að steinninn breytir ekki hraða sínum nema eitthvað utanaðkomandi
+komi til, kallast <strong>tregða</strong> steinsins til að breyta hreyfingunni.</p>
+<section id="fyrsta-logmal-newtons">
+<h2><span class="section-number">5.1. </span>Fyrsta lögmál Newtons<a class="headerlink" href="#fyrsta-logmal-newtons" title="Permalink to this heading"></a></h2>
+<p>Fyrsta lögmál Newtons hljóðar svo í íslensku þýðingunni:</p>
+<p><em>Hlutur leitast alltaf við að haldast í því hreyfingarástandi sem hann
+er í</em>.</p>
+<p>Það má líka bara segja að hlutur vill halda áfram að hafa þann hraða sem
+hann hefur, vera áfram kyrr ef hann er kyrr og ferðast áfram á sama
+hraða ef hann er á ferð.</p>
+<section id="helstu-kraftar">
+<h3><span class="section-number">5.1.1. </span>Helstu kraftar<a class="headerlink" href="#helstu-kraftar" title="Permalink to this heading"></a></h3>
+<p>Eitt mikilvægasta hugtakið í eðlisfræðinni er hugtakið <strong>kraftur</strong>.
+Kraftar eru grunnur aflfræðinnar. Þegar við byrjum að tala um krafta
+þurfum við að hafa smá hugmynd um hvað kraftur er. Það er ekki svo
+auðvelt að skilgreina kraft, ekki eins og hlutir eru skilgreindir í
+stærðfræði. Í staðin fyrir skilgreiningu krafts almennt ætlum við að
+skoða ýmisleg sem við köllum kraft, og læra að þekkja það og fá
+tilfinningu fyrir hvað kraftur er í stórsæjum kerfum.</p>
+</section>
+</section>
+<section id="a-yta-ea-toga">
+<h2><span class="section-number">5.2. </span>Að ýta eða toga<a class="headerlink" href="#a-yta-ea-toga" title="Permalink to this heading"></a></h2>
+<p>Auðveldast er að hugsa sér kraft sem eitthvað sem hlutur verður fyrir
+þegar við ýtum á hann eða togum í hann. Ýtikraftur eða togkraftur. Við
+höfum tilfinningu fyrir því hvað það er.</p>
+<p><a class="reference internal" href="../_images/ytatoga.png"><img alt="image1" src="../_images/ytatoga.png" style="width: 100%;" /></a></p>
+<p>Við getum fundið fyrir togkrafti og ýtikrafti. Það er eitthvað
+raunverulegt.</p>
+</section>
+<section id="nuningskraftur">
+<h2><span class="section-number">5.3. </span>Núningskraftur<a class="headerlink" href="#nuningskraftur" title="Permalink to this heading"></a></h2>
+<p>Í byrjun kaflans töluðum við um núning. Við höfum svokallaðan
+núningskraft sem verkar alltaf á móti þeirri stefnu sem hluturinn er að
+fara í eða vill fara í. Í rauninni höfum við tvær tegundir af
+núningskröftum. Annar er núningur sem verkar á hlut sem er á hreyfingu
+miðað við undirlagið sem hann ferðast á. Hitt er núningur sem verkar á
+hlut sem er kyrr miðað við undirlagið sem hann situr á. Þessir kraftar
+hegða sér á svolítið mismunandi hátt eins og við munum sjá.</p>
+</section>
+<section id="verkraftur">
+<h2><span class="section-number">5.4. </span>Þverkraftur<a class="headerlink" href="#verkraftur" title="Permalink to this heading"></a></h2>
+<p>Núningskrafturinn er alltaf samsíða undirlaginu sem hluturinn er á.
+Unidirlagið verkar á hlut sem liggur á því með krafti og þessi kraftur
+hefur þætti bæði hornrétt á undirlagið og samsíða því.</p>
+<p>Sá þáttur sem er hornréttur á undirlagið kallast þverkraftur eða
+normalkraftur. Þverkrafturinn er krafturinn sem verkar frá undirlagin og
+hornrétt upp á hlutinn.</p>
+</section>
+<section id="fjaurkraftur">
+<h2><span class="section-number">5.5. </span>Fjaðurkraftur<a class="headerlink" href="#fjaurkraftur" title="Permalink to this heading"></a></h2>
+<p>Þegar við togum í gorm verður erfiðara og erfiðara að toga eftir því sem
+við togum lengra. Sama gerist ef við ýtum gorminum saman, það verður
+erfiðara eftir því sem við ýtum honum meira saman. Ef gormur er alveg í
+jafnvægi í einhverri ákveðinni lengd, <span class="math notranslate nohighlight">\(\vec{x}\)</span>, og honum er
+þjappað saman eða hann dreginn út um <span class="math notranslate nohighlight">\(\Delta \vec{x}\)</span>, þá ýtir
+gormurinn á móti með kraftinum:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+\vec{F} = \,-\,k\cdot\Delta\vec{x}
+\end{equation}\]</div>
+<p>Þessi kraftur er kallaður „fjaðurkraftur“ og jafnan er stundum kölluð
+„lögmál Hookes“.</p>
+<p>Þó fjaðurkrafturinn láti ekki mikið yfir sér þá er hann mjög mikilvægur
+kraftur. Við komum til með að tala meira um hann seinna.</p>
+<p>Gormar eru t.d. meginuppistaðan í svo kölluðum „kraftmælum“. Ef togað er
+í gorminn þá lengist hann í réttu hlutfalli við kraftinn sem togað er
+með. Það er því hægt að setja gorminn í plasthólk, mæla hvar ákveðinn
+staður á gorminum er þegar togað er í gorminn með tveimur þekktum
+kröftum og gera svo tilsvarandi skala á plasthólkinn. Síðan er hægt að
+toga í gorminn með óþekktum krafti og lesa stærð hans af skalanum.</p>
+</section>
+<section id="yngdarkraftur">
+<h2><span class="section-number">5.6. </span>Þyngdarkraftur<a class="headerlink" href="#yngdarkraftur" title="Permalink to this heading"></a></h2>
+<p>Flestir vita eitthvað um þyngdarkraftinn, t.d. það að hann kemur til af
+því að massi jarðarinnar togar okkur inn að miðju jarðar.
+Þyngdarkrafturinn er merkilegastur og grundvallarlegastur þeirra krafta
+sem við erum kunnug. Hann er öðru vísi en hinir kraftarnir sem við
+nefndum því hann verkar á minnstu einingar efnis. Hinir kraftarnir sem
+við ræddum um eru heildaráhrif margra lítilla krafta, eru eins konar
+heildarkraftáhrif margra mismunandi krafta, en þyngdarkrafturinn er
+grunnkraftur, einn af fjórum grunnkröftum eðlisfræðinnar.
+Þyngdarkrafturinn verkar á stærð sem við köllum þyngdarmassa,
+<span class="math notranslate nohighlight">\(m_g\)</span>. Þ.e.a.s. ef hlutur hefur ákveðinn þyngdarmassa og ef hann
+er staðsettur í þyngdarsviði <span class="math notranslate nohighlight">\(\vec{g}\)</span>, eins og t.d. því sem við
+höfum við yfirborð jarðar: <span class="math notranslate nohighlight">\(\vec{g} \approx -9,8\,m/s^2 \vec{j}\)</span>
+(hér vísar <span class="math notranslate nohighlight">\(\vec{j}\)</span> út frá miðju jarðar), þá verkar á hann
+kraftur <span class="math notranslate nohighlight">\(\vec{F}_g = m_g\vec{g}\)</span>.</p>
+<section id="anna-logmal-newtons">
+<h3><span class="section-number">5.6.1. </span>Annað lögmál Newtons<a class="headerlink" href="#anna-logmal-newtons" title="Permalink to this heading"></a></h3>
+<p>Fyrsta lögmál Newtons segir okkur að hlutir haldi þeim hraða sem þeir
+eru á ef ekki koma til utanaðkomandi áhrif—kraftar.</p>
+<div class="line-block">
+<div class="line">Annað lögmál Newtons er mun nákvæmara. Það segir okkur að breyting á
+hraða hlutar verði fyrir tilstilli krafts og að breytingin sé í réttu
+hlutfalli við kraftinn. Það segir okkur einnig að breytingin verði
+þeim mun minni sem svokallaður tregðumassi, <span class="math notranslate nohighlight">\(m_t\)</span>, sé meiri.
+Þ.e.a.s. eftir því sem tregðumassi hlutar er meiri, (tregða hlutarins)
+þeim mun meiri kraft þarf til þess að breyta hraða hans. Breytingu á
+hraða lýsum við með hröðun hlutarins, <span class="math notranslate nohighlight">\(\vec{a}\)</span>.</div>
+<div class="line">Við skulum nú skrifa annað lögmál Newtons með stærðfræðitáknum:</div>
+</div>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[\vec{F} = m_t\vec{a}\]</div>
+</div></blockquote>
+<p>Hér er <span class="math notranslate nohighlight">\(\vec{F}\)</span> summa allra krafta sem verka á hlutinn, ekki bara
+einn þeirra, svo kannski væri réttara að skrifa:</p>
+<div class="math notranslate nohighlight">
+\[\sum_{allir\,\, kraftar}\vec{F} = m_t\vec{a}\]</div>
+<div class="line-block">
+<div class="line">Við getum skilið að það þurfi meiri kraft til þess að koma hlut á
+ákveðinn hraða úr kyrrstöðu ef hann hefur mikinn tregðumassa (er
+tregur til að breyta hraða sínum) heldur enn ef hann hefur lítinn
+tregðumassa. Hugsum okkur t.d. að við værum á svelli og hefðum góða
+snjóþotu. Það þarf mun minni kraft til að koma snjóþotunni (c.a. 2 kg)
+ferð yfir svellið ef hún er tóm, en ef t.d. 40 kg barn situr á henni.
+Hér er <span class="math notranslate nohighlight">\(m_t\)</span> = 2 kg annars vegar og <span class="math notranslate nohighlight">\(m_t\)</span> = 42 kg hins
+vegar.</div>
+<div class="line">Til þess að taka enn meiri mun, hugsum okkur að við verðum að stöðva
+hlut sem er á hraðanum 25 m/s = 90 km/klst. Við gerum okkur grein
+fyrir því að það þarf mun minni kraft til þess að stoppa 0,002 kg
+flugu sem væri á þessum hraða heldur enn þarf til að stoppa 1000 kg
+bifreið sem væri á þessum hraða.</div>
+</div>
+<p>Annað lögmál Newtons segir okkur að ef við beitum krafti þá breytist
+heyfing hlutarins.</p>
+<p>Það er mjög mikilvægt að gera sér grein fyrir því að þetta er það sem
+lögmálið segir.</p>
+<p>Þegar við reiknum dæmi, þá þurfum við að skoða hvaða kraftar verka á
+hlutina sem við höfum. Það er okkar verkefni. Þegar við höfum fundið
+alla krafta sem verka á þann hlut sem við erum að skoða, þá leggjum við
+saman kraftvigrana. Summa kraftvigranna er svo jöfn tregðumassanum
+sinnum hröðun hlutarins.</p>
+</section>
+<section id="ymislegt-um-kraftana-sem-vi-notum">
+<h3><span class="section-number">5.6.2. </span>Ýmislegt um kraftana sem við notum<a class="headerlink" href="#ymislegt-um-kraftana-sem-vi-notum" title="Permalink to this heading"></a></h3>
+</section>
+</section>
+<section id="ytikraftur-og-togkraftur">
+<h2><span class="section-number">5.7. </span>Ýtikraftur og togkraftur<a class="headerlink" href="#ytikraftur-og-togkraftur" title="Permalink to this heading"></a></h2>
+<p>Þegar maður ýtir á eitthvað þá er krafturinn í þá stefnu sem maður ýtir.</p>
+<p><a class="reference internal" href="../_images/ytabeint.png"><img alt="image2" src="../_images/ytabeint.png" style="width: 100%;" /></a></p>
+<p>Á myndinni hér er maðurinn að ýta í x-stefnuna sem skilgreind er.
+Krafturinn verkar frá manninum. Ef kassinn er á núninglausu yfirborði
+gætum við sett upp jöfnu:</p>
+<div class="math notranslate nohighlight">
+\[F_x = m_{t_{kassi}} a_x\]</div>
+<p>Við verðum að muna að við erum að skoða kassann. Það er hreyfing kassans
+sem er til umræðu.</p>
+<p>Við getum líka ýtt á kassann á ská:</p>
+<p><a class="reference internal" href="../_images/ytaska.png"><img alt="image3" src="../_images/ytaska.png" style="width: 100%;" /></a></p>
+<p>Hér er ýtikrafturinn ekki eftir yfirborðinu.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\vec{F} =  \left( \begin{array}{c} F_x  \\ F_y  \end{array}\right)\end{split}\]</div>
+<p>Hvorki <span class="math notranslate nohighlight">\(F_x\)</span> né <span class="math notranslate nohighlight">\(F_y\)</span> eru 0. Ef þetta væri eini krafturinn
+sem verkaði á kassann fengjum við:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left( \begin{array}{c} F_x  \\ F_y  \end{array}\right) = m_{t_{kassi}}  \left( \begin{array}{c} a_x  \\ a_y  \end{array}\right)\end{split}\]</div>
+<p>þar sem hvorki <span class="math notranslate nohighlight">\(a_x\)</span> né <span class="math notranslate nohighlight">\(a_y\)</span> eru 0. Þegar við skoðum
+myndina sjáum við strax að það er ekki rétt. Við vitum að kassinn fer
+eftir jörðinni. Hann er ekki á leið inn í jörðina, <span class="math notranslate nohighlight">\(a_y\)</span> = 0. En
+höfum ekki áhyggjur, þetta er vegna þess að ýtikrafturinn er ekki eini
+krafturinn sem kemur við sögu. Við þurfum að taka hina með líka.</p>
+<p>Togkraftur verkar alltaf í átt að þeim sem togar.</p>
+<p><a class="reference internal" href="../_images/togaska.png"><img alt="image4" src="../_images/togaska.png" style="width: 100%;" /></a></p>
+<div class="line-block">
+<div class="line">Togkraftur togar alltaf í hlutinn. Við getum hugsað okkur band fest í
+hlut. Togkrafturinn getur orðið 0 ef bandið er slakt. En togkraftur
+getur aldrei ýtt á hlut. Togkraftur í bandi hefur líka efri mörk.
+Bandið getur slitnað. Ef togkrafturinn fer yfir ákveðin mörk þá
+slitnar bandið.</div>
+<div class="line">Á myndinni hér fyrir ofan höfum við sömu vandræði og fyrir ýtikraftinn
+sem var á ská. Það hljóta fleiri kraftar að koma við sögu heldur en
+bara þessi togkraftur.</div>
+</div>
+</section>
+<section id="yngdarkraftur-1">
+<span id="id1"></span><h2><span class="section-number">5.8. </span>Þyngdarkraftur<a class="headerlink" href="#yngdarkraftur-1" title="Permalink to this heading"></a></h2>
+<div class="line-block">
+<div class="line">Þyngdarkrafturinn er eins og við sögðum kraftur sem verkar á
+þyngdarmassa hluta. Við yfirborð jarðar getum við skilgreint stærð sem
+við köllum þyngdarsvið, <span class="math notranslate nohighlight">\(\vec{g}\)</span> sem vísar inn að miðju jarðar.
+Þyngdarsviðið gefur eins konar heildaráhrif massa jarðar.
+Þyngdarkraftur á þyngdarmassa <span class="math notranslate nohighlight">\(m_g\)</span> er þá</div>
+</div>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[\vec{F}_g = m_g \vec{g}\]</div>
+<p>Nú kemur að því sem er svo alveg sérstakt. <strong>Þyngdarmassi hlutar er
+jafnstór tregðumassa hans.</strong> Þetta virðist í öllum mælingum vera sama
+stærðin. Af hverju er þá verið að tala um tregðumassa og þyngdarmassa?
+Af hverju ekki bara að tala um massa? Ástæðan fyrir því er sú að
+þessir massar hafa svo ólík hlutverk. Tregðumassi ræður því hversu
+erfitt eða létt það er að breyta hraða hlutarins. Þyngdarmassi er eins
+konar hleðsla þyngdarkraftsins.</p>
+</div></blockquote>
+<div class="line-block">
+<div class="line">Það er alveg sérstaklega mikilvægt að gera sér grein fyrir því strax,
+að þyngdarkrafturinn, <span class="math notranslate nohighlight">\(\vec{F}_g = m_g\vec{g}\)</span> er kraftur.
+Þyngdarkrafturinn er þyngdarmassi sinnum þyngdarsviðið. Í mörgum
+eðlisfræðibókum er talað um þyngdarhröðun. Það er í sjálfu sér allt í
+lagi en það getur valdið misskilningi.</div>
+<div class="line">Þegar eini krafturinn sem verkar á hlut er þyngdarkrafturinn þá fáum
+við samkvæmt öðru lögmáli Newtons:</div>
+</div>
+<div class="math notranslate nohighlight">
+\[\vec{F}_g = m_g\vec{g} = m_t\vec{a}\]</div>
+<p>Vegna þess að <span class="math notranslate nohighlight">\(m_t = m_g\)</span> þá fæst <span class="math notranslate nohighlight">\(\vec{g} = \vec{a}\)</span> Þ.e.
+hröðun hlutarins verður jöfn þyngdarsviðinu. Þetta þýðir t.d. að allir
+hlutir falla með sömu hröðun við yfirborð jarðar ef ekki verka á þá
+aðrir kraftar eins og t.d. loftmótstaða.</p>
+<p><span class="math notranslate nohighlight">\(\vec{g}\)</span> er samt ekki hugmyndafræðileg hröðun heldur þyngdarsvið.
+Það er bara jafnt hröðuninni í þessu tilfelli. Auðvitað hefur
+þyngdarsviðið einingu hröðunar en það þýðir ekki að það sé hröðun.</p>
+<p>Ef við tökum með t.d. loftmótstöðu segjum að við lýsum henni með
+<span class="math notranslate nohighlight">\(\vec{F}_{loft} = -b\vec{v}\)</span> Þar sem <span class="math notranslate nohighlight">\(\vec{v}\)</span> er hraði
+hutarins, þá fáum við:</p>
+<div class="math notranslate nohighlight">
+\[m\vec{g}  - b\vec{v} = m\vec{a}\]</div>
+<p>Hér er <span class="math notranslate nohighlight">\(\vec{g}\)</span> greinilega ekki jafnt hröðunninni lengur.</p>
+<p>Það er greinilegt að þyngdarkrafturinn er kraftur en hann hefur þann
+sérkennilega eiginleika að vera jafnstór <span class="math notranslate nohighlight">\(m\vec{g}\)</span> sem lítur út
+eins og <span class="math notranslate nohighlight">\(m\vec{a}\)</span>. Til þess að vera viss um að þetta rugli ekki
+fyrir er sniðugt að skrifa stærð þyngdarkraftsins sem <span class="math notranslate nohighlight">\(F_g\)</span> meðan
+verið er að setja upp jöfnur og setja svo inn <span class="math notranslate nohighlight">\(mg\)</span> þegar farið er
+að reikna.</p>
+</section>
+<section id="verkraftur-og-nuningskraftur">
+<h2><span class="section-number">5.9. </span>Þverkraftur og núningskraftur<a class="headerlink" href="#verkraftur-og-nuningskraftur" title="Permalink to this heading"></a></h2>
+<p>Nú skulum við skoða aftur konuna sem var að ýta á kassann.</p>
+<p><a class="reference internal" href="../_images/ytaska.png"><img alt="image5" src="../_images/ytaska.png" style="width: 100%;" /></a></p>
+<p>Ef kassinn er á jörðunni þá kemur jörðin til með að toga kassann inn að
+miðju jarðar. Á þessarri mynd er það í neikvæða <span class="math notranslate nohighlight">\(y\)</span>-stefnu. Svo
+auk þess að verða fyrir þessum ýtikrafti:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\vec{F} =  \left( \begin{array}{c} F_x  \\ F_y  \end{array}\right)\end{split}\]</div>
+<p>þá verður kassinn líka fyrir þyngdarkrafti:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\vec{F}_g =  \left( \begin{array}{c} 0 \\ -F_g  \end{array}\right)\end{split}\]</div>
+<p>Hvaða fleiri kraftar koma við sögu. Jú það er undirlagið, jörðin. Hún
+kemur til með að halda kassanum uppi. Kraftur undirlagsins/jarðarinnar
+hornrétt á undirlagið er það sem við kölluðum þverkraft eða normalkraft,
+<span class="math notranslate nohighlight">\(\vec{N}\)</span>. Á myndinni hjá okkur er þverkrafturinn að ýta upp í
+jákvæða <span class="math notranslate nohighlight">\(y\)</span> - stefnu.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\vec{\textit{Þ}} =  \left( \begin{array}{c} 0 \\ \textit{Þ}  \end{array}\right)\end{split}\]</div>
+<p>Við gerum okkur grein fyrir því að þverkraftur verkar alltaf frá
+yfirborði sem hlutur liggur á. Þverkrafturinn er alltaf það sem hann
+þarf að vera til þess að hluturinn sökkvi ekki inn í yfirborðið. Það er
+engin sér formúla sem gefur þverkraftinn, við verðum alltaf að finna
+hann í hverju tilfelli fyrir sig. Ef þverkrafturinn verður 0 er
+hluturinn að losna frá yfirborðinu. Þverkrafturinn getur ekki orðið
+minni en 0, borðið togar ekki í hlutinn. Það eru líka til efri mörk
+fyrir þverkraftinn. Ef við setjum of þungan hlut á borð þá getur borðið
+brotnað. Þverkraftur borðsins á hlut getur ekki orðið meiri en svo að
+efnatengi borðsins nái að halda honum uppi.</p>
+<p>Núningskraftur er hinn þáttur krafts undirlagsins. Hann er krafturinn
+sem undirlagið verkar með samsíða fletinum. Á myndinni er
+núningskrafturinn í neikvæða <span class="math notranslate nohighlight">\(x\)</span> - stefnu. Tilfellin geta verið
+tvö. Segjum að kassinn sé á ferð, þá er hann að hreyfast í jákvæða
+<span class="math notranslate nohighlight">\(x\)</span> - stefnu. Þá er stefna núningskraftsins öfug við stefnu
+hraðans. Hins vegar gæti kassinn verið kyrr. Það er verið að reyna að
+færa hann í jákvæða <span class="math notranslate nohighlight">\(x\)</span> - stefnu svo núningurinn er á móti þeiri
+stefnu. Í báðum tilfellum er núningurinn í neikvæða <span class="math notranslate nohighlight">\(x\)</span> - stefnu.</p>
+<div class="line-block">
+<div class="line">Það hversu stór núningskrafturinn er fer eftir því hversu mikið
+yfirborðið ýtir upp á kassann, en það ýtir jafnmikið upp og kassinn
+ýtir niður á borðið. Þverkrafturinn er í raun mælikvarði á það hveru
+mikið yfirborðið og hluturinn þrýstast saman. Það er hægt að ímynda
+sér að núningurinn verði meiri ef þungur massi er settur ofan á
+kassann. Einnig getum við ímyndað okkur að núningurinn verði minni ef
+einhver togar með reipi upp á kassann. Núningurinn er mjög háður
+þverkraftinum.</div>
+<div class="line">Hreyfinúningur:</div>
+</div>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[\vec{F}_{nun} = -\mu_k \textit{Þ}\vec{e}_v\]</div>
+</div></blockquote>
+<p>Hér er <span class="math notranslate nohighlight">\(\vec{e}_v\)</span> einingavigur í stefnu hraðans og <span class="math notranslate nohighlight">\(\mu_k\)</span>
+svokallaður hreyfinúningsstuðull eða „coefficient of kinetic friction“.
+Þessi núningsstuðull er mismunandi fyrir mismunandi pör efna. Það þarf í
+raun að mæla núningsstuðulinn, en samt eru til nokkuð áreiðanleg gildi
+fyrir ýmsar samsetningar efna. Stuðullinn er yfirleitt á bilinu frá 0
+til 1.</p>
+<p>Kyrrstöðunúningur:</p>
+<div class="math notranslate nohighlight">
+\[\vec{F}_{nun} \leq -\mu_s N\vec{e}_v\]</div>
+<p>Þetta er næstum því eins og hér að ofan, nema þetta er ójafna og
+stuðullinn heitir kyrrstöðunúningsstuðull eða „coefficient of static
+friction“. Þessi stuðull er yfirleitt svolítið stærri en
+hreyfinúningsstuðullinn.</p>
+<div class="line-block">
+<div class="line">Aðalatriðið er þó ójöfnumerkið. Ójöfnumerkið segir:
+Kyrrstöðunúningurinn er hvað svo sem hann þarf að vera upp að ákveðnu
+marki. Ef hann nær þessu marki þá er hluturinn alveg að fara af stað.
+Hann er að fara að renna.</div>
+<div class="line">Við skulum skulum skoða tilfellið á myndinni.</div>
+<div class="line">Fyrst skulum við gera ráð fyrir að kassinn sé á ferð og þá er
+núningurinn:</div>
+</div>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[\begin{split}\vec{F}_{nun} =  \left( \begin{array}{c} -F_{nun} \\ 0  \end{array}\right) =  \left( \begin{array}{c} -\mu_k \textit{Þ} \\ 0  \end{array}\right)\end{split}\]</div>
+</div></blockquote>
+<p>Heildarjarna hreyfingarinnar verður þá:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left( \begin{array}{c} F_x  \\ F_y  \end{array}\right)+  \left( \begin{array}{c} 0 \\ F_g  \end{array}\right)+ \left( \begin{array}{c} 0 \\ \textit{Þ}  \end{array}\right)+\left( \begin{array}{c} -\mu_k \textit{Þ} \\ 0  \end{array}\right) = m_{kassi}\left( \begin{array}{c} a \\ 0  \end{array}\right)\end{split}\]</div>
+<p>Ef við vitum stærð og stefnu kraftsins <span class="math notranslate nohighlight">\(\vec{F}\)</span> og
+núningsstuðulinn <span class="math notranslate nohighlight">\(\mu_k\)</span> þá getum við reiknað þverkaftinn <em>Þ</em>, út
+frá <span class="math notranslate nohighlight">\(y\)</span> - jöfnunni. Þegar við höfum fundið <em>Þ</em>, þá getum við
+reiknað hröðun sleðans út frá <span class="math notranslate nohighlight">\(x\)</span> - jöfnunni.</p>
+<p>Næst skulum við athuga hvort kassinn hafi farið af stað. Gerum ráð fyrir
+að hann hafi ekki farið af stað. Þá er núningurinn:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\vec{F}_{nun} = \left( \begin{array}{c} -F_{nun} \\ 0  \end{array}\right) \leq   \left( \begin{array}{c} -\mu_s \textit{Þ} \\ 0  \end{array}\right)\end{split}\]</div>
+<p>Ef kassinn er ekki farinn að hreyfast heldur liggur þarna kyrr þá höfum
+að <span class="math notranslate nohighlight">\(a = 0\)</span>. Þá fáum við því jöfnurnar:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left( \begin{array}{c} F_x  \\ F_y  \end{array}\right)+  \left( \begin{array}{c} 0 \\ F_g  \end{array}\right)+ \left( \begin{array}{c} 0 \\ \textit{Þ}  \end{array}\right)+\left( \begin{array}{c} -F_{nun} \\ 0  \end{array}\right) = m_{kassi}\left( \begin{array}{c} 0 \\ 0  \end{array}\right)\end{split}\]</div>
+<p>Nú er núningskrafturinn breyta hjá okkur eins og þverkrafturinn. Það sem
+þarf að gera hér er að athuga hvort þetta stenst. Getur kassinn verið
+kyrr svona?</p>
+<p>Við finnum þverkraftinn, <span class="math notranslate nohighlight">\(\textit{Þ}\)</span>, úr <span class="math notranslate nohighlight">\(y\)</span> - jöfnunni og
+núningskraftinn, <span class="math notranslate nohighlight">\(F_{nun}\)</span>, úr <span class="math notranslate nohighlight">\(x\)</span> - jöfnunni og athugum
+hvort <span class="math notranslate nohighlight">\(F_{nun} \leq \mu_s\textit{Þ}\)</span>. Ef það gildir þá er allt í
+lagi. Ef ekki þá er hluturinn ekki kyrr.</p>
+<section id="daemi">
+<h3><span class="section-number">5.9.1. </span>Dæmi<a class="headerlink" href="#daemi" title="Permalink to this heading"></a></h3>
+<section id="id2">
+<h4><span class="section-number">5.9.1.1. </span>1.<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h4>
+<div class="line-block">
+<div class="line">Maður togar 20 kg sleða eftir snjóbreiðu með jöfnum hraða. Maðurinn
+togar í sleðann með bandi sem vísar upp á við undir
+<span class="math notranslate nohighlight">\(35\ensuremath{^\circ}\)</span> horni. Togkrafturinn í bandinu er
+28,8 N.</div>
+<div class="line">a) Hversu stór er núningskrafturinn?</div>
+<div class="line">b) Hversu stór er þverkrafurinn?</div>
+</div>
+</section>
+<section id="section-1">
+<span id="id3"></span><h4><span class="section-number">5.9.1.2. </span>2.<a class="headerlink" href="#section-1" title="Permalink to this heading"></a></h4>
+<div class="line-block">
+<div class="line">Hekla rennir sér eftir láréttu svelli. Byrjunarhraði hennar er 10 m/s
+og hún stöðvast á 23 m.</div>
+<div class="line">a) Hver er hröðun Heklu?</div>
+<div class="line">b) Hekla vegur 41 kg. Hversu stór heildarkraftur verkar á Heklu?</div>
+<div class="line">c) Hvers konar kraftur er það sem stöðvar hana?</div>
+</div>
+</section>
+<section id="section-2">
+<span id="id4"></span><h4><span class="section-number">5.9.1.3. </span>3.<a class="headerlink" href="#section-2" title="Permalink to this heading"></a></h4>
+<div class="line-block">
+<div class="line">Til þess að draga 100 kg hlut eftir jörðunni (með jöfnum hraða) þarf
+að beita 300 N láréttum krafti.</div>
+<div class="line">a) Hversu stór er núningskrafturinn milli hlutarins og jarðarinnar?</div>
+<div class="line">b) Með hversu stórum krafti þyrfti að draga hlutinn svo að hann fengi
+hröðunina 2,0 m/s<span class="math notranslate nohighlight">\(^2\)</span>?</div>
+</div>
+</section>
+<section id="section-3">
+<span id="id5"></span><h4><span class="section-number">5.9.1.4. </span>4.<a class="headerlink" href="#section-3" title="Permalink to this heading"></a></h4>
+<div class="line-block">
+<div class="line">Lóðréttur togkraftur <span class="math notranslate nohighlight">\(T\)</span> (upp) verkar á 5,0 kg hlut sem er
+staðsettur nálægt yfirborði jarðar. Finnið hröðun hlutarins ef</div>
+<div class="line">a) <span class="math notranslate nohighlight">\(T\)</span> = 5,0 N</div>
+<div class="line">b) <span class="math notranslate nohighlight">\(T\)</span> = 10 N</div>
+<div class="line">c) <span class="math notranslate nohighlight">\(T\)</span> = 100 N</div>
+</div>
+</section>
+<section id="section-4">
+<span id="id6"></span><h4><span class="section-number">5.9.1.5. </span>5.<a class="headerlink" href="#section-4" title="Permalink to this heading"></a></h4>
+<div class="line-block">
+<div class="line">Kassa sem vegur 600 N er ýtt með 250 N láréttum krafti eftir láréttu
+gólfi á jöfnum hraða.</div>
+<div class="line">a) Hversu stór núningskraftur verkar á hlutinn? b) Hversu stót er
+þverkraftur gólfsins á kassann? c) Hver er núningsstuðullinn milli
+kassans og gólfsins?</div>
+</div>
+</section>
+<section id="section-5">
+<span id="id7"></span><h4><span class="section-number">5.9.1.6. </span>6.<a class="headerlink" href="#section-5" title="Permalink to this heading"></a></h4>
+<p>50 kg kassi liggur á láréttu gólfi í skemmu. Það þarf að færa kassann
+til til þess að koma honum fyrir. Kalli ýtir niður á kassann undir
+<span class="math notranslate nohighlight">\(34\ensuremath{^\circ}\)</span> horni við lárétt með 90 N krafti.
+Kyrrstöðunúningsstuðullinn milli gólfs og kassa er 0,60. Tekst Kalla að
+færa kassann?</p>
+</section>
+<section id="section-6">
+<span id="id8"></span><h4><span class="section-number">5.9.1.7. </span>7.<a class="headerlink" href="#section-6" title="Permalink to this heading"></a></h4>
+<div class="line-block">
+<div class="line">800 N kubbur liggur á skáplani sem myndar
+<span class="math notranslate nohighlight">\(30\ensuremath{^\circ}\)</span> horn við lárétt. Stína notar kraftmæli
+og sér að ef hún togar í kubbinn upp samsíða planinu með 200 N krafti
+þá fer kubburinn niður planið á jöfnum hraða.</div>
+<div class="line">a) Hver er hreyfinúningsstuðullinn milli plansins og kubbsins?</div>
+<div class="line">b) Með hversu stórum krafti þarf að toga kubbinn upp skáplanið til
+þess að hann renni upp hallann á jöfnum hraða?</div>
+</div>
+</section>
+<section id="svor">
+<h4><span class="section-number">5.9.1.8. </span>Svör<a class="headerlink" href="#svor" title="Permalink to this heading"></a></h4>
+<div class="line-block">
+<div class="line">1) a. 23,6 N,    b. 179 N</div>
+<div class="line">2) a. -2,17 m/<span class="math notranslate nohighlight">\(s2\)</span>,    b. 89,1 N gagnstætt hreyfistefnu</div>
+<div class="line">3) a. 300 N,    b. 500 N</div>
+<div class="line">4)
+a. -8,8 m/s<span class="math notranslate nohighlight">\(^2\)</span>,    b. -7,8 m/s<span class="math notranslate nohighlight">\(^2\)</span>,    c. 10,2m/s<span class="math notranslate nohighlight">\(^2\)</span></div>
+<div class="line">5) a. 250 N    b. 600 N    c. 0,42</div>
+<div class="line">6) 326 N &gt;74,6 N svo nei</div>
+<div class="line">7) a. 0,29,    b. 600 N</div>
+</div>
+</section>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../kafli04/" class="btn btn-neutral float-left" title="4. Hreyfing í fleiri víddum" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../kafli06/" class="btn btn-neutral float-right" title="6. Verkan og gagnverkan" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p></p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+<script>
+    window.addEventListener("load", function () {
+        for (var i in ggbAppletId) {
+            ggbAppletId[i].inject(i);
+        }
+    });
+</script>
+
+
+ 
+
+<style>
+    /* Sidebar header (and topbar for mobile) */
+    .wy-side-nav-search,
+    .wy-nav-top {
+       /* HI: #10099F, VoN: #EB7125, orginal #01447B */
+       background: #321c4a;
+    }
+
+    /* Sidebar */
+    .wy-nav-side {
+      /* orginal #343131, HÍ grár dekkri: #EEEEEE, HÍ svartur: #262626 */
+      background: #262626;
+    }
+</style>
+
+
+</body>
+</html>

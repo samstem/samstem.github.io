@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="is" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2. Hreyfing í einni vídd &mdash; Eðlisfræði I </title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/eqt.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/datacamp-custom.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/edbook.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/samstem.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+        <script src="../_static/js/eqt.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script src="https://cdn.datacamp.com/datacamp-light-latest.min.js"></script>
+        <script async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../_static/js/theme.js"></script>
+
+<!-- hoverrole.py css code -->
+<style type="text/css">
+    a.tooltip {
+        outline: none;
+        border-bottom: thin dotted;
+        background: #ffeedd
+    }
+
+    a.tooltip strong {
+        line-height: 30px;
+    }
+
+    a.tooltip:hover {
+        text-decoration: none;
+    }
+
+    a.tooltip span {
+        z-index: 10;
+        display: none;
+        padding: 14px 20px;
+        margin-top: -30px;
+        margin-left: 12px;
+        width: 310px;
+        line-height: 16px;
+    }
+
+    a.tooltip:hover span {
+        display: inline;
+        position: absolute;
+        color: #111;
+        border: 1px solid #DCA;
+        background: #fffAF0;
+    }
+
+    .callout {
+        z-index: 20;
+        position: absolute;
+        top: 30px;
+        border: 0;
+        left: -12px;
+    }
+
+    /*CSS3*/
+    a.tooltip span {
+        border-radius: 4px;
+        box-shadow: 5px 5px 8px #CCC;
+    }
+</style>
+<!-- End hoverrole.py css code -->
+
+<style type="text/css">
+    .sagecell .CodeMirror-scroll {
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+
+    .sagecell .CodeMirror {
+        height: auto;
+    }
+
+    /* - Begin equation reference style - */
+    h6.eqno {
+        display: inline-block;
+        padding-left: 10px;
+    }
+
+    h6 .headerlink {
+        display: inline-block !important;
+    }
+
+    h6 .headerlink:after {
+        visibility: hidden !important;
+    }
+
+    h6 .headerlink:hover:after {
+        visibility: visible !important;
+    }
+
+    .eqno:hover>.headerlink:after {
+        visibility: visible !important;
+    }
+
+    table>caption>.headerlink {
+        visibility: hidden !important;
+    }
+
+    table>caption>.headerlink {
+        visibility: hidden !important;
+    }
+
+    /* - End - */
+</style>
+
+
+
+    <link rel="index" title="Atriðaskrá" href="../genindex/" />
+    <link rel="search" title="Leit" href="../search/" />
+    <link rel="next" title="3. Afstæð hreyfing" href="../kafli03/" />
+    <link rel="prev" title="1. Mælingar" href="../kafli01/" />
+
+
+
+<!--	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
+<script type="text/javascript" src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+<script>ggbAppletId = [];</script>
+
+
+ 
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../" class="icon icon-home">
+            Eðlisfræði I
+              <img src="../_static/samstem.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../kafli01/">1. Mælingar</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">2. Hreyfing í einni vídd</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#faersla">2.1. Færsla</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#skilgreining-vigra-i-staerfraei">2.1.1. Skilgreining vigra í stærðfræði</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#timi">2.2. Tími</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mealhrai">2.3. Meðalhraði</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fer">2.4. Ferð</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#augnablikshrai">2.5. Augnablikshraði</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#hrai-i-grafi-af-stou-sem-fall-af-tima">2.5.1. Hraði í grafi af stöðu sem fall af tíma</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#augnablikshrai-og-augnabliksfer">2.5.2. Augnablikshraði og augnabliksferð</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#hroun">2.6. Hröðun</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#hroun-i-grafi-af-hraa-sem-fall-af-tima">2.6.1. Hröðun í grafi af hraða sem fall af tíma</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vegalengd-i-grafi-af-hraa-sem-falli-af-tima">2.6.2. Vegalengd í grafi af hraða sem falli af tíma</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#serstok-tilfelli-hrounnar">2.7. Sérstök tilfelli hröðunnar</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#engin-hroum">2.7.1. Engin hröðum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#jofn-hroun">2.7.2. Jöfn hröðun</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#floknari-hroun">2.7.3. Flóknari hröðun</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#yngdarsvii-vi-yfirbor-jarar">2.8. Þyngdarsviðið við yfirborð jarðar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#samantekt-a-jofnum">2.9. Samantekt á jöfnum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#daemi">2.10. Dæmi</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#section-12">2.10.1. 13.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#section-13">2.10.2. 14.*</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#svor">2.10.2.1. Svör</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli03/">3. Afstæð hreyfing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli04/">4. Hreyfing í fleiri víddum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli05/">5. Tregða og núningur</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli06/">6. Verkan og gagnverkan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli07/">7. Notkun á lögmálum Newtons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli08/">8. Þyngdarkraftur</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli09/">9. Vinna og orka</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli10/">10. Atlag og skriðþungi</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ordaskra/">Orðaskrá</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../">Eðlisfræði I</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><span class="section-number">2. </span>Hreyfing í einni vídd</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/edbook/haskoli-islands/blob/master/projects/edlisfraediI/kafli02.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="hreyfing-i-einni-vidd">
+<h1><span class="section-number">2. </span>Hreyfing í einni vídd<a class="headerlink" href="#hreyfing-i-einni-vidd" title="Permalink to this heading"></a></h1>
+<p><a class="reference internal" href="../_images/hradibeinlina.png"><img alt="image" src="../_images/hradibeinlina.png" style="width: 100%;" /></a></p>
+<p>Einfaldasta hreyfingin er hreyfing eftir beinni línu. Hreyfing þar sem
+bara er hægt að fara fram og aftur. Það er alltaf best að byrja fyrst að
+skoða það sem er einfalt og reyna að skilja það. Svo er hægt að færa sig
+yfir í flóknari tilfelli.</p>
+<section id="faersla">
+<h2><span class="section-number">2.1. </span>Færsla<a class="headerlink" href="#faersla" title="Permalink to this heading"></a></h2>
+<p>Við könnumst öll við hreyfingu eftir línu. Við getum farið afturábak og
+áfram. Ef við færum einhvern hlut eftir <span class="math notranslate nohighlight">\(x\)</span>-ás frá punkti
+<span class="math notranslate nohighlight">\(x = 2 \,\text{cm}\)</span> yfir á <span class="math notranslate nohighlight">\(x = 7 \,\text{cm}\)</span> þá höfum við
+fært okkur um <span class="math notranslate nohighlight">\(5\,\text{cm}\)</span> í jákvæða stefnu. Við skrifum það sem
+<span class="math notranslate nohighlight">\(7\,\text{cm}-  2\,\text{cm}= 5 \,\text{cm}\)</span>. Ef við hefðum hins
+vegar fært hlutinn frá <span class="math notranslate nohighlight">\(2\,\text{cm}\)</span> yfir í <span class="math notranslate nohighlight">\(-3\,\text{cm}\)</span>
+þá hefðum við færst um <span class="math notranslate nohighlight">\(-5\,\text{cm}\)</span>. Þetta tilfelli myndum við
+skrifa sem <span class="math notranslate nohighlight">\(-3\,\text{cm}- 2\,\text{cm}= -5\,\text{cm}\)</span>.</p>
+<p>Færsla, eins og nafnið gefur til kynna er stærð sem lýsir því hversu
+mikið við höfum færst úr stað. Ef við táknum stöðu með bókstafnum
+<span class="math notranslate nohighlight">\(s\)</span>, þá getum við kallað færslu <span class="math notranslate nohighlight">\(\Delta s\)</span> og fæslan frá
+<span class="math notranslate nohighlight">\(s_1\)</span> til <span class="math notranslate nohighlight">\(s_2\)</span> er á skrifuð:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+\Delta s = s_2 - s_1
+\end{equation}\]</div>
+<p>Sem sagt ef hlutur færist í þá átt sem <span class="math notranslate nohighlight">\(s\)</span> stækkar þannig að
+<span class="math notranslate nohighlight">\(s_2\)</span> er stærra en <span class="math notranslate nohighlight">\(s_1\)</span> þá er færslan jákvæð. Ef við
+hluturinn færist í þá átt sem <span class="math notranslate nohighlight">\(s\)</span> minnkar þá er færslan neikvæð.
+Mikilvægt er að gera sér grein fyrir því að færsla hefur formerki.
+Færsla er vigur. Það að við erum að skoða færslu í einni vídd gæti látið
+mann halda að færsla væri bara tala en betra er að hugsa um færsluna sem
+eitt hnit vigurs.</p>
+<section id="skilgreining-vigra-i-staerfraei">
+<h3><span class="section-number">2.1.1. </span>Skilgreining vigra í stærðfræði<a class="headerlink" href="#skilgreining-vigra-i-staerfraei" title="Permalink to this heading"></a></h3>
+<p>Í stærðfræði er vigur oft skilgreindur sem munur á hnitum punkta.
+Skilgreiningin er eitthvað á þessa átt: Ef punkturinn P hefur hnitin
+<span class="math notranslate nohighlight">\((x_P; y_P)\)</span> og punturinn Q hefur hnitin <span class="math notranslate nohighlight">\((x_Q; y_Q)\)</span> þá er
+vigurinn frá P til Q, <span class="math notranslate nohighlight">\(\vec{PQ}\)</span>, skilgreindur samkvæmt:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{equation}
+\overrightarrow{PQ} = \left( \begin{array}{c}{x_Q - x_P}\\{y_Q - y_P}\end{array}\right)
+\end{equation}\end{split}\]</div>
+<p>Þetta er í raun skilgreiningin á færslu. Í þessum kafla ætlum við bara
+að tala um hreyfingu eftir beinni línu og því höfum við bara eitt hnit.
+Við gætum t.d. hugsað okkur að það sé <span class="math notranslate nohighlight">\(x\)</span> - hnit. Þá er færslan
+frá <span class="math notranslate nohighlight">\(x_1\)</span> til <span class="math notranslate nohighlight">\(x_2\)</span> nákvæmlega:</p>
+<div class="math notranslate nohighlight">
+\[\Delta x =  \overrightarrow{x_1x_2} = x_2 - x_1\]</div>
+<p>.</p>
+<p>Í stærðfræðinni eru hnitin á punktunum einingalaus. Ekki er verið að
+tala um lengdir eins og hjá okkur og því á skilgreining þeirra við um
+fleira en færslu. Við sjáum þó greinilega að færsla er vigur og því þarf
+alltaf að huga að stefnu færslunnar.</p>
+</section>
+</section>
+<section id="timi">
+<h2><span class="section-number">2.2. </span>Tími<a class="headerlink" href="#timi" title="Permalink to this heading"></a></h2>
+<p>Tíminn líður áfram. Þegar við erum að skoða tvær mismunandi stöður
+hlutar, þá er alltaf hægt að treysta því að hluturinn er fyrst í annarri
+stöðunni og svo seinna í hinni. Oftast merkjum við stöðurnar með 1 og 2
+og þá er eðlilegt að kalla þá stöðu sem hluturinn er fyrst í <span class="math notranslate nohighlight">\(s_1\)</span>
+og þá stöðu sem hluturinn er seinna í <span class="math notranslate nohighlight">\(s_2\)</span>. Þetta er þó alltaf
+bara val. Það er hefð að <em>tímabil</em> séu jákvæð. Það þýðir bara að tímabil
+er alltaf skilgreint sem seinni tíminn - fyrri tíminn. Þ.e.
+<span class="math notranslate nohighlight">\(t_2 - t_1\)</span>. Við getum á sama hátt og fyrir <span class="math notranslate nohighlight">\(s\)</span> skilgreint
+<span class="math notranslate nohighlight">\(\Delta t = t_2 - t_1\)</span>.</p>
+</section>
+<section id="mealhrai">
+<h2><span class="section-number">2.3. </span>Meðalhraði<a class="headerlink" href="#mealhrai" title="Permalink to this heading"></a></h2>
+<p>Ef 300 km eru eknir á 5,0 klst þá vitum við að meðalhraðinn er
+60 km/klst. Hvernig fáum við það? Ef 326 km eru eknir á 6,0 klst hver er
+þá meðalhraðinn? Svar 54 km/klst.</p>
+<p>Hraði er hugtak sem við teljum okkur skilja. Hraði sinnum tími er
+vegalengd, vegalengd deild með tíma er hraði. Þetta þarf þó að
+skilgreina á nákvæman hátt til þess að hægt sé að halda áfram og nota
+hugtakið við flóknari og flóknari aðstæður.</p>
+<p>Við skulum byrja með því að skilgreina meðalhraða nokkurn vegin eins og
+við sáum hér að ofan en hugsum okkur að <span class="math notranslate nohighlight">\(\vec{s}\)</span> sé stöðuvigur
+punkts:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+\vec{v}_{m} = \frac{\vec{s}_2 -\vec{s}_1}{t_2 - t_1} = \frac{\Delta\vec{ s}}{\Delta t}
+\end{equation}\]</div>
+<p>Hraði er í eðli sínu vigur. Alveg eins og færslan var vigur, þá verður
+hraði vigur vegna þess að vigur sem deilt er í með tölu er áfram vigur.
+Talan sem um ræðir er tímabilið. Þó við séum að færa okkur bara eftir
+beinni línu, þá er hraðinn vigur og því skiptir máli hvert formerki hans
+er. Ef hlutur er að færast eftir <span class="math notranslate nohighlight">\(x\)</span>-ás í neikvæða stefnu, þá er
+hraði hans neikvæður. Ef hann er að færast í jákvæða stefnu þá er
+hraðinn jákvæður. Við gætum alveg eins sett <span class="math notranslate nohighlight">\(s\)</span> sem
+<span class="math notranslate nohighlight">\(y\)</span>-hnit. Hugsum okkur færslu í stefnu jákvæða y-ássins. Þá væri
+hraðinn jákvæður miðað við jákvæða <span class="math notranslate nohighlight">\(y\)</span>-ásinn. Sömuleiðis ef
+færslan væri í neikvæða átt eftir <span class="math notranslate nohighlight">\(y\)</span> - ás, þá yrði hraðinn
+neikvæður.</p>
+<p>Við þurfum því alltaf að muna að meðalhraðinn er vigur og við verðum að
+huga að formerkinu. Seinna, þegar við skoðum fleiri víddir er hraðinn
+vigur sem getur haft fleiri ein eitt hnit.</p>
+</section>
+<section id="fer">
+<h2><span class="section-number">2.4. </span>Ferð<a class="headerlink" href="#fer" title="Permalink to this heading"></a></h2>
+<p>Ef við skoðum skilgreiningu meðalhraða nánar sjáum við að þetta er ekki
+alveg það sem við hugsum okkur sem hraða. Hvað gerist t.d. ef við
+hlaupum 100 m og tilbaka 100 m í upphafspunkt á 40 s. Hvað höfum við þá
+hlaupið hratt? Jú við hlupum 200 metra á 40 sekúndum. Er þá ekki hraðinn
+að meðaltali 200/40 = 5,0 m/s? Nei, því samkvæmt skilgreiningunni þá er
+meðalhraðinn</p>
+<div class="math notranslate nohighlight">
+\[\vec{v}_m = \frac{\vec{s}_0 - \vec{s}_0}{40} = \vec{0}\]</div>
+<p>Svo þessi meðalhraði er alls ekki það sem við hugsum um sem hraða! Það
+sem við köllum yfirleitt hraða hefur fengið nafnið <em>ferð</em> á meðan við
+notum almenna orðið hraða fyrir hina nýju skilgreiningu hraðavigurs. Á
+ensku er þetta á hinn veginn. Stærðin sem við erum að reyna að gefa nýja
+nafnið <em>ferð</em> er á ensku kölluð „speed“. Það sem við köllum hraða,
+hraðavigurinn, er á ensku kallað „velocity“.</p>
+<p>Ferð hlutar er skilgreind sem:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+\text{ferð} = \frac{\text{vegalengd}\hspace{0.3 cm}\text{farin}}{\text{tíma}}
+\end{equation}\]</div>
+<p>Það er ástæða fyrir því að við viðhöldum nafninu hraða á meginhugtakinu,
+hraðavigrinum. Við komum til með að sjá af hverju það er í næstu grein.</p>
+</section>
+<section id="augnablikshrai">
+<h2><span class="section-number">2.5. </span>Augnablikshraði<a class="headerlink" href="#augnablikshrai" title="Permalink to this heading"></a></h2>
+<p>Þegar við ökum um í bíl, lítum við öðru hverju á hraðamælinn.
+Hraðamælirinn sýnir hraða, eða öllu heldur ferð bílsins nokkurn veginn á
+hverjum tíma. Í raun sýnir hraðamælirinn meðalferð á litlu tímabili. Við
+sjáum þetta sem hraðann á hverjum tíma, eins konar augnablikshraða. Án
+nákvæmra mæla getum við ekki greint munin á meðalferð á litlu tímabili
+og augnabliksferð eða meðalhraða á litlu tímabili og augnablikshraða.</p>
+<p>Augnablikshraði er hraði sem er fundin út frá formúlu 2.3 með
+<span class="math notranslate nohighlight">\(t_2 \approx t_1\)</span> eða <span class="math notranslate nohighlight">\(\Delta t \approx 0\)</span>. Auðvita má ekki
+deila með núlli en stærðfræðilega skrifum við:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+\vec{v} = \lim_{t_2  \rightarrow  t_1} \frac{\vec{s}_2 - \vec{s}_1}{t_2 - t_1}
+\end{equation}\]</div>
+<p>Þetta þýðir bara að við erum að reikna hraðann þegar <span class="math notranslate nohighlight">\(t_2\)</span> er
+alveg að verða það sama og <span class="math notranslate nohighlight">\(t_1\)</span>.</p>
+<p>Augnablikshraði er yfirleitt bara kallaður hraði.</p>
+<p><a class="reference internal" href="../_images/3grof.png"><img alt="image1" src="../_images/3grof.png" style="width: 100%;" /></a></p>
+<p>Jafnan fyrir meðalhraða er mjög lík jöfnunni fyrir hallatölu línu.
+Jafnan er í raun hallatala línu sem dregin er í gegnum tvo punkta í
+línuriti af stöðu sem falli af tíma. Á mynd 2.1 má sjá gröf af stöðu sem
+falli af tíma. Sjá má punkta <span class="math notranslate nohighlight">\((t_1; s_1)\)</span> og <span class="math notranslate nohighlight">\((t_2; s_2)\)</span>
+þar sem <span class="math notranslate nohighlight">\(t_2\)</span> er mislangt frá <span class="math notranslate nohighlight">\(t_1\)</span>. Þegar lína er dregin í
+gegnum punktana sést að þegar <span class="math notranslate nohighlight">\(t_2\)</span> nálgast <span class="math notranslate nohighlight">\(t_1\)</span> þá nálgast
+línan það að vera snertill í punktinum <span class="math notranslate nohighlight">\((t_1; s_1)\)</span>. Þegar við
+skoðum graf af stöðu sem falli af tíma má alltaf sjá augnablikshraðann
+við ákveðinn tíma sem snertil grafsins á vikomandi tíma.</p>
+<section id="hrai-i-grafi-af-stou-sem-fall-af-tima">
+<h3><span class="section-number">2.5.1. </span>Hraði í grafi af stöðu sem fall af tíma<a class="headerlink" href="#hrai-i-grafi-af-stou-sem-fall-af-tima" title="Permalink to this heading"></a></h3>
+<p><a class="reference internal" href="../_images/snertlar.png"><img alt="image2" src="../_images/snertlar.png" style="width: 100%;" /></a></p>
+<p>Skoðið hallatölu snertils grafsins þegar <span class="math notranslate nohighlight">\(t = 2,0\,\text{s}\)</span>,
+<span class="math notranslate nohighlight">\(t = 4,0\,\text{s}\)</span>, <span class="math notranslate nohighlight">\(t = 7,0\,\text{s}\)</span>,
+<span class="math notranslate nohighlight">\(t = 10,5\,\text{s}\)</span> og <span class="math notranslate nohighlight">\(t = 13,0\,\text{s}\)</span>. Í hvaða
+punktum er hraðinn jákvæður? Í hvaða punktum er hraðinn neikvæður? Í
+hvaða punktum er hraðinn 0? Í hvaða punkti er hraðinn mestur?</p>
+</section>
+<section id="augnablikshrai-og-augnabliksfer">
+<h3><span class="section-number">2.5.2. </span>Augnablikshraði og augnabliksferð<a class="headerlink" href="#augnablikshrai-og-augnabliksfer" title="Permalink to this heading"></a></h3>
+<p>Þegar við höfum reiknað augnablikshraða þá er ekki mikill vandi að finna
+augnabliksferð.</p>
+<p>Augnabliksferð er bara tölugildi augnablikshraða. Þetta er ástæðan fyrir
+því að við notum orðið hraði yfir hraðavigurinn. Þegar við erum að tala
+um augnablikshraða, sem er í rauninni hraðinn á hverjum tíma, þá er
+ferðin bara tölugildi hraðans eða stærð hraðans. Það er því eðlilegt að
+tala um hraða eða stærð hraða, líka fyrir ferð hluta svo lengi sem maður
+er að tala um augnablikshraða. Það er bara þegar við skoðum meðalhraða
+sem það er verulegur mumur á ferð og hraða.</p>
+</section>
+</section>
+<section id="hroun">
+<h2><span class="section-number">2.6. </span>Hröðun<a class="headerlink" href="#hroun" title="Permalink to this heading"></a></h2>
+<p>Það er yfirleitt munur á hraða og meðalhraða. Hraði er það sama og
+meðalhraði bara ef hlutur er alltaf á sama hraða, eykur aldrei hraðann
+og hægir aldrei á sér. Það er greinilegt að fáir hlutir halda alltaf
+sama hraða. Það eru þá helst hlutir sem eru kyrrir einhvers staðar og
+því alltaf á hraðanum 0. Oftast er hraði hluta breytilegur, hann er
+breytist með tíma. Til þess að geta talað af einhverju viti um hraða
+hluta þurfum við því að geta lýst því hvernig hann er að breytast.</p>
+<p>Við skilgreinum hugtakið <em>meðalhröðun</em>, <span class="math notranslate nohighlight">\(\vec{a}\)</span>, sem breytingu á
+hraðavigri á hverri tímaeiningu:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+ \vec{a}_m = \frac{\vec{v}_2 - \vec{v}_1}{t_2 - t_1}
+\end{equation}\]</div>
+<p>Á sama hátt fæst <em>augnablikshröðun</em> eða bara <em>hröðun</em> sem markgildið:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+ \vec{a} = \lim_{t_2  \rightarrow  t_1}\frac{\vec{v}_2 - \vec{v}_1}{t_2 - t_1}
+\end{equation}\]</div>
+<p>Það er greinilegt að hröðun alveg eins og hraði getur verið mikil,
+lítil, jákvæð, neikvæð eða núll. Hröðun er vigur því við tökum mun
+tveggja vigra og deilum með tölu. Í einni vídd er vigurinn bara með eitt
+hnit og er því í raun tala en sú tala getur verið jákvæð eða neikvæð.
+Það er mikilvægt að gera sér góða grein fyrir hröðunarvigrinum.</p>
+<p>Dæmi 1:</p>
+<p>Hugsum okkur bíl sem er að ferðast eftir beinni línu í þá stefnu sem við
+köllum jákvæða. Þá er hraði bílsins jákvæður. Ef bíllinn eykur hraðann
+þá er hröðunin líka jákvæð. Ef bíllinn hægir á sér þá er hröðunin
+neikvæð.</p>
+<p>Dæmi 2:</p>
+<p>Hugum okkur bíl sem ferðast í það sem við köllum neikvæða stefnu. Þetta
+gæti t.d. verið bíllinn í dæmi 1 að fara tilbaka þangað sem hann
+byrjaði. Ef bíllinn er að ferðast í neikvæða stefnu þá er hraði hans
+neikvæður. Ef ferði bílsins er að aukast í neikvæða stefnu þá er
+hröðunin neikvæð. Ef bíllinn er hins vegar að hægja á sér í neikvæða
+stefnu þá er hröðun hans jákvæð.</p>
+<p>Það er alltaf erfiðara að vinna með neikvæðar stærðir en jákvæðar. Við
+höfum svo mikið betri tilfinningu fyrir því sem er jákvætt. Það er því
+mjög mikilvægt að vara sig á neikvæðum stærðum.</p>
+<p>Við verðum alltaf að skilgreina hvað er jákvæð stefna og hvað er neikvæð
+stefna í dæmunum sem við skoðum. Eftir það er gott að muna að það þarf
+alltaf að fara með gát ef hluturinn sem við skoðum fer í neikvæða
+stefnu.</p>
+<p>Dæmi 3. Hugsum okkur að við hendum bolta beint upp í loft. Skilgreinum
+upp sem jákvæða stefnu. Þá er hraði boltans jákvæður á meðan boltinn er
+að fara upp. Við vitum að boltinn hægir á sé þar til hann stoppar í
+efsta punkti (<span class="math notranslate nohighlight">\(\vec{v}\)</span> = 0) og snýr svo við og kemur niður aftur.
+Á uppleið er hröðun boltans neikvæð (hægir á ferð í jákvæða stefnu) og á
+niðurleið er hröðunin líka neikvæð (eykur ferð í neikvæða stefnu).</p>
+<section id="hroun-i-grafi-af-hraa-sem-fall-af-tima">
+<h3><span class="section-number">2.6.1. </span>Hröðun í grafi af hraða sem fall af tíma<a class="headerlink" href="#hroun-i-grafi-af-hraa-sem-fall-af-tima" title="Permalink to this heading"></a></h3>
+<p>Ef við teiknum graf af hraða sem fall af tíma fáum við að hröðunin er
+hallatalan grafsins. Þetta má sjá með því að bera saman jöfnurnar fyrir
+hraða sem fall af stöðu og tíma og jöfnurnar fyrir hröðun sem fall af
+hraða og tíma. Greinilegt er að þetta eru nákvæmlega sams konar tengsl.</p>
+<p>Þegar við höfum lært að diffra kynnumst við því að stærðin:</p>
+<div class="math notranslate nohighlight">
+\[\lim_{t_2 \rightarrow t_1} \frac{y_2 - y_1}{t_2 - t_1}\]</div>
+<p>er kölluð diffurkvótinn af y með tilliti til t og er það skrifað</p>
+<div class="math notranslate nohighlight">
+\[\frac{dy}{dt} = \lim_{t_2 \rightarrow t_1} \frac{y_2 - y_1}{t_2 - t_1}\]</div>
+<p>Táknið <span class="math notranslate nohighlight">\(\lim_{a\rightarrow b}\)</span> er kölluð markgildi þegar a stefnir
+á b og segir bara: „látið a vera óendanlega nálægt b“. Þegar við töluðum
+um hraða notuðum við þetta til þess að finna augnablikshraðann, hraðann
+á augnablikinu <span class="math notranslate nohighlight">\(t_1\)</span>. Þá var hraðinn snertill stöðu-tíma grafs í
+punktinum <span class="math notranslate nohighlight">\(t_1\)</span>. Á sama hátt getum við nú fundið
+augnablikshröðunina á tímanum <span class="math notranslate nohighlight">\(t_1\)</span>. Við skoðum graf af hraða sem
+falli af tíma og finnum snertil grafsins í punktinum <span class="math notranslate nohighlight">\(t_1\)</span>.</p>
+</section>
+<section id="vegalengd-i-grafi-af-hraa-sem-falli-af-tima">
+<h3><span class="section-number">2.6.2. </span>Vegalengd í grafi af hraða sem falli af tíma<a class="headerlink" href="#vegalengd-i-grafi-af-hraa-sem-falli-af-tima" title="Permalink to this heading"></a></h3>
+<p>Nú getum við líka gert annað. Gerum ráð fyrir að við hlutur ferðist með
+jöfnum hraða. Hvernig lítur það út á hraða - tíma grafi?</p>
+<p><a class="reference internal" href="../_images/flatjafnhradi.png"><img alt="image3" src="../_images/flatjafnhradi.png" style="width: 100%;" /></a></p>
+<p>Jafn hraði er bara bein lárétt lína. Hraðinn hefur alltaf sama gildi. Nú
+er jafnan fyrir meðalhraða sama og jafnan fyrir augnablikshraða ef
+hraðinn er jafn. Þ.e.</p>
+<div class="math notranslate nohighlight">
+\[\vec{v} = \frac{\vec{s}_2 - \vec{s}_1}{t_2 - t_1}\]</div>
+<p>Við getum umritað þetta með því að skrifa:</p>
+<div class="math notranslate nohighlight">
+\[\vec{v} (t_2 - t_1) = \vec{s}_2 - \vec{s}_1 \Longleftrightarrow \vec{v} \Delta t = \Delta \vec{s}\]</div>
+<p>(Munið að enn sem komið er er vigurinn bara plús eða mínus tala.)</p>
+<p>Hér sjáum við að til þess að finna hversu langt hluturinn fer á tímanum
+<span class="math notranslate nohighlight">\(\Delta t\)</span> margföldum við <span class="math notranslate nohighlight">\(\Delta t\)</span> með <span class="math notranslate nohighlight">\(\vec{v}\)</span>. Á
+grafinu hér að ofan má sjá að vegalengdin er flatarmálið undir ferlinum.
+Þegar við margföldum <span class="math notranslate nohighlight">\(\vec{v}\)</span> og <span class="math notranslate nohighlight">\(\Delta t\)</span> fáum við
+<span class="math notranslate nohighlight">\(\Delta s\)</span>. Eða
+<span class="math notranslate nohighlight">\(12\,\text{m}/\text{s}\cdot (12 - 3)\,\text{s}= 108\,\text{m}\)</span>.
+Skyggða flatarmálið á myndinni er vegalengdin sem hluturinn fór frá á
+þessum 9 sekúndum frá t = 3 s til t = 12 s.</p>
+<p>Nú er jafn hraði allara einfaldasta tilfellið (kyrrstaða er sértilfelli
+af jöfnum hraða, v = 0). Ef hraðinn er ekki jafn er þetta aðeins
+flóknara. Skoðum annað hraða - tíma graf:</p>
+<p><a class="reference internal" href="../_images/flatstallhradi.png"><img alt="image4" src="../_images/flatstallhradi.png" style="width: 100%;" /></a></p>
+<p>Hér er hraðinn að breytast (svolítið ótrúlega stöllóttur en látum það
+vera í bili). Hvernig myndum við reikna vegalengdina sem hlutur sem
+hreyfðist svona ferðaðist frá t.d. t = 4 s til t = 15 s?</p>
+<p>Við kunnum að reikna vegalengdina sem farin er ef hraðinn er jafn svo þá
+er einfaldast að skoða það sem við kunnum. Skiptum bilinu niður í smærri
+bil þannig að hraðinn sé jafn á hverju bili. Tökum bilin frá 4 s til 7 s
+og reiknum <span class="math notranslate nohighlight">\(6\,\text{m}/\text{s}\cdot 3\,\text{s}= 18\,\text{m}\)</span>.
+Næst tökum við 7,0 s til 7,5 s, 7,5 s til 8,0 s og svo farmvegis upp að
+t = 13 s og reiknum vegalengdina sem farin er á hverju þeirra og leggjum
+saman
+<span class="math notranslate nohighlight">\(0,5\,\text{m}/\text{s}\cdot (18 +17+16+14+12+10+8+6+4+2-2-4)\,\text{s}= 50,5\,\text{m}\)</span>.
+Síðan kemur síðasta bilið frá t = 13 s upp í t = 15 s, þar fæst
+<span class="math notranslate nohighlight">\(-6\,\text{m}/\text{s}\cdot 2\,\text{s}= -12\,\text{m}\)</span> Að lokum
+leggjum við þetta allt saman og fáum 56,5 m. Þetta er flatarmálið undir
+ferlinum frá t = 4 s til t = 15 s, þar sem það flatarmál sem er fyrir
+neðan tímaásinn er dregið frá.</p>
+<p>Eins og ég nefndi þá er ólíklegt að hraði breytist á svona rykkjóttan
+hátt. Hvað gerist ef hraðinn breytist samfellt? Þegar við vorum að skoða
+hraðann sem markgildi af meðalhraða milli tveggja tíma þá létum við
+tímabilið verða óendanlega lítið. Nú skulum við gera eitthvað svolítið
+líkt því fyrir vegalengdina. Þegar við reiknuðum vegalengdina frá 4 s
+til 15 s í dæminu hér að ofan gerðum við það með því að reikna hvert
+bil, þar sem hraðinn var jafn, fyrir sig. Við hefðum líka getað skipt
+bilinu í 22 bil af lengdinni 0,5 s og reiknað vegalengdina sem farin var
+á hverju þeirra. Hvað ef við hefðum graf eins og á myndinni hér fyrir
+neðan?</p>
+<p><a class="reference internal" href="../_images/hraditimi.png"><img alt="image5" src="../_images/hraditimi.png" style="width: 100%;" /></a></p>
+<p>Við getum skipt tímaásnum í bil og skoðað vegalengdina sem er um það bil
+farin á hverju þeirra. Hefð er að skoða tvenns konar summur, undirsummu
+og yfirsummu.</p>
+<p>Undirsumma fæst ef við skoðum alltaf vegalengdir sem eru styttri en
+raunveruleg vegalengd sem farin er. Við sjáum mynd af slíku á
+eftirfarandi grafi:</p>
+<p><a class="reference internal" href="../_images/undirsumma.png"><img alt="image6" src="../_images/undirsumma.png" style="width: 100%;" /></a></p>
+<p>Undirsumman er minnsti hraðinn á einhverju tímabili sinnum breidd
+tímabilsins:</p>
+<div class="math notranslate nohighlight">
+\[\sum_i v_{min,i} \Delta t_i\]</div>
+<p>Undirsumma <span class="math notranslate nohighlight">\(\leqslant \Delta\vec{s}\)</span></p>
+<p>Yfirsumma fæst á sama veg nema nú er alltaf tekin lengri vegalengd en sú
+sem raunverulega er farin.</p>
+<p><a class="reference internal" href="../_images/yfirsumma.png"><img alt="image7" src="../_images/yfirsumma.png" style="width: 100%;" /></a></p>
+<p>Yfirsumman er stærsti hraðinn á einhverju tímabili sinnum breidd
+tímabilsins:</p>
+<div class="math notranslate nohighlight">
+\[\sum_i v_{max,i} \Delta t_i\]</div>
+<p>Yfirsumma <span class="math notranslate nohighlight">\(\geqslant \Delta\vec{s}\)</span></p>
+<p>Með öðrum orðum:</p>
+<p>Undirsumma <span class="math notranslate nohighlight">\(\leqslant \Delta\vec{s} \leqslant\)</span>Yfirsumma</p>
+<div class="math notranslate nohighlight">
+\[\sum_i v_{min,i} \Delta t_i \leqslant \Delta\vec{s} \leqslant \sum_i v_{max,i} \Delta t_i\]</div>
+<p>Ef við tökum smærri tímabil í skiptinguna þá nálgast yfirsumman
+undirsummuna. Þegar við látum bilin í skiptingunni verða örsmá,
+<span class="math notranslate nohighlight">\(\Delta t \rightarrow 0\)</span>, þá verða summurnar jafnstórar og jafnar
+vegalengdinni sem farin var. Í raun erum við þá að finna flatarmálið
+undir ferlinum. Þetta er það sem þið komið til með að læra um sem
+„tegur“.</p>
+<div class="math notranslate nohighlight">
+\[\lim_{\Delta t \rightarrow 0}\sum_i v_{i} \Delta t = \int v(t)dt\]</div>
+</section>
+</section>
+<section id="serstok-tilfelli-hrounnar">
+<h2><span class="section-number">2.7. </span>Sérstök tilfelli hröðunnar<a class="headerlink" href="#serstok-tilfelli-hrounnar" title="Permalink to this heading"></a></h2>
+<p>Hröðun getur verið með ýmsu móti og hér skulum við skoða nokkur dæmi.</p>
+<section id="engin-hroum">
+<h3><span class="section-number">2.7.1. </span>Engin hröðum<a class="headerlink" href="#engin-hroum" title="Permalink to this heading"></a></h3>
+<p>Ef engin hröðun er, þ.e. hröðunin <span class="math notranslate nohighlight">\(\vec{a}\)</span> = 0, þá er hraðinn
+jafn. Þá er hluturinn að hreyfast með jöfnum hraða, hann fer alltaf jafn
+marga metra á hverri sekúndu.</p>
+<p>Ef þannig er, þá er hraði jafn meðalhraða og við höfum jöfnuna:</p>
+<div class="math notranslate nohighlight">
+\[\vec{v} = \frac{\vec{s}_2 - \vec{s}_1}{t_2 - t_1}\]</div>
+<p>Við getum umritað hana á eftirfarandi hátt:</p>
+<div class="math notranslate nohighlight">
+\[\vec{s_2 } = \vec{v}\cdot (t_2 - t_1) + \vec{s_1}\]</div>
+<p>Oftast skrifum við bara t fyrir stærðina <span class="math notranslate nohighlight">\((t_2 - t_1)\)</span>. Þar með
+erum við að gefa í skyn að <span class="math notranslate nohighlight">\(t_2\)</span> eigi að kallast <span class="math notranslate nohighlight">\(t\)</span> og
+<span class="math notranslate nohighlight">\(t_1\)</span> sé 0. Í samræmi við það er þá <span class="math notranslate nohighlight">\(\vec{s}_2\)</span> bara kallað
+<span class="math notranslate nohighlight">\(\vec{s}\)</span> og <span class="math notranslate nohighlight">\(\vec{s}_1\)</span> kallað <span class="math notranslate nohighlight">\(\vec{s}_0\)</span> til þess
+að gefa til kynna að það sé staðan við tímann t = 0.</p>
+<p>Þetta verður þá:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+\vec{s} = \vec{v} t + \vec{s}_0
+\end{equation}\]</div>
+<p>Þetta er í raun eina jafnan sem við þurfum þegar við erum með jafnan
+hraða, enga hröðun.</p>
+</section>
+<section id="jofn-hroun">
+<h3><span class="section-number">2.7.2. </span>Jöfn hröðun<a class="headerlink" href="#jofn-hroun" title="Permalink to this heading"></a></h3>
+<p>Ef hröðunin er fasti en ekki núll, höfum við að stærðin</p>
+<div class="math notranslate nohighlight">
+\[\vec{a} = \frac{\vec{v}_2 - \vec{v}_1}{t_2 - t_1}\]</div>
+<p>er fasti. Það þýðir að hallatala grafs af hraða sem falls af tíma er
+fasti. Hallatalan er alltaf sú sama. Grafið er því bein lína. Hér eru
+nokkur dæmi.</p>
+<p><a class="reference internal" href="../_images/jofnhrodungrof.png"><img alt="image8" src="../_images/jofnhrodungrof.png" style="width: 100%;" /></a></p>
+<p>Samkvæmt jöfnunni fyrir hröðun, fæst nú með sömu algebru og þegar við
+skoðuðum jafnan hraða, að</p>
+<div class="math notranslate nohighlight">
+\[\vec{v}_2 = \vec{a}(t_2 - t_1) + \vec{v}_1\]</div>
+<p>Eins og áður gerum við ráð fyrir að <span class="math notranslate nohighlight">\(t_1\)</span> = 0 og köllum
+<span class="math notranslate nohighlight">\(t_2\)</span> = <span class="math notranslate nohighlight">\(t\)</span>. Síðan köllum við <span class="math notranslate nohighlight">\(\vec{v}_2 = \vec{v}\)</span> og
+<span class="math notranslate nohighlight">\(\vec{v}_1 = \vec{v}_0\)</span>. Þá fáum við jöfnuna:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+\vec{v} = \vec{a}t + \vec{v}_0
+\end{equation}\]</div>
+<p>Þetta gengur vegna þess að hröðunin er jöfn, <span class="math notranslate nohighlight">\(\vec{a}\)</span> er föst
+tala eins og t.d. á fyrsta grafinu þar sem
+<span class="math notranslate nohighlight">\(\vec{a} = 0,5\,\text{m}/\text{s}^2\)</span>, í miðgrafinu þar sem
+<span class="math notranslate nohighlight">\(\vec{a} = 0,3\,\text{m}/\text{s}^2\)</span> og í grafinu sem er lengst
+til vinstri þar sem <span class="math notranslate nohighlight">\(\vec{a} = -1,0\,\text{m}/\text{s}^2\)</span>.
+Greinilegt er að gröfin eru af beinum línum sem hafa jöfnur:</p>
+<p>Til vinstri: <span class="math notranslate nohighlight">\(\vec{v} = 0,5\,\text{m}/\text{s}^2\cdot t\)</span>. Í
+miðjunni:
+<span class="math notranslate nohighlight">\(\vec{v} = 0,3\,\text{m}/\text{s}^2\cdot t + 1,0\,\text{m}/\text{s}\)</span>.
+Til hægri:
+<span class="math notranslate nohighlight">\(\vec{v} =-1,0\,\text{m}/\text{s}^2\cdot t + 2,0\,\text{m}/\text{s}\)</span>.</p>
+<p>Nú er eftir að athuga hversu langt hlutur fer á ákveðnum tíma. Við getum
+skoðað tvær aðferðir.</p>
+<p>1. aðferð. <em>Flatarmál undir ferli</em>. Segjum að við viljum skoða hversu
+langt hluturinn sem lýst er með grafinu sem er lengst til vinstri fer
+frá <span class="math notranslate nohighlight">\(t = 2,0\,\text{s}\)</span> til <span class="math notranslate nohighlight">\(t = 4,0\,\text{s}\)</span>. Hvernig
+gerum við það. Jú við finnum flatarmálið undir ferlinum frá
+<span class="math notranslate nohighlight">\(t = 2,0\,\text{s}\)</span> til <span class="math notranslate nohighlight">\(t = 4,0\,\text{s}.\)</span> Hvernig gerum
+við það? Það eru margir möguleikar. T.d. gætum við talið rúður. Ég held
+við getum verið sammála um að þetta séu 12 rúður. Svo þarf að athuga
+hversu stór hver rúða er. Ef við skoðum skalann á ásunum sjáum við að
+hverjar 4 rúður eru
+<span class="math notranslate nohighlight">\(1,0\,\text{m}/\text{s}\cdot 1,0\,\text{s}= 1,0\,\text{m}\)</span> svo
+hver rúða er 0,25 m. Þar með sjáum við að frá <span class="math notranslate nohighlight">\(t = 2,0\,\text{s}\)</span>
+til <span class="math notranslate nohighlight">\(t = 4,0\,\text{s}\)</span> fer hluturinn
+<span class="math notranslate nohighlight">\(12 \cdot 0,25\,\text{m}= 3,0\,\text{m}\)</span>.</p>
+<p>Önnur leið til þess að finna flatarmálið undir ferlinum er aðskoða
+flatarmál trapisu eða flatarmál rétthyrnings + flatarmál þríhyrnings.
+Við skulum venja okkur á að tákna flatarmál með bókstafnum A (area).
+Flatarmál trapisu:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+A = \frac{1}{2}g(a+b)
+\end{equation}\]</div>
+<p>Hér táknar g, grunnlínu og a og b hinar mislöngu hliðar trapisunnar. Í
+dæminu okkar er þá <span class="math notranslate nohighlight">\(g =  2,0\,\text{s}\)</span>,
+<span class="math notranslate nohighlight">\(a = 1,0\,\text{m}/\text{s}\)</span> og
+<span class="math notranslate nohighlight">\(b = 2,0\,\text{m}/\text{s}\)</span>. Við fáum því að</p>
+<div class="math notranslate nohighlight">
+\[A =  \frac{1}{2}\cdot 2,0\,\text{s}\cdot (1,0 + 2,0)\,\text{m}/\text{s}= 3,0\,\text{m}\]</div>
+<p>Þetta er það sama og ef við hefðum reiknað rétthyrninginn og lagt við
+þríhyrninginn:</p>
+<div class="math notranslate nohighlight">
+\[A = 1,0\,\text{m}/\text{s}\cdot 2,0\,\text{s}+ \frac{1}{2}\cdot 1,0\,\text{m}/\text{s}\cdot 2,0\,\text{s}= 3,0\,\text{m}\]</div>
+<p>2. aðferð. <em>Meðalhraði er jafn miðhraða, meðaltali upphafs og lokahraða
+þegar hröðunin er fasti</em>. Ef við vitum meðalhraðann á tímabilinu sem við
+erum að skoða þá getum við reiknað vegalengdina sem farin var á
+tímabilinu. Jafnan</p>
+<div class="math notranslate nohighlight">
+\[\vec{v}_m = \frac{\vec{s}_2 - \vec{s}_1}{t_2 - t_1}\]</div>
+<p>gefur okkur að</p>
+<div class="math notranslate nohighlight">
+\[\vec{s}_2 = \vec{v}_m(t_2 - t_1) + \vec{s}_1\]</div>
+<p>Eða með <span class="math notranslate nohighlight">\(t_2 = t\)</span> og <span class="math notranslate nohighlight">\(t_1 = 0\)</span> og svo framvegis:</p>
+<div class="math notranslate nohighlight">
+\[\vec{s} = \vec{v}_m \cdot t + \vec{s}_0\]</div>
+<p>En hvernig vitum við meðalhraðann þegar hraðinn er alltaf að breytast?
+Almennt vitum við hann ekki. En þegar hröðunin er jöfn, er meðalhraðinn
+jafn miðhraðanum, meðaltali upphaf og lokahraða.</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+\vec{v}_m = \vec{v}_{mid} = \frac{\vec{v}_1 + \vec{v}_2}{2}
+\end{equation}\]</div>
+<p>Af hverju? Skýringuna má sjá á mynd. Ef hluturinn hefði haft hraðann
+upphafshraði + lokahraði hefði hann farið helmingi lengra en hann fór
+(tvær eins trapisur).</p>
+<p>Eða: Ef hann hefði haft sama hraða alla leið, nefnilega hraðann sem hann
+hefur á miðju tímabilinu, þá væri vegalengdin sem hann færi jöfn
+flatarmálinu <span class="math notranslate nohighlight">\(\Delta \vec{s} = \vec{v}_{mid}\cdot t\)</span>. Með jafnri
+hröðun, fer hann jafnmikið styttra en
+<span class="math notranslate nohighlight">\(\vec{v}_{mid}\cdot \frac{t}{2}\)</span> á fyrri hluta tímabilsins og hann
+fer lengra en <span class="math notranslate nohighlight">\(\vec{v}_{mid}\cdot \frac{t}{2}\)</span> á seinni hluta
+tímabilsins.</p>
+<p><a class="reference internal" href="../_images/medaltalhrada.png"><img alt="image9" src="../_images/medaltalhrada.png" style="width: 100%;" /></a></p>
+<p>Út frá þessarri jöfnu og jöfnunni sem við höfðum fyrir hraða getum við
+svo fengið almenna jöfnu fyrir stöðu hlutar sem hefur jafna hröðun.</p>
+<div class="math notranslate nohighlight">
+\[\vec{s}_2 = \vec{v}_m(t_2 - t_1) + \vec{s}_1\]</div>
+<div class="math notranslate nohighlight">
+\[\vec{s}_2 = \frac{\vec{v}_1 + \vec{v}_2}{2}\cdot (t_2 - t_1) + \vec{s}_1\]</div>
+<div class="math notranslate nohighlight">
+\[\vec{s}_2 = \frac{\vec{v}_1 + \vec{a}(t_2 - t_1) + \vec{v}_1}{2}\cdot (t_2 - t_1) + \vec{s}_1\]</div>
+<div class="math notranslate nohighlight">
+\[\vec{s}_2 = \frac{1}{2}\vec{a}(t_2 - t_1)^2+\vec{v}_1(t_2 - t_1) +\vec{s}_1\]</div>
+<p>Ef við nú setjum eins og áður <span class="math notranslate nohighlight">\(t_2 = t\)</span>, <span class="math notranslate nohighlight">\(t_1 = 0\)</span> og svo
+framvegis þá fáum við:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+\vec{s} = \frac{1}{2}\vec{a}t^2+\vec{v}_0t +\vec{s}_0
+\end{equation}\]</div>
+<p>Nú erum við búin að fá fram flest sem þarf til þess að geta lýst
+hreyfingu með jafnri hröðun.</p>
+<p>Samt skulum við gera eina útleiðslu enn. Sú útleiðsla gefur okkur jöfnu
+sem við komum til með að nota oft en hún er samt ekki nein ný jafna
+heldur fæst hún með algebru út frá jöfnunum:</p>
+<div class="math notranslate nohighlight">
+\[\vec{v} = \vec{a}t + \vec{v}_0\]</div>
+<p>og</p>
+<div class="math notranslate nohighlight">
+\[\vec{s} = \frac{1}{2}\vec{a}t^2+\vec{v}_0t +\vec{s}_0\]</div>
+<p>Fyrst skulum við umrita báðar jöfnurnar:</p>
+<div class="math notranslate nohighlight">
+\[\vec{v} - \vec{v}_0 = \vec{a}t\]</div>
+<div class="math notranslate nohighlight">
+\[\vec{s} - \vec{s}_0 = \frac{1}{2}\vec{a}t^2+\vec{v}_0t  =  \frac{1}{2}(\vec{v} - \vec{v}_0)t+\vec{v}_0t\]</div>
+<p>Nú skulum við margfalda saman <span class="math notranslate nohighlight">\(\vec{a}t\)</span> og
+<span class="math notranslate nohighlight">\(\vec{s} - \vec{s}_0\)</span>, þá fæst:</p>
+<div class="math notranslate nohighlight">
+\[\vec{a}t (\vec{s} - \vec{s}_0) = (\vec{v} - \vec{v}_0)(\frac{1}{2}(\vec{v} - \vec{v}_0)t+\vec{v}_0t)\]</div>
+<p>Nú getum við losað okkur við <span class="math notranslate nohighlight">\(t\)</span>, (<span class="math notranslate nohighlight">\(t \neq 0\)</span>) og margfaldað
+í gegn með tveimur:</p>
+<div class="math notranslate nohighlight">
+\[2\vec{a} (\vec{s} - \vec{s}_0) = (\vec{v} - \vec{v}_0)(\vec{v} - \vec{v}_0+2\vec{v}_0) \Leftrightarrow\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+2\vec{a} (\vec{s} - \vec{s}_0) = \vec{v}^2 - \vec{v}_0^2
+\end{equation}\]</div>
+</section>
+<section id="floknari-hroun">
+<h3><span class="section-number">2.7.3. </span>Flóknari hröðun<a class="headerlink" href="#floknari-hroun" title="Permalink to this heading"></a></h3>
+<p>Ef hröðunin er ekki jöfn þá getur hún verið með ýmsu móti. Við getum
+lýst henni sem <span class="math notranslate nohighlight">\(\vec{a}(t)\)</span> Þá gilda bara grunnjöfnurnar fyrir
+samband stöðu, hraða, hröðunar og tíma. Þau tengsl eru fengin með
+diffrun/tegrun.</p>
+<p>Hraði er skilgreindur sem:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+\vec{v} = \frac{d\vec{s}}{dt}
+\end{equation}\]</div>
+<p>Hröðun er skilgreind sem:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+\vec{a} = \frac{d\vec{v}}{dt}
+\end{equation}\]</div>
+<p>Staða fengist sem tegur hraða og hraði sem tegur hröðunnar. En við munum
+hér mest halda okkur við að skoða dæmi þar sem hröðun er jöfn, alla vega
+á köflum.</p>
+</section>
+</section>
+<section id="yngdarsvii-vi-yfirbor-jarar">
+<h2><span class="section-number">2.8. </span>Þyngdarsviðið við yfirborð jarðar<a class="headerlink" href="#yngdarsvii-vi-yfirbor-jarar" title="Permalink to this heading"></a></h2>
+<p>Ein af ástæðunum þess að jöfn hröðun er okkur svo mikilvæg er sú að
+hlutir sem falla frjálsir við yfirborð jarða, þ.e. án áhrifa nokkurra
+annarra krafta en þyngdarkrafts jarðar, þeir falla allir með fastri
+hröðun. Það er sama hversu stórir hlutirnir eru eða hversu þungir allir
+falla þeir með sömu hröðun. Þessi hröðun er nokkurn veginn sú sama alls
+staðar á jörðunni. Hröðunin er um <span class="math notranslate nohighlight">\(9,8\,\text{m}/\text{s}^2\)</span> og
+vísar inn að miðju jarðar. Ástæðan fyrir þessu er mjög djúp. Við skulum
+ræða þetta aftur þegar við tölum um krafta. En hafa ber í huga að svo
+kölluð þyngdarhröðun er í raun bara sú hröðun sem hlutur fær ef enginn
+kraftur verkar nema þyngdarkrafturinn, engin núningur, engin
+loftmótstaða.</p>
+<p>Ef við köstum kúlu upp í loft við yfirborð jarðar hægir hún á sér á
+leiðinni upp með hröðun sem er u.þ.b. <span class="math notranslate nohighlight">\(9,8\,\text{m}/\text{s}^2\)</span>
+og vísar niður. Ef við veljum ása þannig að upp sé jákvætt, þá er
+hröðunin <span class="math notranslate nohighlight">\(\vec{a} =-9,8\,\text{m}/\text{s}^2\)</span>. Að endingu stöðvast
+svo kúlan (í efsta punkti er <span class="math notranslate nohighlight">\(\vec{v}_{efst}= 0\)</span>) og fer að fara
+tilbaka niður. Á niðurleið er hraðinn í neikvæða stefnu,
+<span class="math notranslate nohighlight">\(\vec{v}_{nidur}&lt; 0\)</span> en ferð hennar er að aukast svo hröðuninr
+aftur neikvæð <span class="math notranslate nohighlight">\(\vec{a} =-9,8\,\text{m}/\text{s}^2\)</span>. Ekki skrítið
+því hröðunin er sú sama alla leið. Alltaf
+<span class="math notranslate nohighlight">\(\vec{a} =-9,8\,\text{m}/\text{s}^2\)</span>.</p>
+<p>Þetta er í raun mjög skrítið. Af hverju er hröðunin sú sama fyrir alla
+massa? Væri ekki eðlilegra t.d. að massamiklir hlutir féllu hraðar?</p>
+<p>Þyngdarkrafturinn er grunnkraftur, auk þess er hann alveg sérstakur og
+enn ekki fullskýrður. Þyngdarkrafturinn verkar á eiginleika hluta sem
+heitir þyngdarmassi, <span class="math notranslate nohighlight">\(m_g\)</span>, og má líta á hann sem eins konar
+hleðslu þyngdarkraftsins. Þegar við lærum 2. lögmál Newtons kemur í ljós
+að heildarkraftur á hlut, veldur hröðun samkvæmt:
+<span class="math notranslate nohighlight">\(\vec{F}_{heild} = m_t\vec{a}\)</span>. Massinn <span class="math notranslate nohighlight">\(m_t\)</span> kallast
+tregðumassi og veldur tregðu gegn hraðabreytingu hluta. Þyngdarkrafti á
+hlut má lýsa með jöfnunni <span class="math notranslate nohighlight">\(\vec{F}_G = m_g \vec{g}\)</span> þar sem
+<span class="math notranslate nohighlight">\(\vec{g}\)</span> kallast þyngdarsvið og lýsir krafti á hleðslueiningu,
+hér krafti á massaeiningu. Við yfirborð jarðar er <span class="math notranslate nohighlight">\(\vec{g}\)</span> fasti,
+gildi hans er u.þ.b. <span class="math notranslate nohighlight">\(-9,8\,\text{m}/\text{s}^2\)</span> ef við veljum upp
+sem jákvæða stefnu. Ef enginn kraftur annar en þyngdarkrafturinn verkar
+á hlut verður jafna Newtons:</p>
+<div class="math notranslate nohighlight">
+\[\vec{F}_G = m_g \vec{g} = m_g (-9,8)\,\text{m}/\text{s}^2 = m_t\vec{a}\]</div>
+<div class="line-block">
+<div class="line">Athuganir og nákvæmar mælingar hafa sýnt að enginn munur virðist vera
+á stærðunum <span class="math notranslate nohighlight">\(m_g\)</span> og <span class="math notranslate nohighlight">\(m_t\)</span>. Þess vegna fáum við að hröðun
+hluta sem einungis þyngdarkraftur verkar á er <span class="math notranslate nohighlight">\(\vec{g}\)</span>. Við
+yfirborð jarðar er
+<span class="math notranslate nohighlight">\(\vec{g} = (-9,8)\,\text{m}/\text{s}^2\vec{e}_r\)</span>.</div>
+<div class="line">Jafngildi massanna <span class="math notranslate nohighlight">\(m_g\)</span> og <span class="math notranslate nohighlight">\(m_t\)</span> hefur djúpstæða
+merkingu. Almenna afstæðiskenningin og uppgötvun hennar eiga rætur
+sínar í jafngildi þessarra massa.</div>
+</div>
+</section>
+<section id="samantekt-a-jofnum">
+<h2><span class="section-number">2.9. </span>Samantekt á jöfnum<a class="headerlink" href="#samantekt-a-jofnum" title="Permalink to this heading"></a></h2>
+<p>Helstu jöfnur sem við höfum fengið fram í þessu kafla eru jöfnur sem
+lýsa hreyfingu eftir beinni línu með engri eða jafnri hröðun auk
+grunnskilgreiningar á hraða og hröðun.</p>
+<p><strong>Skilgreiningar:</strong></p>
+<p>Færsla:</p>
+<div class="math notranslate nohighlight">
+\[\Delta s = s_2 - s_1\]</div>
+<p>Meðalhraði:</p>
+<div class="math notranslate nohighlight">
+\[\vec{v}_{m} = \frac{\vec{x_2 - x_1}}{t_2 - t_1} = \frac{\Delta\vec{ s}}{\Delta t}\]</div>
+<p>Hraði:</p>
+<div class="math notranslate nohighlight">
+\[\vec{v} = \lim_{t_2  \rightarrow  t_1} \frac{\vec{s_2 - s_1}}{t_2 - t_1} = \frac{d\vec{s}
+}{dt}\]</div>
+<p>Hröðun:</p>
+<div class="math notranslate nohighlight">
+\[\vec{a} = \lim_{t_2  \rightarrow  t_1}\frac{\vec{v}_2 - \vec{v}_1}{t_2 - t_1} = \frac{d\vec{v}}{dt}\]</div>
+<p>Miðhraði-meðaltal hraða:</p>
+<div class="math notranslate nohighlight">
+\[\vec{v}_{mid} = \frac{\vec{v}_1 + \vec{v}_2}{2}\]</div>
+<p><strong>Jöfnur fyrir jafna hröðun:</strong></p>
+<div class="math notranslate nohighlight">
+\[\vec{v}_{mid} = \vec{v}_{m}\]</div>
+<div class="math notranslate nohighlight">
+\[\vec{v} = \vec{a}t + \vec{v}_0\]</div>
+<div class="math notranslate nohighlight">
+\[\vec{s} = \frac{1}{2}\vec{a}t^2+\vec{v}_0t +\vec{s}_0\]</div>
+<div class="math notranslate nohighlight">
+\[2\vec{a} (\vec{s} - \vec{s}_0) = \vec{v}^2 - \vec{v}_0^2\]</div>
+</section>
+<section id="daemi">
+<h2><span class="section-number">2.10. </span>Dæmi<a class="headerlink" href="#daemi" title="Permalink to this heading"></a></h2>
+<div class="line-block">
+<div class="line">Hvalur syndir 6,9 km beint í austur snýr við og syndir 1,8  beint í
+vestur. Síðan snýr hann aftur við og syndir 3,5 km beint í austur.</div>
+<div class="line">a) Hver er heildarvegalengdin sem hvalurinn synti?</div>
+<div class="line">b) Hver er færsla hvalsins, tiltakið stærð og stefnu.</div>
+</div>
+<p id="section-1">Ferðamaður er að flýja undan reiðum skógarbirni. Ferðamaðurinn hleypur í
+átt að bílnum sínum á hraðanum 4,0 m/s. Þegar hann er kominn á þennan
+hraða er björninn 26 m fyrir aftan hann á jafna hraðanum 6,0 m/s og
+bíllinn er í fjarlægðinni <span class="math notranslate nohighlight">\(d\)</span> fyrir framan hann. Ef ferðamaðurinn
+á að ná bílnum áður enn björninn nær honum hvað er þá það mesta sem
+<span class="math notranslate nohighlight">\(d\)</span> má vera?</p>
+<p id="section-2">Bíll ekur 60 km vegalengd. Meðalhraði hans er 40,0 km/klst. Ferð bílsins
+má skipta í þrjá parta. Fyrst ferðast bíllinn 15 km á hraðanum
+25,0 km/klst. Næst ferðast hann 32 km á hraðanum 62 km/klst. Hver er
+hraði bílsins á síðustu 13 kílómetrunum?</p>
+<p id="section-3">Kári er að reyna að að ná Kötlu litlu systur sinni því hann sér að hún
+er að nálgast götuna. Hann er byrjaður að hlaupa á 5,1 m/s þegar hann er
+20 m frá Kötlu en Katla ráfar í átt að götunni á hraðanum 0,6 m/s.
+Hversu langt frá götunni er Katla þegar Kári er 20 m frá henni ef hann
+nær henni rétt þegar hún kemur að götunni?</p>
+<p id="section-4">Hlaupari eykur hraðann í 5,36 m/s á 5,0 s. Hann eykur hraðann með hröðun
+0,640 m/s<span class="math notranslate nohighlight">\(^2\)</span>. Hver var hraði hlauparans þegar hann byrjaði að
+auka hraðann?</p>
+<p id="section-5">Hraðbátur eykur hraðann úr kyrrstöðu í 3,2 m/s á 2,0 s. Hver verður
+hraði bátsins eftir 3,0 s til viðbótar ef hann heldur sömu hröðun?</p>
+<div class="line-block" id="section-6">
+<div class="line">Skíðamaður leggur af stað úr kyrrstöðu efst í brekku og nær harðanum
+8,0 m/s á 5,0 s.</div>
+<div class="line">a) Hver er meðalhröðun skíðamannsins?</div>
+<div class="line">b) Hversu langt eftir brekkunni fer hann á þessum tíma?</div>
+</div>
+<p id="section-7">Hraðagildra er sett á þjóðvegi þar sem hámarkshraði er 25 m/s
+(90 km/klst). Hún er þannig að tvær rákir sem mæla hvenær bíllinn fer
+yfir þær eru settar yfir þjóðveginn með 110 m millibili. Bíll kemur að
+fyrri rákinni á hraðanum 35 m/s og byrjar samstundis að hægja á sér.
+Hver þarf hröðun hans að vera svo að meðalhraði hans mælist innan
+hraðamarka?</p>
+<div class="line-block" id="section-8">
+<div class="line">Þegar 48 m eru á milli tveggja fótboltaleikmanna byrja þeir að hlaupa.
+Þeir hlaupa beint í átt til hvors annars, báðir með hröðun. Annar
+leikmaðurinn hefur hröðun að stærð 0,50 m/s<span class="math notranslate nohighlight">\(^2\)</span>, en hinn hefur
+hröðun að stærð 0,30 m/s<span class="math notranslate nohighlight">\(^2\)</span>.</div>
+<div class="line">a) Hversu langur tími líður þar til þeir rekast á?</div>
+<div class="line">b) Hversu langt hefur fyrri leikmaðurinn þá hlaupið?</div>
+</div>
+<p id="section-9">Lest er með jafna hröðun 1,6 m/s<span class="math notranslate nohighlight">\(^2\)</span>. Hún fer undir 20,0 m
+breiða brú á 2,4 s. Hversu langur tími líður frá því lestin kemur undan
+brúnni þar til hún hefur náð hraðanum 32 m/s?</p>
+<p id="section-10">Í hundrað metra spretthlaupi hraðar hlauparinn sér upp í hámarkshraða
+með hröðun sem er 2,68 m/s<span class="math notranslate nohighlight">\(^2\)</span>. Eftir að hlauparinn hefur náð
+hámarkshraða heldur hann þeim hraða alla leið að marki án þess að herða
+eða hægja á sér. Ef heildartími hans í hlaupinu er 12,0 s, hversu langt
+hljóp hann þá á meðan hann var að hraða sér?</p>
+<p id="section-11">Stúlka sleppir blöðru sem fyllt er með vatni frá glugga sem er 6,00 m
+yfir jörðu. Hversu lengi er blaðran í loftinu ef engin loftmótstaða
+verkar á hana?</p>
+<section id="section-12">
+<span id="id1"></span><h3><span class="section-number">2.10.1. </span>13.<a class="headerlink" href="#section-12" title="Permalink to this heading"></a></h3>
+<p>Kona stendu á 90,0 m hárri brú og horfir á fleka fljóta á jöfnum hraða
+eftir ánni. Konan sleppir steini af brúnni. Þegar steininum er sleppt þá
+á flekinn eftir 6,00 m að brúnni. Steinninn lendir 2,00 m fyrir aftan
+flekann. Finnið hraða flekans. (Aftur skuluð þið gera ráð fyrir að
+loftmótastað sé engin.)</p>
+</section>
+<section id="section-13">
+<span id="id2"></span><h3><span class="section-number">2.10.2. </span>14.*<a class="headerlink" href="#section-13" title="Permalink to this heading"></a></h3>
+<p>Loftbelgur rís með jöfnum hraða 7,0 m/s. Þegar loftbelgurinn er í 12 m
+hæð yfir jörðu, er skotið af byssu beint upp frá jörðu. Upphafshraði
+byssukúlunnar er 30,0 m/s. Það eru tveir staðir á ferli byssukúlunnar
+þar sem hún er í sömu hæð og loftbelgurinn (á sama tíma). Í hvaða hæð
+eru þessir staðir?</p>
+<section id="svor">
+<h4><span class="section-number">2.10.2.1. </span>Svör<a class="headerlink" href="#svor" title="Permalink to this heading"></a></h4>
+<div class="line-block">
+<div class="line">1) 5,1 km í austur</div>
+<div class="line">2) 54 m</div>
+<div class="line">3) 33,9 km/klst</div>
+<div class="line">4) 2,7 m</div>
+<div class="line">5) 2,16 m/s</div>
+<div class="line">6) 8,0 m/s</div>
+<div class="line">7) a. 1,6 m/s<span class="math notranslate nohighlight">\(^2\)</span>   b. 20 m</div>
+<div class="line">8) -4,5 m/s<span class="math notranslate nohighlight">\(^2\)</span></div>
+<div class="line">9) a. 11,7 s   b. 34,3 m</div>
+<div class="line">10) 13,6 s</div>
+<div class="line">11) 18,1 m</div>
+<div class="line">12) 1,1 s</div>
+<div class="line">13) 1,87 m/s</div>
+<div class="line">14) 16,2 m og 40,7 m</div>
+</div>
+</section>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../kafli01/" class="btn btn-neutral float-left" title="1. Mælingar" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../kafli03/" class="btn btn-neutral float-right" title="3. Afstæð hreyfing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p></p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+<script>
+    window.addEventListener("load", function () {
+        for (var i in ggbAppletId) {
+            ggbAppletId[i].inject(i);
+        }
+    });
+</script>
+
+
+ 
+
+<style>
+    /* Sidebar header (and topbar for mobile) */
+    .wy-side-nav-search,
+    .wy-nav-top {
+       /* HI: #10099F, VoN: #EB7125, orginal #01447B */
+       background: #321c4a;
+    }
+
+    /* Sidebar */
+    .wy-nav-side {
+      /* orginal #343131, HÍ grár dekkri: #EEEEEE, HÍ svartur: #262626 */
+      background: #262626;
+    }
+</style>
+
+
+</body>
+</html>

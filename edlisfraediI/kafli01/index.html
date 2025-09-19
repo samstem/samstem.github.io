@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="is" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1. Mælingar &mdash; Eðlisfræði I </title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/eqt.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/datacamp-custom.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/edbook.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/samstem.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+        <script src="../_static/js/eqt.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script src="https://cdn.datacamp.com/datacamp-light-latest.min.js"></script>
+        <script async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../_static/js/theme.js"></script>
+
+<!-- hoverrole.py css code -->
+<style type="text/css">
+    a.tooltip {
+        outline: none;
+        border-bottom: thin dotted;
+        background: #ffeedd
+    }
+
+    a.tooltip strong {
+        line-height: 30px;
+    }
+
+    a.tooltip:hover {
+        text-decoration: none;
+    }
+
+    a.tooltip span {
+        z-index: 10;
+        display: none;
+        padding: 14px 20px;
+        margin-top: -30px;
+        margin-left: 12px;
+        width: 310px;
+        line-height: 16px;
+    }
+
+    a.tooltip:hover span {
+        display: inline;
+        position: absolute;
+        color: #111;
+        border: 1px solid #DCA;
+        background: #fffAF0;
+    }
+
+    .callout {
+        z-index: 20;
+        position: absolute;
+        top: 30px;
+        border: 0;
+        left: -12px;
+    }
+
+    /*CSS3*/
+    a.tooltip span {
+        border-radius: 4px;
+        box-shadow: 5px 5px 8px #CCC;
+    }
+</style>
+<!-- End hoverrole.py css code -->
+
+<style type="text/css">
+    .sagecell .CodeMirror-scroll {
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+
+    .sagecell .CodeMirror {
+        height: auto;
+    }
+
+    /* - Begin equation reference style - */
+    h6.eqno {
+        display: inline-block;
+        padding-left: 10px;
+    }
+
+    h6 .headerlink {
+        display: inline-block !important;
+    }
+
+    h6 .headerlink:after {
+        visibility: hidden !important;
+    }
+
+    h6 .headerlink:hover:after {
+        visibility: visible !important;
+    }
+
+    .eqno:hover>.headerlink:after {
+        visibility: visible !important;
+    }
+
+    table>caption>.headerlink {
+        visibility: hidden !important;
+    }
+
+    table>caption>.headerlink {
+        visibility: hidden !important;
+    }
+
+    /* - End - */
+</style>
+
+
+
+    <link rel="index" title="Atriðaskrá" href="../genindex/" />
+    <link rel="search" title="Leit" href="../search/" />
+    <link rel="next" title="2. Hreyfing í einni vídd" href="../kafli02/" />
+    <link rel="prev" title="Eðlisfræði I" href="../" />
+
+
+
+<!--	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
+<script type="text/javascript" src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+<script>ggbAppletId = [];</script>
+
+
+ 
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../" class="icon icon-home">
+            Eðlisfræði I
+              <img src="../_static/samstem.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1. Mælingar</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#einingar">1.1. Einingar</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#samlagning">1.1.1. Samlagning</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#margfoldun">1.1.2. Margföldun</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#serstok-foll">1.1.3. Sérstök föll</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#stalaar-einingar">1.1.4. Staðlaðar einingar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#forskeyti">1.1.5. Forskeyti</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#nakvaemni">1.2. Nákvæmni</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#mat-a-ovissu">1.2.1. Mat á óvissu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tolfraei">1.2.2. Tölfræði</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#reikna-me-ovissu">1.3. Reiknað með óvissu</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#margfoldun-me-fasta">1.3.1. Margföldun með fasta</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#samlagning-og-fradrattur">1.3.2. Samlagning og frádráttur</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#margfoldun-og-deiling">1.3.3. Margföldun og deiling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#floknari-tengsl-staera-i-ovissureikningum">1.3.4. Flóknari tengsl stærða í óvissureikningum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#markverir-stafir">1.3.5. Markverðir stafir</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#a-nota-grof-vi-urvinnslu-maelinga">1.4. Að nota gröf við úrvinnslu mælinga</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#hvaa-grof-eru-ger-i-hverju-tilviki">1.4.1. Hvaða gröf eru gerð í hverju tilviki?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hallatala-grafs-og-skurpunktur-vi-y-as">1.4.2. Hallatala grafs og skurðpunktur við y-ás</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#skekkja-i-maelingu">1.4.3. Skekkja í mælingu</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#daemi">1.5. Dæmi</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">1.5.1. 1.</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#section-1">1.5.1.1. 2.</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#section-2">1.5.1.2. 3.</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#section-3">1.5.1.3. 4.</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#section-4">1.5.1.4. 5.</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#section-5">1.5.1.5. 6.</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#section-6">1.5.1.6. 7.</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#section-7">1.5.1.7. 8.</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#section-8">1.5.1.8. 9.</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#svor">1.5.1.9. Svör</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli02/">2. Hreyfing í einni vídd</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli03/">3. Afstæð hreyfing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli04/">4. Hreyfing í fleiri víddum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli05/">5. Tregða og núningur</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli06/">6. Verkan og gagnverkan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli07/">7. Notkun á lögmálum Newtons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli08/">8. Þyngdarkraftur</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli09/">9. Vinna og orka</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli10/">10. Atlag og skriðþungi</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ordaskra/">Orðaskrá</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../">Eðlisfræði I</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><span class="section-number">1. </span>Mælingar</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/edbook/haskoli-islands/blob/master/projects/edlisfraediI/kafli01.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="maelingar">
+<h1><span class="section-number">1. </span>Mælingar<a class="headerlink" href="#maelingar" title="Permalink to this heading"></a></h1>
+<p><a class="reference internal" href="../_images/reglustika.png"><img alt="image" src="../_images/reglustika.png" style="width: 100%;" /></a></p>
+<p>Undirstaða eðlisfræðinnar eru mælingar. Án mælinga væri engin
+eðlisfræði. Til þess að hægt sé að byrja að setja fram kenningu þarf
+fyrst að skoða hlutina sem kenningin kemur til með að fjalla um. Í raun
+þróast kenningin smátt og smátt út úr því sem menn læra við mælingar og
+athuganir. Það er því mikilvægt að byrja á mælingum og framsetningu
+”niðurstaðna” þeirra.</p>
+<section id="einingar">
+<h2><span class="section-number">1.1. </span>Einingar<a class="headerlink" href="#einingar" title="Permalink to this heading"></a></h2>
+<p>Við höfum mismunandi tegundir stærða svo sem lengd, tíma, massa og
+fjölmargar fleiri. Auk þess að hafa mismunandi tegundir stærða höfum við
+mismunandi mælikvarða á hverri stærð. Við köllum þessa mælikvarða
+einingar. Við mælum lengd í ýmsum einingum, kílómetrum, metrum, föðmum,
+tommum, ljósárum og ýmsum öðrum einingum. Einn kílómetri er t.d.
+jafnlangur og 1000 metrar og ein tomma er jafnlöng 0,0254 metrum. Tími
+er önnur stærð sem við mælum í ýmsum einingum. Við mælum tímann stundum
+í sekúndum, stundum í mínútum, klukkustundum, vikum, mánuðum, árum eða
+jafnvel öldum. Við vitum hvernig þessar stærðir tengjast, 1 mínúta er
+jöfn 60 sekúndum og svo framvegis.</p>
+<p>Nú eru þessar einingar nokkuð sem fólk hefur komið sér saman um. Það að
+mæla eitthvað í þumlungum eða föðmum var upprunanlega gert með því að
+bera þumalfingur að einhverju eða breiða út faðminn. Þumalfingur og
+faðmar gátu verið mismunandi frá manni til manns. Þetta voru samt
+mælikvarðar sem allir höfðu við höndina og því alltaf til taks. Nú til
+dags eru alltaf notaðar einingar sem eru þær sömu alls staðar. En til
+þess þarf að hafa tæki til þess að mæla með, tæki sem eru kvörðuð
+samkvæmt ákveðnum staðli.</p>
+<section id="samlagning">
+<h3><span class="section-number">1.1.1. </span>Samlagning<a class="headerlink" href="#samlagning" title="Permalink to this heading"></a></h3>
+<p>Það er ýmislegt sem þarf að passa þegar unnið er með stærðir í ákveðnum
+einingum. Hugsum okkur að við séum að mæla lengd gangs í skóla. Við
+mælum fyrst með löngu málbandi sem mælir metra og fáum að lengd gangsins
+frá byrjun út að ákveðinni línu á veggnum sé 12 m. Nú er bara smá
+vegalengd eftir, frá línunni út að enda gangsins. Við mælum þá vegalengd
+með öðru málbandi og fáum að hún sé 72 centimetrar Nú þarf þá að finna
+heildarlengd gangsins. Hér er heildarlengdin greinilega 12 m og 72 cm
+sem við skrifum sem 12,72 m eða 1272 cm. Þið mynduð aldrei láta ykkur
+detta í hug að segja 12 + 72 = 94…. Það væri bara rugl. Við verðum
+alltaf að nota sömu einingar þegar við leggjum saman. 12,00 m og 0,72 m
+gefa 12,00 m + 0,72 m = 12,72 m eða þá leggjum við saman 1200 cm og
+72 cm.</p>
+<p>Dæmi:</p>
+<div class="math notranslate nohighlight">
+\[34\, \text{min}+ 245\, \text{s}+ 1\, \text{klst}= 34 \cdot 60\, \text{s}+ 245\ \text{s}+ 1 \cdot 3600\, \text{s}= 5885\, \text{s}\]</div>
+<p><strong>Þegar lagt er saman eða dregið frá þurfa allar stærðir að vera í sömu
+einingum.</strong></p>
+</section>
+<section id="margfoldun">
+<h3><span class="section-number">1.1.2. </span>Margföldun<a class="headerlink" href="#margfoldun" title="Permalink to this heading"></a></h3>
+<p>Stundum erum við að margfalda saman mismunandi tegundir stærða eða deila
+þeim hvorri í aðra. Þegar við margföldum eða deilum getum við leyft
+okkur að hafa stærðir í hvaða einingum sem er í margfeldinu svo lengi
+sem við skráum svarið í réttri einingu.</p>
+<p>Ef við höfum t.d. ekið 1200 km á tveimur dögum þá er allt í lagi að
+segja að meðalhraði okkar þessa tvo daga hafi verið 600 km á dag eða
+600 km/dag. Við getum líka breytt einingunum í eitthvað sem er
+kunnuglegra eins og t.d. 600 km/(24 klst) = 25 km/klst. Hér settum við
+bara inn að 1 dagur = 24 klst. Síðan getum við haldið áfram og breytt
+km/klst í m/s. Þá fáum við (25<span class="math notranslate nohighlight">\(\cdot\)</span>1000 m)/(3600 sek) =
+6,94 m/s. Hér notum við að 1 km = 1000 m og 1 klst = 3600 s.</p>
+<p>Stundum höfum við skrítnar einingar. Einingin Watt, skammstöfuð W,
+tengist einingunni Joule, skammstafað J, á eftirfarandi hátt: W = J/s.
+Svo undarlega vill til að það er til algeng eining sem blandar saman
+sekúndum og klukkustundum. Þessi eining er kölluð kílówattstund. 1
+kílówatt, kW, er 1000 Wött. Watt er eining orku á tímaeiningu meðan
+Joule er eining orku. Einingin kWst er orkan sem fæst þegar eitt
+kílówatt er notað í eina klukkustund þ.e. 1 kWst = (k
+J/s)<span class="math notranslate nohighlight">\(\cdot\)</span>klst. Eðlilegast hefði verið að breyta
+klukkustundinni í sekúndur 1  kJ/s <span class="math notranslate nohighlight">\(\cdot\)</span> 3600 s = 3,6
+<span class="math notranslate nohighlight">\(\cdot\)</span> 10<span class="math notranslate nohighlight">\(^6\)</span> J. En það er komin hefð á þessa notkun
+einingar. Orkunotkun heimila er mæld í kWst.</p>
+<p>Þegar við margföldum saman eða deilum stærðum getum við haft þær í
+mismunandi einingum, en ef við viljum að einingarnar í lokin séu
+einfaldar er best að hafa stærðir af sömu tegund í sömu einingum. Það
+gerir okkur kleift að einfalda og stytta út einingar.</p>
+<p>Dæmi:</p>
+<div class="math notranslate nohighlight">
+\[\frac{3550 \,\text{m}\cdot3865 \,\text{cm}\cdot 5,3 \,\text{min}}{20\, \text{s}\cdot 0,4 \,\text{klst}\cdot 0,21 \,\text{km}} = \frac{3550 \,\text{m}\cdot38,65 \,\text{m}\cdot5,3\cdot60 \,\text{s}}{20\,\text{s}\cdot1440 \,\text{s}\cdot 210 \,\text{m}} \approx 7,21\, \frac{\text{m}}{\text{s}}\]</div>
+<p><strong>Þegar margfaldað er eða deilt borgar sig að hafa stærðir af sömu
+tegund í sömu einingu. Hins vegar er það ekki nauðsynlegt ef einingarnar
+eru skráðar rétt.</strong></p>
+</section>
+<section id="serstok-foll">
+<h3><span class="section-number">1.1.3. </span>Sérstök föll<a class="headerlink" href="#serstok-foll" title="Permalink to this heading"></a></h3>
+<p>Þegar við erum að skoða föll eins og <span class="math notranslate nohighlight">\(\sin(u)\)</span>, <span class="math notranslate nohighlight">\(\cos(u)\)</span>
+eða <span class="math notranslate nohighlight">\(e^u\)</span> verðum við að passa okkur. Hér verður <span class="math notranslate nohighlight">\(u\)</span>-ið að
+vera einingalaust. Ef við ætlum að skoða eitthvað sem breytist í tíma
+með sinusfalli þá verðum við að skoða stærð á forminu
+<span class="math notranslate nohighlight">\(A\sin(\omega t)\)</span> þar sem <span class="math notranslate nohighlight">\(\omega\)</span> hefur eininguna 1/s þegar
+t er mælt í s. Sama gildir ef við skoðum t.d. eitthvað sem fellur með
+veldisfalli af fjarlægð t.d. <span class="math notranslate nohighlight">\(Ae^{-kx}\)</span>, þá verður <span class="math notranslate nohighlight">\(k\)</span> að
+hafa einingu 1/m ef <span class="math notranslate nohighlight">\(x\)</span> er mælt í metrum.</p>
+<p>Þessi föll eru sérstök því breyta þeirra verður að vera einingalaus. Ef
+fallið sem við erum að skoða er t.d. f<span class="math notranslate nohighlight">\((u) = u^5\)</span>, þá getur u
+haft hvaða einingu sem er. Ef <span class="math notranslate nohighlight">\(u\)</span> hefur eininguna kg, þá hefði
+f<span class="math notranslate nohighlight">\((u)\)</span> eininguna kg<span class="math notranslate nohighlight">\(^5\)</span>.</p>
+</section>
+<section id="stalaar-einingar">
+<h3><span class="section-number">1.1.4. </span>Staðlaðar einingar<a class="headerlink" href="#stalaar-einingar" title="Permalink to this heading"></a></h3>
+<p>Þegar við erum að breyta einingum úr einni í aðra þurfum við að ákveða
+hvaða einingu við viljum breyta í. Þegar við höfum sekúndur og
+klukkustundir, eigum við þá að breyta öllu í sekúndur eða öllu í
+klukkustundir? Þegar við höfum centimetra og metra, eigum við þá að
+breyta öllu í centimetra eða öllu í metra?</p>
+<p>Til þess að hafa samræmi, væri gott að koma sér saman um einhverjar
+ákveðnar einingar sem væru staðaleiningar og þær einingar væru það sem
+notað væri ef ekkert annað væri tiltekið. Þetta hefur verið gert.
+Stöðluðu einingarnar sem notaðar eru í dag kallast SI einingar eða MKSA
+einingar. Þær byggja á alþjóðlega stöðluðum gildum á metra, kílógrammi,
+sekúndu og amperi (MKSA). Áður en SI kerfið var almennt tekið í notkun
+voru til önnur einingakerfi. T.d. var stundum notað cgs einingakerfið
+sem byggði á centimetrum, grömmum og sekúndum. Sumir nota þessi eldri
+kerfi ennþá en í þessarri bók er byggt á hinu alþjóðlega SI - kerfi.</p>
+<p>Þær einingar sem við nefnum hér, eins og einingar lengdar, tíma og
+massa, eru kallaðar grunneiningar. Í dæminu hér að ofan kemur fyrir
+einingin m/s sem er búin til úr fleiri en einni grunneiningu. Slíkar
+einingar eru kallaðar samsettar eða afleiddar einingar. Oft er heppilegt
+að búa til ný nöfn á afleiddar einingar. T.d. fær einingin
+<span class="math notranslate nohighlight">\(\frac{\text{kg}\text{m}}{\text{s}^2}\)</span> nafnið N eða Newton (eining
+fyrir kraft), einingin <span class="math notranslate nohighlight">\(\frac{\text{kg}\text{m}^2}{\text{s}^2}\)</span> =
+Nm fær nafnið J eða Joule (eining á orku) og einingin
+<span class="math notranslate nohighlight">\(\frac{\text{kg}\text{m}^2}{\text{s}^3}\)</span> = J/s nafnið W eða Watt
+(eining á afli).</p>
+</section>
+<section id="forskeyti">
+<h3><span class="section-number">1.1.5. </span>Forskeyti<a class="headerlink" href="#forskeyti" title="Permalink to this heading"></a></h3>
+<p>Stundum eru stöðluðu einingarnar ansi stórar eða litlar. Þá er gott að
+tákna tölurnar með veldum af 10. En það getur jafnvel verið leiðinlegt
+að skrifa 3,4 <span class="math notranslate nohighlight">\(\cdot\)</span> 10<span class="math notranslate nohighlight">\(^3\)</span> m í stað 3400 m. Við vorum
+búin að tala um kJ og kW sem 1000 J og 1000 W þar sem k stendur fyrir
+kíló. Við gætum því skrifað eins og oft er gert 3,4 km í stað 3,4
+<span class="math notranslate nohighlight">\(\cdot\)</span> 10<span class="math notranslate nohighlight">\(^3\)</span>  m. Sum forskeyti eru algengari en önnur. Í
+töflunni hér fyrir neðan má sjá nokkur algeng forskeyti.</p>
+<div class="center docutils container">
+<table class="docutils align-default" id="id10">
+<caption><span class="caption-text">Nokkur forskeyti</span><a class="headerlink" href="#id10" title="Varanlegur hlekkur á þessa töflu"></a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Nafn</strong></p></th>
+<th class="head"><p><strong>Tákn</strong></p></th>
+<th class="head"><p><strong>Veldi af tíu</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p></p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Peta</p></td>
+<td><p>P</p></td>
+<td><p>10<span class="math notranslate nohighlight">\(^{15}\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Tera</p></td>
+<td><p>T</p></td>
+<td><p>10<span class="math notranslate nohighlight">\(^{12}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Gíga</p></td>
+<td><p>G</p></td>
+<td><p>10<span class="math notranslate nohighlight">\(^{9}\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Mega</p></td>
+<td><p>M</p></td>
+<td><p>10<span class="math notranslate nohighlight">\(^{6}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>kíló</p></td>
+<td><p>k</p></td>
+<td><p>10<span class="math notranslate nohighlight">\(^{3}\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>hektó</p></td>
+<td><p>h</p></td>
+<td><p>10<span class="math notranslate nohighlight">\(^{2}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>deka</p></td>
+<td><p>da</p></td>
+<td><p>10<span class="math notranslate nohighlight">\(^{1}\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>desi</p></td>
+<td><p>d</p></td>
+<td><p>10<span class="math notranslate nohighlight">\(^{-1}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>centi</p></td>
+<td><p>c</p></td>
+<td><p>10<span class="math notranslate nohighlight">\(^{-2}\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>milli</p></td>
+<td><p>m</p></td>
+<td><p>10<span class="math notranslate nohighlight">\(^{-3}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>míkró</p></td>
+<td><p><span class="math notranslate nohighlight">\(\mu\)</span></p></td>
+<td><p>10<span class="math notranslate nohighlight">\(^{-6}\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>nanó</p></td>
+<td><p>n</p></td>
+<td><p>10<span class="math notranslate nohighlight">\(^{-9}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>pícó</p></td>
+<td><p>p</p></td>
+<td><p>10<span class="math notranslate nohighlight">\(^{-12}\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>femtó</p></td>
+<td><p>f</p></td>
+<td><p>10<span class="math notranslate nohighlight">\(^{-15}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="nakvaemni">
+<h2><span class="section-number">1.2. </span>Nákvæmni<a class="headerlink" href="#nakvaemni" title="Permalink to this heading"></a></h2>
+<p>Þegar við mælum stærðir reynum við að passa að mæla eins nákvæmlega og
+við getum. En hversu nákvæmlega sem við mælum getum við ekki vitað
+stærðina fullkomlega. Við getum í mesta lagi sagt að stærðin sé á
+einhverju bili.</p>
+<p>Ef við mælum t.d. lengd á einhverju þá notum við oft einhvers konar
+reglustiku. Þá þarf að bera reglustikuna við það sem á að mæla, það þarf
+að passa að allt standist á og það þarf að lesa af. Það er erfitt á vita
+nákvæmlega hvenær reglustikan er á réttum stað því línurnar hafa breidd
+og maður getur ekki lesið tölur nema með vissu millibili. Þetta veldur
+ónákvæmni í aflestri. Þegar við mælum hversu langan tíma eitthvað tekur
+þá þurfum við að byrja að mæla og ljúka mælingu. Hvoru tveggja er
+ónákvæmt því það tekur tíma og er háð mati. Svona á við um flestar
+mælingar. Við getum aldrei mælt neitt 100% en við getum gert betri og
+betri mælingar með því t.d. að nota fínni skala á mælitækjum og almennt
+með því að hugsa út aðferðir sem gefi meiri nákvæmni, en það verður
+aldrei 100%.</p>
+<div class="line-block">
+<div class="line">Vegna þessa, er alltaf nauðsynlegt að segja til um það hversu nákvæm
+mæling er. Vitum við að lengdin sem við erum að mæla er á milli 9,0 m
+og 10,0 m eða vitum við að hún er á milli 9,48 m og 9,52 m? Til þess
+að þurfa ekki að skrifa bil af þessu tagi (það er svolítið þungt í
+vöfum), þá er innfærður nýr ritháttur.</div>
+<div class="line">Í stað þess að skrifa að stærð sé á milli 9,0 m og 10,0 m skrifum við:
+Stærðin er 9,5 m <span class="math notranslate nohighlight">\(\pm\)</span> 0,5 m.</div>
+<div class="line">Í stað þess að skrifa að stærðin sé á milli 9,48 m og 9,52 m skrifum
+við: Stærðin er 9,50 m <span class="math notranslate nohighlight">\(\pm\)</span> 0,02 m</div>
+<div class="line">Það er hefð að kalla stærðina sem kemur á eftir <span class="math notranslate nohighlight">\(\pm\)</span> (0,5 eða
+0,02) óvissu. Sem sagt við tölum um óvissu upp á <span class="math notranslate nohighlight">\(\pm\)</span> 0,5 eða
+<span class="math notranslate nohighlight">\(\pm\)</span> 0,02. Þeim mun meiri óvissa þeim mun minni nákvæmni í
+mælngunni eða mælitækjunum.</div>
+</div>
+<section id="mat-a-ovissu">
+<h3><span class="section-number">1.2.1. </span>Mat á óvissu<a class="headerlink" href="#mat-a-ovissu" title="Permalink to this heading"></a></h3>
+<div class="line-block">
+<div class="line">Við verðum alltaf sjálf að meta hver óvissan er í mælingunum því að sá
+sem mælir er sá sem sér hversu nákvæmlega hann getur mælt.</div>
+<div class="line">Maður getur sett sér reglur eins og t.d. að gera ráð fyrir óvissu upp
+á <span class="math notranslate nohighlight">\(\pm\)</span> bilið á milli minnstu strikanna á reglustiku. Oftast
+verður maður þó bara að meta óvissuna hverju sinni.</div>
+<div class="line">Það getur verið erfitt að meta óvissu á einni ákveðinni mælingu. Þá er
+ekki vitlaust að framkvæma sömu mælinguna mörgum sinnum og skoða
+dreifingu gilda. Við ættum að geta séð út frá dreifingu gildanna að
+flest séu innan einhverra marka sem við gætum kallað óvissumörk. Þetta
+myndum við bara gera eftir auganu.</div>
+</div>
+<p>Það er hægt að nota tölfræði til þess að gera þetta betur.</p>
+</section>
+<section id="tolfraei">
+<h3><span class="section-number">1.2.2. </span>Tölfræði<a class="headerlink" href="#tolfraei" title="Permalink to this heading"></a></h3>
+<p>Við ætlum ekki að fara út í að skýra tölfræðilega óvissu en ljóst er að
+eftir því sem gerðar eru fleiri mælingar er minni óvissa á meðalgildinu.</p>
+<p>Segjum sem svo að við gerum <span class="math notranslate nohighlight">\(N\)</span> mælingar á breytistærðinni
+<span class="math notranslate nohighlight">\(x\)</span>. Köllum fyrstu mælinguna <span class="math notranslate nohighlight">\(x_1\)</span> og i-tu mælinguna
+<span class="math notranslate nohighlight">\(x_i\)</span>. Meðalgildi stærðarinnar <span class="math notranslate nohighlight">\(x\)</span> er þá:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+\bar{x} = \frac{1}{N} (x_1+x_2+ ...........+x_{N-1}+x_{N} ) =   \frac{1}{N} \sum_{i = 1}^{N} {x_i}
+\end{equation}\]</div>
+<p>Síðan er er reiknað svo kallað rms gildi á fráviki frá meðalgildi. Þetta
+er kvaðratrót af meðaltali frávikanna í öðru veldi „root mean square“.
+Þetta meðalgildi frávikanna hefur hlotið nafnið staðalfrávik táknað
+<span class="math notranslate nohighlight">\(\sigma\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+%
+\sigma = \sqrt{\frac{1}{N-1} \sum_{i=1}^{N}{ (x_i-\bar{x})}^2}
+%
+\end{equation}\]</div>
+<p>Staðalfrávikið, <span class="math notranslate nohighlight">\(\sigma\)</span>, má nota til þess að finna óvissu á
+meðalgildinu sem við fáum úr þessum <span class="math notranslate nohighlight">\(N\)</span> mælingum. Við getum kallað
+þá óvissu staðalóvissu. Staðalóvissan segir til um á hvaða bili
+meðalgildið okkar er (með nokkurri vissu). Við skulum kalla
+staðalóvissuna <span class="math notranslate nohighlight">\(\Delta \bar{x}\)</span> og þá höfum við</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+\Delta \bar{x} = \frac{\sigma}{\sqrt{N}}
+\end{equation}\]</div>
+</section>
+</section>
+<section id="reikna-me-ovissu">
+<h2><span class="section-number">1.3. </span>Reiknað með óvissu<a class="headerlink" href="#reikna-me-ovissu" title="Permalink to this heading"></a></h2>
+<p>Við höfum talað um það að við þurfum að meta og skrá hjá okkur hversu
+nákvæmar stærðir sem við mælum eru. Nú skulum við skoða lítillega hvað
+gerist þegar við notum stærðir sem hafa óvissu til þess að reikna út
+aðrar stærðir. Hver er nákvæmni útkomunnar?</p>
+<section id="margfoldun-me-fasta">
+<h3><span class="section-number">1.3.1. </span>Margföldun með fasta<a class="headerlink" href="#margfoldun-me-fasta" title="Permalink to this heading"></a></h3>
+<p>Hugsum okkur að við séum með stærð <span class="math notranslate nohighlight">\(A\pm\Delta A\)</span> og við viljum
+margfalda hana með fasta. Við viljum sem sagt reikna stærðina <span class="math notranslate nohighlight">\(kA\)</span>
+þar sem <span class="math notranslate nohighlight">\(k\)</span> er fasti.</p>
+<p>Hér er auðvelt að sjá hver óvissan verður:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+k\cdot (A\pm\Delta A) = kA \pm k \Delta A.
+\end{equation}\]</div>
+<p>Dæmi:</p>
+<div class="math notranslate nohighlight">
+\[3 (3,04 \pm 0,02) = 9,12 \pm 0,06\]</div>
+<div class="math notranslate nohighlight">
+\[\frac{1}{2} (8,24 \pm 0,04) = 4,12 \pm 0,02\]</div>
+</section>
+<section id="samlagning-og-fradrattur">
+<h3><span class="section-number">1.3.2. </span>Samlagning og frádráttur<a class="headerlink" href="#samlagning-og-fradrattur" title="Permalink to this heading"></a></h3>
+<p>Hugsum okkur nú að við höfum tvær stærðir, <span class="math notranslate nohighlight">\(A\pm\Delta A\)</span> og
+<span class="math notranslate nohighlight">\(B\pm\Delta B\)</span> og við viljum reikna út stærðina <span class="math notranslate nohighlight">\(A+B\)</span>.</p>
+<p>Hér sjáum við að stærsta gildið sem við gætum fengið væri
+<span class="math notranslate nohighlight">\(A+B +\Delta A+\Delta B\)</span> og minnsta gildið sem við gætum fengið
+væri <span class="math notranslate nohighlight">\(A+B -\Delta A-\Delta B\)</span>. Þetta getum við einfaldlega
+skrifað:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+(A\pm\Delta A) + (B\pm\Delta B) = A+B \pm (\Delta A+\Delta B)
+\end{equation}\]</div>
+<p>Ef við viljum draga stærðirnar frá hvor annarri sjáum við að það stærsta
+sem við getum fengið er <span class="math notranslate nohighlight">\(A-B+\Delta A +\Delta B\)</span> og það minnsta
+sem veið getum fengið er <span class="math notranslate nohighlight">\(A-B-\Delta A -\Delta B\)</span></p>
+<p>Þetta getum við skrifað á svipaðan hátt og hér að ofan:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+(A\pm\Delta A) - (B\pm\Delta B) = A-B \pm (\Delta A+\Delta B)
+\end{equation}\]</div>
+<p>Dæmi:</p>
+<div class="math notranslate nohighlight">
+\[(3,5 \pm 0,1) + (4,1 \pm 0,3) = 7,6 \pm 0,4\]</div>
+<div class="math notranslate nohighlight">
+\[(8,7 \pm 0,3) - (5,2 \pm 0,2) = 3,5 \pm 0,5\]</div>
+</section>
+<section id="margfoldun-og-deiling">
+<h3><span class="section-number">1.3.3. </span>Margföldun og deiling<a class="headerlink" href="#margfoldun-og-deiling" title="Permalink to this heading"></a></h3>
+<p>Nú er komið að því að margfalda
+<span class="math notranslate nohighlight">\((A\pm\Delta A)\cdot (B\pm\Delta B)\)</span>. Til að byrja með skulum við
+athuga hvað gerist ef við bara margföldum upp úr svigunum:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+(A\pm \Delta A)\cdot (B\pm\Delta B) = A\cdot B \pm A \cdot \Delta B \pm \Delta A \cdot B + \Delta A \cdot \Delta B \approx A\cdot B \pm A \cdot \Delta B \pm \Delta A \cdot B
+\end{equation}\]</div>
+<p>Vegna þess að <span class="math notranslate nohighlight">\(\Delta A\)</span> og <span class="math notranslate nohighlight">\(\Delta B\)</span> eru yfirleitt litlar
+miðað við stærðirnar <span class="math notranslate nohighlight">\(A\)</span> og <span class="math notranslate nohighlight">\(B\)</span> sjálfar getum við leyft
+okkur að sleppa margfeldi litlu stærðanna, þ.e.
+<span class="math notranslate nohighlight">\(\Delta A \cdot \Delta B\)</span>.</p>
+<p>Við sjáum að óvissan á <span class="math notranslate nohighlight">\(A\cdot B\)</span> er
+<span class="math notranslate nohighlight">\(A \cdot \Delta B + \Delta A \cdot B\)</span> eða með öðrum orðum:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+\Delta (A\cdot B) = A \cdot \Delta B + \Delta A \cdot B
+\end{equation}\]</div>
+<p>Þetta er gott og blessað en til þess að gera þetta svolítið skipulegra
+skulum við skilgreina eina nýja stærð. Þetta er svokölluð
+<em>hlutfallsóvissa</em> sem er bara hveru stórt hlutfall óvissan er af
+stærðinni: hlutfallsóvissa <span class="math notranslate nohighlight">\(A\)</span> = <span class="math notranslate nohighlight">\(\frac{\Delta A}{A}\)</span>.</p>
+<p>Augljóst er að hlutfallsóvissan á <span class="math notranslate nohighlight">\(\Delta (A\cdot B)\)</span> er
+<span class="math notranslate nohighlight">\(\frac{\Delta (A\cdot B)}{A \cdot B}\)</span>. Ef við deilum í gegnum
+jöfnu 1.8 með <span class="math notranslate nohighlight">\(A\cdot B\)</span> fáum við jöfnu fyrir hlutfallsóvissunni á
+<span class="math notranslate nohighlight">\((A\cdot B)\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+\frac{\Delta (A\cdot B)}{A\cdot B} = \frac{A \cdot \Delta B}{A\cdot B} + \frac{\Delta A \cdot B}{A\cdot B}
+\end{equation}\]</div>
+<p>Sem einfaldað verður:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+ \frac{\Delta (A\cdot B)}{A\cdot B} = \frac{\Delta B}{B} + \frac{\Delta A }{A}
+\end{equation}\]</div>
+<p>Hér sést að hlutfallsóvissan á margfeldi er summa hutfallsóvissanna á
+stærðunum sem margfaldaðar voru saman.</p>
+<p>Á svipaðan hátt má fá að það sama gildir um óvissu þegar deilt er.
+(Maður myndi þá aftur nota að óvissan er mikið minni en stærðin.)</p>
+<p>Þá fæst að hlutfallsóvissan á stærðum sem deilt er hvorri í aðra er
+summan af hlutfallsóvissum stærðanna:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+ \frac{\Delta (A/ B)}{A/B} = \frac{\Delta B}{B} + \frac{\Delta A }{A}
+\end{equation}\]</div>
+<p>Þetta lítur út fyrir að vera vesen í notkun en það er ekki svo slæmt ef
+maður bara byrjar.</p>
+<p>Heppilegast er að reikna bara fyrst stærðina <span class="math notranslate nohighlight">\(A\cdot B\)</span> (eða
+<span class="math notranslate nohighlight">\(\frac{A}{B}\)</span>), og geyma hana svo í minni reiknivélar á meðan
+reiknaðar eru hlutfallsóvissur <span class="math notranslate nohighlight">\(A\)</span> og <span class="math notranslate nohighlight">\(B\)</span>. Nú eru
+hlutfallsóvissur <span class="math notranslate nohighlight">\(A\)</span> og<span class="math notranslate nohighlight">\(B\)</span> lagðar saman og svo margfaldað
+með <span class="math notranslate nohighlight">\(A\cdot B\)</span> (eða <span class="math notranslate nohighlight">\(\frac{A}{B}\)</span>).</p>
+<p>Tökum dæmi:</p>
+<div class="math notranslate nohighlight">
+\[(57,20 \pm 0,03)( 1,035 \pm 0,004) = 57,20 \cdot 1,035(1 \pm (\frac{0,03}{57,20} + \frac{0,004}{1,035})) = 59,2 \pm 0,3\]</div>
+<div class="math notranslate nohighlight">
+\[\frac{952 \pm 3}{45,23 \pm 0,02} = \frac{952}{45,23} (1 \pm (\frac{3}{952} +\frac{0,02}{45,23})) =   21,05 \pm 0,08\]</div>
+</section>
+<section id="floknari-tengsl-staera-i-ovissureikningum">
+<h3><span class="section-number">1.3.4. </span>Flóknari tengsl stærða í óvissureikningum<a class="headerlink" href="#floknari-tengsl-staera-i-ovissureikningum" title="Permalink to this heading"></a></h3>
+<p>Gerum ráð fyrir að við höfum stærð <span class="math notranslate nohighlight">\(x\)</span> með óvissu
+<span class="math notranslate nohighlight">\(\Delta x\)</span>, en þurfum við að finna óvissuna á <span class="math notranslate nohighlight">\(f(x)\)</span>. Hvað
+gerum við þá?</p>
+<p>Það er eitt sem við getum alltaf gert. Við getum fundið <span class="math notranslate nohighlight">\(f(x)\)</span>,
+<span class="math notranslate nohighlight">\(f(x-\Delta x)\)</span> og <span class="math notranslate nohighlight">\(f(x+\Delta x)\)</span>. Óvissan á <span class="math notranslate nohighlight">\(f(x)\)</span>
+væri þá stærri munurinn, <span class="math notranslate nohighlight">\(|f(x-\Delta x) - f(x)|\)</span> eða
+<span class="math notranslate nohighlight">\(|f(x+\Delta x) - f(x)|\)</span>. Setjum til dæmis <span class="math notranslate nohighlight">\(x = 2,3\)</span>,
+<span class="math notranslate nohighlight">\(\Delta x = 0,2\)</span> og <span class="math notranslate nohighlight">\(f(x) = e^x\)</span></p>
+<p>Þá fæst:</p>
+<div class="math notranslate nohighlight">
+\[f(2,3) = 9,9742, \hspace{0,5 cm} f(2,1) = 8,166, \hspace{0,5 cm} f(2,5) = 12,182\]</div>
+<p>sem gefur:</p>
+<div class="math notranslate nohighlight">
+\[|f(2,1) - f(2,3)| = 1,8082 \approx 1,8  \hspace{1 cm} |f(2,5) - f(2,3)| = 2.2078 \approx 2,2\]</div>
+<div class="math notranslate nohighlight">
+\[\Delta f(x) = max(1,8 ; 2,2) = 2,2\]</div>
+<p>Svo</p>
+<div class="math notranslate nohighlight">
+\[f(2,3 \pm 0,2) \approx 10,0 \pm 2,2\]</div>
+<p>Vegna þess að við notum yfirleitt bara einn staf í óvissum myndi þetta
+þó yfirleitt vera skrifað:</p>
+<div class="math notranslate nohighlight">
+\[f(2,3 \pm 0,2) \approx 10 \pm 2\]</div>
+<p>Það er dálítil vinna að setja tölur inn á þennan hátt og þess vegna er
+gott að hafa aðra aðferð. Sú aðferð verður ljósari þegar búið er að læra
+að diffra. Diffrun falls <span class="math notranslate nohighlight">\(f(x)\)</span> er skilgreind með markgildinu:</p>
+<div class="math notranslate nohighlight">
+\[f^\prime(x) = \lim_{\Delta x \to 0} \frac{f(x+\Delta x) - f(x)}{\Delta x}\]</div>
+<p>Ef við hugsum okkur að <span class="math notranslate nohighlight">\(\Delta x\)</span> sé óvissa og að hún sé lítil en
+ekki 0, þá getum við skrifað:</p>
+<div class="math notranslate nohighlight">
+\[f^\prime(x) \approx\frac{f(x+\Delta x) - f(x)}{\Delta x}\]</div>
+<p>Þá sjáum við líka að:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+\Delta f(x)= f(x+\Delta x) - f(x)  \approx  f^\prime(x) \Delta x
+\end{equation}\]</div>
+<p>Dæmi:</p>
+<div class="math notranslate nohighlight">
+\[f(x) = \frac{1}{x^4}; \hspace{0,5 cm} f^\prime (x) = -\frac{4}{x^5}; \hspace{0,5 cm} x = 1,203;\hspace{0,5 cm} \Delta x = 0,002\]</div>
+<div class="math notranslate nohighlight">
+\[\Delta f(1,203) = \frac{-4}{1,203^5}\cdot 0,002 =   -0,003\]</div>
+<p>Svo við fáum:</p>
+<div class="math notranslate nohighlight">
+\[f(1,203) \pm \Delta f(1,203) = 0,477 \pm 0,003\]</div>
+</section>
+<section id="markverir-stafir">
+<h3><span class="section-number">1.3.5. </span>Markverðir stafir<a class="headerlink" href="#markverir-stafir" title="Permalink to this heading"></a></h3>
+<p>Markverðir stafir eru þeir stafir sem skráðir eru. T.d. hefur talan
+5,56901 sex markverða stafi. Talan 5,00000 hefur líka sex markverða
+stafi meðan tala 5,0 hefur tvo markverða stafi. Talan 598,00 hefur 5
+markverða stafi og tala 0,00598 hefur þrjá markverða stafi. Þegar við
+við skrifum 3000 getur verið vafamál hversu marga markverða stafi er átt
+við. Hægt er að gera það ótvírætt með því að nota tíu-veldi. Þannig
+hefur 3 <span class="math notranslate nohighlight">\(\cdot\)</span> 10<span class="math notranslate nohighlight">\(^3\)</span> einn markverðan staf meðan 3,00
+<span class="math notranslate nohighlight">\(\cdot\)</span> 10<span class="math notranslate nohighlight">\(^3\)</span> hefur þrjá markverða stafi og svo
+framvegis.</p>
+<p>Þegar mæliniðurstöður eru skráðar er auðvelt að skrá þær með réttum
+fjölda markverðra stafa ef óvissan er þekkt. Við höfum yfirleitt alltaf
+einn markverðan staf í óvissu (eina undantekningin er ef óvissan er t.d.
+0,15, þá má nota tvo markverða stafi). Síðan er þá mæliniðurstaðan skráð
+þannig að aðeins sé óvissa á síðasta staf.</p>
+<p>Dæmi:</p>
+<div class="math notranslate nohighlight">
+\[5,897 \,\text{cm}\pm 0,002 \,\text{cm}\]</div>
+<div class="math notranslate nohighlight">
+\[0,00234 \,\text{kg}\pm 0,00005 \,\text{kg}\Leftrightarrow (2,34 \pm 0,05) \cdot 10^{-3} \,\text{kg}\Leftrightarrow (2,34 \pm 0,05) \,\text{g}\]</div>
+<div class="math notranslate nohighlight">
+\[3450000 \,\text{s}\pm 30000 \,\text{s}\Leftrightarrow (3,45 \pm 0,03)\cdot 10^6 \,\text{s}\]</div>
+<p>Það er alltaf betra, ef stærðir eru skrifaðar með veldisvísum, að taka
+stærð og óvissu saman og margfalda svo heildina með tíu-veldi. Þá sést á
+hvaða staf óvissan kemur.</p>
+<p>Segjum sem svo að við höfum reiknað á reiknivél og fengið að niðurstaða
+sé:</p>
+<div class="math notranslate nohighlight">
+\[3,9865345 \cdot 10^{-6} \,\text{m}\pm 6,732 \cdot 10^{-8} \,\text{m}\]</div>
+<p>Það er ekki auðvelt að lesa þetta og þetta er ekki með réttum fjölda
+markverðra stafa. Það fyrsta sem þarf að gera er að breyta þessu þannig
+að veldisvísirinn sé sá sami á stærð og óvissu.</p>
+<div class="math notranslate nohighlight">
+\[(3,9865345 \pm 0,06732) \cdot 10^{-6} \,\text{m}\]</div>
+<p>Nú sést að stærðin hefur 3 markverða stafi því óvissan er 0,07 (einn
+markverður stafur) og rétt framsetning stærðarinnar með óvissu er:</p>
+<div class="math notranslate nohighlight">
+\[(3,99 \pm 0,07) \cdot 10^{-6} \,\text{m}\]</div>
+<p>Orðið markverðir stafir gefur til kynna að hér sé um að ræða þá stafi
+sem mark er takandi á. Ef við gerum ráð fyrir að stærðir séu yfirleitt
+gefnar með þeim fjölda markverðra stafa sem mark er takandi á er hentugt
+að skilja hvernig fjöldi markverðra stafa þróast við reikniaðgerðir.</p>
+<p>Í raun er hér um óvissureikninga að ræða þar sem gert er ráð fyrir
+einhverri óvissu á síðasta staf eða jafnvel bara gert ráð fyrir
+rúnnunaróvissu (3,54 gæti verið allt niður í 3,535 og allt upp í 3,545).</p>
+<p>Þegar stærðir eru lagðar saman eða dregnar frá hvor annarri þá ræðst
+fjöldi markverðra stafa af því hvaða tala hefur fæsta stafi fyrir aftan
+kommu (í tíuvelda framsetningu ef engin komma er).</p>
+<p>Dæmi:</p>
+<div class="math notranslate nohighlight">
+\[234,5 + 34,892 = 269,4;   \hspace{0,5 cm} 58402 + 20000 = ( 5,8402 +2 ) \cdot 10^4 = 8\cdot 10^4\]</div>
+<div class="math notranslate nohighlight">
+\[2,00234 - 1,03 = 0,97;   \hspace{0,5 cm}  98,234 - 97,3 = 0,9\]</div>
+<p>Þegar tölur eru margfaldaðar saman eða þeim deilt hvorri í aðra þá er
+fjöldi markverðra stafa jafn fjöld markverðra stafa þeirrar tölu sem
+hefur fæsta markverða stafi.</p>
+<p>Dæmi:</p>
+<div class="math notranslate nohighlight">
+\[345,09 \cdot 45 =  16000 = 16 \cdot 10^3\]</div>
+<div class="math notranslate nohighlight">
+\[0,6701 \cdot 0,20002 = 0,1340\]</div>
+<div class="math notranslate nohighlight">
+\[\frac{569,2}{71} = 8,0\]</div>
+<div class="math notranslate nohighlight">
+\[\frac{0,12}{0,0387} = 3,1\]</div>
+<p>Þessar aðferðir eru til hliðsjónar þegar við reiknum. Ekki er nein
+ástæða til þess að skrá fleiri markverða stafi í reikningum en þessar
+reglur gefa tilefni til. Þó má stundum nota niðurstöðu reiknivélar (of
+marga stafi) í millireikningum og laga svo fjölda markverðra stafa í
+lokaniðurstöðu.</p>
+</section>
+</section>
+<section id="a-nota-grof-vi-urvinnslu-maelinga">
+<h2><span class="section-number">1.4. </span>Að nota gröf við úrvinnslu mælinga<a class="headerlink" href="#a-nota-grof-vi-urvinnslu-maelinga" title="Permalink to this heading"></a></h2>
+<p>Gröf eru mjög mikilvægt hjálpartæki þegar við skoðum niðurstöður
+mælinga. Mikilvægt er að skilja hvernig best er að nota gröfin til þess
+að skilja niðurstöðurnar.</p>
+<section id="hvaa-grof-eru-ger-i-hverju-tilviki">
+<h3><span class="section-number">1.4.1. </span>Hvaða gröf eru gerð í hverju tilviki?<a class="headerlink" href="#hvaa-grof-eru-ger-i-hverju-tilviki" title="Permalink to this heading"></a></h3>
+<p>Beinar línur er auðvelt að skoða á grafi og við kunnum að finna
+hallatölur beinna lína og skurðpunkta þeirra við y-ás. Athuganir felast
+oft í því að athuga tengsl tveggja breytistærða. Við höfum áhuga á að
+vita hvernig þær tengjast. Hugsum okkur að stærðirnar sem við mælum séu
+kallaðar <span class="math notranslate nohighlight">\(a\)</span> og <span class="math notranslate nohighlight">\(b\)</span>. Þá gætu þær tengst t.d. á eftirfarandi
+hátt:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+ a = hb+k
+\end{equation}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+a = kb^n
+\end{equation}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+a = ke^{b}
+\end{equation}\]</div>
+<div class="line-block">
+<div class="line">Dæmi 1.</div>
+<div class="line">Hugsum okkur að við höfum tengsl eins og t.d.:</div>
+</div>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[34a = 102rb -68s\]</div>
+<p>Þá myndum við undir eins hreinsa frá a-inu og skrifa:</p>
+</div></blockquote>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[a = 3rb - 2s\]</div>
+<p>Svo myndum við teikna graf með <span class="math notranslate nohighlight">\(b = x\)</span>-hnit og
+<span class="math notranslate nohighlight">\(a = y\)</span>-hnit. Grafið ætti þá að vera bein lína. Hér myndi
+hallatala grafsins vera <span class="math notranslate nohighlight">\(h = 3r\)</span> og skurðpunktur við
+<span class="math notranslate nohighlight">\(y\)</span>-ás vera <span class="math notranslate nohighlight">\(k = 2s\)</span>. Þetta myndi gera okkur kleift að
+finna <span class="math notranslate nohighlight">\(r\)</span> og <span class="math notranslate nohighlight">\(s\)</span>.</p>
+</div></blockquote>
+<div class="line-block">
+<div class="line">Dæmi 2.</div>
+<div class="line">Hugsum okkur að okkur gruni að <span class="math notranslate nohighlight">\(a\)</span> og <span class="math notranslate nohighlight">\(b\)</span> séu tengd á
+eftirfarandi hátt:</div>
+</div>
+<div class="math notranslate nohighlight">
+\[k = ab^5r\]</div>
+<p>Þá myndum við umrita þetta þannig að <span class="math notranslate nohighlight">\(a\)</span> væri eitt og sér öðru
+megin við jöfnumerkið:</p>
+<div class="math notranslate nohighlight">
+\[a = \frac{kb^{-5}}{r}\]</div>
+<p>Svo myndum við athuga sambandið á ýmsa vegu. Við gætum fyrst athugað
+hvort það sé rétt að <span class="math notranslate nohighlight">\(a\)</span> sé í réttu hlutfalli við <span class="math notranslate nohighlight">\(b^{-5}\)</span>
+með því að skoða svokallað <span class="math notranslate nohighlight">\(\log\log\)</span> - graf. Athugum hvernig það
+er gert:</p>
+<div class="math notranslate nohighlight">
+\[\log(a) = \log(\frac{kb^{-5}}{r}) \Leftrightarrow \log(a) = \log(k)-\log(r) +\log(b^{-5}) \Leftrightarrow \log(a) = \log(k) - \log(r) -5\log(b)\]</div>
+<p>Ef <span class="math notranslate nohighlight">\(r\)</span> og <span class="math notranslate nohighlight">\(k\)</span> eru fastar getum við skrifað
+<span class="math notranslate nohighlight">\(\log(k) - \log(r) = c\)</span> og þá fæst:</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[\log(a) =  -5\log(b) + c\]</div>
+<p>Hér myndum við teikna graf með <span class="math notranslate nohighlight">\(\log(b) = x\)</span>-hnit og
+<span class="math notranslate nohighlight">\(\log(a) = y\)</span>-hnit. Það sem við hefðum mestan áhuga á væri að
+finna tengslin, þ.e. veldisvísinn. Við myndum þvi athuga hvort
+hallatala grafsins væri <span class="math notranslate nohighlight">\(h = -5\)</span>. Þegar við hefðum staðfest
+tengslin gætum við svo teiknað annað graf. Nú myndum við setja
+<span class="math notranslate nohighlight">\(b^{-5} = x\)</span>-hnit og <span class="math notranslate nohighlight">\(a = y\)</span>-hnit Þá ætti hallatala
+grafsins að vera <span class="math notranslate nohighlight">\(h =  \frac{k}{r}\)</span>.</p>
+</div></blockquote>
+<div class="line-block">
+<div class="line">Dæmi 3.</div>
+<div class="line">Að síðustu skulum við hugsa okkur að við höfum <span class="math notranslate nohighlight">\(a\)</span> og <span class="math notranslate nohighlight">\(b\)</span>
+tengd með veldisfalli:</div>
+</div>
+<div class="math notranslate nohighlight">
+\[a = ke^{tb}\]</div>
+<p>Þá myndum við aftur taka logra, en hér væri eðlilegast að taka
+náttúrulega logra. (Í raun má alveg eins taka náttúrulegan logra í dæmi
+2 hér að ofan.)</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[\ln(a) = \ln(ke^{rb}) \Leftrightarrow  \ln(a) = \ln(k) + \ln(e^{rb}) \Leftrightarrow  \ln(a) = \ln(k) +rb\]</div>
+<p>Hér myndum við setja <span class="math notranslate nohighlight">\(b =x\)</span>-hnit og <span class="math notranslate nohighlight">\(\ln(a) = y\)</span>-hnit. Þá
+er hallatala grafsins <span class="math notranslate nohighlight">\(h = r\)</span>.</p>
+</div></blockquote>
+<div class="line-block">
+<div class="line">Þegar við teiknum gröfin verðum við að muna að skrá á ásana bæði hvaða
+stærðir eru á þeim og í hvaða einingum við skráðum stærðirnar, m.ö.o.
+hversu stórt 1 bil er á ásum grafsins.</div>
+</div>
+</section>
+<section id="hallatala-grafs-og-skurpunktur-vi-y-as">
+<h3><span class="section-number">1.4.2. </span>Hallatala grafs og skurðpunktur við y-ás<a class="headerlink" href="#hallatala-grafs-og-skurpunktur-vi-y-as" title="Permalink to this heading"></a></h3>
+<p>Mikilvægt er að skilja vel hvernig nota má hallatölur slíkra grafa til
+þess að fá upplýsingar úr tilraunaniðurstöðum. Með því að finna bestu
+línu í gegnum punktasafn dregur maður úr óvissu. Hallatala bestu línu
+gefur mun betri niðurstöðu en bara reikningur á gildum í töflu.</p>
+<p>Það er hægt að finna bestu línu í gegnum punktasafn með ýmsu móti. Það
+fyrsta sem þarf þó alltaf að athuga er að punktarnir séu á línu og að
+það séu engir „augljólega fáranlegir“. (Slíkir punktar gætu t.d. komið
+til af því að einhver læsi kolvitlaust af skala, eitthvað alveg úr átt.)</p>
+<p>Þegar við höfum teiknað grafið upp getum við reiknað hallatölu þess.
+Þetta er hægt að gera með því að taka tvo punkta á línunni sem eru eins
+langt frá hvor öðrum og heppilegt er og nota þá til þess að reikna
+hallatöluna.</p>
+<p><a class="reference internal" href="../_images/hallatala.png"><img alt="image1" src="../_images/hallatala.png" style="width: 100%;" /></a></p>
+<p>Við skoðum nú hallatölu línunnar með því að skoða tvo punkta á línunni
+sem eru langt hver frá öðrum. Segjum að punktarnir séu:
+<span class="math notranslate nohighlight">\((x_1 ; y_1)\)</span> = ((1,5<span class="math notranslate nohighlight">\(\pm\)</span> 0,2) ; (8,0 <span class="math notranslate nohighlight">\(\pm\)</span> 0,5) )
+annars vegar og hins vegar <span class="math notranslate nohighlight">\((x_2 ; y_2)\)</span> = ((8,5<span class="math notranslate nohighlight">\(\pm\)</span>
+0,2) ; (30,0 <span class="math notranslate nohighlight">\(\pm\)</span> 0,5) m). Þá getum við reiknað hallatölu
+línunnar:</p>
+<div class="math notranslate nohighlight">
+\[h = \frac{(30,0 \pm 0,5) \,\text{m}/\text{s}-  (8,0 \pm 0,5) \,\text{m}/\text{s}}{(8,5 \pm 0,2) \,\text{s}- (1,5\pm 0,2) \,\text{s}} = \frac{(22 \pm 1)\,\text{m}/\text{s}}{(7,0 \pm 0,4)\,\text{s}}  =\]</div>
+<p></p>
+<div class="math notranslate nohighlight">
+\[= 3,14(1 \pm ( \frac{1}{22} +\frac{0,4}{7,0}))\,\text{m}/\text{s}^2 =  (3,1 \pm 0,3)\, \text{m}/\text{s}^2\]</div>
+<p>Það þarf að velja punkta á grafinu sem eru á bestu línunni og svo að
+meta óvissu þeirra punkta. Þetta gefur alveg sæmilega góða mynd af
+óvissu hallatölunnar.</p>
+<p>Skurðpunktur við y-ás, eða eins og hér að ofan við <span class="math notranslate nohighlight">\(\vec{v}\)</span> - ás,
+er lesinn beint af ásnum. Á grafinu hér að ofan sést að
+<span class="math notranslate nohighlight">\(\vec{v}(0) \approx 3,0\,\text{m}/\text{s}\)</span>. Taka má óvissuna á
+hverju gildi <span class="math notranslate nohighlight">\(\vec{v}\)</span> sem ytri mörk óvissu skurðpunktsins. Þegar
+það er gert fæst <span class="math notranslate nohighlight">\(\vec{v}(0) = (3,0 \pm 0,5)\,\text{m}/\text{s}\)</span>.
+Athugið að hér er vigurinn <span class="math notranslate nohighlight">\(\vec{v}\)</span> bara með eitt hnit svo
+niðurstaðan er tala. Talan getur verið bæði jákvæð og neikvæð vegna þess
+að talan er hnit vigurs.</p>
+</section>
+<section id="skekkja-i-maelingu">
+<h3><span class="section-number">1.4.3. </span>Skekkja í mælingu<a class="headerlink" href="#skekkja-i-maelingu" title="Permalink to this heading"></a></h3>
+<p>Þegar við erum að mæla eitthvað er stundum til eitthvað sem við getum
+kallað „rétt“ gildi og við viljum bera okkar mælingu saman við þetta
+rétta gildi. Hvað þýðir það þegar við tölum um rétt gildi? Hver segir að
+þetta sé rétt og ekki annað. Að sjálfsögðu er ekkert til sem er
+óyggjandi rétt. En stundum hefur fjöldi manns mælt eitthvað á marga
+mismunandi vegu og allir alltaf fengið sama gildið. Þá má segja að það
+sé komið samkomulag um að þetta gildi sé „rétt“.</p>
+<p>Stundum erum við að sannreyna einhverja formúlu. Þá erum við að mæla
+t.d. einhverjar tvær stærðir og athuga hvort samband þeirra sé eins og
+við eigum von á. Þetta gæti verið samband eins og</p>
+<div class="math notranslate nohighlight">
+\[mg - F_{nun} = Ma\]</div>
+<p>þar sem <span class="math notranslate nohighlight">\(m\)</span> er breyta og fyrir hvert <span class="math notranslate nohighlight">\(m\)</span> mælum við
+<span class="math notranslate nohighlight">\(a\)</span>. Þá væri gott að umrita jöfnuna:</p>
+<div class="math notranslate nohighlight">
+\[a = \frac{g}{M}m -\frac{F_{nun}}{M}\]</div>
+<p>Við myndum teikna graf og finna hallatölu þess. Síðan myndum við bera
+hallatöluna saman við <span class="math notranslate nohighlight">\(\frac{g}{M}\)</span>.</p>
+<p>Í báðum tilfellum gætum við skoðað hvort okkar mæling væri góð með því
+að bera „rétta“ gildið, eða að gildi sem kenningin gefur, saman við
+okkar mælda gildi.</p>
+<p>Segjum að þið fáið sem niðurstöðu úr einhverri tilraun:</p>
+<div class="math notranslate nohighlight">
+\[(3,98 \pm 0,03)\,\text{ein}\]</div>
+<p>en rétt gildi væri:</p>
+<div class="math notranslate nohighlight">
+\[(3,9583 \pm 0,0002)\,\text{ein}\]</div>
+<p>. Þið fáið sem sagt að gildið liggi milli <span class="math notranslate nohighlight">\(3,95\,\text{ein}\)</span> og
+<span class="math notranslate nohighlight">\(4,01\,\text{ein}\)</span>. „Rétta“ mæligildið er á þessu bili svo
+mælingin gefur <strong>rétt gildi innan óvissumarka</strong>. Ykkar niðurstaða er því
+rétt — allt er gott og ekki þarf að hafa áhyggjur. Þið gætuð reynt að
+hugsa út hvernig þið gætuð minnkað óvissuna með því að nota önnur tæki
+og slíkt en niðurstaðan er rétt í viðkomandi tilraun.</p>
+<p>Segjum hins vegar að þið hefðuð fengið niðurstöðuna</p>
+<div class="math notranslate nohighlight">
+\[(4,04 \pm 0,03)\,\text{ein}\]</div>
+<p>Þið fáið að gildið sé á bilinu <span class="math notranslate nohighlight">\(4,01 \,\text{ein}\)</span> til
+<span class="math notranslate nohighlight">\(4,07 \,\text{ein}\)</span>. Þá sjáið þið að <strong>rétt gildi er utan
+óvissumarka</strong> svo mælingin er ekki rétt. Í slíku tilfelli er um
+<strong>skekkju</strong> að ræða og leita þarf að orsökum hennar. Ekki er hægt að
+skila niðurstöðu með skakkri niðurstöðu án þess að gefa einhverja
+skýringu á skekkjunni.</p>
+<p>Þegar við erum að bera saman mæliniðurstöðu við kenningu eins og hér að
+ofan í dæminu með <span class="math notranslate nohighlight">\(m\)</span> og <span class="math notranslate nohighlight">\(a\)</span>, þá fáum við hallatölu grafs
+<span class="math notranslate nohighlight">\(h\)</span> með óvissu. Við getum svo reiknað út <span class="math notranslate nohighlight">\(\frac{g}{M}\)</span> með
+óvissu. Nú erum við kannski að bera saman tvær tölur sem eru með óvissu
+af svipaðri stærðargráðu. Þá getum við talað um að mælingin sé rétt ef
+bilin skarast. Ef hallatalan er</p>
+<div class="math notranslate nohighlight">
+\[h = (8,22 \pm 0,03)\, \frac{\text{m}}{\text{s}^2 \text{kg}}\]</div>
+<p>og</p>
+<div class="math notranslate nohighlight">
+\[\frac{g}{M} = \frac{9,82 \pm 0,01}{1,200 \pm 0,002}\,\frac{\text{m}}{\text{s}^2 \text{kg}} = (8,18 \pm 0,02)\,\frac{\text{m}}{\text{s}^2 \text{kg}}\]</div>
+<p>Þá er niðurstaðan rétt vegna þess að bilin, [8,19; 8,25] og [8,16; 8,20]
+skarast í [8,19; 8,20]. Ef bilin hefðu ekki skarast væri um <strong>skekkju</strong>
+að ræða.</p>
+</section>
+</section>
+<section id="daemi">
+<h2><span class="section-number">1.5. </span>Dæmi<a class="headerlink" href="#daemi" title="Permalink to this heading"></a></h2>
+<section id="id1">
+<h3><span class="section-number">1.5.1. </span>1.<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h3>
+<p>Hlaupari herðir á sér og nær hraðanum (5,36 <span class="math notranslate nohighlight">\(\pm\)</span> 0,03) m/s á
+(3,0<span class="math notranslate nohighlight">\(\pm\)</span> 0,2) sekúndum. Meðalhröðun hans er (0,640<span class="math notranslate nohighlight">\(\pm\)</span>
+0,005) m/s<span class="math notranslate nohighlight">\(^2\)</span>. Finnið hraðann sem hann var á þegar hann byrjaði
+að herða á sér. Skráið hraðann með óvissu og skilið svarinu með réttum
+fjölda markverðra stafa.</p>
+<p>(Notið að: <span class="math notranslate nohighlight">\(v-v_0 = a\cdot t\)</span>, þar sem <span class="math notranslate nohighlight">\(v\)</span> er hraði,
+<span class="math notranslate nohighlight">\(v_0\)</span> er upphafshraði, <span class="math notranslate nohighlight">\(t\)</span> er tími og <span class="math notranslate nohighlight">\(a\)</span> er hröðun.)</p>
+<section id="section-1">
+<span id="id2"></span><h4><span class="section-number">1.5.1.1. </span>2.<a class="headerlink" href="#section-1" title="Permalink to this heading"></a></h4>
+<div class="line-block">
+<div class="line">Rétthyrnd járnplata mælist 330 mm á lengd og 170 mm á breidd. Óvissa á
+báðum lengdarmælingum telst vera <span class="math notranslate nohighlight">\(\pm\)</span>2 mm. Massi plötunnar
+mælist 730 g með óvissu upp á <span class="math notranslate nohighlight">\(\pm\)</span>5 g.</div>
+<div class="line">a) Reiknið út flatarmassa plötunnar, þ.e. massann á flatareiningu og
+gefið svarið í einingunni g/cm<span class="math notranslate nohighlight">\(^2\)</span>.</div>
+<div class="line">b) Reiknið skipulega út óvissu á flatarmassanum.</div>
+<div class="line">c) Ritið loks flatarmassan ásamt óvissu með viðeigandi fjölda
+markverðra stafa.</div>
+</div>
+</section>
+<section id="section-2">
+<span id="id3"></span><h4><span class="section-number">1.5.1.2. </span>3.<a class="headerlink" href="#section-2" title="Permalink to this heading"></a></h4>
+<p>Hvert er rúmmál kúlu sem hefur radíus r = (3,86 <span class="math notranslate nohighlight">\(\pm0,08\)</span>) m?
+Skráðið svarið með óvissu og réttum fjölda markverðra stafa.</p>
+</section>
+<section id="section-3">
+<span id="id4"></span><h4><span class="section-number">1.5.1.3. </span>4.<a class="headerlink" href="#section-3" title="Permalink to this heading"></a></h4>
+<div class="line-block">
+<div class="line">Rétthyrnd járnplata mælist (330<span class="math notranslate nohighlight">\(\pm\)</span>4) mm á lengd og
+(170<span class="math notranslate nohighlight">\(\pm\)</span>2) mm á breidd.</div>
+<div class="line">a) Reiknið út ummál plötunnar með óvissu og skráið með réttum fjölda
+markverðra stafa.</div>
+<div class="line">b) Reiknið út flatarmál plötunnar með óvissu og skráið með réttum
+fjölda markverðra stafa.</div>
+</div>
+</section>
+<section id="section-4">
+<span id="id5"></span><h4><span class="section-number">1.5.1.4. </span>5.<a class="headerlink" href="#section-4" title="Permalink to this heading"></a></h4>
+<p>Bíll eykur hraðann úr (30<span class="math notranslate nohighlight">\(\pm\)</span>2) km/klst í
+(80<span class="math notranslate nohighlight">\(\pm\)</span>3) km/klst á (70<span class="math notranslate nohighlight">\(\pm\)</span>4) sekúndum. Reiknið
+hröðun bílsins með óvissu og skráið niðurstöðuna í SI einingum, með
+réttum fjölda markverðra stafa.</p>
+</section>
+<section id="section-5">
+<span id="id6"></span><h4><span class="section-number">1.5.1.5. </span>6.<a class="headerlink" href="#section-5" title="Permalink to this heading"></a></h4>
+<p>Hafdís var að hita <span class="math notranslate nohighlight">\(m = (100\pm 2)\,\text{g}\)</span> af vatni.
+Upphafshitastig vatnsins var
+<span class="math notranslate nohighlight">\(T_1 = (7,3\pm 0,2)\ensuremath{^\circ}\text{C}\)</span> en lokahitastig
+þess er <span class="math notranslate nohighlight">\(T_2 = (85,0\pm 0,2)\ensuremath{^\circ}\text{C}\)</span>.
+Eðlisvarmi vatns er
+<span class="math notranslate nohighlight">\(c_{\textnormal{vatn}} = (4,186\pm 0,004)\,\text{kJ}/\text{kg}\text{C}\ensuremath{^\circ}\)</span>.</p>
+<p>Notið jöfnuna <span class="math notranslate nohighlight">\(Q = c\cdot m\cdot \Delta T\)</span> til þess að finna
+hversu mikinn varma <span class="math notranslate nohighlight">\(Q\)</span> hún þurfti til þess að hita vatnið. Skráið
+svarið með óvissu og réttum fjölda markverðra stafa.</p>
+</section>
+<section id="section-6">
+<span id="id7"></span><h4><span class="section-number">1.5.1.6. </span>7.<a class="headerlink" href="#section-6" title="Permalink to this heading"></a></h4>
+<div class="line-block">
+<div class="line">Halldór er að gera tilraunina „<em>Umbreyting spennuorku í
+hreyfiorku</em>“. Hann fær af grafi að kraftstuðull fjaðrarinnar sé
+<span class="math notranslate nohighlight">\(k = (75 \pm 3\)</span>) N/m. Hann ætlar nú að reikna spennuorkuna,
+<span class="math notranslate nohighlight">\(\frac{1}{2}k(\Delta x)^2\)</span>, sem gormurinn fær þegar honum er
+þjappað saman úr óþjöppuðu ástandi í (<span class="math notranslate nohighlight">\(18,0 \pm 0,2\)</span>) cm, niður
+í (<span class="math notranslate nohighlight">\(15,5 \pm 0,2\)</span>) cm.</div>
+<div class="line">Reiknið spennuorkuna með óvissu og skráið niðurstöðu með óvissu og
+réttum fjölda markverðra stafa.</div>
+</div>
+</section>
+<section id="section-7">
+<span id="id8"></span><h4><span class="section-number">1.5.1.7. </span>8.<a class="headerlink" href="#section-7" title="Permalink to this heading"></a></h4>
+<div class="line-block">
+<div class="line">Nemandi þarf að reikna eðlismassa óreglulega lagaðs hlutar. Hann hefur
+stóra könnu sem er með skala þannig að hægt er að lesa af hversu
+margir ml af vatni eru í henni. Hann er einnig með vog til þess að
+mæla massa hlutarins.</div>
+<div class="line">Þegar bara vatn er í könnunni les nemandinn að af skalanum að þetta
+séu <span class="math notranslate nohighlight">\((330\pm10)\)</span> ml. Þegar hluturinn er settur á kaf í könnuna
+les nemandinn af skalanum að það séu <span class="math notranslate nohighlight">\((460 \pm10)\)</span> ml í
+könnunni. Massi hlutarins mælist <span class="math notranslate nohighlight">\((550\pm 2)\)</span> g</div>
+<div class="line">(Athugið að 1 ml = 1 cm<span class="math notranslate nohighlight">\(^3\)</span>)</div>
+<div class="line">a) Hvert er rúmmál hlutarins (með óvissu og réttum fjölda markverðra
+stafa)?</div>
+<div class="line">b) Hver er eðlismassi hlutarins (með óvissu og réttum fjölda
+markverðra stafa)?</div>
+</div>
+</section>
+<section id="section-8">
+<span id="id9"></span><h4><span class="section-number">1.5.1.8. </span>9.<a class="headerlink" href="#section-8" title="Permalink to this heading"></a></h4>
+<div class="line-block">
+<div class="line">Sigurlaug er að mæla stærð lítils rétthyrnds kubbs. Hún byrjar á því
+að mæla núllskekkju rennimálsins (það sem rennimálið sýnir þegar
+ekkert er mælt) og fær að hún sé <span class="math notranslate nohighlight">\((0,05\pm0,05\,)\)</span>mm. Síðan
+mælir hún lengdina sem <span class="math notranslate nohighlight">\((13,15\pm0,05\,)\)</span>mm, breiddina sem
+<span class="math notranslate nohighlight">\((5,25\pm0,05\,)\)</span>mm og þykktina sem
+<span class="math notranslate nohighlight">\((2,65\pm0,05\,)\)</span>mm.</div>
+<div class="line">a) Finnið leiðrétt gildi lengdar, breiddar og þykktar með óvissu.</div>
+<div class="line">b) Finnið rúmmál kubbsins með óvissu og skráið það með réttum fjölda
+markverðra stafa</div>
+</div>
+</section>
+<section id="svor">
+<h4><span class="section-number">1.5.1.9. </span>Svör<a class="headerlink" href="#svor" title="Permalink to this heading"></a></h4>
+<div class="line-block">
+<div class="line">1) <span class="math notranslate nohighlight">\((7,3\pm0,2)\)</span> m/s</div>
+<div class="line">2) <span class="math notranslate nohighlight">\((1,30\pm0,03)\,g/cm^2\)</span></div>
+<div class="line">3) <span class="math notranslate nohighlight">\((240\pm20)\,\text{m}^3\)</span></div>
+<div class="line">4) a. <span class="math notranslate nohighlight">\((94\pm1)\,\text{cm}\)</span>    b.
+<span class="math notranslate nohighlight">\((560\pm10)\,\text{cm}^2\)</span></div>
+<div class="line">5) <span class="math notranslate nohighlight">\((0,20\pm0,03)\,\text{m}/\text{s}^2\)</span></div>
+<div class="line">6) <span class="math notranslate nohighlight">\((32,5\pm0,8)\,\)</span>kJ</div>
+<div class="line">7) <span class="math notranslate nohighlight">\((230\pm80)\,\)</span>J (eða <span class="math notranslate nohighlight">\((235\pm85)\,\)</span>J)</div>
+<div class="line">8) a. (<span class="math notranslate nohighlight">\(130\pm20)\,\text{m}\ell\)</span>   b.
+<span class="math notranslate nohighlight">\((4,2\pm0,7)\,\text{g}/\text{m}\ell\)</span></div>
+<div class="line">9) a. <span class="math notranslate nohighlight">\(\ell =  (13,1\pm0,1)\,\text{mm}\)</span>;
+<span class="math notranslate nohighlight">\(b = (5,2\pm0,1)\,\text{mm}\)</span>; Þ =
+<span class="math notranslate nohighlight">\((2,6\pm0,1)\,\text{mm}\)</span>.    b. <span class="math notranslate nohighlight">\((180\pm10)\,\text{mm}^3\)</span>.</div>
+</div>
+</section>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../" class="btn btn-neutral float-left" title="Eðlisfræði I" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../kafli02/" class="btn btn-neutral float-right" title="2. Hreyfing í einni vídd" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p></p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+<script>
+    window.addEventListener("load", function () {
+        for (var i in ggbAppletId) {
+            ggbAppletId[i].inject(i);
+        }
+    });
+</script>
+
+
+ 
+
+<style>
+    /* Sidebar header (and topbar for mobile) */
+    .wy-side-nav-search,
+    .wy-nav-top {
+       /* HI: #10099F, VoN: #EB7125, orginal #01447B */
+       background: #321c4a;
+    }
+
+    /* Sidebar */
+    .wy-nav-side {
+      /* orginal #343131, HÍ grár dekkri: #EEEEEE, HÍ svartur: #262626 */
+      background: #262626;
+    }
+</style>
+
+
+</body>
+</html>

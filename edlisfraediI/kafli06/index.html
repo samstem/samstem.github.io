@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="is" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>6. Verkan og gagnverkan &mdash; Eðlisfræði I </title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/eqt.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/datacamp-custom.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/edbook.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/samstem.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+        <script src="../_static/js/eqt.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script src="https://cdn.datacamp.com/datacamp-light-latest.min.js"></script>
+        <script async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../_static/js/theme.js"></script>
+
+<!-- hoverrole.py css code -->
+<style type="text/css">
+    a.tooltip {
+        outline: none;
+        border-bottom: thin dotted;
+        background: #ffeedd
+    }
+
+    a.tooltip strong {
+        line-height: 30px;
+    }
+
+    a.tooltip:hover {
+        text-decoration: none;
+    }
+
+    a.tooltip span {
+        z-index: 10;
+        display: none;
+        padding: 14px 20px;
+        margin-top: -30px;
+        margin-left: 12px;
+        width: 310px;
+        line-height: 16px;
+    }
+
+    a.tooltip:hover span {
+        display: inline;
+        position: absolute;
+        color: #111;
+        border: 1px solid #DCA;
+        background: #fffAF0;
+    }
+
+    .callout {
+        z-index: 20;
+        position: absolute;
+        top: 30px;
+        border: 0;
+        left: -12px;
+    }
+
+    /*CSS3*/
+    a.tooltip span {
+        border-radius: 4px;
+        box-shadow: 5px 5px 8px #CCC;
+    }
+</style>
+<!-- End hoverrole.py css code -->
+
+<style type="text/css">
+    .sagecell .CodeMirror-scroll {
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+
+    .sagecell .CodeMirror {
+        height: auto;
+    }
+
+    /* - Begin equation reference style - */
+    h6.eqno {
+        display: inline-block;
+        padding-left: 10px;
+    }
+
+    h6 .headerlink {
+        display: inline-block !important;
+    }
+
+    h6 .headerlink:after {
+        visibility: hidden !important;
+    }
+
+    h6 .headerlink:hover:after {
+        visibility: visible !important;
+    }
+
+    .eqno:hover>.headerlink:after {
+        visibility: visible !important;
+    }
+
+    table>caption>.headerlink {
+        visibility: hidden !important;
+    }
+
+    table>caption>.headerlink {
+        visibility: hidden !important;
+    }
+
+    /* - End - */
+</style>
+
+
+
+    <link rel="index" title="Atriðaskrá" href="../genindex/" />
+    <link rel="search" title="Leit" href="../search/" />
+    <link rel="next" title="7. Notkun á lögmálum Newtons" href="../kafli07/" />
+    <link rel="prev" title="5. Tregða og núningur" href="../kafli05/" />
+
+
+
+<!--	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
+<script type="text/javascript" src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+<script>ggbAppletId = [];</script>
+
+
+ 
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../" class="icon icon-home">
+            Eðlisfræði I
+              <img src="../_static/samstem.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../kafli01/">1. Mælingar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli02/">2. Hreyfing í einni vídd</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli03/">3. Afstæð hreyfing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli04/">4. Hreyfing í fleiri víddum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli05/">5. Tregða og núningur</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">6. Verkan og gagnverkan</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#rija-logmal-newtons">6.1. Þriðja lögmál Newtons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#nokkur-daemi">6.2. Nokkur dæmi</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#vagn-a-lestarteinum">6.2.1. Vagn á lestarteinum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hoppa-a-joru">6.2.2. Hoppað á jörðu</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#aftur-i-3-logmal-newton">6.3. Aftur í 3. lögmál Newton</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#rijalogmalspor">6.3.1. Þriðjalögmálspör</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#daemi">6.4. Dæmi</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli07/">7. Notkun á lögmálum Newtons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli08/">8. Þyngdarkraftur</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli09/">9. Vinna og orka</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli10/">10. Atlag og skriðþungi</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ordaskra/">Orðaskrá</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../">Eðlisfræði I</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><span class="section-number">6. </span>Verkan og gagnverkan</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/edbook/haskoli-islands/blob/master/projects/edlisfraediI/kafli06.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="verkan-og-gagnverkan">
+<h1><span class="section-number">6. </span>Verkan og gagnverkan<a class="headerlink" href="#verkan-og-gagnverkan" title="Permalink to this heading"></a></h1>
+<p><a class="reference internal" href="../_images/reiptog.png"><img alt="image" src="../_images/reiptog.png" style="width: 100%;" /></a></p>
+<p>Þegar tveir aðilar toga í band hvað gerist? Yfirleitt vinnur annar og
+togar hinn til sín. Hvor togar með meiri krafti? Þeir toga með
+jafnmiklum krafti. Þetta er það sem þriðja lögmál Newtons fjallar um.</p>
+<section id="rija-logmal-newtons">
+<h2><span class="section-number">6.1. </span>Þriðja lögmál Newtons<a class="headerlink" href="#rija-logmal-newtons" title="Permalink to this heading"></a></h2>
+<div class="line-block">
+<div class="line">Fyrsta lögmál Newtons sagði að ef hlutur verður ekki fyrir áhrifum
+krafts þá heldur hann sama hraða. Þetta má líta á sem sértilfelli
+annars lögmáls Newtons sem segir að hraðabreyting hlutar á
+tímaeiningu, hröðunin, sé í réttu hlutfalli við kraftinn sem verkar á
+hlutinn. Nú ef svo er þá er greinilegt að ef krafturinn sem verkar á
+hlutinn er <span class="math notranslate nohighlight">\(\vec{0}\)</span>, þá er hröðunin <span class="math notranslate nohighlight">\(\vec{0}\)</span>. Þriðja
+lögmál Newtons er hins vegar alveg ný hugmynd. Það fæst ekki út frá
+öðru lögmálinu heldur er alveg sjálfsætt. Þriðja lögmál Newtons segir:</div>
+<div class="line">Ef hlutur A verkar á hlut B með krafti <span class="math notranslate nohighlight">\(\vec{F}_{AB}\)</span> þá verkar
+hlutur B á hlut A með krafti, <span class="math notranslate nohighlight">\(\vec{F}_{BA}\)</span>, sem er jafnstór
+<span class="math notranslate nohighlight">\(\vec{F}_{AB}\)</span> og hefur gagnstæða stefnu við
+<span class="math notranslate nohighlight">\(\vec{F}_{AB}\)</span> þ.a.:</div>
+</div>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[\vec{F}_{BA} = - \vec{F}_{AB}\]</div>
+</div></blockquote>
+<p>Þetta er oft orðað sem svo: „Hvert átak á sér jafnstórt, gagnstætt
+gagntak“. („Every action has an equal and opposite reaction“).</p>
+</section>
+<section id="nokkur-daemi">
+<h2><span class="section-number">6.2. </span>Nokkur dæmi<a class="headerlink" href="#nokkur-daemi" title="Permalink to this heading"></a></h2>
+<p>Þetta er alls ekki augljóst. Við höfum ekki einu sinni góða tilfinningu
+fyrir þessu. En skoðum dæmi og sjáum hvort við sannfærumst.</p>
+<section id="vagn-a-lestarteinum">
+<h3><span class="section-number">6.2.1. </span>Vagn á lestarteinum<a class="headerlink" href="#vagn-a-lestarteinum" title="Permalink to this heading"></a></h3>
+<p><a class="reference internal" href="../_images/hoppafvagni.png"><img alt="image1" src="../_images/hoppafvagni.png" style="width: 100%;" /></a></p>
+<p>Hugsum okkur að við stöndum á litlum vagni sem getur runnið á
+lestarteinum. (Maður sér stundum svona vagna í bíómyndum. Þeir eru
+knúnir áfram með handpumpu.) Hugsum okkur að þú hoppir af vagninum.
+Kemur vagninn til með að hreyfast? Þegar við hoppum af vagninum ýtir
+hann okkur í eina átt en við ýtum honum hina áttina. Við spyrnum í
+vagninn svo hann færist til hægri sbr. mynd en vagninn ýtir okkur til
+vinstri.</p>
+<p>Væri einhver möguleiki á því að við myndum hoppa af vagninum og vagninn
+myndi bara standa kyrr? Líklega ekki. Kannski, ef vagninn væri skrúfaður
+fastur við jörðina.</p>
+<div class="line-block">
+<div class="line">Ef við hoppuðum aftan af lest sem er kyrrstæð, þá myndi hún líklega
+ekki færast úr stað. Af hverju er það?</div>
+<div class="line">Eitt af því mikilvægasta varðandi þriðja lögmál Newtons er að gera sér
+grein fyrir því að kraftarnir tveir, átak og gagntak eru alltaf að
+verka á tvo mismunandi hluti. Ef krafturinn <span class="math notranslate nohighlight">\(\vec{F}_{AB}\)</span>
+verkar á hlut B, þá verkar krafturinn <span class="math notranslate nohighlight">\(\vec{F}_{BA}\)</span> á A.
+Kraftarnir verka á mismunandi hluti og við skoðum bara einn þessarra
+hluta í einu.</div>
+</div>
+<p>Skoðum hreyfingu mannsins á myndinni: Á hann verkar kraftur til vinstri
+og auk þess þyngdarkraftur og eitthvað fleira. Til þess að skoða
+hreyfingu mannsins setjum við upp jöfnu með kröftunum sem verka á hann.
+Ef við tökum bara kraftana í <span class="math notranslate nohighlight">\(x\)</span> - stefnu þá er meginkrafturinn
+<span class="math notranslate nohighlight">\(\vec{F}_{vm}\)</span>, þ.e. krafturinn frá vagninum á manninn. Annað
+lögmál Newtons gefur þá fyrir <span class="math notranslate nohighlight">\(x\)</span> - hnitið:</p>
+<div class="math notranslate nohighlight">
+\[F_{vm} = m_m a_x\]</div>
+<p>Ef við hins vegar skoðum hreyfingu vagnsins, þá höfum við aðra krafta í
+myndinni, þyngdarkraft, þverkraft, núningskraft og svo
+<span class="math notranslate nohighlight">\(\vec{F}_{mv}\)</span>, þ.e. kraft mannsins á vagninn.</p>
+<p>Ef við nú skoðum aftur bara <span class="math notranslate nohighlight">\(x\)</span> - þátt kraftjöfnunnar fáum við
+fyrir vagninn:</p>
+<div class="math notranslate nohighlight">
+\[F_{mv} - F_{nun} = m_v a_x\]</div>
+<p>Massarnir <span class="math notranslate nohighlight">\(m_m\)</span> og <span class="math notranslate nohighlight">\(m_v\)</span> eru massi mannsins annars vegar og
+massi vagnsins hins vegar.</p>
+<div class="line-block">
+<div class="line">Ef teinarnir eru fullkomlega núningslausir þ.a. <span class="math notranslate nohighlight">\(F_{nun} = 0\)</span>
+fáum við:</div>
+<div class="line">Hröðun mannsins:</div>
+</div>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[F_{vm} = m_m (a_x)_m \,\,\, \Rightarrow \,\,\, (a_x)_m =F_{vm}/m_m\]</div>
+</div></blockquote>
+<p>Hröðun vagnsins:</p>
+<div class="math notranslate nohighlight">
+\[F_{mv} = m_v (a_x)_v \,\,\, \Rightarrow \,\,\, (a_x)_v =F_{vm}/m_v \,\,\, \Leftrightarrow \,\,\, (a_x)_v = -F_{mv}/m_v\]</div>
+<p>Ef þetta hefði ekki verið vagn heldur lest, þá hefði massi lestarinnar
+verið mun meiri en massi mannsins. Það er augljóst að lestin hefði þá
+fengið mjög litla hröðun. Ef um einhvern núning er að ræða þá hefði hún
+líklega ekki bifast.</p>
+</section>
+<section id="hoppa-a-joru">
+<h3><span class="section-number">6.2.2. </span>Hoppað á jörðu<a class="headerlink" href="#hoppa-a-joru" title="Permalink to this heading"></a></h3>
+<p>Annað dæmi um 3. lögmálið er maður sem hoppar á jörðinni.</p>
+<p>Þegar maður hoppar upp þá ýtir jörðin honum upp. Þetta gerist vegna þess
+að maðurinn ýtir á jörðina. Hann spyrnir í jörðina og hún spyrnir á móti
+og ýtir honum upp. En ef maðurinn ýtir á jörðina af hverju færist hún þá
+ekki?</p>
+<p><a class="reference internal" href="../_images/hoppajordu.png"><img alt="image2" src="../_images/hoppajordu.png" style="width: 100%;" /></a></p>
+<p>Hún gerir það, en það er svo lítið að maður verður ekki var við það.
+Kannski myndum við sjá það ef þetta væri litli prinsinn að hoppa á sinni
+plánetu.</p>
+<p>Maðurinn verður fyrir krafti frá jörðinni og hann fær hröðun upp sem
+fæst samkvæmt:</p>
+<div class="math notranslate nohighlight">
+\[F_{spyrnu} -F_g = m_m a_m \,\,\, \Rightarrow a_m = (F_{spyrnu} -F_g)/m_m\]</div>
+<p>.</p>
+<p>Hröðun jarðarinnar er í öfuga stefnu við stefnu mannsins og hún fæst
+samkvæmt:</p>
+<div class="math notranslate nohighlight">
+\[F_g -F_{spyrnu} = m_{j} a_j\,\,\, \Rightarrow a_m = -(F_{spyrnu} -F_g)/m_j\]</div>
+<p>Hröðun jarðarinnar er lítil vegna þess að við erum að deila með massa
+jarðarinnar sem er gífurlega stór.</p>
+</section>
+</section>
+<section id="aftur-i-3-logmal-newton">
+<h2><span class="section-number">6.3. </span>Aftur í 3. lögmál Newton<a class="headerlink" href="#aftur-i-3-logmal-newton" title="Permalink to this heading"></a></h2>
+<p>Hvernig vitum við að 3. lögmálið gildir? Hvernig vitum við að kraftarnir
+eru nákvæmlega jafnstórir?</p>
+<p>Til þess að byrja með þá gætum við gert tilraunir og komist að því að í
+öllum tilraunum sem við prófum þá gildir það að kraftarnir eru
+jafnstórir og stefna í gagnstæðar stefnur.</p>
+<div class="line-block">
+<div class="line">Ein tilraun sem við gætum gert væri að taka tvo vagna með nákvæmlega
+sama massa og festa þá saman með gorm á milli. T.d. með því að binda
+þá saman með þræði. Í byrjun eru vagnarnir kyrrir. Nú brennum við
+þráðinn svo gormurinn fellur burt og vagnarnir fá hröðun Við getum
+mælt hröðunina og séð hvort hún er sú sama. Við gætum fundið upp alls
+kyns tilraunir til þess að prófa þetta. Við myndum fá að kraftarnir
+væru alltaf þeir sömu.</div>
+<div class="line">Við getum líka séð að þetta hljóti að vera svo því hugsum okkur hlut
+sem búinn er til úr pörtum (eins og allt sem við sjáum) Ef partarnir
+verkuðu ekki á hvorn annan með jafnstórum kröftum myndum við fá
+eitthvað sem væri öðru vísi en það sem við þekkjum. Tökum bara einfalt
+dæmi. Límum saman tvo kubba, kubb A og kubb B. Nú eru þeir einn
+kubbur, kubbur AB. Hugsum okkur að kubbur AB svífi úti í geimi og
+engir ytri kraftar verki á hann. Ef kraftur A á B er stærri en kraftur
+B á A, þá myndi verka heildar innri kraftur á kerfið sem myndi ýta
+kubbnum í stefnu stærri kraftsins. Það myndi líta út eins og einhver
+dularfullur innri hreyfieiginleiki kubbsins. Kubburinn myndi fara
+hraðar og hraðar í stefnu stærri kraftsins án þess að nokkuð
+utanaðkomandi snerti hann. Þetta gerist ekki.</div>
+</div>
+<p>Við getum treyst því að þriðja lögmálið gildi því við getum prófað það
+og auk þess sjáum við að summa innri krafta sem verka á hluti er alltaf
+núll. Ef heildarsumma innri krafta væri ekki núll þá gætu hlutir farið
+af stað án þess að nokkur sjáanlegur kraftur verkaði á þá.</p>
+<section id="rijalogmalspor">
+<h3><span class="section-number">6.3.1. </span>Þriðjalögmálspör<a class="headerlink" href="#rijalogmalspor" title="Permalink to this heading"></a></h3>
+<div class="line-block">
+<div class="line">Þriðja lögmál Newtons fjallar um tvo hluti sem verka hvor á annan. Það
+er stundum gott að gera sér grein fyrir því hver pörin eru. Ef við
+skoðum kraft A á B þá er þriðja lögmáls par þess krafts, kraftur B á
+A.</div>
+<div class="line">Hugsum okkur bók sem liggur á borði á jörðunni.</div>
+</div>
+<p><a class="reference internal" href="../_images/bord.png"><img alt="image3" src="../_images/bord.png" style="width: 100%;" /></a></p>
+<div class="line-block">
+<div class="line">Kraftarnir sem verka á bókina þar sem hún liggur kyrr á borðinu eru
+annars vegar þyngdarkraftur jarðar, <span class="math notranslate nohighlight">\(\vec{F}_g\)</span> og hins vegar
+þverkraftur frá borðinu <span class="math notranslate nohighlight">\(\vec{N}_b\)</span>. Hver eru þriðjalögmálspör
+þessarra krafta?</div>
+</div>
+<div class="minipage docutils container">
+<div class="wrapfigure docutils container">
+<p>r2.3in</p>
+<p><a class="reference internal" href="../_images/bokbord.png"><img alt="image4" src="../_images/bokbord.png" style="width: 1.3in;" /></a></p>
+</div>
+<p>Skoðum fyrst <span class="math notranslate nohighlight">\(\vec{N}_{ub}\)</span>, þetta er kraftur frá borðinu
+(undirlaginu) á bókina. Þá er þriðjalögmálpar þessa krafts kraftur
+frá bókinni á borðið. Bókin ýtir niður á borðið. Svo borðið verður
+fyrir krafti frá bókinni. Við getum kallað kraftinn
+<span class="math notranslate nohighlight">\(\vec{N}_{bu}\)</span> kraftur bókarinnar á borðið (undirlagið).
+Samkvæmt 3. lögmálinu gildir að <span class="math notranslate nohighlight">\(\vec{N}_{bu}\)</span> = -
+<span class="math notranslate nohighlight">\(\vec{N}_{ub}\)</span>.</p>
+</div>
+<div class="minipage docutils container">
+<div class="wrapfigure docutils container">
+<p>l2in</p>
+<p><a class="reference internal" href="../_images/bokjord.png"><img alt="image5" src="../_images/bokjord.png" style="width: 2in;" /></a></p>
+</div>
+<p>Við verðum alltaf að skoða pörin sem slík. Við verðum að muna að
+pörin verka á sinn hvorn hlutinn. Ef hestur dregur kerru og verkar
+því með krafti á hana, þá verkar kerran með krafti á hestinn.
+Kraftarnir verka samt á mismunandi hluti. Annar krafturinn á hestinn,
+hinn á kerruna.</p>
+<p>Ef við skoðum þyngdarkraft jarðar á bókina, <span class="math notranslate nohighlight">\((\vec{F}_g)_b\)</span>, þá
+er hann kraftur sem jörðin beitir á bókina. Þriðjalögmálspar
+þyngdarkraftsins á bókina hlýtur því að vera kraftur bókarinnar á
+jörðina.</p>
+</div>
+<p>Bókin togar í jörðina því jörðin togar í bókina. Þyngdarkraftur
+bókarinnar á jörðina er <span class="math notranslate nohighlight">\((\vec{F}_g)_j\)</span> = -<span class="math notranslate nohighlight">\((\vec{F}_g)_b\)</span>.
+Kraftur bókarinnar á jörðina er jafnstór krafti jarðarinnar á bókina.</p>
+</section>
+</section>
+<section id="daemi">
+<h2><span class="section-number">6.4. </span>Dæmi<a class="headerlink" href="#daemi" title="Permalink to this heading"></a></h2>
+<div class="line-block">
+<div class="line">Hlutur sem er 2,0 kg hangir í streng úr loftinu í herbergi nokkru.</div>
+<div class="line">a) Teiknið mynd og sýnið hvaða kraftar verka á hlutinn.</div>
+<div class="line">b) Teiknið mynd og sýnið hvaða kraftar verka á strenginn? c) Hver eru
+3. lögmáls pör kraftanna sem verka á hlutinn?</div>
+</div>
+<p id="section-1">Kassi rennur áfram eftir gólfi. Teiknið mynd og sýnið alla krafta sem
+verka á kassann (3 ef loftmótstöðu er sleppt.) Nefnið fyrir hvern
+þessarra krafta tilsvarandi þriðja lögmáls par.</p>
+<p id="section-2">Þegar maður gengur eftir gólfinu þá ýtir maður á gólfið með krafti sem
+vísar niður og afturábak. Hvernig skýrir þetta það að við förum áfram?</p>
+<p id="section-3">Þegar við hoppum gerum við að með því að ýta niður á gólfið með krafti
+sem við framleiðum með vöðvunum í leggjunum. Við ýtum niður og við það
+förum við upp í loft. Skýrið það út frá 3. lögmáli Newtons.</p>
+<div class="line-block" id="section-4">
+<div class="line">1000 kg bíll ýtir 2000 kg trukk, sem er rafmagnslaus, eftir láréttum
+vegi. Hjól bílsins ýta á jörðina með 4500 N krafti beint afturábak.
+(Gerið ráð fyrir að snúningsnúningur og loftmótstaða séu hverfandi.)</div>
+<div class="line">a) Hver verður hröðun bíls og trukks?</div>
+<div class="line">b) Hver er kraftur trukksins á bílinn?</div>
+<div class="line">c) Hver er kraftur bílsins á trukkinn?</div>
+<div class="line">d) Reiknið hröðun trukksins út frá kraftinum sem verkar á hann. Passar
+það við a) lið?</div>
+</div>
+<div class="line-block" id="section-5">
+<div class="line">Kubbar sem eru 2,0 kg, 3,0 kg og 5,0 kg liggja þétt saman á
+núningslausu borði þannig að 2,0 kg kubburinn er lengst til vinstri,
+næst honum 3,0 kg kubburinn og síðast 5,0 kg kubburinn. Nú er ýtt á
+2,0 kg kubbinn með 10 N krafti beint til hægri.</div>
+<div class="line">a) Með hversu miklum krafti verkar 3,0 kg kubburinn á 5,0 kg kubbinn?</div>
+<div class="line">b) Með hversu miklum krafti verkar 3,0 kg kubburinn á 2,0 kg kubbinn?</div>
+</div>
+<div class="line-block" id="section-6">
+<div class="line">4,0 kg kassi liggur ofaná 3,0 kg kassa sem liggur á gólfi.
+Kyrrstöðunúningsstuðullinn milli kassanna er 0,6.
+Hreyfinúningsstuðullinn milli neðri kassans og gólfsins er 0,2. Nú er
+togað í 4,0 kg kassann með krafti <span class="math notranslate nohighlight">\(\vec{F}\)</span> sem vísar samsíða
+gólfinu í það sem við skulum kall x-stefnu.</div>
+<div class="line">a) Teiknið og merkið alla krafta sem verka á 4,0 kg kassann.</div>
+<div class="line">b) Teiknið og merkið alla krafta sem verka á 3,0 kg kassann.</div>
+<div class="line">c) Hversu stór er hreyfinúningurinn milli borðs og neðri kassans?</div>
+<div class="line">d) Táknið hröðun kassanna (ef sá efri rennur ekki á þeim neðri) við
+stærð kraftsins <span class="math notranslate nohighlight">\(\vec{F}\)</span>.</div>
+<div class="line">e) Hver er mesti mögulegi kyrrstöðunúningur milli kassanna?</div>
+<div class="line">f) Hvert er stærsta tölugildi sem krafturinn <span class="math notranslate nohighlight">\(\vec{F}\)</span> getur
+haft svo að efri kassinn renni ekki á þeim neðri?</div>
+<div class="line">g) Ef stærð kraftsins <span class="math notranslate nohighlight">\(\vec{F}\)</span> er aðseins 75% stærsta
+gildisins, hver verður þá hröðun kassanna og kyrrstöðunúningurinn
+milli þeirra?</div>
+</div>
+<div class="line-block">
+<div class="line">1) b. Togkraftur bands á hlut/tog hlutar í band; Þyngdarkraftur jarðar
+á hlut/þyngdarkraftur hlutar á jörðu.</div>
+<div class="line">2) Núningskraftur gólfs á kassann/núningskraftur kassans á gólf;
+Þverkraftur gólfs að ýta upp á kassann/kraftur kassans að ýta niður á
+gólfið; Þyngdarkraftur jarðar á kassann/þyngdarkraftur kassans á jörðu</div>
+<div class="line">3) Gagnkraftur við það að maður ýtir niður og afturábak á gólf er að
+gólfið ýtir upp og áfram á manninn.</div>
+<div class="line">4) Við ýtum niður á gólfið með krafti sem er meiri en þyngdarkraftur
+okkar svo gólfið ýtir á móti með krafti sem er meiri en
+þyngdarkrafturinn.</div>
+<div class="line">5)
+a. 1,5 m/s<span class="math notranslate nohighlight">\(^2\)</span>,    b.-3000 N,    c) 3000 N,    d)1,5 m/s<span class="math notranslate nohighlight">\(^2\)</span></div>
+<div class="line">6) a. 5 N,    b.  8 N</div>
+<div class="line">7) c. 13,72 N,
+d.<span class="math notranslate nohighlight">\(a = \frac{F -13,72\,\text{N}}{7\,\text{kg}}\)</span>,    e. 23,52 N,    f. 36,6 N</div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../kafli05/" class="btn btn-neutral float-left" title="5. Tregða og núningur" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../kafli07/" class="btn btn-neutral float-right" title="7. Notkun á lögmálum Newtons" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p></p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+<script>
+    window.addEventListener("load", function () {
+        for (var i in ggbAppletId) {
+            ggbAppletId[i].inject(i);
+        }
+    });
+</script>
+
+
+ 
+
+<style>
+    /* Sidebar header (and topbar for mobile) */
+    .wy-side-nav-search,
+    .wy-nav-top {
+       /* HI: #10099F, VoN: #EB7125, orginal #01447B */
+       background: #321c4a;
+    }
+
+    /* Sidebar */
+    .wy-nav-side {
+      /* orginal #343131, HÍ grár dekkri: #EEEEEE, HÍ svartur: #262626 */
+      background: #262626;
+    }
+</style>
+
+
+</body>
+</html>

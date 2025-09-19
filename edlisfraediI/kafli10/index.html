@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="is" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>10. Atlag og skriðþungi &mdash; Eðlisfræði I </title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/eqt.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/datacamp-custom.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/edbook.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/samstem.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+        <script src="../_static/js/eqt.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script src="https://cdn.datacamp.com/datacamp-light-latest.min.js"></script>
+        <script async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../_static/js/theme.js"></script>
+
+<!-- hoverrole.py css code -->
+<style type="text/css">
+    a.tooltip {
+        outline: none;
+        border-bottom: thin dotted;
+        background: #ffeedd
+    }
+
+    a.tooltip strong {
+        line-height: 30px;
+    }
+
+    a.tooltip:hover {
+        text-decoration: none;
+    }
+
+    a.tooltip span {
+        z-index: 10;
+        display: none;
+        padding: 14px 20px;
+        margin-top: -30px;
+        margin-left: 12px;
+        width: 310px;
+        line-height: 16px;
+    }
+
+    a.tooltip:hover span {
+        display: inline;
+        position: absolute;
+        color: #111;
+        border: 1px solid #DCA;
+        background: #fffAF0;
+    }
+
+    .callout {
+        z-index: 20;
+        position: absolute;
+        top: 30px;
+        border: 0;
+        left: -12px;
+    }
+
+    /*CSS3*/
+    a.tooltip span {
+        border-radius: 4px;
+        box-shadow: 5px 5px 8px #CCC;
+    }
+</style>
+<!-- End hoverrole.py css code -->
+
+<style type="text/css">
+    .sagecell .CodeMirror-scroll {
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+
+    .sagecell .CodeMirror {
+        height: auto;
+    }
+
+    /* - Begin equation reference style - */
+    h6.eqno {
+        display: inline-block;
+        padding-left: 10px;
+    }
+
+    h6 .headerlink {
+        display: inline-block !important;
+    }
+
+    h6 .headerlink:after {
+        visibility: hidden !important;
+    }
+
+    h6 .headerlink:hover:after {
+        visibility: visible !important;
+    }
+
+    .eqno:hover>.headerlink:after {
+        visibility: visible !important;
+    }
+
+    table>caption>.headerlink {
+        visibility: hidden !important;
+    }
+
+    table>caption>.headerlink {
+        visibility: hidden !important;
+    }
+
+    /* - End - */
+</style>
+
+
+
+    <link rel="index" title="Atriðaskrá" href="../genindex/" />
+    <link rel="search" title="Leit" href="../search/" />
+    <link rel="next" title="Orðaskrá" href="../ordaskra/" />
+    <link rel="prev" title="9. Vinna og orka" href="../kafli09/" />
+
+
+
+<!--	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
+<script type="text/javascript" src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+<script>ggbAppletId = [];</script>
+
+
+ 
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../" class="icon icon-home">
+            Eðlisfræði I
+              <img src="../_static/samstem.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../kafli01/">1. Mælingar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli02/">2. Hreyfing í einni vídd</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli03/">3. Afstæð hreyfing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli04/">4. Hreyfing í fleiri víddum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli05/">5. Tregða og núningur</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli06/">6. Verkan og gagnverkan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli07/">7. Notkun á lögmálum Newtons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli08/">8. Þyngdarkraftur</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli09/">9. Vinna og orka</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">10. Atlag og skriðþungi</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#atlag">10.1. Atlag</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#skriungi">10.2. Skriðþungi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#arekstur-daemi">10.3. Árekstur, dæmi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fjarandi-arekstur">10.4. Fjaðrandi árekstur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#massamija">10.5. Massamiðja</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#daemi">10.6. Dæmi</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">10.6.1. 1.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#section-1">10.6.2. 2.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#section-2">10.6.3. 3.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#section-3">10.6.4. 4.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#section-4">10.6.5. 5.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#section-5">10.6.6. 6.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#section-6">10.6.7. 7.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#section-7">10.6.8. 8.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#section-8">10.6.9. 9.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#section-9">10.6.10. 10.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#section-10">10.6.11. 11.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#section-11">10.6.12. 12.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#section-12">10.6.13. 13.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#section-13">10.6.14. 14.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#section-14">10.6.15. 15.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#section-15">10.6.16. 16.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#section-16">10.6.17. 17.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#section-17">10.6.18. 18.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#section-18">10.6.19. 19.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#section-19">10.6.20. 20.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#section-20">10.6.21. 21.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#section-21">10.6.22. 22.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#svor">10.6.23. Svör</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ordaskra/">Orðaskrá</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../">Eðlisfræði I</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><span class="section-number">10. </span>Atlag og skriðþungi</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/edbook/haskoli-islands/blob/master/projects/edlisfraediI/kafli10.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="atlag-og-skriungi">
+<h1><span class="section-number">10. </span>Atlag og skriðþungi<a class="headerlink" href="#atlag-og-skriungi" title="Permalink to this heading"></a></h1>
+<p><a class="reference internal" href="../_images/boltakastad.png"><img alt="image" src="../_images/boltakastad.png" style="width: 100%;" /></a></p>
+<div class="line-block">
+<div class="line">Við höfum talað um bolta sem kastað er upp í loft t.d. á ská. Við
+höfum reiknað út hver hraði hans er á ýmsum stöðum út frá því hver
+hraði hans er í upphafi. En hvernig fær hann þennan upphafshraða? Nú
+lendir boltinn t.d. á jörðinni. Eftir smástund er hann kyrr. Hvernig
+stoppaði hann?</div>
+<div class="line">Þegar við köstum bolta upp í loft, beitum við krafti á meðan boltinn
+er í snetingu við hendina á okkur. Við beitum krafti í dálítinn tíma
+og breytum þar með hraða boltans. Þegar boltinn lendir á jörðunni
+beitir jörðin krafti á boltann í smá tíma og breytir hraða hans.
+Krafturinn sem við beitum er jafn massa sinnum hraðabreytingunni á
+tímaeiningu. Við getum alveg eins sagt að krafturinn sé jafn breytingu
+á stærðinni <span class="math notranslate nohighlight">\(\vec{p} = m\vec{v}\)</span> á tímaeiningu. Stærðin
+<span class="math notranslate nohighlight">\(\vec{p}\)</span> er kölluð skriðþungi. Skriðþungi er nokkuð sem gefur
+okkur hugmynd um magn hreyfingar. Ef við vitum skriðþunga hlutar vitum
+við hversu erfitt er að stöðva hann.</div>
+</div>
+<p>Við getum skrifað annað lögmál Newtons á eftirfarandi vegu:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+\sum_i\vec{F}_i\,\, =\,\, \frac{d\vec{p}}{dt}
+\end{equation}\]</div>
+<section id="atlag">
+<h2><span class="section-number">10.1. </span>Atlag<a class="headerlink" href="#atlag" title="Permalink to this heading"></a></h2>
+<p>Atlag er skilgreint sem kraftur, <span class="math notranslate nohighlight">\(\vec{F}\)</span> margfaldaður með
+tímabili <span class="math notranslate nohighlight">\(\Delta t\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+\vec{I} = \vec{F}\cdot\Delta t
+\end{equation}\]</div>
+<p>Atlag er táknað með bókstafnum <span class="math notranslate nohighlight">\(I\)</span>, á ensku hefur atlag nafnið
+„impulse“.</p>
+<p>Ef krafturinn er breytilegur verðum við notað meðalkraftinn,
+<span class="math notranslate nohighlight">\(\vec{F}_m\)</span> á tímabilinu <span class="math notranslate nohighlight">\(\Delta t\)</span> til þess að finna
+meðalatlagið. Annað lögmál Newtons gefur okkur að:</p>
+<div class="math notranslate nohighlight">
+\[\vec{F}_\text{m}= m\cdot\vec{a}_m = m\cdot\frac{\Delta \vec{v}}{\Delta t}\]</div>
+<p>Nú sjáum við að ef við margföldum <span class="math notranslate nohighlight">\(\vec{F}\)</span> með <span class="math notranslate nohighlight">\(\Delta t\)</span>,
+þá fáum við:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+\vec{F}_\text{m}\cdot\Delta t = m\cdot\Delta \vec{v} = m\cdot\vec{v}_2 - m\cdot\vec{v}_1
+\end{equation}\]</div>
+<p>Það er stærðin <span class="math notranslate nohighlight">\(m\vec{v}\)</span> sem við breytum þegar við verkum með
+krafti á hlut í smá tíma.</p>
+<p>Stærðin <span class="math notranslate nohighlight">\(\vec{p}\,=\,m\vec{v}\)</span> er kölluð skriðþungi. Ég hef enga
+skýringu á af hverju hún er táknuð með bókstafnum <span class="math notranslate nohighlight">\(p\)</span>. Á ensku
+heitir skriðþungi „momentum“.</p>
+</section>
+<section id="skriungi">
+<h2><span class="section-number">10.2. </span>Skriðþungi<a class="headerlink" href="#skriungi" title="Permalink to this heading"></a></h2>
+<p><a class="reference internal" href="../_images/stodva.png"><img alt="image1" src="../_images/stodva.png" style="width: 3.5in;" /></a></p>
+<p>Skriðþungi er nokkuð lýsandi orð. Maður getur næstum því séð fyrir sér
+að stór trukkur á hraðanum 15,0 m/s hefur mikinn skriðþunga, meðan fluga
+á sama hraða hefur lítinn skriðþunga. Þetta er ástæða þess að manni
+finnst eins og skriðþungi sé eins konar magn hreyfingarinnar. En
+skriðþungi er mjög mikilvæg stærð að öðru leiti líka. Hann er mjög
+mikilvægur þegar það kemur að því að skoða kerfi agna. Við skulum byrja
+á mjög einföldu kerfi agna, kerfi tveggja agna.</p>
+<p>Hugsum okkur tvo massa, <span class="math notranslate nohighlight">\(m_A\)</span> og <span class="math notranslate nohighlight">\(m_B\)</span>. Skoðum alla krafta
+sem verka á <span class="math notranslate nohighlight">\(m_A\)</span> og <span class="math notranslate nohighlight">\(m_B\)</span>. Það gætu alls konar kraftar
+verkað t.d. á <span class="math notranslate nohighlight">\(m_A\)</span>. Köllum summu þeirra</p>
+<div class="math notranslate nohighlight">
+\[\vec{F}_A\,=\,\vec{F}_{yaA} +\vec{F}_{BaA}\]</div>
+<p>Við skulum sem sagt líta á summu allra krafta sem verka á <span class="math notranslate nohighlight">\(m_A\)</span> en
+skipta þeim í það sem við köllum ytri krafta, <span class="math notranslate nohighlight">\(\vec{F}_{yaA}\)</span>
+annars vegar og í kraftinn frá <span class="math notranslate nohighlight">\(m_B\)</span> á <span class="math notranslate nohighlight">\(m_A\)</span> hins vegar.
+Síðan gerum við það sama fyrir kraftana sem verka á <span class="math notranslate nohighlight">\(m_B\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\vec{F}_B \,=\,\vec{F}_{yaB} +\vec{F}_{AaB}\]</div>
+<p>Nú skulum við skoða kerfið okkar, <span class="math notranslate nohighlight">\(m_A\)</span> og <span class="math notranslate nohighlight">\(m_B\)</span> sem eitt
+kerfi og skoða heildarkraftinn á kerfið okkar. Þá fáum við:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+\vec{F}_A+\vec{F}_B\,=\,\vec{F}_{yaA} +\vec{F}_{BaA}\,+\,\vec{F}_{yaB} +\vec{F}_{AaB}
+\end{equation}\]</div>
+<p>En skv. þriðja lögmáli Newtons eru kraftarnir <span class="math notranslate nohighlight">\(\vec{F}_{BaA}\)</span> og
+<span class="math notranslate nohighlight">\(\vec{F}_{AaB}\)</span> jafnstórir en verka í gagnstæðar áttir. Summa
+þeirra er því <span class="math notranslate nohighlight">\(\vec{0}\)</span>,
+<span class="math notranslate nohighlight">\(\vec{F}_{BaA}+\vec{F}_{AaB}= \vec{0}\)</span>. Ef við skoðum kerfið sem
+samanstendur af báðum mössum, <span class="math notranslate nohighlight">\(m_A\)</span> og <span class="math notranslate nohighlight">\(m_B\)</span> þá er
+heildarkrafturinn á það kerfi bara <span class="math notranslate nohighlight">\(\vec{F}_{ytri}\)</span>. Ef engir ytri
+kraftar verka á kerfið, þá fáum við því:</p>
+<div class="math notranslate nohighlight">
+\[\frac{\Delta\vec{p}_{heild}}{\Delta t} = \sum_{allir}\vec{F}_{ytri} = \vec{0}\]</div>
+<p>En það gefur okkur ef <span class="math notranslate nohighlight">\(\vec{p}_{heild} = \sum_i \vec{p}_i\)</span> að:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+\Delta \vec{p}_{heild} =  \vec{0} \hspace{1 cm}\Leftrightarrow  \hspace{1 cm} \sum_{i}\vec{p}_{i_{fyrir}}  =\sum_{i}\vec{p}_{i_{eftir} }
+\end{equation}\]</div>
+<p>Fyrir massana okkar hér að ofan þýðir þetta:</p>
+<div class="math notranslate nohighlight">
+\[\vec{p}_{A_{1}} +\vec{p}_{B _{1}} = \vec{p}_{A_{2}}+\vec{p}_{B_{2}} \hspace{1 cm} \Leftrightarrow \hspace{1 cm} m_A\vec{v}_{A_1}+m_B\vec{v}_{B_1}=m_A\vec{v}_{A_2}+m_B\vec{v}_{B_2}\]</div>
+<p>Þetta er það sem við köllum <em>varðveislu skriðþunga</em>. Ef engir ytri
+kraftar verka á kerfið okkar, þá er skriðþungi varðveittur.</p>
+<p>Þið munið að þegar engin vinna er framkvæmd af ógeymnum kröftum, þá er
+vélræn orka (summa hreyfiorku og stöðuorku) varðveitt. Þetta eru tvö
+mjög ólík tilfelli og oft höfum við varðveislu skriðþunga án þess að
+hafa varðveislu vélrænnar orku. Við getum líka haft varðveislu vélrænnar
+orku án þess að hafa varðveislu skriðþunga.</p>
+<p>Orka getur orðið að óreglulegri hreyfingu atóma og valdið hitun eða
+broti. Þegar slíkt hendir segjum við að vélræn orka hafi tapast (vinna
+unnin af ógeymnum kröftum). En getum við ekki einnig gefið atómunum
+skriðþunga? Geta ekki einstöku atóm fengið meiri skriðþunga en önnur? Af
+hverju tölum við ekki um skriðþungatap á sama hátt?</p>
+<p>Hreyfiorka eða orka yfirleitt er tölustærð. Þegar hlutur fær auka orku
+t.d. í formi hreyfiorku atóma, þá geta atómin verið að hreyfast í hvaða
+stefnu sem er. Hluturinn þarf ekki að hreyfast í heild því hreyfing
+agnanna er dreifð yfir allar áttir.</p>
+<p>Skriðþungi á hinn bóginn er vigurstærð. Ef hlutur fær einhvern heildar
+skriðþunga, þá dreifist þessi skriðþungi á atómin í hlutnum og
+mismunandi atóm geta fengið mismunandi skriðþunga en skriðþunginn er í
+einhverja ákveðna stefnu svo hluturinn í heild verður að hreyfast í
+samræmi við það.</p>
+<p>Skoðum dæmi:</p>
+<p>Árekstur bíla: Hér er meginkrafturinn í dæminu milli bílanna sem lenda í
+árekstrinum. Greinilegt er að vélræn orka er ekki varðveitt, það fór
+orka í varma, hljóð, beyglur of fleira. Ef við skoðum kerfi beggja bíla
+þá er aðalkrafturinn krafturinn sem verkar á milli bílanna. Það er innri
+kraftur og heildarkrafturinn á kerfi þessarra tveggja bíla u.þ.b. enginn
+(í x-stefnun) <span class="math notranslate nohighlight">\(\vec{F}_{ytri}\,\, \approx\,\, \vec{0}\)</span>. Því er
+summa skriðþunganna rétt fyrir áreksturinn sú sama og summa
+skriðþunganna rétt eftir áreksturinn.</p>
+<p>Fall í þyngdarsviði í lofttæmi: Hér eru engir ógeymnir kraftar að verki
+svo við höfum varðveislu vélrænnar orku. Hér er hins vegar ytri kraftur
+að verka, þyngdarkrafturinn. Hann breytir hraða hlutanna og þar með
+skriðþunganum svo við höfum ekki skriðþungavarveislu.</p>
+</section>
+<section id="arekstur-daemi">
+<h2><span class="section-number">10.3. </span>Árekstur, dæmi<a class="headerlink" href="#arekstur-daemi" title="Permalink to this heading"></a></h2>
+<p><a class="reference internal" href="../_images/arekstur.png"><img alt="image2" src="../_images/arekstur.png" style="width: 5in;" /></a></p>
+<p>Hugsum okkur að bíll A, <span class="math notranslate nohighlight">\(m_A = 1200\,\text{kg}\)</span> komi eftir götu á
+hraðanum
+<span class="math notranslate nohighlight">\(\vec{v} = \left(\begin{array}{c}v_A\\0\end{array}\right)\)</span>. Hann
+rekst á bíl B, <span class="math notranslate nohighlight">\(m_B = 1700\,\text{kg}\)</span> sem kemur hornrétt á hann á
+hraðanum
+<span class="math notranslate nohighlight">\(\vec{v} = \left(\begin{array}{c}0\\v_B\end{array}\right)\)</span>. Við
+áreksturinn festast bílarnir saman og renna <span class="math notranslate nohighlight">\(5,0\,\text{m}\)</span> áður
+enn þeir stöðvast, þ.a. færslan frá árekstrarstað í sama hnitakefi er
+<span class="math notranslate nohighlight">\(\Delta\vec{s} = \left(\begin{array}{c}3,0\,\text{m}\\4,0\,\text{m}\end{array}\right)\)</span>.
+Gera má ráð fyrir gatan sé lárétt og að núningsstuðull milli bíla og
+götu sé <span class="math notranslate nohighlight">\(\mu_k = 0,8\)</span> . Nú þurfum við að finna út hvort bíll B
+hafi verið á ólöglegum hraða.</p>
+<p>Það fyrsta sem við gerum er að ákvarða hver hraði bílanna hafi verið
+rétt eftir áreksturinn. Það gerum við með hjálp vinnulögmálsins.</p>
+<p>Bílarnir eru fastir saman. Heildarmassi þeirra er 2900 kg.
+Núningskrafturinn sem verkar á þá þar sem þeir renna er:</p>
+<div class="math notranslate nohighlight">
+\[F_{\textnormal{nún}} = \mu_k
+\hspace{2 cm} \textit{Þ} = mg = 2900\cdot9,82\,\text{N}= 28478\,\text{N}\]</div>
+<p>Núningskrafturinn er því
+<span class="math notranslate nohighlight">\(F_{\textnormal{nún}} = 0,8\cdot 28478\,\text{N}= 22782\,\text{N}\)</span></p>
+<p>Við getum nú fundið hraða bílanna rétt eftir áreksturinn með því að nota
+vinnulögmálið:</p>
+<div class="math notranslate nohighlight">
+\[E_1 +W = E_2\]</div>
+<p>Rétt eftir áreksturinn er hraði bílanna v en þegar hann stöðvast er
+hraðinn 0. Vinnulögmálið gefur þá:</p>
+<div class="math notranslate nohighlight">
+\[\frac{1}{2}(m_A+m_B)v^2 - \vec{F}_{nun}\cdot\Delta\vec{s}= 0  \hspace{0.5 cm} \Rightarrow \hspace{0.5 cm} \frac{1}{2}2900\,v^2 = 22782\cdot 5,0\,\text{N}\text{m}\hspace{0.5 cm} \Rightarrow \hspace{0.5 cm} v = 8,86\,\text{m}/\text{s}\]</div>
+<p>Þetta er ferð samföstu massanna og nú þurfum við að vita hver stefna
+hraðans er svo við getum fundið hraðavigurinn.</p>
+<p>Stefna hraðans er sú sama og stefna færslunnar en færslan var
+<span class="math notranslate nohighlight">\(\Delta\vec{s} = \left(\begin{array}{c}3,0\,\text{m}\\4,0\,\text{m}\end{array}\right)\)</span>.</p>
+<p>Stefna hraðans myndar því hornið <span class="math notranslate nohighlight">\(\theta\)</span> við upphafstefnu
+<span class="math notranslate nohighlight">\(m_A\)</span> þar sem <span class="math notranslate nohighlight">\(\tan(\theta) = 4/3\)</span>,
+<span class="math notranslate nohighlight">\(\sin(\theta) = 4/5\)</span> og <span class="math notranslate nohighlight">\(\cos(\theta) = 3/5\)</span>.</p>
+<p>Við fáum því að hraðavigurinn
+<span class="math notranslate nohighlight">\(\vec{v} = \left(\begin{array}{c}8,86\cdot3/5\,\text{m}/\text{s}\\8,86\cdot4/5\,\text{m}/\text{s}\end{array}\right) = \left(\begin{array}{c}\,5,3\,\text{m}/\text{s}\\7,1\,\text{m}/\text{s}\end{array}\right)\)</span></p>
+<p>Þegar við erum búinn að finna hraðavigurinn <span class="math notranslate nohighlight">\(\vec{v}\)</span>, þá getum
+við snúið okkur að því að finna hraða massanna fyrir áreksturinn. Til
+þess notum við skriðungavarðveislu:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}m_A\vec{v}_A + m_B\vec{v}_B\,=\,(m_A+m_B)\vec{v}\hspace{0.5 cm}\Rightarrow\hspace{0.5 cm} m_A\left(\begin{array}{c}v_A\\0\end{array}\right) +m_B\left(\begin{array}{c}0\\v_B\end{array}\right)  = (m_A + m_B)\left(\begin{array}{c}5,3\,\text{m}/\text{s}\\7,1\,\text{m}/\text{s}\end{array}\right)\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}1200\left(\begin{array}{c}v_A\\0\end{array}\right) +1700\left(\begin{array}{c}0\\v_B\end{array}\right)  = 2900\left(\begin{array}{c}5,3\,\text{m}/\text{s}\\7,1\,\text{m}/\text{s}\end{array}\right) \hspace{0.5 cm}\Rightarrow\hspace{0.5 cm}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[v_A = \frac{2900\cdot 5,3}{1200}=12,8\,\text{m}/\text{s}\hspace{0.5 cm}\textnormal{og} \hspace{0.5 cm}v_B = \frac{2900\cdot7,1}{1700}=12,1\,\text{m}/\text{s}\]</div>
+<p>Þessir bílstjórar hafa alla vega ekki verið á neinum rosa hraða báðir
+undir 50 km/klst.</p>
+</section>
+<section id="fjarandi-arekstur">
+<h2><span class="section-number">10.4. </span>Fjaðrandi árekstur<a class="headerlink" href="#fjarandi-arekstur" title="Permalink to this heading"></a></h2>
+<p>Árekstrar eru kallaðir fjaðrandi ef vélræn orka er varðveitt í
+árekstrinum auk skriðþungans. Fjaðrandi árekstrar eru ekki algengir hjá
+venjulegum hlutum. Hins vegar eru til næstum fjaðrandi árekstrar. En í
+heimi öreinda eru árekstrar hins vegar yfirleitt fjaðrandi nema
+eindirnar séu að breytast úr einni í aðra.</p>
+<p>Það er alveg þess virði að skoða fjaðrandi árekstra svolítið. Við skulum
+hér skoða árekstur tveggja massa sem ferðast í einni vídd, þ.e. eftir
+línu. Við skulum kalla massana <span class="math notranslate nohighlight">\(m_A\)</span> og <span class="math notranslate nohighlight">\(m_B\)</span>.</p>
+<p>Við getum skrifað heildarskriðþunga fyrir árekstur</p>
+<div class="math notranslate nohighlight">
+\[p_{fyrir} =  m_Av_{A_1} + m_Bv_{B_1}\]</div>
+<p>Á sama hátt fæst</p>
+<div class="math notranslate nohighlight">
+\[p_{eftir} =  m_Av_{A_2} + m_Bv_{B_2}\]</div>
+<p>Nú setjum við <span class="math notranslate nohighlight">\(p_{fyrir} = p_{eftir}\)</span> svo skriðþungavarðveislan
+gefur:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+m_Av_{A_1} + m_Bv_{B_1} =  m_Av_{A_2} + m_Bv_{B_2}
+\end{equation}\]</div>
+<p>Næst skrifum á svipaðan hátt:</p>
+<div class="math notranslate nohighlight">
+\[E_{fyrir} = \frac{1}{2}m_Av^2_{A_1} +\frac{1}{2}m_Bv^2_{B_1}\]</div>
+<p>og</p>
+<div class="math notranslate nohighlight">
+\[E_{eftir} = \frac{1}{2}m_Av^2_{A_2} +\frac{1}{2}m_Bv^2_{B_2}\]</div>
+<p>og þá fæst að varðveisla hreyfiorku orku gefur:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+\frac{1}{2}m_Av^2_{A_1} +\frac{1}{2}m_Bv^2_{B_1} =   \frac{1}{2}m_Av^2_{A_2} +\frac{1}{2}m_Bv^2_{B_2}
+\end{equation}\]</div>
+<p>Við getum umritað jöfnur 1 og 2 þannig að við höfum <span class="math notranslate nohighlight">\(m_A\)</span>-liði
+vinstra mgin við jafnaðarmerkið og <span class="math notranslate nohighlight">\(m_B\)</span>-liði hægra megin við
+jafnaðarmerkið.</p>
+<div class="math notranslate nohighlight">
+\[m_A(v_{A_1}-v_{A_2})= m_B(v_{B_2}-v_{B_1})\]</div>
+<div class="math notranslate nohighlight">
+\[m_A(v^2_{A_1}-v^2_{A_2}) = m_B(v^2_{B_2}-v^2_{B_1})\]</div>
+<p>Nú getum við notað samokaregluna til þess að umrita seinni jöfnuna:</p>
+<div class="math notranslate nohighlight">
+\[m_A(v_{A_1}-v_{A_2})(v_{A_1}+v_{A_2}) = m_B(v_{B_2}-v_{B_1})(v_{B_2}+v_{B_1})\]</div>
+<p>Ef við nú notum fyrri jöfnuna fæst:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+(v_{A_1}+v_{A_2})\,\,=\,\,(v_{B_2}+v_{B_1})
+\end{equation}\]</div>
+<p>Þetta er ekki nein ný jafna. Hún er í raun bara jafna 10.2. umrituð með
+hjálp 10.1, en hún er línuleg og því mund einfaldari í notkun en jafna
+10.2.</p>
+<p>Það þarf þó að muna að þetta gildir bara um svona einfaldan línulegan
+fjaðrandi árekstur.</p>
+</section>
+<section id="massamija">
+<h2><span class="section-number">10.5. </span>Massamiðja<a class="headerlink" href="#massamija" title="Permalink to this heading"></a></h2>
+<p>Þegar við höfum kraft sem verkar á hlut sem er samsettur úr mörgum
+pörtum getur verið gott hugsa sér einhvern einn stað sem hegðar sér eins
+og allur massinn væri þar.</p>
+<p>Skoðum hlut sem er samsettur úr tveimur mössum. Eins og áður skulum við
+kalla þá <span class="math notranslate nohighlight">\(m_A\)</span> og <span class="math notranslate nohighlight">\(m_B\)</span>.</p>
+<p>Þá verka ytri kraftar á massana skv.</p>
+<div class="math notranslate nohighlight">
+\[\vec{F}_{ytri} = \frac{d\vec{p}_A}{dt}+\frac{d\vec{p}_B}{dt}
+=  m_A\frac{d\vec{v}_A}{dt}+m_B\frac{d\vec{v}_B}{dt}\]</div>
+<p>Við getum nú hugsað okkur að skilgreina hröðun eins konar „miðju
+hlutarins“, með því að setja</p>
+<div class="math notranslate nohighlight">
+\[\vec{F}_{ytri} = M\cdot\vec{a}_{CM}\]</div>
+<p>Hér er <span class="math notranslate nohighlight">\(M = m_A +m_B\)</span>.</p>
+<p>Við fáum þá að</p>
+<div class="math notranslate nohighlight">
+\[\vec{a}_{CM} = \frac{1}{M}(\frac{d\vec{p}_A}{dt}+\frac{d\vec{p}_B}{dt})
+=  \frac{1}{M}(m_A\frac{d\vec{v}_A}{dt}+m_B\frac{d\vec{v}_B}{dt})= \frac{d}{dt}(\frac{m_A\vec{v}_A+m_B\vec{v}_B}{M})\]</div>
+<p>Nú er hægt að skilgreina hraða, <span class="math notranslate nohighlight">\(\vec{v}_{CM}\)</span>, sem þann hraða sem
+diffraður gefur <span class="math notranslate nohighlight">\(\vec{a}_{CM}\)</span>. Við getum einnig skrifað:</p>
+<div class="math notranslate nohighlight">
+\[\vec{v}_A = \frac{d\vec{r}_A}{dt} \hspace{1 cm}\textnormal{og}\hspace{1 cm} \vec{v}_B = \frac{d\vec{r}_B}{dt}\]</div>
+<p>Þar með getum við einnig skilgreint stöðu:</p>
+<div class="math notranslate nohighlight">
+\[\vec{r}_{CM} = \frac{m_A\vec{r}_A+m_B\vec{r}_B}{M}\]</div>
+<p>Þessi staða þessa samsetta hlutar verður eins konar staður sem ytri
+kraftar valda hröðun á. Við köllum þetta massamiðju hlutarins.</p>
+<p>Ef við höfum fleiri en tvo massa getum við skrifað almenna jöfnu
+massamiðju sem:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+\vec{r}_{CM} = \frac{\sum_im_i\vec{r}_i}{M}\,\,\,\,\,\, M=\sum{m_i}
+\end{equation}\]</div>
+<p>Greinilegt er út frá skilgreiningu massamiðju, að ef engir ytri kraftar
+verka á hlut, þá getur massamiðja hans ekki haft hröðun, og því er hraði
+massamiðjunnar fasti.</p>
+</section>
+<section id="daemi">
+<h2><span class="section-number">10.6. </span>Dæmi<a class="headerlink" href="#daemi" title="Permalink to this heading"></a></h2>
+<section id="id1">
+<h3><span class="section-number">10.6.1. </span>1.<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h3>
+<p>Ísklumpur (120 g) kemur eftir láréttu svelli á hraðanum
+1,1 <span class="math notranslate nohighlight">\(\vec{i}\)</span> m/s. Kalli er með spítu og slær hann í ísklumpinn
+með krafti sem vísar í sömu stefnu og klumpurinn ferðast. Spítan er í
+snertingu við klumpinn í 0,4 sek. Meðalkrafturinn sem spítan verkar á
+klumpinn með er (2,1 <span class="math notranslate nohighlight">\(\vec{i}\)</span> N). Hver er hraði klumpsins eftir
+að hann sleppir spítunni?</p>
+</section>
+<section id="section-1">
+<span id="id2"></span><h3><span class="section-number">10.6.2. </span>2.<a class="headerlink" href="#section-1" title="Permalink to this heading"></a></h3>
+<p>Vagn með massann 600 g kemur á hraðanum 0,80 m/s og lendir á kyrrstæðum
+vegg. Við áreksturinn kastast vagninn tilbaka tilbaka á hraðanum
+0,75 m/s (ef 0,80 <span class="math notranslate nohighlight">\(\vec{i}\)</span> m/s er upphafshraðinn þá er
+lokahraðinn -0,75 <span class="math notranslate nohighlight">\(\vec{i}\)</span> m/s). Áreksturinn við vegginn tekur
+3,0 sekúndur. Með hversu stórum meðalkrafti verkaði veggurinn á vagninn?</p>
+</section>
+<section id="section-2">
+<span id="id3"></span><h3><span class="section-number">10.6.3. </span>3.<a class="headerlink" href="#section-2" title="Permalink to this heading"></a></h3>
+<p>Ísklumpur (1,2 kg) ferðast eftir svelli á hraðanum
+0,8 <span class="math notranslate nohighlight">\(\vec{i}\)</span> m/s. Steinþór slær með spítu í klumpinn með krafti
+sem vísar hornrétt á ísklumpinn. Spítan er í snertingu við ísklumpinn í
+0,8 sek. Eftir að spítan sleppir klumpinum er hann að ferðast á hraðanum
+(<span class="math notranslate nohighlight">\(0,8\,\vec{i}+0,5\,\vec{j}\,)\)</span>m/s. Hver var meðalkrafturinn sem
+spítan verkaði á klumpinn með?</p>
+</section>
+<section id="section-3">
+<span id="id4"></span><h3><span class="section-number">10.6.4. </span>4.<a class="headerlink" href="#section-3" title="Permalink to this heading"></a></h3>
+<p>Leikfangalestarvagn sem hefur massann 250 g, ferðast á hraðanum 0,5 m/s
+til hægri eftir beinni braut. Hann lendir á kyrrstæðum 400 g
+leikfangavagni og tengist honum. Vagnarnir halda síðan áfram saman. Hver
+er hraði þeirra eftir að þeir tengjast?</p>
+</section>
+<section id="section-4">
+<span id="id5"></span><h3><span class="section-number">10.6.5. </span>5.<a class="headerlink" href="#section-4" title="Permalink to this heading"></a></h3>
+<p>Geimskip ferðast á jöfnum hraða 230 m/s. Skipið er með eldflaug
+innanborðs sem skjóta má framávið. Massi geimskipsins án eldflaugar er
+<span class="math notranslate nohighlight">\(4,0\cdot10^6\)</span> kg og massi eldflaugarinnar er 1300 kg. Þegar
+eldflauginni er skotið beint áfram í ferðastefnuna stöðvast geimskipið.
+Hver er hraði eldflaugarinnar?</p>
+</section>
+<section id="section-5">
+<span id="id6"></span><h3><span class="section-number">10.6.6. </span>6.<a class="headerlink" href="#section-5" title="Permalink to this heading"></a></h3>
+<p>Batmann (91 kg) hoppar beint niður af brú og lendir á bát sem glæpón er
+að flýja í (bátur og glæpón samtals 510kg). Upphaflega er báturinn að
+ferðast á hraðanum 11 m/s. Hver er hraði bátsins rétt eftir að Batman
+lendir á honum?</p>
+</section>
+<section id="section-6">
+<span id="id7"></span><h3><span class="section-number">10.6.7. </span>7.<a class="headerlink" href="#section-6" title="Permalink to this heading"></a></h3>
+<p>Aðalheiður og Jóhanna standa úti á glerhálu svelli. Samtals er massi
+þeirra 148 kg. Nú ýta þær hvor annarri frá sér og við það fer Aðalheiður
+með hraðanum 1,20 m/s í eina átt og Jóhanna með hraðanum 0,80 m/s í
+gagnstæða átt. Hver er massi Aðalheiðar?</p>
+</section>
+<section id="section-7">
+<span id="id8"></span><h3><span class="section-number">10.6.8. </span>8.<a class="headerlink" href="#section-7" title="Permalink to this heading"></a></h3>
+<div class="line-block">
+<div class="line">Kalli og Stína eru jafnþung og standa sitt á hvorum enda á 2,00 m
+löngu svifbretti. Massi Kalla, Stínu og brettisins samtals er 118 kg.
+Stína heldur á 6,00 kg bolta og kastar honum beint yfir til Kalla
+þannig að boltinn ferðast svo til alveg lárétt.</div>
+<div class="line">Athugið að þið getið gert ráð fyrir að boltinn og brettið séu hvort um
+sig á jöfnum hraða milli þess sem boltanum er sleppt og hann gripinn.</div>
+<div class="line">a) Ef brettið færist um vegalengd <span class="math notranslate nohighlight">\(x\)</span> á tímanum <span class="math notranslate nohighlight">\(t\)</span> sem
+það tekur boltann að fara frá Stínu til Kalla, hvernig má þá tákna
+hraða brettisins?</div>
+<div class="line">b) Hvernig má tákna hraða boltans við <span class="math notranslate nohighlight">\(x\)</span> og <span class="math notranslate nohighlight">\(t\)</span>?</div>
+<div class="line">c) Finnið <span class="math notranslate nohighlight">\(x\)</span>.</div>
+</div>
+</section>
+<section id="section-8">
+<span id="id9"></span><h3><span class="section-number">10.6.9. </span>9.<a class="headerlink" href="#section-8" title="Permalink to this heading"></a></h3>
+<p>Vagn ferðast á jafna hraðanum <span class="math notranslate nohighlight">\(v_A\)</span> efti beinum láréttum vegi. Ef
+10% af massa vagnsin er kastað með hraða (ferð) <span class="math notranslate nohighlight">\(v\)</span> beint áfram í
+stefnu vagnsins, þá stöðvast vagninn. Ef sama massa er kastað með sama
+hraða (ferð) <span class="math notranslate nohighlight">\(v\)</span> í stefnu sem er gagnstæð stefnu vagnsins þá fær
+vagninn hraðann <span class="math notranslate nohighlight">\(v_B\)</span>. Finnið hlutfallið <span class="math notranslate nohighlight">\(\frac{v_B}{v_A}\)</span>.</p>
+</section>
+<section id="section-9">
+<span id="id10"></span><h3><span class="section-number">10.6.10. </span>10.<a class="headerlink" href="#section-9" title="Permalink to this heading"></a></h3>
+<p>Hraði byssukúlu (12 g) er mældur þannig að henni er skotið í kubb
+(4,0 kg) sem situr kyrr á núningslausu borði (t.d. blástursborði). Hraði
+kubbsins eftir að kúlan lendir í honum er svo mældur og reynist hann
+vera 1,8 m/s. Hver var hraði kúlunnar?</p>
+</section>
+<section id="section-10">
+<span id="id11"></span><h3><span class="section-number">10.6.11. </span>11.<a class="headerlink" href="#section-10" title="Permalink to this heading"></a></h3>
+<div class="line-block">
+<div class="line">Tveir vagnar, <span class="math notranslate nohighlight">\(A\)</span> (1,50 kg) og <span class="math notranslate nohighlight">\(B\)</span> (1,8 kg) lenda í
+línuárekstri. Fyrir áreksturinn var hraði massa <span class="math notranslate nohighlight">\(A\)</span> 1,3 m/s í
+jákvæða x-stefnu og hraði <span class="math notranslate nohighlight">\(B\)</span> 1,5 m/s í neikvæða x-stefnu.</div>
+<div class="line">Hver er hraði vagnanna eftir árekstur ef</div>
+<div class="line">a) áreksturinn er fullkomlega ófjaðrandi? b) áreksturinn er
+fullkomlega fjaðrandi?</div>
+</div>
+</section>
+<section id="section-11">
+<span id="id12"></span><h3><span class="section-number">10.6.12. </span>12.<a class="headerlink" href="#section-11" title="Permalink to this heading"></a></h3>
+<p>Tvær billjard kúlur eru á laréttu borði. Þær hafa báðar sama massa. Ef
+annarri kúlunni er skotið á hina sem stendur kyrrstæð á borðinu með
+hraða 2,1 m/s, hver verður hraði kúlanna rétt eftir áreksturinn? Gera má
+ráð fyrir að áreksturinn sé línulegur og fullkomlega fjaðrandi.</p>
+</section>
+<section id="section-12">
+<span id="id13"></span><h3><span class="section-number">10.6.13. </span>13.<a class="headerlink" href="#section-12" title="Permalink to this heading"></a></h3>
+<p>Tvær billjardkúlur liggja á láréttu borði. Þær hafa báðar sama massa. Nú
+er annarri kúlunni skotið á hina þannig að önnur kúlan fær ferðina
+0,8 m/s og stefnir 56<span class="math notranslate nohighlight">\(\ensuremath{^\circ}\)</span> frá stefnu upphaflegu
+kúlunnar og hin kúlan fær ferðina 1,2 m/s. Ef áreksturinn er fullkomlega
+fjaðrandi, hvert er þá hornið sem hin kúlan fer miðað við upprunanlegu
+stefnuna og hver var hraði kúlunnar sem var skotið þegar hún lenti á
+þeirri kyrrstæðu?</p>
+</section>
+<section id="section-13">
+<span id="id14"></span><h3><span class="section-number">10.6.14. </span>14.<a class="headerlink" href="#section-13" title="Permalink to this heading"></a></h3>
+<div class="line-block">
+<div class="line">Tveir vagnar, <span class="math notranslate nohighlight">\(A\)</span> (1,50 kg) og <span class="math notranslate nohighlight">\(B\)</span> (1,8 kg) lenda í
+línuárekstri. Fyrir áreksturinn var hraði massa <span class="math notranslate nohighlight">\(A\)</span> 1,3 m/s í
+jákvæða x-stefnu og hraði <span class="math notranslate nohighlight">\(B\)</span> 1,5 m/s einnig í jákvæða x-stefnu.
+(Það þýðir auðvitað að <span class="math notranslate nohighlight">\(B\)</span> er lengra til vinstri á x-ás fyrir
+árekstur!) Hver er hraði vagnanna eftir árekstur ef</div>
+<div class="line">a) áreksturinn er fullkomlega ófjaðrandi? b) áreksturinn er
+fullkomlega fjaðrandi?</div>
+</div>
+</section>
+<section id="section-14">
+<span id="id15"></span><h3><span class="section-number">10.6.15. </span>15.<a class="headerlink" href="#section-14" title="Permalink to this heading"></a></h3>
+<div class="line-block">
+<div class="line">Tveir vagnar, <span class="math notranslate nohighlight">\(A\)</span> (1,50 kg) og <span class="math notranslate nohighlight">\(B\)</span> (1,8 kg) lenda í
+línuárekstri. Fyrir áreksturinn var hraði massa <span class="math notranslate nohighlight">\(A\)</span> 1,3 m/s í
+jákvæða x-stefnu og hraði <span class="math notranslate nohighlight">\(B\)</span> 1,5 m/s í neikvæða x-stefnu. Eftir
+áreksturinn er hraði <span class="math notranslate nohighlight">\(A\)</span> 0,3 m/s í neikvæða x-stefnu.</div>
+<div class="line">a) Hver er hraði B eftir áreksturinn?</div>
+<div class="line">b) Hversu mikil orka breyttist í varma hljóð og eða beyglur í
+árekstrinum?</div>
+</div>
+</section>
+<section id="section-15">
+<span id="id16"></span><h3><span class="section-number">10.6.16. </span>16.<a class="headerlink" href="#section-15" title="Permalink to this heading"></a></h3>
+<div class="line-block">
+<div class="line">Önnur aðferð við að mæla hraða kúlu sem skotið er úr byssu er að
+skjóta kúlunni í eins konar pendúl þar sem hún festist og byrjar að
+sveiflast. Útfrá því hversu hátt pendúllinn sveiflast má svo reikna
+hraða kúlunnar. Hugsum okkur að kúlu með massa 10 g sé skotið í pendúl
+sem hefur massa 1,2 kg og hangir í bandi sem er 80 cm að lengd. Ef
+pendúllinn sveiflast upp þannig að hann myndar
+38<span class="math notranslate nohighlight">\(\ensuremath{^\circ}\)</span> horn við lóðrétta stöðu</div>
+<div class="line">a) hversu langa vegalengd í lóðrétta stefnu hefur pendúllinn þá lyfst?</div>
+<div class="line">b) hver er þá stöðuorka pendúls og kúlu í efstu stöðu (miðað við að
+hún sé 0 í neðstu stöðu)?</div>
+<div class="line">c) hver er þá hreyfiorka pendúls og kúlu í neðstu stöðu?</div>
+<div class="line">d) hver er þá hraði pendúls og kúlu rétt eftir að kúlan lendir í
+pendúlnum?</div>
+<div class="line">e) hver er þá hraði kúlunnar áður en hún lenti í pendúlnum?</div>
+</div>
+</section>
+<section id="section-16">
+<span id="id17"></span><h3><span class="section-number">10.6.17. </span>17.<a class="headerlink" href="#section-16" title="Permalink to this heading"></a></h3>
+<p>Bíll <span class="math notranslate nohighlight">\(A\)</span> (800 kg) situr kyrrstæður á gatnamótum. Bílstjóri bílsins
+er með fótinn á bremsunni þegar annar bíll, bíll <span class="math notranslate nohighlight">\(B\)</span> (1200 kg),
+kemur og lendir aftan á honum. Við þetta renna bílarnir áfram 3,0 m. Ef
+núningsstuðull milli dekkja og vegar er 0,7, hver var þá hraði bíls
+<span class="math notranslate nohighlight">\(B\)</span>?</p>
+</section>
+<section id="section-17">
+<span id="id18"></span><h3><span class="section-number">10.6.18. </span>18.<a class="headerlink" href="#section-17" title="Permalink to this heading"></a></h3>
+<div class="line-block">
+<div class="line">Bíll <span class="math notranslate nohighlight">\(A\)</span> (1200 kg) kemur akandi að gatnamótum úr vesturátt. Bíll
+<span class="math notranslate nohighlight">\(B\)</span> (900 kg) kemur akandi að sömu gatnamótum en hann kemur úr
+suðurátt. Báðir bílstjórarnir eru að texta og taka ekki eftir hvor
+öðrum fyrr en þeir lenda saman. Þá stíga þeir á bremsurnar en bílarnir
+klessa, festast saman og renna áfram í stefnu
+48<span class="math notranslate nohighlight">\(\ensuremath{^\circ}\)</span> norður af austri. Þeir stöðvast þegar
+þeir hafa runnið 4,2 m.</div>
+<div class="line">Á hvaða hraða voru bílarnir fyrir áreksturinn? (Gera má ráð fyrir að
+núningsstuðullinn sé aftur 0,7.)</div>
+</div>
+</section>
+<section id="section-18">
+<span id="id19"></span><h3><span class="section-number">10.6.19. </span>19.<a class="headerlink" href="#section-18" title="Permalink to this heading"></a></h3>
+<p><a class="reference internal" href="../_images/Stong.png"><img alt="image3" src="../_images/Stong.png" style="width: 3in;" /></a></p>
+<div class="line-block">
+<div class="line">Ákvarðið stöðu massamiðju stangarinnar á myndinni ef upphafspunktur
+hnitakerfisins er í</div>
+<div class="line">a) miðju stærri kúlunnar</div>
+<div class="line">b) miðju minni kúlunnar</div>
+<div class="line">c) í punktinum sem teiknaður er 1,0 m vinstra megin við stærri kúluna.</div>
+</div>
+</section>
+<section id="section-19">
+<span id="id20"></span><h3><span class="section-number">10.6.20. </span>20.<a class="headerlink" href="#section-19" title="Permalink to this heading"></a></h3>
+<p><a class="reference internal" href="../_images/Hringir.png"><img alt="image4" src="../_images/Hringir.png" style="width: 1.5in;" /></a></p>
+<div class="line-block">
+<div class="line">Á myndinni má sjá kerfi þriggja kúla sem hafa geisla 2,0 m, 4,0 m og
+6,0 m. Kúlurnar eru úr mismunandi efnum þannig að minnsta kúlan hefur
+eðlismassa 4,0 g/cm<span class="math notranslate nohighlight">\(^3\)</span>, kúlan í miðjunni hefur eðlismassa
+8,0 g/cm<span class="math notranslate nohighlight">\(^3\)</span> og sú stærsta hefur eðlismassa
+12,0 g/cm<span class="math notranslate nohighlight">\(^3\)</span>.</div>
+<div class="line">Finnið massamiðju kerfisins miðað við miðju minnstu kúlunnar.</div>
+</div>
+</section>
+<section id="section-20">
+<span id="id21"></span><h3><span class="section-number">10.6.21. </span>21.<a class="headerlink" href="#section-20" title="Permalink to this heading"></a></h3>
+<p><a class="reference internal" href="../_images/Box.png"><img alt="image5" src="../_images/Box.png" style="width: 1in;" /></a></p>
+<p>Myndin sýnir tóman kassa með engu loki. Flatarmál hliðanna (fernigslaga)
+og botnsins er það sama, <span class="math notranslate nohighlight">\(h^2\)</span>. Ef botninn er úr efni sem hefur
+tvöfaldan eðlismassa hliða, hversu hátt yfir botni kassans er þá
+massamiðja kassans?</p>
+</section>
+<section id="section-21">
+<span id="id22"></span><h3><span class="section-number">10.6.22. </span>22.<a class="headerlink" href="#section-21" title="Permalink to this heading"></a></h3>
+<div class="line-block">
+<div class="line">Kúla, <span class="math notranslate nohighlight">\(K_A\)</span>, rekst með hraða <span class="math notranslate nohighlight">\(\vec{v}\)</span> á aðra jafnþunga
+kyrrstæða kúlu, <span class="math notranslate nohighlight">\(K_B\)</span>. Áreksturinn er alfjaðrandi.</div>
+<div class="line">a) Sýnið að ef áreksturinn línuárekstur stöðvast <span class="math notranslate nohighlight">\(K_A\)</span> en
+<span class="math notranslate nohighlight">\(K_B\)</span> heldur áfram með hraða <span class="math notranslate nohighlight">\(\vec{v}\)</span>.</div>
+<div class="line">b) Sýnið að ef áreksturinn er skáárekstur verður hornið milli hraða
+kúlanna eftir árekstur 90<span class="math notranslate nohighlight">\(\ensuremath{^\circ}\)</span>.</div>
+</div>
+</section>
+<section id="svor">
+<h3><span class="section-number">10.6.23. </span>Svör<a class="headerlink" href="#svor" title="Permalink to this heading"></a></h3>
+<div class="line-block">
+<div class="line">1) 1,8 m/s</div>
+<div class="line">2) -0,31 N</div>
+<div class="line">3) 0,75 N</div>
+<div class="line">4) 0,192 m/s</div>
+<div class="line">5) 708 km/s</div>
+<div class="line">6) 9,3 m/s</div>
+<div class="line">7) 59,2 kg</div>
+<div class="line">8) 0,10 m</div>
+<div class="line">9) 2,22</div>
+<div class="line">10) 602 m/s</div>
+<div class="line">11) a. -0,23 m/s    b. -1,75 m/s og 1,05 m/s</div>
+<div class="line">12) 0 m/s og 2,1 m/s</div>
+<div class="line">13) <span class="math notranslate nohighlight">\(-34\ensuremath{^\circ}\)</span> og 1,4 m/s 14) a. 1,4 m/s    b.
+1,3 m/s og 1,5 m/s</div>
+<div class="line">15) a. 0,17 m/s    b. -3,20 J</div>
+<div class="line">16) a. 0,17 m    b. 2,01 J    c. 2,01 J    d. 1,82 m/s    e. 221 m/s</div>
+<div class="line">17) 10,7 m/s</div>
+<div class="line">18) 8,9 m/s og 13,2 m/s</div>
+<div class="line">19) a. 0,33 m    b. -0,67 m    c. 1,33 m</div>
+<div class="line">20) 13,3 m</div>
+<div class="line">21) <span class="math notranslate nohighlight">\(\frac{1}{3}h\)</span></div>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../kafli09/" class="btn btn-neutral float-left" title="9. Vinna og orka" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../ordaskra/" class="btn btn-neutral float-right" title="Orðaskrá" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p></p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+<script>
+    window.addEventListener("load", function () {
+        for (var i in ggbAppletId) {
+            ggbAppletId[i].inject(i);
+        }
+    });
+</script>
+
+
+ 
+
+<style>
+    /* Sidebar header (and topbar for mobile) */
+    .wy-side-nav-search,
+    .wy-nav-top {
+       /* HI: #10099F, VoN: #EB7125, orginal #01447B */
+       background: #321c4a;
+    }
+
+    /* Sidebar */
+    .wy-nav-side {
+      /* orginal #343131, HÍ grár dekkri: #EEEEEE, HÍ svartur: #262626 */
+      background: #262626;
+    }
+</style>
+
+
+</body>
+</html>

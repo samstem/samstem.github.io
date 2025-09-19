@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="is" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>7. Notkun á lögmálum Newtons &mdash; Eðlisfræði I </title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/eqt.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/datacamp-custom.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/edbook.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/samstem.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+        <script src="../_static/js/eqt.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script src="https://cdn.datacamp.com/datacamp-light-latest.min.js"></script>
+        <script async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../_static/js/theme.js"></script>
+
+<!-- hoverrole.py css code -->
+<style type="text/css">
+    a.tooltip {
+        outline: none;
+        border-bottom: thin dotted;
+        background: #ffeedd
+    }
+
+    a.tooltip strong {
+        line-height: 30px;
+    }
+
+    a.tooltip:hover {
+        text-decoration: none;
+    }
+
+    a.tooltip span {
+        z-index: 10;
+        display: none;
+        padding: 14px 20px;
+        margin-top: -30px;
+        margin-left: 12px;
+        width: 310px;
+        line-height: 16px;
+    }
+
+    a.tooltip:hover span {
+        display: inline;
+        position: absolute;
+        color: #111;
+        border: 1px solid #DCA;
+        background: #fffAF0;
+    }
+
+    .callout {
+        z-index: 20;
+        position: absolute;
+        top: 30px;
+        border: 0;
+        left: -12px;
+    }
+
+    /*CSS3*/
+    a.tooltip span {
+        border-radius: 4px;
+        box-shadow: 5px 5px 8px #CCC;
+    }
+</style>
+<!-- End hoverrole.py css code -->
+
+<style type="text/css">
+    .sagecell .CodeMirror-scroll {
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+
+    .sagecell .CodeMirror {
+        height: auto;
+    }
+
+    /* - Begin equation reference style - */
+    h6.eqno {
+        display: inline-block;
+        padding-left: 10px;
+    }
+
+    h6 .headerlink {
+        display: inline-block !important;
+    }
+
+    h6 .headerlink:after {
+        visibility: hidden !important;
+    }
+
+    h6 .headerlink:hover:after {
+        visibility: visible !important;
+    }
+
+    .eqno:hover>.headerlink:after {
+        visibility: visible !important;
+    }
+
+    table>caption>.headerlink {
+        visibility: hidden !important;
+    }
+
+    table>caption>.headerlink {
+        visibility: hidden !important;
+    }
+
+    /* - End - */
+</style>
+
+
+
+    <link rel="index" title="Atriðaskrá" href="../genindex/" />
+    <link rel="search" title="Leit" href="../search/" />
+    <link rel="next" title="8. Þyngdarkraftur" href="../kafli08/" />
+    <link rel="prev" title="6. Verkan og gagnverkan" href="../kafli06/" />
+
+
+
+<!--	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
+<script type="text/javascript" src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+<script>ggbAppletId = [];</script>
+
+
+ 
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../" class="icon icon-home">
+            Eðlisfræði I
+              <img src="../_static/samstem.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../kafli01/">1. Mælingar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli02/">2. Hreyfing í einni vídd</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli03/">3. Afstæð hreyfing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli04/">4. Hreyfing í fleiri víddum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli05/">5. Tregða og núningur</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli06/">6. Verkan og gagnverkan</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">7. Notkun á lögmálum Newtons</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#tungumal-daemanna">7.1. Tungumál dæmanna</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#togkraftur-i-bandi">7.1.1. Togkraftur í bandi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#a-byrja-a-renna">7.1.2. Að byrja að renna</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#a-sleppa-yfirbori">7.1.3. Að sleppa yfirborði</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#atrii-sem-tengjast-hreyfifraei">7.1.4. Atriði sem tengjast hreyfifræði</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#daemi-1-maur-a-draga-kassa">7.2. Dæmi 1. Maður að draga kassa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#daemi-2-kassi-togaur-upp-skabretti">7.3. Dæmi 2. Kassi togaður upp skábretti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#daemi-3-bill-i-beygju">7.4. Dæmi 3. Bíll í beygju</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#daemi-4-kassar-festir-yfir-trissu">7.5. Dæmi 4. Kassar festir yfir trissu</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#retta-ur-asnum">7.5.1. Rétta úr ásnum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#urklippur">7.5.2. Úrklippur</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#daemi">7.6. Dæmi</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli08/">8. Þyngdarkraftur</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli09/">9. Vinna og orka</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli10/">10. Atlag og skriðþungi</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ordaskra/">Orðaskrá</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../">Eðlisfræði I</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><span class="section-number">7. </span>Notkun á lögmálum Newtons</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/edbook/haskoli-islands/blob/master/projects/edlisfraediI/kafli07.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="notkun-a-logmalum-newtons">
+<h1><span class="section-number">7. </span>Notkun á lögmálum Newtons<a class="headerlink" href="#notkun-a-logmalum-newtons" title="Permalink to this heading"></a></h1>
+<p><a class="reference internal" href="../_images/notkunalogmalumN.png"><img alt="image" src="../_images/notkunalogmalumN.png" style="width: 100%;" /></a></p>
+<p>Það er margt sem þarf að hafa í huga þegar lögmál Newtons eru notuð. Ef
+maður fer varlega og notar vigrana rétt þá getur maður leyst stóran
+hluta dæma án vandræða. Auðvelt er að leysa dæmi eins og það að finna
+með hversu stórum krafti þarf að draga eitthvað til þess að það fari með
+jöfnum hraða eða hversu mikla hröðun hlutur fær ef maður togar með svo
+eða svo miklum krafti. Við getum skoðað hversu hratt má fara í krappar
+beygjur án þess að renna og við getum fundið hversu hratt þarf að fara
+til þess að komast heill á húfi úr lóðréttum „loop-the-loop rússibana“.
+Við getum leyst alls kyns dæmi ef við skiljum og vitum hvernig á að nota
+lögmál Newtons. Auðvitað þurfum við að hafa almenna skynsemi með í ráðum
+og ekki er verra að hafa í huga nokkur atriði sem gætu tafið fyrir okkur
+ef við ætluðum að uppgötva þau sjálf þegar við reiknum dæmin.</p>
+<section id="tungumal-daemanna">
+<h2><span class="section-number">7.1. </span>Tungumál dæmanna<a class="headerlink" href="#tungumal-daemanna" title="Permalink to this heading"></a></h2>
+<p>Oft getur verið erfitt að lesa dæmi og skilja hvað verið er að segja.
+Við skulum skoða nokkur atriði sem gott er að hafa í huga við lestur
+dæma. Við skulum nú taka fyrir nokkur algeng atriði sem oft koma fyrir í
+dæmum.</p>
+<section id="togkraftur-i-bandi">
+<h3><span class="section-number">7.1.1. </span>Togkraftur í bandi<a class="headerlink" href="#togkraftur-i-bandi" title="Permalink to this heading"></a></h3>
+<p>Togkraftur í bandi kemur til vegna efnatengja sem halda bandinu saman ef
+við togum í bandið í einhverjum punkti þá er jafnstór kraftur í báðar
+áttir (samkvæmt 3. lögmálinu) að reyna að toga bandið í sundur í þeim
+punkti. Í hverjum punkti í bandinu eru kraftar í báðar áttir. Við höfum
+helst áhuga á kraftinum sem bandið togar í einhvern hlut með og svo
+auðvitað því að bandið slitni ekki.</p>
+<p>Oft er í dæmum talað um að bandið sé létt. Hvað þýðir það og af hverju
+er verið að segja það í dæminu? Jú það er alveg ákveðin ástæða fyrir
+því. Hugsum okkur að við séum að draga vagn eftir götu. Er togkrafturinn
+sem við beitum sá sami og krafturinn sem togar í vagninn? M.ö.o. er
+togkrafturinn sá sami við báða enda bandsins?</p>
+<p><a class="reference internal" href="../_images/togkrafturibandi.png"><img alt="image1" src="../_images/togkrafturibandi.png" style="width: 100%;" /></a></p>
+<p>Skoðum myndina. Inn á hana er merktur bútur af bandinu. Við skulum segja
+að hann hafi massan <span class="math notranslate nohighlight">\(\delta m\)</span>. Kraftur <span class="math notranslate nohighlight">\(T_1\)</span> togar í hægri
+enda bandsins og kraftur <span class="math notranslate nohighlight">\(T_2\)</span> togar í vinstri enda bandsins. Ef
+við skrifum upp 2. lögmál Newtons fyrir þennan bút þá fáum við:</p>
+<div class="math notranslate nohighlight">
+\[T_1 - T_2 = \delta m a_x\]</div>
+<p>Hér erum við að skoða x-þátt vigurjöfnunnar. Við sjáum að ef
+<span class="math notranslate nohighlight">\(a_x = 0\)</span>, þá fæst að <span class="math notranslate nohighlight">\(T_1 = T_2\)</span>. Það er gott og blessað en
+oft erum við að reikna dæmi þar sem <span class="math notranslate nohighlight">\(a_x\)</span> er ekki núll. Þá er
+greinilegt að <span class="math notranslate nohighlight">\(T_1 \neq T_2\)</span>. Það er ekkert að því í sjálfu sér
+nema þá þarf að taka massan á bandinu inn í reikninga og allt verður mun
+flóknara. Þegar maður er að byrja að reikna dæmi er gott að hafa þau
+einföld. Þess vegna er yfirleitt tekið fram í dæmum að bandið sé létt.
+Þá er átt við að miðað við aðrar stærðir í dæminu sé það svo létt að við
+megum ganga út frá því að <span class="math notranslate nohighlight">\(\delta m\)</span> = 0. Þetta segir þá að
+<span class="math notranslate nohighlight">\(T_1 = T_2\)</span> allstaðar í bandinu ef engir massar eru á milli.</p>
+<p>Ef við höfum fleiri en einn vagn eins og á myndinni hér:</p>
+<p><a class="reference internal" href="../_images/togkrafturmargirvagnar.png"><img alt="image2" src="../_images/togkrafturmargirvagnar.png" style="width: 100%;" /></a></p>
+<p>Þá er togkrafturinn mismunandi í mismunandi böndum. Hann er þó sá sami í
+hverju bandi fyrir sig, ef bandið er „létt“.</p>
+</section>
+<section id="a-byrja-a-renna">
+<h3><span class="section-number">7.1.2. </span>Að byrja að renna<a class="headerlink" href="#a-byrja-a-renna" title="Permalink to this heading"></a></h3>
+<p>Stundum er spurt um hvort hlutur haldist kyrr einhvers staðar. Stundum
+er spurt með hversu miklum krafti þurfi að ýta til þess að hlutur byrji
+að renna. Í báðum tilfellum er átt við hvort kyrrstöðunúningskrafturinn
+sé næganlega stór til þess að halda hlutnum kyrrum.
+Kyrrstöðunúningskrafturinn er alltaf minni en kyrrstöðunúningsstuðullinn
+sinnum þverkrafturinn. Þegar hann nær því að vera jafn þá er það sem
+hluturinn er alveg að fara að renna.</p>
+<p>Dæmi gæti fjallað um bíl í beygju. Kyrrstöðunúningskraftur þvert á
+hreyfistefnuna heldur honum frá því að skransa og renna út úr beygjunni.
+Annað dæmi gæti fjallað um kassa á bílpalli. Ef bíllinn fer af stað þá
+er það núningur milli palls og kassa sem hreyfir kassann—gefur honum
+hröðun. Stærðfræðilega skrifum við:
+<span class="math notranslate nohighlight">\(F_{nun} \leq \mu_s \textit{Þ}\)</span>. Mikilvægt er að skilja að þetta
+þýðir að kyrrstöðunúningur á hlut er alltaf það sem hann þarf að vera
+þannig að jöfnurnar séu uppfylltar, þar til hann nær gildinu
+<span class="math notranslate nohighlight">\(\mu_s \textit{Þ}\)</span>, en þá byrjar hluturinn að renna.</p>
+</section>
+<section id="a-sleppa-yfirbori">
+<h3><span class="section-number">7.1.3. </span>Að sleppa yfirborði<a class="headerlink" href="#a-sleppa-yfirbori" title="Permalink to this heading"></a></h3>
+<p>Við getum hugsað okkur að við höfum pening í lófanum og svo kippum við
+hendini svo hratt niður að peningurinn verður eftir, losnar frá lófanum.</p>
+<p>Við höfum öll séð, að minnsta kosti myndir af „loop the loop“ rússibana.
+Það er rússibani sem fer í heilan hring svo þeir sem eru í honum eru
+alveg á hvolfi í efstu stöðu.</p>
+<p>Koma þeir sem eru í rússibananum til með að detta? Hvað þarf rússibaninn
+að fara hratt?</p>
+<p>Það að losna frá yfirborði af einni gerð eða annarri þýðir bara að
+þverkrafturinn, krafturinn frá undirlaginu hornrétt á hlutinn, verður
+enginn. Í dæmareikningi þýðir það að <span class="math notranslate nohighlight">\(\vec{\textit{Þ}} = 0\)</span>. Maður
+getur skilið að ef yfirborðið ýtir ekkert á hlutinn þá er hann laus frá
+því.</p>
+</section>
+<section id="atrii-sem-tengjast-hreyfifraei">
+<h3><span class="section-number">7.1.4. </span>Atriði sem tengjast hreyfifræði<a class="headerlink" href="#atrii-sem-tengjast-hreyfifraei" title="Permalink to this heading"></a></h3>
+<p>Í hreyfifræðinni koma upp ýmis atriði sem við verðum að skilja.</p>
+<p>Þegar sagt er að einhver hafi farið af stað úr kyrrstöðu, þá vitum við
+að <span class="math notranslate nohighlight">\(\vec{v}_0=\vec{0}\)</span>.</p>
+<p>Þegar einhver ferðast með jöfnum hraða, þá vitum við að
+<span class="math notranslate nohighlight">\(\vec{a} = \vec{0}\)</span></p>
+<p>Þegar hlut er kastað upp í loft þá eru einkenni efsta punkts þau að
+<span class="math notranslate nohighlight">\(v_y = 0\)</span>.</p>
+<p>Það eru fleiri svona atriði sem við lærum að þekkja en látum þetta duga
+í bili.</p>
+</section>
+</section>
+<section id="daemi-1-maur-a-draga-kassa">
+<h2><span class="section-number">7.2. </span>Dæmi 1. Maður að draga kassa<a class="headerlink" href="#daemi-1-maur-a-draga-kassa" title="Permalink to this heading"></a></h2>
+<p>Hugsum okkur að Kalli sé að draga kassa eftir gólfinu. Hann dregur
+kassann með krafti <span class="math notranslate nohighlight">\(|\vec{F}| = 300\,\text{N}\)</span> undir
+<span class="math notranslate nohighlight">\(\theta\)</span> = 34<span class="math notranslate nohighlight">\(\ensuremath{^\circ}\)</span> horni við lárétt.
+Hreyfinúningsstuðull milli gólfs og kassa er 0,4 og kassinn er 73 kg að
+þyngd. Hér myndi spurningin vera: Hver er hröðun kassans?</p>
+<p>Það fyrsta sem við gerum er að teikna mynd eða ef myndin er gefin, þá
+förum við strax í næsta skref að teikna inn inn kraftana sem verka á
+kassann og velja hnitakerfi til þess að skoða þá í.</p>
+<p><a class="reference internal" href="../_images/madurtogarkassa.png"><img alt="image3" src="../_images/madurtogarkassa.png" style="width: 100%;" /></a></p>
+<p>Þegar við erum búin að teikna, merkja inn krafta og velja hnitakerfi þá
+er næsta skref það að skrifa kraftana sem vigra.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left( \begin{array}{c} F\cos(\theta)  \\ F\sin(\theta)  \end{array}\right) + \left( \begin{array}{c} 0 \\- F_g  \end{array}\right)+ \left( \begin{array}{c} 0 \\ \textit{Þ}  \end{array}\right)+\left( \begin{array}{c} -F_{nun} \\ 0  \end{array}\right) = m_{kassi}\left( \begin{array}{c} a \\ 0  \end{array}\right)\end{split}\]</div>
+<p>Við sjáum að við höfum liðað kraftinn <span class="math notranslate nohighlight">\(\vec{F}\)</span> eftir ásum
+hnitakerfisins og einnig að hröðunin er eftir <span class="math notranslate nohighlight">\(x\)</span>-ássnum. Við
+höfum auk þessa jöfnuna: <span class="math notranslate nohighlight">\(F_{nun} = \mu_k \textit{Þ}\)</span>.</p>
+<p>Það ætti í raun að skrifa einingar á allar stærðir í reikningum líka, en
+það er afskaplega ruglandi, sérstaklega þegar við erum með m (metra) og
+<span class="math notranslate nohighlight">\(m\)</span> (massa) eða N (krafteiningin newton) og <span class="math notranslate nohighlight">\(N\)</span> (normalkraft
+eða þverkaft, sem kannski er hentura að kalla bara <span class="math notranslate nohighlight">\(\textit{Þ}\)</span>)
+þar sem eini munurinn er sá að stærðir eru skrifaðar í mismunandri
+letri. Þegar við skrifum í höndunum er mjög erfitt að gera greinarmun á
+þessu. Við pössum okkur því í byrjun á að vera með samsvarandi einingar
+og sleppum svo í reikningum að skrifa inn einingarnar.</p>
+<p>Nú skoðum við hvað muni vera best að gera fyrst. Í <span class="math notranslate nohighlight">\(y\)</span>-jöfnunni er
+bara ein óþekkt stærð meðan það eru tvær óþekktar stærðir í
+<span class="math notranslate nohighlight">\(x\)</span>-jöfnunni. Við skoðum því <span class="math notranslate nohighlight">\(y\)</span>-jöfnuna fyrst:</p>
+<div class="math notranslate nohighlight">
+\[F\sin(\theta) - F_g + \textit{Þ} = 0 \,\,\, \Rightarrow \,\,\, 300 \sin(34\ensuremath{^\circ}) - 73\cdot 9,8 +\textit{Þ} = 0\,\,\, \Rightarrow \,\,\, \textit{Þ} = 548 \,\text{N}\]</div>
+<p>Næsta skref er þá að nota núningsjöfnuna til þess að finna
+núningskraftinn:</p>
+<div class="math notranslate nohighlight">
+\[F_{nun} = \mu_k \textit{Þ} = 0,4\cdot 548 = 219\,\text{N}\]</div>
+<p>Nú getum við fundið hröðunina út frá <span class="math notranslate nohighlight">\(x\)</span>-jöfnunni:</p>
+<div class="math notranslate nohighlight">
+\[F\cos(\theta) - F_{nun} = m a \,\,\,\Rightarrow\,\,\, 300\cos(34\ensuremath{^\circ}) - 219 = 73 a\,\,\,\, \Rightarrow\,\,\, a = 0,41\,\text{m}/\text{s}^2\]</div>
+</section>
+<section id="daemi-2-kassi-togaur-upp-skabretti">
+<h2><span class="section-number">7.3. </span>Dæmi 2. Kassi togaður upp skábretti<a class="headerlink" href="#daemi-2-kassi-togaur-upp-skabretti" title="Permalink to this heading"></a></h2>
+<p>Hér skulum við skoða skábretti . Hugsum okkur að efst á skábrettinu sé
+„létt núningslaus“ trissa. „Létt“ band liggur yfir trissuna og er bundið
+í kassa, kassinn er á leið upp skábrettið vegna þess að honum var komið
+af stað og nú er togað í bandið með jöfnum krafti <span class="math notranslate nohighlight">\(F\)</span>. Kassinn
+hefur massa <span class="math notranslate nohighlight">\(m_{kassi}\)</span> = 73 kg eins og áður og við skulum segja
+að krafutrinn sé <span class="math notranslate nohighlight">\(F = 300\,\text{N}\)</span>. Hreyfinúningstuðul milli
+kassa og skáplans skulum við hafa <span class="math notranslate nohighlight">\(\mu_k = 0,3\)</span> og kyrrstöðunúning
+milli þeirra <span class="math notranslate nohighlight">\(\mu_s = 0,4\)</span>. Skáplanið skulum við láta halla um
+<span class="math notranslate nohighlight">\(\theta = 27\ensuremath{^\circ}\)</span>.</p>
+<p><a class="reference internal" href="../_images/kassiskaplan.png"><img alt="image4" src="../_images/kassiskaplan.png" style="width: 100%;" /></a></p>
+<p>Á myndinni höfum við sett inn hnitakerfi sem er þannig að
+<span class="math notranslate nohighlight">\(x\)</span>-ásinn er upp eftir skáplaninu. Þetta gerum við vegna þess að
+hröðunin er upp eða niður eftir skáplaninu. Við getum í raun valið hvaða
+hnitakerfi sem er, en það er þægilegt að velja hnitakerfi þar sem
+hröðunin er samsíða öðru hnitinu. Þetta er bara til þæginda og gerir það
+að verkum að jöfnurnar verða þægilegri vegna þess að hröðunin er oft
+óþekkt stærð. Við reynum að setja upp hnitakerfi þannig að jöfnurnar
+okkar verði þægilegri.</p>
+<p>Í þessu hnitakerfi, þarf að liða þyngdarkraftinn. Þið sjáið á myndinni
+til hægri hvernig <span class="math notranslate nohighlight">\(\vec{F}_g\)</span> er liðaður. Þverkraftur og
+núningskraftar eru alveg eins og áður. Togkrafturinn sem togar í kassann
+er jafn <span class="math notranslate nohighlight">\(\vec{F}\)</span> kraftinum sem við togum í kassann með því þetta
+er allt sama bandið og trissan er „létt og núningslaus“. Þegar við höfum
+léttar og núningslausar trissur í dæmunum okkar þá hafa þær einungis þau
+áhrif að breyta stefnu. Hér gætum við hugsað okkur að krafturinn
+<span class="math notranslate nohighlight">\(\vec{F}\)</span> verki í jákvæða <span class="math notranslate nohighlight">\(x\)</span>-stefnu. Það er bara búið að
+beygja ásinn.</p>
+<p>Nú getum við reiknað eins og áður:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left( \begin{array}{c} T\\0  \end{array}\right) + \left( \begin{array}{c} -F_g\sin(\theta) \\- F_g \cos(\theta) \end{array}\right)+ \left( \begin{array}{c} 0 \\ \textit{Þ}  \end{array}\right)+\left( \begin{array}{c} -F_{nun} \\ 0  \end{array}\right) = m_{kassi}\left( \begin{array}{c} a \\ 0  \end{array}\right)\end{split}\]</div>
+<p>Við setum inn þekktar stærðir:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left( \begin{array}{c} 300\\0  \end{array}\right) + \left( \begin{array}{c} -73\cdot9,8\cdot\sin(27\ensuremath{^\circ}) \\- 73\cdot9,8\cdot \cos(27\ensuremath{^\circ}) \end{array}\right)+ \left( \begin{array}{c} 0 \\ \textit{Þ}  \end{array}\right)+\left( \begin{array}{c} -0,3\cdot \textit{Þ} \\ 0  \end{array}\right) = 73\left( \begin{array}{c} a \\ 0  \end{array}\right)\end{split}\]</div>
+<p>Aftur er það <span class="math notranslate nohighlight">\(y\)</span>-jafnan sem við byrjum á því hún hefur aðeins eina
+óþekkta stærð. Við finnum <em>Þ</em>:</p>
+<div class="math notranslate nohighlight">
+\[- 73\cdot9,8\cdot \cos(27\ensuremath{^\circ}) + \textit{Þ} = 0\,\,\,\Rightarrow\,\,\, \textit{Þ} = 637\,\text{N}\]</div>
+<p>Næst finnum við núningskraftinn:</p>
+<div class="math notranslate nohighlight">
+\[F_{nun} = \mu_k \cdot \textit{Þ}\,\,\,\Rightarrow\,\,\, F_{nun} = 0,3\cdot 637 \,\,\,\Rightarrow\,\,\, F_{nun} = 191\,\text{N}\]</div>
+<p>Að lokum notum við <span class="math notranslate nohighlight">\(x\)</span>-jöfnuna til þess að finna hröðunina:</p>
+<div class="math notranslate nohighlight">
+\[300 -73\cdot9,8\cdot\sin(27\ensuremath{^\circ}) - 191 = 73\cdot a\,\,\,\Rightarrow\,\,\, a = -2,96\,\text{m}/\text{s}^2\]</div>
+<p>Neikvæð hröðun, er það í lagi? Jú það er allt í lagi. Kassinn er bara að
+hægja á sér. Honum var komið á ákveðinn hraða í byrjun, en þegar togað
+er með jöfnum 300 N krafti þá hægir kassinn á sér. Að endingu mun hann
+svo stoppa. Hvað gerist þá?</p>
+<p>Kannski fer hann að renna tilbaka niður hallann. Kannski situr hann bara
+kyrr. Hvað ræður því?</p>
+<p>Hugsum okkur að kassinn hafi stöðvast. Kassinn vill fara að renna niður
+en það verkar á hann kyrrstöðunúningur í stefnu sem er öfug við þá
+stefnu sem hann vill fara. Getur kassinn yfirunnið kyrrstöðunúninginn og
+runnið af stað niður? Við skulum athuga það með reikningum.</p>
+<p><a class="reference internal" href="../_images/kassiskanidur.png"><img alt="image5" src="../_images/kassiskanidur.png" style="width: 100%;" /></a></p>
+<p>Kraftjafnan er núna:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left( \begin{array}{c} 300\\0  \end{array}\right)+\left( \begin{array}{c} -F_g\sin(\theta) \\- F_g \cos(\theta) \end{array}\right)+ \left( \begin{array}{c} 0 \\ \textit{Þ}  \end{array}\right)+\left( \begin{array}{c} F_{nun} \\ 0  \end{array}\right) = m_{kassi}\left( \begin{array}{c} a \\ 0  \end{array}\right)\end{split}\]</div>
+<p>Stefna núningskraftsins er öfug við það sem áður var og við fáum því
+plúsmerki á <span class="math notranslate nohighlight">\(F_{nun}\)</span>. Við sjáum að <span class="math notranslate nohighlight">\(y\)</span>-jafnan er óbreytt og
+við höfum því áfram að <span class="math notranslate nohighlight">\(\textit{Þ} = 637\,\text{N}\)</span>.</p>
+<p>Athugum nú hvort hluturinn helst kyrr í hallanum. Ef hann gerir það þá
+er <span class="math notranslate nohighlight">\(a = 0\)</span> og <span class="math notranslate nohighlight">\(F_{nun} \leq \mu_s \cdot N\)</span></p>
+<p><span class="math notranslate nohighlight">\(x\)</span>-jafnan gefur okkur:</p>
+<div class="math notranslate nohighlight">
+\[300 -73\cdot9,8\cdot\sin(27\ensuremath{^\circ}) + F_{nun} = 0\,\,\,\Rightarrow\,\,\, F_{nun} = 25\,\text{N}\]</div>
+<p>Þetta eru 25 N upp hallann því kassinn vill niður. Við skulum að lokum
+að huga hvort þessi núningskraftur sé minni en <span class="math notranslate nohighlight">\(\mu_s N\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\mu_s \textit{Þ} = 0,4\cdot 637 = 255\,\text{N};  \,\,\, F_{nun} = 25\,\text{N}\]</div>
+<p>Svo augljóst er að</p>
+<div class="math notranslate nohighlight">
+\[255 &gt; 25\,\,\,\Rightarrow\,\,\,  \mu_s \textit{Þ} &gt; F_{nun}\]</div>
+<p>Núningskrafturinn er minni en mesti mögulegi kyrrstöðunúningurinn. Það
+þýðir að hluturinn fer ekki af stað niður heldur situr kyrr í hallanum.</p>
+</section>
+<section id="daemi-3-bill-i-beygju">
+<h2><span class="section-number">7.4. </span>Dæmi 3. Bíll í beygju<a class="headerlink" href="#daemi-3-bill-i-beygju" title="Permalink to this heading"></a></h2>
+<p>Þegar bíll ekur í beygju þá er hann á eins konar hringhreyfingu. Maður
+getur hugsað sér beygjuna sem hluta af hring. Við þurfum þá að þekkja
+radíus beygjunnar, það er að segja radíus hringsins sem beygjan er hluti
+af. Eins og talað var um í kafla 4, þá er hringhreyfing hröðuð hreyfing.
+Þegar farið er í hring er stöðugt verið að breyta stefnu og þar með
+stöðugt verið að breyta hraðanum. Þetta þýðir að við höfum stöðuga
+hröðun. Þessi hröðun getur verið mismikil, en hröðun inn að miðju
+hringsins er alltaf tengd hraða hlutarins á sama hátt.</p>
+<div class="math notranslate nohighlight">
+\[\vec{a}_r = - \frac{v^2}{r} \vec{e}_r\]</div>
+<p><a class="reference internal" href="../_images/billihring.png"><img alt="image6" src="../_images/billihring.png" style="width: 5in;" /></a></p>
+<p>Á myndinni sjáum við bíl að keyra í hring. Á myndinni til vinstri sést
+ofan á bílinn en á myndinni til hægri sést aftan á bílinn.</p>
+<p>Á hægri myndina eru teiknaðir inn kraftarnir sem verka á bílinn í tvær
+áttir. Við höfum ekki merkt inn krafta í hreyfistefnuna eins og
+hreyfinúning og drifkraft bílsins. Við ætlum ekki að pæla í þeim núna
+heldur bara í því hvort bíllinn haldist í beygjunni. Núningskrafturinn
+sem merktur er inn á myndina er kyrrstöðunúningurinn sem kemur í veg
+fyrir að bíllinn renni út úr beygjunni.</p>
+<p>Við skulum hugsa okkur að viljum vita hversu hratt bíllinn,
+<span class="math notranslate nohighlight">\(m_{bill} = 1050\,\text{kg}\)</span>, getur ekið í hring með radíus
+<span class="math notranslate nohighlight">\(R = 37\,\text{m}\)</span>. Kyrrstöðunúningstuðull milli götu og bíls er
+<span class="math notranslate nohighlight">\(\mu_s = 0,28\)</span>.</p>
+<p>Við setum upp jöfnur eins og venjulega. Nú eru ásarnir okkar aðrir en
+áður. Í stað <span class="math notranslate nohighlight">\(x\)</span>-áss höfum við ás í stefnu inn að miðju hringsins.
+Af hverju þann ás? Jú, við veljum hann því að hröðunin er inn að miðju
+hringsins.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left( \begin{array}{c} F_{nun}\\0  \end{array}\right) + \left( \begin{array}{c} 0\\- F_g \end{array}\right)+ \left( \begin{array}{c} 0 \\ \textit{Þ}  \end{array}\right) = m_{bill}\left( \begin{array}{c} a_{r} \\ 0  \end{array}\right)\end{split}\]</div>
+<p>Nú setjum við inn að <span class="math notranslate nohighlight">\(a_{r} = \frac{v^2}{R} = \frac{v^2}{37}\)</span> og
+fáum:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left( \begin{array}{c} F_{nun}\\0  \end{array}\right) + \left( \begin{array}{c} 0\\- 1050\cdot 9,8 \end{array}\right)+ \left( \begin{array}{c} 0 \\ \textit{Þ}  \end{array}\right) = 1050\left( \begin{array}{c} \frac{v^2}{37} \\ 0  \end{array}\right)\end{split}\]</div>
+<p>Hér er höfum við þrjár óþekktar stærðir, <span class="math notranslate nohighlight">\(F_{nun}\)</span>, <span class="math notranslate nohighlight">\(N\)</span>, og
+<span class="math notranslate nohighlight">\(v\)</span>. Við höfum tvær jöfnur og getum því ekki fundið allar þrjár.
+Við gætum fundið núningskraftinn við mismunandi hraða en greinilegt er
+að núningskrafturinn er breytilegur. Það sem beðið var um í dæminu var
+<strong>mesti hraði bílsins áður en hann fer að renna</strong>. Það getum við fundið
+því þegar bíllinn er alveg að fara að renna, þá er
+<span class="math notranslate nohighlight">\(F_{nun} = \mu_s\textit{Þ}= 0,28\textit{Þ}\)</span></p>
+<p>Setjum það inn. Bíllinn fer að renna ef:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left( \begin{array}{c}  0,28\textit{Þ}\\0  \end{array}\right) + \left( \begin{array}{c} 0\\- 1050\cdot 9,8 \end{array}\right)+ \left( \begin{array}{c} 0 \\ \textit{Þ}  \end{array}\right) = 1050\left( \begin{array}{c} \frac{v^2}{37} \\ 0  \end{array}\right)\end{split}\]</div>
+<p><span class="math notranslate nohighlight">\(y\)</span>-jafnan gefur: <span class="math notranslate nohighlight">\(\textit{Þ} = 10290\,\text{N}\)</span> og þá fæst
+úr <span class="math notranslate nohighlight">\(x\)</span>-jöfnunni að <span class="math notranslate nohighlight">\(v_{max} = 10,1\,\text{m}/\text{s}\)</span></p>
+<p>Það er ljóst að þetta er mesti hraðinn sem bíllinn getur náð áður en
+hann byrjar að renna því ef við höldum ójöfnumerkinu fæst:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left( \begin{array}{c} F_{nun}\\0  \end{array}\right) + \left( \begin{array}{c} 0\\- F_g \end{array}\right)+ \left( \begin{array}{c} 0 \\ \textit{Þ}  \end{array}\right) = m_{bill}\left( \begin{array}{c} a_{-r} \\ 0  \end{array}\right) \,\Leftrightarrow\, \left( \begin{array}{c} \mu \textit{Þ}\\0  \end{array}\right) + \left( \begin{array}{c} 0\\- F_g \end{array}\right)+ \left( \begin{array}{c} 0 \\ \textit{Þ}  \end{array}\right) \geq m_{bill}\left( \begin{array}{c} \frac{v^2}{R} \\ 0  \end{array}\right)\end{split}\]</div>
+<p>Ójafnan sýnir að hraðinn sem við reiknuðum er mesti hraði sem bíllin
+getur verið á án þess að renna.</p>
+</section>
+<section id="daemi-4-kassar-festir-yfir-trissu">
+<h2><span class="section-number">7.5. </span>Dæmi 4. Kassar festir yfir trissu<a class="headerlink" href="#daemi-4-kassar-festir-yfir-trissu" title="Permalink to this heading"></a></h2>
+<p>Hugsum okkur að við höfum tvo kassa með massa:
+<span class="math notranslate nohighlight">\(m_A = 4,3\,\text{kg}\)</span> og <span class="math notranslate nohighlight">\(m_B = 2,6\,\text{kg}\)</span>. Þessir
+kassar eru festir í sinn hvorn enda „létts“  bands sem hangir yfir létta
+núningslausa trissu sem fest er í loftið. Spurt er: Hver er hröðun
+massanna.</p>
+<p><a class="reference internal" href="../_images/massaryfirtrissu.png"><img alt="image7" src="../_images/massaryfirtrissu.png" style="width: 100%;" /></a></p>
+<p>Nú þurfum við að velja hnitakerfi. Hvernig gerum við það?</p>
+<section id="retta-ur-asnum">
+<h3><span class="section-number">7.5.1. </span>Rétta úr ásnum<a class="headerlink" href="#retta-ur-asnum" title="Permalink to this heading"></a></h3>
+<p>. Hugsum okkur að trissan sé bara að beygja <span class="math notranslate nohighlight">\(x\)</span>-ásinn. Við lítum
+þá á kassana sem tengdir eru saman sem eitt kerfi, tvo tengda massa sem
+dregnir eru eftir <span class="math notranslate nohighlight">\(x\)</span>-ás. Þá höfum í raun myndina hér til hægri
+þar sem hvað þyngdarkraftur <span class="math notranslate nohighlight">\((F_g)_A\)</span> togar í massa <span class="math notranslate nohighlight">\(m_A\)</span>
+til hægri og þyngdarkraftur <span class="math notranslate nohighlight">\((F_g)_B\)</span> togar massa <span class="math notranslate nohighlight">\(m_B\)</span> til
+vinstri.</p>
+<p>Kraftjafnan verður:</p>
+<div class="math notranslate nohighlight">
+\[(F_g)_A - (F_g)_B = (m_A + m_B) a\,\,\,\Rightarrow\,\,\, 4,3\cdot 9,8 - 2,6\cdot 9,8 = (4,3 +2,6) a \,\,\,\Rightarrow\,\,\, a = 2,4\,\text{m}/\text{s}^2\]</div>
+<p>Við tökum eftir því að hröðunin á myndinni til hægri er í stefnu
+<span class="math notranslate nohighlight">\(x\)</span>-ássins. Samsvarandi stefna á myndinni til vinstri er upp fyrir
+massa <span class="math notranslate nohighlight">\(m_B\)</span> og niður fyrir massa <span class="math notranslate nohighlight">\(m_A\)</span>.</p>
+</section>
+<section id="urklippur">
+<h3><span class="section-number">7.5.2. </span>Úrklippur<a class="headerlink" href="#urklippur" title="Permalink to this heading"></a></h3>
+<p>Við gætum líka sleppt að rétta úr ásnum og skoðað það sem á ensku er
+kallað „free body diagram“. Ég veit ekki um neina samræmda þýðingu á því
+og hef því bara notast við orðið <strong>úrklippu</strong>. Hugmyndin er sem sagt að
+klippa út einn hlut í einu og skoða kraftana sem verka á hann.</p>
+<p><a class="reference internal" href="../_images/urklippa.png"><img alt="image8" src="../_images/urklippa.png" style="width: 100%;" /></a></p>
+<p>Við tökum þá hluta af dæminu út og skoðum alla kraftana sem verka á
+þennan hluta. Hér myndum við skoða hvorn massa fyrir sig. Með
+úrklippunum getum við fundið togkraftinn í bandinu.</p>
+<p>Úrklippur eru notaðar þegar ekki er einfalt að eiga við allt kerfið í
+einu og þegar við þurfum að finna innri krafta eins og t.d. togkraftinn
+í bandinu í dæminu hér að ofan.</p>
+</section>
+</section>
+<section id="daemi">
+<h2><span class="section-number">7.6. </span>Dæmi<a class="headerlink" href="#daemi" title="Permalink to this heading"></a></h2>
+<div class="line-block">
+<div class="line">Hástökkvari, sem er 62 kg, stekkur upp og sleppir jörðu á hraðanum
+4,5 m/s. Þegar hann stekkur beygir hann sig fyrst í hnjánum svo að
+massamiðja hann er 0,6 m neðar en þegar hann er uppréttur. Hann ýtir
+svo á jörðina á meðan hann réttir úr sér og sleppir jörðu þegar hann
+er búinn að rétta úr sér.</div>
+<div class="line">a) Hver er meðalhröðun hans á meðan hann er að rétta úr fótunum?</div>
+<div class="line">b) Hver er heildarkrafturinn á hann á meðan hann er að rétta úr
+fótunum?</div>
+<div class="line">c) Hver er krafturinn frá jörðunni á fætur hans?</div>
+<div class="line">d) Hver er krafturinn á hann þegar hann sleppir jörðu?</div>
+<div class="line">e) Hversu hátt fer hann?</div>
+</div>
+<div class="line-block" id="section-1">
+<div class="line">20.000 kg eldflaug hefur mótor framleiðir jafnan
+<span class="math notranslate nohighlight">\(3,0\times10^5\)</span> N ýtikraft. (Gerið ráð fyrir að loftmótstaða sé
+engin.) Nú er eldflauginni skotið beint upp.</div>
+<div class="line">a) Hver er hröðun eldflaugarinnar í byrjun?</div>
+<div class="line">b) Þegar eldflaugin er komin í 5000 m hæð hefur hröðun eldflaugarinnar
+aukist í 6,0 m/s<span class="math notranslate nohighlight">\(^2\)</span>. Hversu mikill massi eldsneytis hefur
+brunnið upp? (Gerið ráð fyrir að þyngdarsviðið hafi breyst óverulega,
+þ.e. að <span class="math notranslate nohighlight">\(g \approx\)</span> 9,8 m/s<span class="math notranslate nohighlight">\(^2\)</span> í 5000 m hæð.)</div>
+</div>
+<p id="section-2">Borgþór er að toga í skjalaskáp sem vegur 30 kg, með 100 N krafti.
+Skápurinn hreyfist ekki. Kyrrstöðunúningstuðullinn milli gólfs og
+skjalaskáps er 0,8. Hversu stór er kyrrstöðunúningskrafturinn á skápinn?</p>
+<p id="section-3">4000 kg vörubíl er lagt í 15<span class="math notranslate nohighlight">\(\ensuremath{^\circ}\)</span> halla. Hversu
+stór er núningskrafturinn á vörubílinn? Kyrrstöðunúningsstuðull milli
+dekkja og götu er 0,9.</p>
+<p id="section-4">1500 kg bíll, bremsar og rennur þar til hann stöðvast á blautum vegi.
+Hreyfinúningsstuðull milli bíls og vegar er <span class="math notranslate nohighlight">\(\mu_k\)</span> =0,50. Hversu
+hratt var bíllinn að fara ef bremsuförin eru 65 m.</p>
+<div class="line-block" id="section-5">
+<div class="line">Lóðréttur gormur með fjaðurstuðul <span class="math notranslate nohighlight">\(k = 400\,\)</span>N/m er festur í
+10 kg massa sem liggur á borði. Gormurinn er strekktur 10 cm frá
+jafnvægisstöðu.</div>
+<div class="line">a) Með hversu stórum krafti togar gormurinn í massann?</div>
+<div class="line">b) Hversu stór er þverkraftur borðsins á massann?</div>
+</div>
+<p id="section-6">Kassi, sem hefur massann 6,0 kg, rennur eftir eftir yfirborði sem hefur
+hreyfinúningsstuðul 0,2. Kassinn er togaður beint áfram í lárétta stefnu
+með gormi sem hefur fjaðurstuðul 600 N/m. Hver er hröðun kassans ef
+gormurinn er strekktur um 2,2 cm?</p>
+<div class="wrapfigure docutils container" id="section-7">
+<p>r0.22</p>
+<div class="center docutils container">
+<p><a class="reference internal" href="../_images/massi2T.png"><img alt="image9" src="../_images/massi2T.png" style="width: 22.0%;" /></a></p>
+</div>
+</div>
+<p>Mynd sem hefur massann 2,0 kg, hangir í tveimur böndum eins og sýnt er á
+myndinni. Hægra bandið myndar hornið
+<span class="math notranslate nohighlight">\(\theta_1 = 62\ensuremath{^\circ}\)</span> við lárétt og hitt bandið
+myndar hornið <span class="math notranslate nohighlight">\(\theta_2 = 37\ensuremath{^\circ}\)</span> við lárétt.
+myndin er kyrr. Finnið togkraftana <span class="math notranslate nohighlight">\(T_1\)</span> og <span class="math notranslate nohighlight">\(T_2\)</span>.</p>
+<div class="line-block" id="section-8">
+<div class="line">Massi, 50 kg, liggur á hálu skábretti sem myndar hornið
+<span class="math notranslate nohighlight">\(\theta = 60\ensuremath{^\circ}\)</span> við lárétt. Massinn rennur ekki
+niður eftir skábrettinu vegna þess að honum er haldið uppi með reipi
+sem er samsíða halla skábrettisins.</div>
+<div class="line">a) Finnið togkraftinn í reipinu.</div>
+<div class="line">b) Finnið þverkraft skábrettisins á massann.</div>
+</div>
+<p><a class="reference internal" href="../_images/maskaplani.png"><img alt="image10" src="../_images/maskaplani.png" style="width: 1in;" /></a></p>
+<div class="line-block" id="section-9">
+<div class="line">Verið er að lyfta 1000 kg massa með krana. Finnið togkraftinn í
+strengnum sem heldur massanum þegar:</div>
+<div class="line">a) massanum er hraðað upp með hröðuninni 2,0 m/s<span class="math notranslate nohighlight">\(^2\)</span>.</div>
+<div class="line">b) massanum er lyft með jöfnum hraða</div>
+<div class="line">c) massinn hægir á sér á uppleið um 2,0 m/s á hverri sekúndu.</div>
+</div>
+<div class="line-block" id="section-10">
+<div class="line">Maður stendur á vog inni í lyftu sem hefur hröðun <span class="math notranslate nohighlight">\(\vec{a}\)</span> sem
+stefnir annað hvort upp eða niður. Þegar maðurinn stendur á voginni
+sýnir hún 960 N. Þegar hann heldur á 20,0 kg kassa sýnir vogin 1200 N.</div>
+<div class="line">a) Finnið hröðun lyftunnar</div>
+<div class="line">b) Finnið massa mannsins.</div>
+</div>
+<div class="line-block" id="section-11">
+<div class="line"><strong>Láréttur</strong> 100 N kraftur er notaður til þess að ýta 12 kg kubb upp
+núningslaust skáplan sem myndar 25<span class="math notranslate nohighlight">\(\ensuremath{^\circ}\)</span> horn
+við lárétt.</div>
+<div class="line">a) Hver er þverkraftur skáplansins á kubbinn?</div>
+<div class="line">b) Hver verður hröðun kubbsins?</div>
+</div>
+<div class="line-block" id="section-12">
+<div class="line">Skoðið aftur kubbinn í 10. dæmi. Hugsið ykkur nú að milli brettis og
+kubbs sé kyrrstöðunúningsstuðullinn 0,25 og hreyfinúningsstuðullinn
+0,16.</div>
+<div class="line">Hver verður nú hröðun kubbsins?</div>
+</div>
+<div class="line-block" id="section-13">
+<div class="line">5,0 kg kassa er haldið kyrrum uppi á lóðréttum vegg með því að ýta á
+hann með láréttum 150 N krafti.</div>
+<div class="line">a) Hversu stór er núningskrafturinn milli veggjar og kassa?</div>
+<div class="line">b) Hversu stór er minnsti lárétti kraftur sem þarf til að halda
+kassanum kyrrum ef kyrrstöðunúningsstuðull milli veggjar og kassa er
+0,40?</div>
+</div>
+<div class="line-block" id="section-14">
+<div class="line">Það þarf að færa 50 kg kassa sem liggur á láréttu gólfi.
+Kyrrstöðunúningur milli kassa og gólfs er 0,6.</div>
+<div class="line">a) Reiknið hversu stóran kraft þarf til þess að færa kassann ef ýtt er
+niður á hann <span class="math notranslate nohighlight">\(30\ensuremath{^\circ}\)</span> undir lárétt.</div>
+<div class="line">b) Reiknið hversu stóran kraft þarf til þess að færa kassann ef hann
+er togaður áfram með bandi sem myndar 30<span class="math notranslate nohighlight">\(\ensuremath{^\circ}\)</span>
+horn yfir láréttu.</div>
+</div>
+<p id="section-15"><a class="reference internal" href="../_images/ytta2kassa.png"><img alt="image11" src="../_images/ytta2kassa.png" style="width: 2.5in;" /></a></p>
+<div class="line-block">
+<div class="line">Tveir kassar liggja upp að hvor öðrum á núningslausu borði. Sá kassinn
+sem er lengra til vinstri er 2,0 kg og sá til hægri er 1,0 kg. Nú er
+ýtt á 2,0 kg kassann með 5,0 N krafti.</div>
+<div class="line">a) Hver verður hröðun kerfisins sem samanstendur af kössunum tveimur?</div>
+<div class="line">b) Hver er hröðun 1,0 kg kassans? Hvaða kraftur veldur þeirri hröðun?
+c) Teiknið inn alla krafta sem verka á 2,0 kg kassann. Hversu stór er
+heildarkrafturinn á þann kassa?</div>
+</div>
+<p id="section-16"><a class="reference internal" href="../_images/trissaskaplan.png"><img alt="image12" src="../_images/trissaskaplan.png" style="width: 2.5in;" /></a></p>
+<p>Tveir massar eru tengdir saman með „massalausum“ streng yfir trissu eins
+og sýnt er á myndinni. Trissan er efst á skáplani sem myndar hornið
+<span class="math notranslate nohighlight">\(\theta = 30\ensuremath{^\circ}\)</span> við lárétt. Massi <span class="math notranslate nohighlight">\(m_1\)</span>
+liggur á skáplaninu, meðan massi <span class="math notranslate nohighlight">\(m_2\)</span> hangir laus í strengnum.
+<span class="math notranslate nohighlight">\(m_1 = m_2 = 5,0\)</span> kg. Skáplanið og trissan eru núningslaus. Finnið
+stærð hröðunar massanna.</p>
+<div class="line-block" id="section-17">
+<div class="line">Hlutur sem er 3,0 kg hreyfist undir áhrifum krafts <span class="math notranslate nohighlight">\(\,\vec{F}\)</span>
+sem er alltaf hornréttur á hraða hlutarins. Hluturinn ferðast í hring
+með radíus 2,0 m og fer hvern heilan hring á 3,0 s.</div>
+<div class="line">a) Hver er stærð hröðunar hlutarinns?</div>
+<div class="line">b) Hversu stór er krafturinn <span class="math notranslate nohighlight">\(\,\vec{F}\)</span>?</div>
+</div>
+<div class="line-block" id="section-18">
+<div class="line">Á palli vörubíls er vog sem sýnir Newton. Kassi sem er 500 N er settur
+á vogina. Vörubíllinn ekur á jöfnum 14 m/s hraða. Hvað sýnir vogin</div>
+<div class="line">a) þegar vörubíllinn fer yfir hól sem er hluti af hring með radíus
+100 m?</div>
+<div class="line">b) Þegar vörubíllinn ekur dæld sem er hluti af hring með radíus 80 m?</div>
+</div>
+<div class="line-block" id="section-19">
+<div class="line">Lítil málmplata hefur massann 100 g. Hún liggur á snúningspalli sem
+snýst einn hring á hverjum 2 sekúndum. Málmplatan er 12 cm frá miðju
+snúningspallsins.</div>
+<div class="line">a) Hversu stór er núningskrafturinn á plötuna?</div>
+<div class="line">b) Platan rennur út af snúningspallinum ef hún er sett í 16 cm
+fjarlægð frá miðju snúningspallsins. Hver er
+kyrrstöðunúningsstuðullinn milli plötunnar og pallsins?</div>
+</div>
+<p id="section-20">Tæki sem finnst víða í skemmtigörðum er þannig að fólk stendur á litlum
+palli upp við vegg inni í sívalningi. Þegar allir eru búnir að koma sér
+fyrir er byrjað að snúa og sívalningnum snúið hraðar og hraðar. Þegar
+ákveðnum hraða er náð dettur pallurinn niður og fólkið helst uppi
+eingöngu vegna núnings. Ef radíus sívalningsins er 4,0 m og
+kyrrstöðunúningur milli manneskju og veggjar sívalnings er 0,4, hversu
+marga snúninga þarf sívalningurinn að fara á mínútu til þess að
+núningurinn nái að halda fólkinu uppi?</p>
+<p id="section-21"><a class="reference internal" href="../_images/23bordtrissa.png"><img alt="image13" src="../_images/23bordtrissa.png" style="width: 2.5in;" /></a></p>
+<div class="line-block">
+<div class="line">3,0 kg kubbur situr á borði. Í kubbinn er fest massalaust band sem
+liggur yfir trissu á brún borðsins. Í hinn enda bandsins er festur
+annar kubbur sá með massa 2,0 kg. 2,0 kg massinn hangir laus í
+bandinu.</div>
+<div class="line">a) Hvað þarf kyrrstöðunúningsstuðull milli 3,0 kg kassans og borðsins
+að vera stór, þannig að kassinn sé kyrr?</div>
+<div class="line">b) Ef kyrrstöðunúningsstuðullinn er minni en það, og hreyfinúningurinn
+er 0,3, hver verður hröðun massanna?</div>
+</div>
+<div class="wrapfigure docutils container" id="section-22">
+<p>r0.22</p>
+<div class="center docutils container">
+<p><a class="reference internal" href="../_images/trissa.png"><img alt="image14" src="../_images/trissa.png" style="width: 22.0%;" /></a></p>
+</div>
+</div>
+<p>Tveir massar sem festir eru yfir trissu eins og sýnt er á myndinni
+kallast <em>Atwoods vél</em>. Með því að mæla hröðun massanna fæst jafna fyrir
+þyngdarhröðun. Gerið ráð fyrir að strengurinn sé massalaus og trissan
+núningslaus. Sýnið að hröðun massanna og togkrafturinn í bandinu séu:</p>
+<div class="math notranslate nohighlight">
+\[a = \frac{m_1 - m_2}{m_1 + m_2}g\,\,\,\,\,\,\,\,\textnormal{og}\,\,\,\,\,\,\,\, T = \frac{2m_1m_2g}{m_1 + m_2}\]</div>
+<p id="section-23"><a class="reference internal" href="../_images/205trissa.png"><img alt="image15" src="../_images/205trissa.png" style="width: 5in;" /></a></p>
+<p>20 kg kassi situr á hálu borði. Framan á kassann er fest trissa. Band
+liggur frá festingu á borði, um trissuna, yfir aðra trissu við enda
+borðsins og í 5 kg massa sem hangir þar (sjá mynd). Finnið hröðun
+kassans og massans og togkraftinn í bandinu. Gerið ráð fyrir að bandið
+sé massalaust og að trissurnar séu núningslausar.</p>
+<div class="line-block">
+<div class="line">1)
+a. 19,9 m/s<span class="math notranslate nohighlight">\(^2\)</span>    b. 1046 N     c. 1654 N    d. 608,N    e. 1,0 m</div>
+<div class="line">2) a. 5,2 kg    b. 2667 kg</div>
+<div class="line">3) 100 N</div>
+<div class="line">4) 10146 N</div>
+<div class="line">5) 25,2 m/s</div>
+<div class="line">6) a. 40 N    b. 98 N</div>
+<div class="line">7) 0,24 m/s<span class="math notranslate nohighlight">\(^2\)</span></div>
+<div class="line">8) 9,3 N og 15,8 N</div>
+<div class="line">9) a. 424 N    b. 245</div>
+<div class="line">10) a. 11800 N    b. 9800 N    c. 7800 N</div>
+<div class="line">11) a. 2,2 m/s<span class="math notranslate nohighlight">\(^2\)</span>    b. 80 kg</div>
+<div class="line">12) a. 107 N    4,2 m/s<span class="math notranslate nohighlight">\(^2\)</span></div>
+<div class="line">13) 2,8 m/s<span class="math notranslate nohighlight">\(^2\)</span></div>
+<div class="line">14) a. 49 N    122,5 N</div>
+<div class="line">15) a. 519 N    252 N</div>
+<div class="line">16) a. 1,67 m/s<span class="math notranslate nohighlight">\(^2\)</span>    3,33 N</div>
+<div class="line">17) 2,45 m/s<span class="math notranslate nohighlight">\(^2\)</span></div>
+<div class="line">18) a. 8,8 m/s<span class="math notranslate nohighlight">\(^2\)</span>    26,3 N</div>
+<div class="line">19) a. 400 N    b. 625 N</div>
+<div class="line">20) a. 0,12 N    b. 0,16</div>
+<div class="line">21) 23,6 snúningar/mínútu</div>
+<div class="line">22) a. 0,67    b. 2,16 m/s<span class="math notranslate nohighlight">\(^2\)</span></div>
+<div class="line">24) 3,3 m/s<span class="math notranslate nohighlight">\(^2\)</span> og 32,6 N.</div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../kafli06/" class="btn btn-neutral float-left" title="6. Verkan og gagnverkan" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../kafli08/" class="btn btn-neutral float-right" title="8. Þyngdarkraftur" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p></p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+<script>
+    window.addEventListener("load", function () {
+        for (var i in ggbAppletId) {
+            ggbAppletId[i].inject(i);
+        }
+    });
+</script>
+
+
+ 
+
+<style>
+    /* Sidebar header (and topbar for mobile) */
+    .wy-side-nav-search,
+    .wy-nav-top {
+       /* HI: #10099F, VoN: #EB7125, orginal #01447B */
+       background: #321c4a;
+    }
+
+    /* Sidebar */
+    .wy-nav-side {
+      /* orginal #343131, HÍ grár dekkri: #EEEEEE, HÍ svartur: #262626 */
+      background: #262626;
+    }
+</style>
+
+
+</body>
+</html>

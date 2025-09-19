@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="is" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>8. Þyngdarkraftur &mdash; Eðlisfræði I </title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/eqt.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/datacamp-custom.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/edbook.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/samstem.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+        <script src="../_static/js/eqt.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script src="https://cdn.datacamp.com/datacamp-light-latest.min.js"></script>
+        <script async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../_static/js/theme.js"></script>
+
+<!-- hoverrole.py css code -->
+<style type="text/css">
+    a.tooltip {
+        outline: none;
+        border-bottom: thin dotted;
+        background: #ffeedd
+    }
+
+    a.tooltip strong {
+        line-height: 30px;
+    }
+
+    a.tooltip:hover {
+        text-decoration: none;
+    }
+
+    a.tooltip span {
+        z-index: 10;
+        display: none;
+        padding: 14px 20px;
+        margin-top: -30px;
+        margin-left: 12px;
+        width: 310px;
+        line-height: 16px;
+    }
+
+    a.tooltip:hover span {
+        display: inline;
+        position: absolute;
+        color: #111;
+        border: 1px solid #DCA;
+        background: #fffAF0;
+    }
+
+    .callout {
+        z-index: 20;
+        position: absolute;
+        top: 30px;
+        border: 0;
+        left: -12px;
+    }
+
+    /*CSS3*/
+    a.tooltip span {
+        border-radius: 4px;
+        box-shadow: 5px 5px 8px #CCC;
+    }
+</style>
+<!-- End hoverrole.py css code -->
+
+<style type="text/css">
+    .sagecell .CodeMirror-scroll {
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+
+    .sagecell .CodeMirror {
+        height: auto;
+    }
+
+    /* - Begin equation reference style - */
+    h6.eqno {
+        display: inline-block;
+        padding-left: 10px;
+    }
+
+    h6 .headerlink {
+        display: inline-block !important;
+    }
+
+    h6 .headerlink:after {
+        visibility: hidden !important;
+    }
+
+    h6 .headerlink:hover:after {
+        visibility: visible !important;
+    }
+
+    .eqno:hover>.headerlink:after {
+        visibility: visible !important;
+    }
+
+    table>caption>.headerlink {
+        visibility: hidden !important;
+    }
+
+    table>caption>.headerlink {
+        visibility: hidden !important;
+    }
+
+    /* - End - */
+</style>
+
+
+
+    <link rel="index" title="Atriðaskrá" href="../genindex/" />
+    <link rel="search" title="Leit" href="../search/" />
+    <link rel="next" title="9. Vinna og orka" href="../kafli09/" />
+    <link rel="prev" title="7. Notkun á lögmálum Newtons" href="../kafli07/" />
+
+
+
+<!--	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
+<script type="text/javascript" src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+<script>ggbAppletId = [];</script>
+
+
+ 
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../" class="icon icon-home">
+            Eðlisfræði I
+              <img src="../_static/samstem.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../kafli01/">1. Mælingar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli02/">2. Hreyfing í einni vídd</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli03/">3. Afstæð hreyfing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli04/">4. Hreyfing í fleiri víddum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli05/">5. Tregða og núningur</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli06/">6. Verkan og gagnverkan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli07/">7. Notkun á lögmálum Newtons</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">8. Þyngdarkraftur</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#soguagrip">8.1. Söguágrip</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#logmal-keplers">8.2. Lögmál Keplers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#yngdarlogmal-newtons">8.3. Þyngdarlögmál Newtons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#gervihnettir-a-braut-um-joru">8.4. Gervihnettir á braut um jörðu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#daemi">8.5. Dæmi</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">8.5.1. 1.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#section-1">8.5.2. 2.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#section-2">8.5.3. 3.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#section-3">8.5.4. 4.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#section-4">8.5.5. 5.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#section-5">8.5.6. 6.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#section-6">8.5.7. 7.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#section-7">8.5.8. 8.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#svor">8.5.9. Svör</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli09/">9. Vinna og orka</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli10/">10. Atlag og skriðþungi</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ordaskra/">Orðaskrá</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../">Eðlisfræði I</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><span class="section-number">8. </span>Þyngdarkraftur</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/edbook/haskoli-islands/blob/master/projects/edlisfraediI/kafli08.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="yngdarkraftur">
+<h1><span class="section-number">8. </span>Þyngdarkraftur<a class="headerlink" href="#yngdarkraftur" title="Permalink to this heading"></a></h1>
+<p><a class="reference internal" href="../_images/epliogstjornur.png"><img alt="image" src="../_images/epliogstjornur.png" style="width: 5in;" /></a></p>
+<p>Allir þekkja söguna um Newton og eplið. Hvernig það að hann fékk epli í
+hausinn hafi leitt hann til þess að uppgötva þyngdarkraftinn sem svo
+skýrði brautir pláneta og annarra himinhnatta.</p>
+<p>Þetta er auðvitað bara grín. Sagan byrjar hins vegar mun fyrr.</p>
+<section id="soguagrip">
+<h2><span class="section-number">8.1. </span>Söguágrip<a class="headerlink" href="#soguagrip" title="Permalink to this heading"></a></h2>
+<p>Stjörnufræði var fyrst notuð til tímatals í Babýlon og víðar t.d. í
+Kína, Mið- og Suður-Ameríku og jafnvel Norður-Evrópu (Stonehenge). Segja
+má að ekki hafi verið um eiginlegar vísindakenningar að ræða hér heldur
+fremur um athuganir og útreikninga sem notair voru m.a. til að styrkja
+veldi trúarleiðtoga.</p>
+<p>Það er oft talað um að fyrstu eiginlegu kenningarnar um stjörnufræði
+hafi orðið til í Grikklandi við Eyjaahafið. Í margar aldir, fram til 338
+f. kr., voru grísku borgirnar sjálfstæðar og óháðar en unnu lauslega
+saman. Miklar breytingar gátu orðið á stuttum tíma. Ekki var um miðlægt
+vald að ræða og engar langvarandi strangar hefðir í trú eða stjórnmálum.
+Borgirnar voru á mótum viðskiptaleiða og það gerði það að verkum að
+íbúar gátu séð að margar mismunandi trúarkenningar og hefðir voru til.</p>
+<p>Í þessu umhverfi getur maður séð fyrir sér að fólk geti farið að velta
+ýmsu fyrir sér, alla vega þeir sem höfðu tíma og peninga til þess að
+sitja og pæla. Á þessum tíma komu fram á sjónarsviðið menn sem við getum
+kallað heimspekinga. Þetta voru ekki spámenn að hætti trúarbragðanna,
+sem krefðust þess að fólk tryði því sem þeir sögðu skilyrðislaust,
+heldur menn sem veltu upp hugmyndum og vildu ræða þær og velta þeim
+fyrir sér.</p>
+<p>Heimspekingarnir komu með ýmsar kenningar og þær voru kannski framan af
+ekki miklar vísindakenningar og voru ekki byggðar á góðum athugunum eins
+og dagatöl prestanna. En þeir eru þeir fyrstu til þess að reyna að búa
+til líkön og reyna að skýra óþekkta hluti með einhverju áþreifanlegu.</p>
+<p>Við skulum athuga veraldarsýn Anaximander frá Miletos.</p>
+<p>Anaximander sagði að jörðin væri sívalningur. Hæð sívalningsins væri
+þriðjungur á við breidd hans. Sívalningurinn svifi frjáls, honum væri
+ekki haldið föstum á neinn hátt, en hann svifi frjáls vegna þess að hann
+er jafnlangt frá öllu. Við byggjum á annarri flötu hliðinni.</p>
+<p>Anaximander hélt því svo fram að umhverfis sívalingin væru hjól sem væru
+full af eldi. Á hjólunum væru göt svolítið eins og göt á flautu og þar
+sæist inn á eldhafið. Þessi göt voru svo sólin, tunglið og stjörnurnar.</p>
+<p><a class="reference internal" href="../_images/sivalningsheimur.png"><img alt="image1" src="../_images/sivalningsheimur.png" style="width: 3in;" /></a></p>
+<p>Þessi kenning var ekki mjög góð. Hún leiddi ekki til skýringa á
+fyrirbærum. En hugmyndin að sívalingurinn þurfi ekkert til að haldast
+uppi er mjög mikilvæg í þróun kenninganna.</p>
+<p>Pýthagórískir heimspekingar vildu að allt tengdist tölum. Þeirra
+hugmyndafræði byggði á því að ræðar tölur væru undirstaða alls. Þeir
+höfðu þá heimsmynd að jörðin væri ekki í miðju alheims heldur væri þar
+eldhaf sem þeir stundum kölluðu „Varðturn Zeusar“. Jörðin væri ein af
+stjörnunum sem ferðaðist umhverfis eldhafið. Jörðin, sólin, tunglið og
+aðrir himinhnettir ferðuðust umhverfið miðjueldinn í fjarlægðum sem væru
+í ræðum hlutföllum og gæfu frá sér tóna samsvarandi þeim hlutföllum. Við
+heyrðum ekki þessa tóna vegna þess að þeir hefðu verið þarna þegar við
+fæddumst og því gerðum við okkur ekki grein fyrir þeim.</p>
+<p>Plató og lærisveinar hans voru miklir áhugamenn um rúmfræði. Þeir héldu
+því fram að allt í heiminum væru ófullkomnar eftirlíkingar af
+stærðfræðilegum fullkomnum rúmfræðihugtökum. Þanngi héldu þeir því fram
+að allir himinhnettir ferðuðust eftir fullkomnum hringferlum. Þeir
+þróuðu heimsmynd þar sem Jörðin er miðja alheims og umhverfis hana eru
+hvolf sem snúast og á þeim eru stjörnurnar. Það voru fleiri en eitt
+slíkt hvolf, of talað um 8 hvolf/himna, sólin var í sjöunda himni og
+fastastjörnurnar í þeim áttunda. (Að vera í sjöunda himni þýðir sem sagt
+að vera þarna uppi hjá sólinni.) Plató og hans menn vildu meina að allt
+mætti skýra með einföldum rúmfræðilegum líkönum.</p>
+<p>Aristoteles, fæddur 384 f.kr., er af flestum talinn fyrsti raunverulegi
+eðlisfræðingurinn. Hann var einnig mikill áhugamaður um líffræði og
+læknisfræði. Hann trúði því ekki að hlutirnir væru eins einfaldir og
+stærðfræðingarnir vildu meina að þeir væru. Hann vildi skoða hluti og
+mynda kenningar út frá því sem hann sá. Hann ákvað að það væri
+heppilegra að skoða hreyfingu á jörðunni og nota þær athuganir til að
+komast að því hvers vegna hlutir hreyfðust eins og þeir gera á himnum.
+Eitt af því sem hann tók eftir var að hlutir gerðust ýmist af
+sjálfsdáðum eða eitthvað utanaðkomandi lét hluti gerast. Í hreyfifræði
+sá hann að steinar falla ef þeim er sleppt og reykur stígur upp. Þetta
+leit hann á sem sjálfkrafa eðlilega hreyfingu. Hins vegar, ef hlut er
+gefinn hraði eftir jörðinni þá stoppar hann. Þess vegna taldi hann þá
+hreyfingu óeðlilega eða „framkvæmda“. Eðlilegu hreyfingarnar leiddu til
+þyngdarkennigar Aristotelesar. Sú kenning gerir ráð fyrir að heimurinn
+sé samsettur úr 4 aðalefnum, jörð, vatni, lofti og eldi. Náttúruleg
+hreyfing þessarra efna er að jörð og vatn leita niður og loft og eldur
+leita upp. Vegna aðgreiningar hreyfinga í eðlilega og framkvæmda
+hreyfingu á jörðu niðri dró Aristotels þá ályktun að himinhnettir
+hreyfðust bara með eðlilegri hreyfingu því þeirra hreyfing hætti aldrei.
+Þeirra eðlilega hreyfing var að fara í hringi umhverfis jörðu.</p>
+<p>Heimsmynd Aristotelesar var sem sagt sú að jörðin væri í miðju alheims.
+Umhverfis hana væru hvolf Platós með reikistjörnum tungli, sólu og
+fastastjörnum. Hringhreyfing umhverfis miðju jarðar var eðlileg
+hreyfing, sem og upp og niður hreyfing hluta á jörðu. Við sjáum að
+eðlileg hreyfing er jú að því er virðist mjög kúlusamhverf hreyfing.</p>
+<p><a class="reference internal" href="../_images/kulusamhverfa.png"><img alt="image2" src="../_images/kulusamhverfa.png" style="width: 3in;" /></a></p>
+<p>Þó svo að allar þessar kenningar virðist ekki hafa mikið með athuganir
+að gera þá voru til gífurlega miklar athuganir á himinhvolfinu t.d. sem
+Babýlóníumenn höfðu gert. Eitt af því sem engin þessarra kenninga gat
+gefið góða skýringu á var það sem kallast „retrograde motion“ en það er
+að reikistjörnurnar virðast stundum fara í lykkju aftur á bak.</p>
+<p><a class="reference internal" href="../_images/retrograde.png"><img alt="image3" src="../_images/retrograde.png" style="width: 3in;" /></a></p>
+<p>Hreyfing í hringi umhverfis jörðu gat ekki skýrt þessa hreyfingu. Samt
+voru gerðar tilraunir til þess að skýra þetta með því að hugsa sé að
+reikistjörðurnar hreyfðust á hringjum sem snerust um punkta sem
+ferðuðust á hringjum umhverfis jörðu. Þetta minnir svolítið á leikfang
+sem margir hafa átt, þar sem maður teiknar munstur með því á láta penna
+teikna feril hrings sem er látinn rúlla innan í eða utan á stærri hring.
+Þetta og fleiri slík brögð gerðu fólki kleift að nálga brautir
+reikistjarnanna.</p>
+<p><a class="reference internal" href="../_images/hringurihring.png"><img alt="image4" src="../_images/hringurihring.png" style="width: 3in;" /></a></p>
+<p>Maður að nafni Claudius Ptolemaeus, grísk-egypskur stærðfræðingur,
+stjarnfræðingur og stjörnuspekingur, sem vann á bókasafninu í Alexandríu
+fínpússaði útreikningana svo að með hans aðferðum mátti reikna mjög
+nákvæmlega ferla reikistjarnanna á himninum. Hann skráði niðurstöður
+sínar í bók, Almagest. Sú bók var svo þýdd á arabísku og var dreift viða
+um hinn arabíska heim. Segja má að vísindi og pælingar hafi horfið úr
+Evrópu á tímum Rómarveldis. Katholska kirkjan varð valdamikil. Hún tók
+jarðmiðjukenninguna sem sannleika og vildi ekki þola neina umræðu um
+málið. Upp úr 1200 eftir Krist byrja svo fræði að koma aftur inn í
+Evrópu, t.d. frá Afríku um Spán með Márum. Smátt og smátt byrja svo
+pælingar í gömlum stíl og nýjir hlutir fara að þróast. Menn finna upp
+ýmsa hluti m.a. safngler og svo sjónauka, fara að pæla í tímabilum og
+hvernig stærðir eins og hraði t.d. breytast með tíma. Við það að fólk
+fer að pæla í hlutunum og skoða, fara hugmyndirnar að þróast og smám
+saman koma fram hugmyndir um að ef til villl væri betra að skoða kerfi
+þar sem reikistjörnurnar snerust um sólina fremur en um jörðina. Sú
+kenning hefur alla jafna verið kennd við Nikulás Kópernikus, pólskan
+stjarnfræðing, sem gaf út kenningar sínar í bók sem hét: „Um snúning
+himintunglanna“ eða „Dē revolutionibus orbium coelestium“. Kópernikus
+setti fram hugmyndir um að hreyfing sólar og reikistjarna eins og við
+sæum hana á jörðu, væri ekki vegna hreyfingar viðkomandi heldur að mestu
+vegna hreyfingar jarðar. Hann kom með mjög mikilvæga sýn á sólkerfið og
+af þeim sökum hefur sú breytings sem varð á heimsmynd manna eftir hans
+tíma, þ.e. breytingin frá jarðmiðjukerfi með jörðu í miðju alheims yfir
+í sólmiðjukerfi verið kölluð <strong>Bylting Kópernikusar</strong>.</p>
+<p>Á þessum tíma voru skiptar skoðanir um hvort kenningar Kópernikusar væru
+réttar. Útreikningar hans á ferlum reikistjarnanna voru í flestum
+tilfellum mun síðri en útreikningar Ptolemeusar. Tycho Brahe, mesti
+stjörnuskoðari þessa tíma hélt því fram að Kópernikus hefði rangt fyrir
+sér vegna þess m.a. að ekki sæist neinn „parallax“. Parallax er
+mælikvarði á hversu mikið sjónarhorn til hlutar breytist þegar hluturinn
+er skoðaður frá mismunandi stöðum. Í stjörnufræði er fjarlægð stjarna
+mæld í einingu sem kallast <em>parsec</em>. Sú eining er í rauninni einn á móti
+því sem við köllum parallax.</p>
+<p><a class="reference internal" href="../_images/parallax.png"><img alt="image5" src="../_images/parallax.png" style="width: 100%;" /></a></p>
+<p>Parallaxinn hér er helmingur þess horns sem nálæg stjarna færist um
+miðað við mjög fjarlægar stjörnur meðan jörðin færist hálfa leiðina
+umhverfis sólu. Á myndinni má sjá hvernig það horn fæst. Fjarlægð jarðar
+frá sólu er yfirleitt kölluð 1 AU <span class="math notranslate nohighlight">\(\approx\)</span> 1,5 <span class="math notranslate nohighlight">\(\cdot\)</span>
+10<span class="math notranslate nohighlight">\(^{11}\)</span> Nú er einfalt að finna fjarlægðina d.</p>
+<div class="math notranslate nohighlight">
+\[\frac{1\,\textnormal{AU}}{d} = \tan(\theta)\]</div>
+<p>Með nálguninni að hornið sé mjög lítið fæst:
+<span class="math notranslate nohighlight">\(\tan(\theta)\,\, \approx \,\,\theta\)</span>. Þetta gildir þó aðeins ef
+<span class="math notranslate nohighlight">\(\theta\)</span> er mælt í radíönum. Ef hornið er mælt í bogasek, þá er
+hornið í radíönum:</p>
+<div class="math notranslate nohighlight">
+\[\theta_{rad} = \theta_{bogasek}\cdot \frac{\pi}{180\cdot3600}\]</div>
+<p>Því er fjarlægð stjörnu með parallax 1 bogasec:</p>
+<div class="math notranslate nohighlight">
+\[d = 1\,\textnormal{AU}\frac{180\cdot3600}{\pi} = 3,09 \cdot 10^{16}\,\text{m}\]</div>
+<p>Einingin parsec er í raun bara</p>
+<div class="math notranslate nohighlight">
+\[d_{parsec} = \frac{1}{\theta_{bogasek}}\]</div>
+<p>.</p>
+<p>Til þess að breyta parsec í metra margföldum við því:</p>
+<p>1 parsek = <span class="math notranslate nohighlight">\(3,09 \cdot 10^{16} \,\text{m}\)</span></p>
+<p>Ástæðan fyrir því að Tycho Brahe sá engann parallax var einfaldlega að
+næsta fastastjarna hefur parallax sem er tæp bogasekúnda og þó að Tyco
+Brahe hafi getað mælt betur en þeir sem á undan fóru gat hann ekki mælt
+svo nákvæmlega.</p>
+<p>Galíleó Galilei var ítalskur eðlisfræðingur sem gerði mikið af tilraunum
+og skrifaði merkar bækur. Galíleó bjó sér til sjónauka. Með sjónaukanum
+gat henn séð m.a. tungl sem fóru umhverfis Júpíter. Það ásamt ýmsu
+fleiru sannfærði hann um að jörðin væri ekki miðja alheims og hann var
+mjög hrifinn af kenningum Kópernikusar.</p>
+<p>Það dugði samt lítið að einn og einn væri hrifinn af kenningum
+Kópernikusar. Meðan þær gáfu ekki betri niðurstöður en kenning
+kirkjunnar og Ptólemeusar, var engin von til þess að menn gæfu upp
+örugga stöðu jarðarinnar í miðju alheims fyrir óstöðuga ferð umhverfis
+sólu ásamt fjölda annarra reikistjarna.</p>
+</section>
+<section id="logmal-keplers">
+<h2><span class="section-number">8.2. </span>Lögmál Keplers<a class="headerlink" href="#logmal-keplers" title="Permalink to this heading"></a></h2>
+<p>Raunverulegur árangur náðist ekki fyrr en Jóhannes Kepler, hellti sér í
+að skoða braut reikistjörnunnar Mars. Kepler var sannfærður um að sólin
+væri í miðu heims og vildi skoða vandamálið um brautir reikistjarnanna
+út frá því sjónarmiði. Hann bað Tycho Brahe um að lána sé
+mæliniðurstöðurnar um brautir reikistjarnanna. Tycho var hins vegar
+algerlega á móti sólmiðjukenningunni og vildi ekki hjálpa neinum sem
+ætlaði að sýna fram á slíkt. Að síðust gaf hann honum þó mæliniðurstöður
+fyrir Mars, því enginn hafði getað fundið góða nálgun á braut Mars.
+Þetta dugði. Kepler fór og reiknaði og skoðaði og fann fyrir rest þrjú
+tilraunalögmál sem giltu um reikistjörnur á braut um sólu.</p>
+<ol class="arabic simple">
+<li><p><em>Lögmál Keplers</em>:</p></li>
+</ol>
+<p>Brautir reikistjarnanna eru sporbaugar með sólu í öðrum brennipunktinum.</p>
+<p><a class="reference internal" href="../_images/sporbaugur.png"><img alt="image6" src="../_images/sporbaugur.png" style="width: 1.5in;" /></a></p>
+<ol class="arabic simple" start="2">
+<li><p><em>Lögmál Keplers</em>:</p></li>
+</ol>
+<p>Línan frá sólu að reikistjörnu fer á hverju tímabili yfir jafnstórt
+flatarmál.</p>
+<p><a class="reference internal" href="../_images/flatarmalradius.png"><img alt="image7" src="../_images/flatarmalradius.png" style="width: 2.5in;" /></a></p>
+<ol class="arabic simple" start="3">
+<li><p><em>Lögmál Keplers</em>:</p></li>
+</ol>
+<p>Lengd hálfs langáss (<span class="math notranslate nohighlight">\(a\)</span>) sporbaugsins sem reikistjarna fer eftir
+í þriðja veldi er í réttu hlutfalli við umferðatíma (<span class="math notranslate nohighlight">\(T\)</span>)
+reikistjörnunnar um sólu í öðru veldi.</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+\frac{a^3}{T^2} = k\,\,\, (\textnormal{fasti})
+\end{equation}\]</div>
+<p>Þessi lögmál reyndust gilda um allar reikistjörnurnar.</p>
+<p>Ef við skoðum 3. lögmál Keplers fyrir hringferil og gerum ráð fyrir að
+við þekkjum annað lögmál Newtons og miðsóknarhröðun þá sjáum við strax
+að krafturinn milli sólar og reikistjarna hlýtur að vera í öfugu
+hlutfalli við radíus brautarinnar í öðru veldi.</p>
+<p>Til þess að skoða þetta skulum við gera ráð fyrir að stærð kraftsins,
+<span class="math notranslate nohighlight">\(F\)</span>, sem heldur reikistjörnu á braut um sólu og stefnir því inn að
+miðju sólar sé óþekktur. Köllum brautarradíusinn <span class="math notranslate nohighlight">\(r\)</span> og
+umferðatímann <span class="math notranslate nohighlight">\(T\)</span>. Hraði reikistjörnunnar á braut sinni er þá
+<span class="math notranslate nohighlight">\(v = \frac{2\pi r}{T}\)</span>. Þriðja lögmál Keplers gefur
+<span class="math notranslate nohighlight">\(\frac{r^3}{T^2} = k\)</span> þar sem <span class="math notranslate nohighlight">\(k\)</span> er einhver fasti.</p>
+<p>Setjum þetta inn í annað lögmál Newtons:</p>
+<div class="math notranslate nohighlight">
+\[F = m\frac{v^2}{r} = m\frac{\frac{(2\pi r)^2}{T^2}}{r} = m\frac{4\pi^2r^2}{T^2r} = m\frac{4\pi^2r^2}{\frac{r^3}{k} r} = m\frac{4\pi^2k}{r^2}\]</div>
+<p>Með öðrum orðum:</p>
+<div class="math notranslate nohighlight">
+\[F =  4\pi^2k\frac{m}{r^2}\]</div>
+<p>Nokkuð ljóst er, vegna þriðja lögmálsins, að massi sólar hlýtur að vera
+inni í fastanum k.</p>
+</section>
+<section id="yngdarlogmal-newtons">
+<h2><span class="section-number">8.3. </span>Þyngdarlögmál Newtons<a class="headerlink" href="#yngdarlogmal-newtons" title="Permalink to this heading"></a></h2>
+<p>Það virðist ekki mikið mál með þetta í höndunum fyrir Newton að setja
+fram lögmál sitt um kraft milli tveggja massa, m og M.</p>
+<p><em>Þyngdarlögmál Newtons</em>:</p>
+<p>Kraftur sem massi M verkar á massa m með er:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+\vec{F}_{Mm} = G\frac{Mm}{r^2}\vec{e}_{mM}\,\,\,\Longleftrightarrow\,\,\,\vec{F}_{Mm} = \,- G\frac{Mm}{r^2}\vec{e}_{Mm}
+\end{equation}\]</div>
+<p>þar sem <span class="math notranslate nohighlight">\(\vec{e}_{mM}\)</span> er einingavigur frá <span class="math notranslate nohighlight">\(m\)</span> til
+<span class="math notranslate nohighlight">\(M\)</span>.</p>
+<p>En þó Newton hafi getað séð tiltölulega snemma að þetta hlyti að vera
+lögmálið um krafta milli tveggja massa, þurfti hann þó að finna upp
+aðferðir til þess að geta skoðað áhrif margra lítilla massa sem saman
+gerðu einn stóran. Jörðin, reikistjörnurnar og sólin eru stórir massar
+samsettir af mörgum litlum. Hvaða fjarlægð á að nota í jöfnunni? Svo
+virtist sem nota ætti miðju reikistjarnanna og sólarinnar, en af hverju?
+Það tók hann mörg ár að leysa þetta vandamál og hann fann upp
+örsmæðareikning, diffrun og tegrun, til þess að geta sannfærst um að
+þetta væri rétt. Með hjálp örsmæðareiknings gat hann fengið fram að
+kúlusamhverfur massi eins og jörðin (er næstum því), hegðar sér gagnvart
+öðrum mössum eins og ef allur massinn væri staðsettur í miðju kúlunnar.</p>
+<p>Þetta gefur okkur að þyngdarkraftur milli hlutar við yfirborð jarðar og
+jarðarinnar er fenginn með jöfnunni</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+F_g = G\frac{M_{\oplus} m}{R^2_{\oplus}}
+\end{equation}\]</div>
+<p>Hér er <span class="math notranslate nohighlight">\(R_{\oplus}\)</span> radíus jarðar og <span class="math notranslate nohighlight">\(M_{\oplus}\)</span> massi
+jarðar.</p>
+<p>Við höfum verið að nota <span class="math notranslate nohighlight">\(F_g = mg\)</span> sem þann kraft sem jörðin togar
+í massa <span class="math notranslate nohighlight">\(m\)</span> með. Við getum nú séð að þyngdarsviðið við yfirborð
+jarðar, g, er í raun:</p>
+<div class="math notranslate nohighlight">
+\[g = G\frac{M_{\oplus}}{R^2_{\oplus}}\]</div>
+</section>
+<section id="gervihnettir-a-braut-um-joru">
+<h2><span class="section-number">8.4. </span>Gervihnettir á braut um jörðu<a class="headerlink" href="#gervihnettir-a-braut-um-joru" title="Permalink to this heading"></a></h2>
+<p>Gervihnöttur á braut um jörðu helst á hringhreyfingu vegna þyngdarkrafts
+jarðar.</p>
+<p>Hugsum okkur að gervihnötturinn, með massa <span class="math notranslate nohighlight">\(m\)</span>, sé í hæð <span class="math notranslate nohighlight">\(r\)</span>
+og finnum á hvaða hraða hann þarf að vera til þess að hann haldist á
+hringbraut um jörðu:</p>
+<p>Við notum annað lögmál Newtons og þyngdarlögmálið:</p>
+<div class="math notranslate nohighlight">
+\[\vec{F} = m\vec{a}\]</div>
+<p>Hér er <span class="math notranslate nohighlight">\(\vec{a}\)</span> miðsóknarhröðunin og hún stefnir inn að miðju
+hringsins eins og þyngdarkrafturinn. Við skoðum því bara stærðirnar:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+G\frac{M_{\oplus}m}{r^2} = m\frac{v^2}{r}
+\end{equation}\]</div>
+<p>Hér fæst að hraðinn þarf að vera:</p>
+<div class="math notranslate nohighlight">
+\[v = \sqrt{\frac{GM_{\oplus}}{r}}\]</div>
+<p>Þ.e. ef r er fast þá þarf hraðinn að vera ákveðin stærð til þess að
+hnötturinn haldist á hringhreyfingu.</p>
+<p>Kannski er áhugaverðara að athuga í hvaða hæð gerfihnöttur þarf að vera
+ef hann á alltaf að vera yfir sama lengdarbaug við miðbaug jarðar. Í því
+tilfelli þarf gerfihnötturinn að fara nákvæmlega einn hring á 24 klst.
+Þá er hraðinn fenginn með:</p>
+<div class="math notranslate nohighlight">
+\[v = \frac{2\pi r}{24\cdot3600}\]</div>
+<p>Við setjum það inn í jöfnuna 8.4 og finnum r.</p>
+</section>
+<section id="daemi">
+<h2><span class="section-number">8.5. </span>Dæmi<a class="headerlink" href="#daemi" title="Permalink to this heading"></a></h2>
+<section id="id1">
+<h3><span class="section-number">8.5.1. </span>1.<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h3>
+<p>Notið þriðja lögmál Keplers til þess að finna umferðatíma Mars um sólu
+ef gefið er að fjarlægð Mars frá sólu er 1,53 AU.</p>
+</section>
+<section id="section-1">
+<span id="id2"></span><h3><span class="section-number">8.5.2. </span>2.<a class="headerlink" href="#section-1" title="Permalink to this heading"></a></h3>
+<p>Meðalfjarlægð Plútó frá sólu er 39,5 AU. Hver er umferðatími Plútós um
+sólu?</p>
+</section>
+<section id="section-2">
+<span id="id3"></span><h3><span class="section-number">8.5.3. </span>3.<a class="headerlink" href="#section-2" title="Permalink to this heading"></a></h3>
+<p>Satúrnus hefur masssann <span class="math notranslate nohighlight">\(5,69\times 10^{26}\,\)</span>kg. Finnið
+umferðatíma tunglsins Mimas sem ferðast umhverfis Satúrnus í
+fjarlægðinni 186 Mm frá miðju Satúrnusar.</p>
+</section>
+<section id="section-3">
+<span id="id4"></span><h3><span class="section-number">8.5.4. </span>4.<a class="headerlink" href="#section-3" title="Permalink to this heading"></a></h3>
+<p>Reiknið massa sólar út frá umferðartíma jarðar um sólu (1 ár), meðal
+brautarradíus (1,496<span class="math notranslate nohighlight">\(\times10^{11}\,\)</span>m = 1 AU) jarðar á braut
+um sólu og þekktu gildi fastans <span class="math notranslate nohighlight">\(G\)</span>.</p>
+</section>
+<section id="section-4">
+<span id="id5"></span><h3><span class="section-number">8.5.5. </span>5.<a class="headerlink" href="#section-4" title="Permalink to this heading"></a></h3>
+<p>Reiknið massa jarðar með því að nota umferðartíma tungls um jörðu
+(<span class="math notranslate nohighlight">\(T = 27,3\,\)</span>dagar), meðalbrautarradíus tungls um jörðu
+(<span class="math notranslate nohighlight">\(r_m = 384\,\)</span>Mm og þekkt gildi fastans <span class="math notranslate nohighlight">\(G\)</span>.</p>
+</section>
+<section id="section-5">
+<span id="id6"></span><h3><span class="section-number">8.5.6. </span>6.<a class="headerlink" href="#section-5" title="Permalink to this heading"></a></h3>
+<div class="line-block">
+<div class="line">Ímyndum okkur að tveir massar séu aleinir í alheimnum. Annar er
+10,0 kg og hinn er 0,10 g. Miðjur massanna eru í 2,0 m fjarlægð hvor
+frá annarri.</div>
+<div class="line">a) Með hversu stórum krafti togar 10,0 kg massinn í 0,10 g massann?</div>
+<div class="line">b) Með hversu stórum krafti togar 0,10 g massinn í 10,0 kg massann?</div>
+</div>
+</section>
+<section id="section-6">
+<span id="id7"></span><h3><span class="section-number">8.5.7. </span>7.<a class="headerlink" href="#section-6" title="Permalink to this heading"></a></h3>
+<div class="line-block">
+<div class="line">Ímyndum okkur nú 3 massa,
+<span class="math notranslate nohighlight">\(m_1, = 12\,\text{kg},\,\,m_2 = 11\,\text{kg}\,\,\)</span> og
+<span class="math notranslate nohighlight">\(m_3 = 16\,\text{kg},\)</span> sem eru þannig staðsettir að við getum
+sett upp hnitakerfi þar sem <span class="math notranslate nohighlight">\(m_1\)</span> er í punktinum (0 ; 3,0 m),
+<span class="math notranslate nohighlight">\(m_2\)</span> er í punktinum (0 ; -3,0 m) og <span class="math notranslate nohighlight">\(m_3\)</span> er staðsettur í
+(4,0 m ; 0).</div>
+<div class="line">Finnið kraftinn sem verkar á <span class="math notranslate nohighlight">\(m_3\)</span> frá hinum tveimur.</div>
+</div>
+</section>
+<section id="section-7">
+<span id="id8"></span><h3><span class="section-number">8.5.8. </span>8.<a class="headerlink" href="#section-7" title="Permalink to this heading"></a></h3>
+<div class="line-block">
+<div class="line">Gerfihnöttur ferðast umhverfis jörðu við miðbaug í sömu átt og jörðin
+snýst.</div>
+<div class="line">a) Í hvaða fjarlægð þarf hann að vera frá miðju jarðar til þess að
+hann sé alltaf yfir sama punkti á yfirborði jarðar? Hversu hátt er það
+yfir yfirborði jarðar?</div>
+<div class="line">b) Ef hann er í 9000 m hæð yfir yfirborði jarðar, hver er þá
+umferðatími hans um jörðu?</div>
+</div>
+</section>
+<section id="svor">
+<h3><span class="section-number">8.5.9. </span>Svör<a class="headerlink" href="#svor" title="Permalink to this heading"></a></h3>
+<div class="line-block">
+<div class="line">1) 1,89 ár</div>
+<div class="line">2) 248 ár</div>
+<div class="line">3) 22,7 klst</div>
+<div class="line">4) <span class="math notranslate nohighlight">\(2,0\cdot10^{30}\)</span> kg</div>
+<div class="line">5) <span class="math notranslate nohighlight">\(6,0\cdot10^{24}\)</span> kg</div>
+<div class="line">6) a. <span class="math notranslate nohighlight">\(1,67\cdot10^{-14}\)</span> N     b. <span class="math notranslate nohighlight">\(1,67\cdot10^{-14}\)</span></div>
+<div class="line">7) <span class="math notranslate nohighlight">\(\begin{pmatrix}
+0,25\cdot10^{-10}\\
+-7,86\cdot10^{-10}
+\end{pmatrix}\)</span> N</div>
+<div class="line">8) 35,9 m</div>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../kafli07/" class="btn btn-neutral float-left" title="7. Notkun á lögmálum Newtons" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../kafli09/" class="btn btn-neutral float-right" title="9. Vinna og orka" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p></p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+<script>
+    window.addEventListener("load", function () {
+        for (var i in ggbAppletId) {
+            ggbAppletId[i].inject(i);
+        }
+    });
+</script>
+
+
+ 
+
+<style>
+    /* Sidebar header (and topbar for mobile) */
+    .wy-side-nav-search,
+    .wy-nav-top {
+       /* HI: #10099F, VoN: #EB7125, orginal #01447B */
+       background: #321c4a;
+    }
+
+    /* Sidebar */
+    .wy-nav-side {
+      /* orginal #343131, HÍ grár dekkri: #EEEEEE, HÍ svartur: #262626 */
+      background: #262626;
+    }
+</style>
+
+
+</body>
+</html>

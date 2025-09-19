@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="is" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3. Afstæð hreyfing &mdash; Eðlisfræði I </title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/eqt.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/datacamp-custom.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/edbook.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/samstem.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+        <script src="../_static/js/eqt.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script src="https://cdn.datacamp.com/datacamp-light-latest.min.js"></script>
+        <script async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../_static/js/theme.js"></script>
+
+<!-- hoverrole.py css code -->
+<style type="text/css">
+    a.tooltip {
+        outline: none;
+        border-bottom: thin dotted;
+        background: #ffeedd
+    }
+
+    a.tooltip strong {
+        line-height: 30px;
+    }
+
+    a.tooltip:hover {
+        text-decoration: none;
+    }
+
+    a.tooltip span {
+        z-index: 10;
+        display: none;
+        padding: 14px 20px;
+        margin-top: -30px;
+        margin-left: 12px;
+        width: 310px;
+        line-height: 16px;
+    }
+
+    a.tooltip:hover span {
+        display: inline;
+        position: absolute;
+        color: #111;
+        border: 1px solid #DCA;
+        background: #fffAF0;
+    }
+
+    .callout {
+        z-index: 20;
+        position: absolute;
+        top: 30px;
+        border: 0;
+        left: -12px;
+    }
+
+    /*CSS3*/
+    a.tooltip span {
+        border-radius: 4px;
+        box-shadow: 5px 5px 8px #CCC;
+    }
+</style>
+<!-- End hoverrole.py css code -->
+
+<style type="text/css">
+    .sagecell .CodeMirror-scroll {
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+
+    .sagecell .CodeMirror {
+        height: auto;
+    }
+
+    /* - Begin equation reference style - */
+    h6.eqno {
+        display: inline-block;
+        padding-left: 10px;
+    }
+
+    h6 .headerlink {
+        display: inline-block !important;
+    }
+
+    h6 .headerlink:after {
+        visibility: hidden !important;
+    }
+
+    h6 .headerlink:hover:after {
+        visibility: visible !important;
+    }
+
+    .eqno:hover>.headerlink:after {
+        visibility: visible !important;
+    }
+
+    table>caption>.headerlink {
+        visibility: hidden !important;
+    }
+
+    table>caption>.headerlink {
+        visibility: hidden !important;
+    }
+
+    /* - End - */
+</style>
+
+
+
+    <link rel="index" title="Atriðaskrá" href="../genindex/" />
+    <link rel="search" title="Leit" href="../search/" />
+    <link rel="next" title="4. Hreyfing í fleiri víddum" href="../kafli04/" />
+    <link rel="prev" title="2. Hreyfing í einni vídd" href="../kafli02/" />
+
+
+
+<!--	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
+<script type="text/javascript" src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+<script>ggbAppletId = [];</script>
+
+
+ 
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../" class="icon icon-home">
+            Eðlisfræði I
+              <img src="../_static/samstem.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../kafli01/">1. Mælingar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli02/">2. Hreyfing í einni vídd</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">3. Afstæð hreyfing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#hrai-eins-hlutar-mia-vi-annan">3.1. Hraði eins hlutar miðað við annan</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#a-hreyfast-i-kerfi-sem-er-a-hreyfast">3.2. Að hreyfast í kerfi sem er að hreyfast</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#fleiri-viddir">3.2.1. Fleiri víddir</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#daemi-batur-sem-roi-er-hornrett-a-straumstefnu">3.2.2. Dæmi: Bátur sem róið er hornrétt á straumstefnu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#daemi-batur-sem-roi-er-annig-a-hann-fer-beint-yfir-ana">3.2.3. Dæmi: Bátur sem róið er þannig að hann fer beint yfir ána</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#mismunandi-hreyfingar-sem-gerast-a-sama-tima">3.3. Mismunandi hreyfingar sem gerast á sama tíma</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vigrar">3.4. Vigrar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hnitakerfi-byggt-upp-af-vigrum">3.5. Hnitakerfi byggt upp af vigrum</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#margfoldun-vigra-upprifjun">3.5.1. Margföldun vigra, upprifjun</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hornafoll">3.5.2. Hornaföll</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#daemi">3.6. Dæmi</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli04/">4. Hreyfing í fleiri víddum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli05/">5. Tregða og núningur</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli06/">6. Verkan og gagnverkan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli07/">7. Notkun á lögmálum Newtons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli08/">8. Þyngdarkraftur</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli09/">9. Vinna og orka</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli10/">10. Atlag og skriðþungi</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ordaskra/">Orðaskrá</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../">Eðlisfræði I</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><span class="section-number">3. </span>Afstæð hreyfing</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/edbook/haskoli-islands/blob/master/projects/edlisfraediI/kafli03.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="afstae-hreyfing">
+<h1><span class="section-number">3. </span>Afstæð hreyfing<a class="headerlink" href="#afstae-hreyfing" title="Permalink to this heading"></a></h1>
+<p><a class="reference internal" href="../_images/relativemotion.png"><img alt="image" src="../_images/relativemotion.png" style="width: 100%;" /></a></p>
+<p>Öll vitum við að það er erfiðara að róa á móti straumi en með straumi,
+að minnsta kosti kemst maður mun styttra með sömu vinnu. Ef bátur er
+kyrr miðað við vatnið í á, þar sem vatnið ferðast t.d. með hraðanum
+-3,0 m/s, þá virðist manni sem stendur á árbakkanum báturinn ferðast með
+hraðanum -3,0 m/s. Til þess að manni sem stendur á bakkanum virðist
+báturinn kyrr í ánni þyrfti sá sem í honum er að róa á móti straumnum
+með hraðanum 3,0 m/s.</p>
+<section id="hrai-eins-hlutar-mia-vi-annan">
+<h2><span class="section-number">3.1. </span>Hraði eins hlutar miðað við annan<a class="headerlink" href="#hrai-eins-hlutar-mia-vi-annan" title="Permalink to this heading"></a></h2>
+<p>Hugsum okkur að báturinn hér að ofan sé kyrr á vatninu. Þá ferðast hann
+með straumnum á hraðanum <span class="math notranslate nohighlight">\(\vec{v}_{vj}\)</span> (vatn miðað við jörð)
+niður ána séð frá þeim sem stendur á bakkanum. En hvernig lítur þetta út
+frá sjónarhóli þess sem er í bátnum? Jú honum finnst bakkinn ferðast í
+öfuga stefnu, þ.e. í öfuga átt við straumstefnuna, þ.e. með hraðanum
+<span class="math notranslate nohighlight">\(\vec{v}_{jv} = -\vec{v}_{vj}\)</span>. Það er kannski auðveldara að hugsa
+sé einhvern í lest ekur hægt framhjá brautarpalli. Sá sem stendur á
+brautarpallinum sér lestina fara framhjá á hraðanum <span class="math notranslate nohighlight">\(\vec{v}_{lb}\)</span>
+(hraði lestar miðað við brautarpall). Sá sem situr inni í lestinni og
+horfir út, sér brautarpallinn fara í stefnu sem er öfug á við stefnu
+lestarinnar. Honum finnst brautarpallurinn ferðast framhjá á hraðanum
+(hraði brautarpalls miðað við lest) <span class="math notranslate nohighlight">\(\vec{v}_{bl}= -\vec{v}_{lb}\)</span>.</p>
+<p>Margir hafa reynslu af því að vera kyrrstæðir í bíl á ljósum og hrökkva
+svo við því að þeir halda að bíllinn þeirra sé að renna afturábak, þegar
+það sem er að gerast er í raun og veru er að bíllinn við hliðina er að
+aka hægt áfram.</p>
+<p>Almennt fáum við alltaf að ef hraði a miðað við b er
+<span class="math notranslate nohighlight">\(\vec{v}_{ab}\)</span> og hraði b miðað við a er <span class="math notranslate nohighlight">\(\vec{v}_{ba}\)</span> þá
+gildir:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+\vec{v}_{ab} = - \vec{v}_{ba}
+\end{equation}\]</div>
+</section>
+<section id="a-hreyfast-i-kerfi-sem-er-a-hreyfast">
+<h2><span class="section-number">3.2. </span>Að hreyfast í kerfi sem er að hreyfast<a class="headerlink" href="#a-hreyfast-i-kerfi-sem-er-a-hreyfast" title="Permalink to this heading"></a></h2>
+<p>Þegar bátnum í dæminu í byrjun kaflans er róið á hraðanum 3,0 m/s þá
+verður hraði hans miðað við jörðu 0,0 /s. Ef bátnum er róið á móti
+straumnum með ferð sem er meiri en ferð vatnsins, t.d. með hraðanum
+4,0 m/s, þá verður hraði bátsins miðað við jörðu á móti straumnum, þ.e.
+1,0 m/s. Ef bátnum væri hins vegar róið á hraðanum -4,0 m/s, þ.e. í
+stefnu straumsins, þá virðist manni sem stendur á bakkanum, báturinn
+fara með straumnum niður ánna á hraðanum 7,0 m/s.</p>
+<p>Almenna jafnan fyrir hraða bátsins á vatni sem hefur straumhraða
+<span class="math notranslate nohighlight">\(v_{vj}\)</span> er:</p>
+<div class="math notranslate nohighlight">
+\[\vec{v}_{bj} = \vec{v}_{bv} + \vec{v}_{vj}\]</div>
+<p>Hér táknar <span class="math notranslate nohighlight">\(\vec{v}_{bj}\)</span> hraða bátsins miðað við fasta jörð, og
+<span class="math notranslate nohighlight">\(\vec{v}_{bv}\)</span> hraði bátsins miðað við vatnið.</p>
+<p>Ef lest er á ferð framhjá brautarpalli og maður gengur eftir gangi
+lestarinnar þá er hraði hans miðað við lestina tengdur hraða hans miðað
+við brautarpallinn:</p>
+<div class="math notranslate nohighlight">
+\[\vec{v}_{mb} = \vec{v}_{ml} + \vec{v}_{lb}\]</div>
+<p>Almennt gildir um samband hraða m miðað við b og hraða m miðað við a, ef
+a hefur hraða <span class="math notranslate nohighlight">\(\vec{v}_{ab}\)</span> miðað við b að:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+\vec{v}_{mb} = \vec{v}_{ma} + \vec{v}_{ab}
+\end{equation}\]</div>
+<p>Við getum auðvitað einangrað <span class="math notranslate nohighlight">\(\vec{v}_{ma}\)</span> og fáum þá:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+\vec{v}_{ma} = \vec{v}_{mb} - \vec{v}_{ab} \Longleftrightarrow \vec{v}_{ma} = \vec{v}_{mb} + \vec{v}_{ba}
+\end{equation}\]</div>
+<p>Við þekkjum öll rúllustiga eins og t.d. í Kringlunni og í Smáralind. Við
+vitum að ef við hlaupum upp upp-rúllustigan þá komumst við hraðar upp.
+Ef við hlaupum upp niður-rúllustigann þá þurfum við að hlaupa ansi hratt
+bara til að standa í stað. Þetta er bara einfalt tilfelli af þessu sem
+við vorum að tala um hér fyrir ofan. Ef hraði rúllustigans miðað við
+jörðu er <span class="math notranslate nohighlight">\(\vec{v}_{rj}\)</span> þá er hraði mans miðað við jörðu:</p>
+<div class="math notranslate nohighlight">
+\[\vec{v}_{mj} = \vec{v}_{mr}+\vec{v}_{rj}\]</div>
+<p>Formerki hraðans kemur inn vegna þess að þetta eru vigrar og við sjáum
+að ferðin verður meiri ef báðir hraðarnir hafa sama formerki.</p>
+<p>En skoðum nú annað atriði við þetta dæmi. Þegar við förum upp
+rúllustigann erum við að fara upp og líka samsíða jörðinni.
+Hraðavigurinn er hallandi miðað við jörðu. Auðvitað skiptir það ekki
+máli því að við erum að fara í sömu átt og stiginn og getum því valið
+<span class="math notranslate nohighlight">\(x\)</span>-ásinn í stefnu stigans.</p>
+<section id="fleiri-viddir">
+<h3><span class="section-number">3.2.1. </span>Fleiri víddir<a class="headerlink" href="#fleiri-viddir" title="Permalink to this heading"></a></h3>
+<p>En hvað gerist ef við t.d. göngum yfir þilfar skips sem er á ferð?
+Segjum að við göngum þvert á stefnu skipsins.</p>
+<p>Jafnan sem við vorum að nota gildir hér líka:</p>
+<div class="math notranslate nohighlight">
+\[\vec{v}_{mv} = \vec{v}_{ms} + \vec{v}_{sv}\]</div>
+<p>. Hraði mannsins miðað við vatnið er hraði hans miðað við skipið plús
+hraði skipsins miðað við vatnið. Hver er þá munurinn? Munurinn ef sá að
+nú þurfum við að nota tvívíða vigra til þess að lýsa hraðanum. Fyrst
+hraðarnir eru ekki í sömu stefnu, þá þurfum við meira en bara + og - til
+þess að lýsa vigureiginleikunum.</p>
+<p>Ef við hugsum okkur að skipið ferðist í <span class="math notranslate nohighlight">\(x\)</span> - stefnu og maðurinn
+gangi í y-stefnu:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left( \begin{array}{c} v_x  \\ v_y  \end{array}\right)_{mv} =  \left( \begin{array}{c} 0  \\ v_y  \end{array}\right)_{ms} +  \left( \begin{array}{c} v_x  \\ 0  \end{array}\right)_{sv}\end{split}\]</div>
+</section>
+<section id="daemi-batur-sem-roi-er-hornrett-a-straumstefnu">
+<h3><span class="section-number">3.2.2. </span>Dæmi: Bátur sem róið er hornrétt á straumstefnu<a class="headerlink" href="#daemi-batur-sem-roi-er-hornrett-a-straumstefnu" title="Permalink to this heading"></a></h3>
+<p>Dæmi um svona tvívíða hreyfingu er bátur sem róið er hornrétt á straum
+ár, sem hefur straumhraða í x-stefnu,
+<span class="math notranslate nohighlight">\(\vec{v}_{vj} =  \left( \begin{array}{c} v_{vj}  \\ 0  \end{array}\right)\)</span>.
+Hugsum okkur að hraði bátsins yfir ána miðað við vatnið í ánni sé
+<span class="math notranslate nohighlight">\(\vec{v}_{bv} =  \left( \begin{array}{c} 0  \\ v_{bv}  \end{array}\right)\)</span>
+þá er sambandið svona:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left( \begin{array}{c} v_{x_{bj}}  \\ v_{y_{bj} } \end{array}\right)=  \left( \begin{array}{c} 0  \\ v_{bv}  \end{array}\right) +  \left( \begin{array}{c} v_{vj}  \\ 0  \end{array}\right)\end{split}\]</div>
+<p><a class="reference internal" href="../_images/batury.png"><img alt="image1" src="../_images/batury.png" style="width: 100%;" /></a></p>
+<p>Ef báturinn hefur ferð <span class="math notranslate nohighlight">\(v_{bv} = 4,0\,\text{m}/\text{s}\)</span> miðað við
+vatnið og vatnið hefur ferðina <span class="math notranslate nohighlight">\(v_{vj} = 3,4\,\text{m}/\text{s}\)</span>
+þá verður jafnan:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left( \begin{array}{c} v_{x_{bj}}  \\ v_{y_{bj} }  \end{array}\right) =  \left( \begin{array}{c} 0  \\ 4,0\,\text{m}/\text{s}\end{array}\right) +  \left( \begin{array}{c} 3,4\,\text{m}/\text{s}\\ 0  \end{array}\right)\end{split}\]</div>
+<p>Heildarhraði bátsins er þá:
+<span class="math notranslate nohighlight">\(\vec{v}_{bj} =  \left( \begin{array}{c} 3,4\,\text{m}/\text{s}\\ 4,0\,\text{m}/\text{s}\end{array}\right)\)</span></p>
+</section>
+<section id="daemi-batur-sem-roi-er-annig-a-hann-fer-beint-yfir-ana">
+<h3><span class="section-number">3.2.3. </span>Dæmi: Bátur sem róið er þannig að hann fer beint yfir ána<a class="headerlink" href="#daemi-batur-sem-roi-er-annig-a-hann-fer-beint-yfir-ana" title="Permalink to this heading"></a></h3>
+<p>Hvernig væri ef við vildum, í stað þess að vita hver heildarhraðinn
+væri, vita hver hraðinn miðað við vatnið þyrfti að vera til þess að fá
+fram einhvern ákveðinn heildarhraða? Þetta er bara spurning um að nota
+jöfnuna sem við höfum og setja inn það sem við þekkjum.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left( \begin{array}{c} v_{x_{bj}}  \\ v_{y_{bj} } \end{array}\right)=  \left( \begin{array}{c} v_{bv_x}  \\ v_{bv_y}  \end{array}\right) +  \left( \begin{array}{c} v_{vj}  \\ 0  \end{array}\right)\end{split}\]</div>
+<div class="minipage docutils container">
+<div class="wrapfigure docutils container">
+<p>r3in</p>
+<p><img alt="image2" src="../_images/baturxy.png" /></p>
+</div>
+<p>Sýnidæmi um þetta væri t.d. ef bátur ætlaði að reyna að fara beint
+yfir á sem hefði straumhraða 3,4 m/s. Báturinn hefur ferð, t.d.
+<span class="math notranslate nohighlight">\(v_0\)</span> = 4,0 m/s, miðað við vatnið en hægt er að beina bátnum í
+mismunandi áttir. Ef báturinn á að fara beint yfir ána þá þarf
+lokahraðinn að vera:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\vec{v}_{bj} = \left( \begin{array}{c} 0  \\ v_{bj} \end{array}\right)\end{split}\]</div>
+<p>Við notum nú jöfnuna:</p>
+<div class="math notranslate nohighlight">
+\[\vec{v}_{bj} = \vec{v}_{bv} + \vec{v}_{vj}\]</div>
+<p>til þess að finna upphafsstefnuna, eða stefnuhorn bátsins:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left( \begin{array}{c} 0  \\v_{bj}  \end{array}\right) =\left( \begin{array}{c} v_0\cos(\theta) \\ v_0\sin(\theta)  \end{array}\right)_{(bv)} + \left( \begin{array}{c} v_{vj}  \\ 0  \end{array}\right)\end{split}\]</div>
+</div>
+<p>Með tölum verður þetta:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left( \begin{array}{c} 0  \\v_{bj} \end{array}\right) = \left( \begin{array}{c} 4,0\,\text{m}/\text{s}\cos(\theta) \\ 4,0\,\text{m}/\text{s}\sin(\theta)  \end{array}\right)_{(bv)}   + \left( \begin{array}{c} 3,4\,\text{m}/\text{s}\\ 0  \end{array}\right)\end{split}\]</div>
+<p>Hér sjáum við að</p>
+<div class="math notranslate nohighlight">
+\[4,0\,\text{m}/\text{s}\cos(\theta) = -3,4\,\text{m}/\text{s}\hspace{1 cm}  \Rightarrow \hspace{1 cm} \theta = 148\ensuremath{^\circ}\]</div>
+<p>miðað við stefnu vatnsins (eða 58<span class="math notranslate nohighlight">\(\ensuremath{^\circ}\)</span>
+ragnsælis miðað við stefnuna beint yfir). Þá fæst:</p>
+<div class="math notranslate nohighlight">
+\[v_{bj} = 4,0\,\text{m}/\text{s}\sin(\theta)  \hspace{1 cm}  \Rightarrow \hspace{1 cm}  v_{bj} = 2,1\,\text{m}/\text{s}\]</div>
+<p>Báturinn þarf því að stefna undir 58<span class="math notranslate nohighlight">\(\ensuremath{^\circ}\)</span> horni
+miðað við beint yfir, upp ána, þ.e. á móti straumnum að hluta.
+Heildarhraði bátsins þvert yfir ána er 2,1 m/s. Ef áin væri 168 m breið,
+þá tæki það bátinn
+<span class="math notranslate nohighlight">\(t = \frac{168\,\text{m}}{2,1\,\text{m}/\text{s}} = 80\,\text{s}\)</span>
+að komast yfir ána.</p>
+</section>
+</section>
+<section id="mismunandi-hreyfingar-sem-gerast-a-sama-tima">
+<h2><span class="section-number">3.3. </span>Mismunandi hreyfingar sem gerast á sama tíma<a class="headerlink" href="#mismunandi-hreyfingar-sem-gerast-a-sama-tima" title="Permalink to this heading"></a></h2>
+<p>Þegar við höfum vigra getum við oft skoðað bara eitt hnit í einu. Við
+getum t.d. skoðað bara hreyfinguna í <span class="math notranslate nohighlight">\(y\)</span>-stefnuna eða bara
+hreyfinguna í <span class="math notranslate nohighlight">\(x\)</span>-stefnuna.</p>
+<p>Lítum á dæmið þar sem bátnum er stýrt þvert yfir ána. Hraði bátsins
+miðað við jörðu var þar:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left( \begin{array}{c} 3,4\,\text{m}/\text{s}\\ 4,0\,\text{m}/\text{s}\end{array}\right)\end{split}\]</div>
+<p>. Hér má sjá að báturinn hefur hraðann <span class="math notranslate nohighlight">\(3,4\,\text{m}/\text{s}\)</span>
+niður ána (með straumnum) og hraðann <span class="math notranslate nohighlight">\(4,0\,\text{m}/\text{s}\)</span>
+þvert yfir ána. Ef þessi á er líka 168 m breið þá getum við skoðað
+hraðann beint yfir og fáum að það tekur bátinn
+<span class="math notranslate nohighlight">\(t = \frac{168\,\text{m}}{4\,\text{m}/\text{s}} = 42\,\text{s}\)</span> að
+komast yfir ána.</p>
+<p>Á sama tíma og báturinn er að fara yfir ána er hann líka að ferðast
+niður ána. Við getum því auðveldlega reiknað út hversu langt hann fer
+niður ána á meðan hann fer yfir:</p>
+<div class="math notranslate nohighlight">
+\[\Delta x = 3,4\,\text{m}/\text{s}\cdot 42\,\text{s}= 143\,\text{m}\]</div>
+<p>Þó að hreyfing í <span class="math notranslate nohighlight">\(x\)</span>-stefnu sé óháð hreyfingu í <span class="math notranslate nohighlight">\(y\)</span>-stefnu
+þá tengjast þær samt vegna þess að þær eru að gerast á sama tíma.</p>
+<p>Dæmi um þetta er t.d. pakki sem látinn er detta úr flugvél. Pakkinn
+dettur beint niður til jarðar með hröðun</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\vec{a} \approx \left( \begin{array}{c} 0\,\text{m}/\text{s}\\ -9,8\,\text{m}/\text{s}^2 \end{array}\right)\end{split}\]</div>
+<p>miðað við flugvélina en miðað við jörðu hefur pakkinn einnig hraða í
+<span class="math notranslate nohighlight">\(x\)</span>-stefnuna, hraða flugvélarinnar.</p>
+</section>
+<section id="vigrar">
+<h2><span class="section-number">3.4. </span>Vigrar<a class="headerlink" href="#vigrar" title="Permalink to this heading"></a></h2>
+<p>Við höfum lært um vigra í stærðfræði. Þar er þó meiri áhersla á
+stærðfræðilegar aðgerðir en hvaða hugtak liggur að baki.</p>
+<p><strong>Vigur er stærð sem hefur tvo eiginleika</strong>. Vigur hefur <strong>stærð</strong> og
+<strong>stefnu</strong>. Vigur hefur enga staðsetningu. Hvað þýðir það? Jú skoðum
+hraða. Hraði hefur <strong>stærð</strong> með einingu, við köllum hana stundum ferð,
+og hann hefur <strong>stefnu</strong>. Stefna hraðans segir til um í hvaða átt farið
+er. Hraðinn gæti t.d. verið 60 km/klst í norðaustur. Greinilegt er að
+hraðinn getur verið þetta bæði í Reykjavík, á Akureyri og í Auckland í
+Nýja Sjálandi. Hraði er óháður staðsetningu. Þetta gildir um vigra
+almennt. Vigrar hafa stærð og stefnu en ekki staðsetningu.</p>
+<p>Þegar við leggjum saman vigra leggjum við saman hvert hnit fyrir sig.</p>
+<p>Skoðum færslu. Ef við leggjum saman vigurinn frá upphafpunkti
+hnitakerfis, O, til P og vigurinn frá P til Q fáum við vigur frá O tilQ:</p>
+<div class="math notranslate nohighlight">
+\[\vec{OP} +\vec{PQ} = \vec{OQ}\]</div>
+<p>Almennt gildir um færslu að ef við færum hlut frá <span class="math notranslate nohighlight">\(P\)</span> til
+<span class="math notranslate nohighlight">\(Q\)</span> og svo frá <span class="math notranslate nohighlight">\(Q\)</span> til <span class="math notranslate nohighlight">\(R\)</span> þá er summan færsla frá
+<span class="math notranslate nohighlight">\(P\)</span> til <span class="math notranslate nohighlight">\(R\)</span>. Ef vigurinn <span class="math notranslate nohighlight">\(\vec{A} = \vec{PQ}\)</span> og
+<span class="math notranslate nohighlight">\(\vec{B} = \vec{QR}\)</span> þá er <span class="math notranslate nohighlight">\(\vec{A} +\vec{B}  = \vec{PR}\)</span></p>
+<p>Við getum táknað þetta myndrænt á eftirfarandi hátt:</p>
+<p><a class="reference internal" href="../_images/vigrasamlagning.png"><img alt="image3" src="../_images/vigrasamlagning.png" style="width: 100%;" /></a></p>
+<p>En hvernig er þetta þegar við erum með hraðavigra? Hvað þýðir þessi
+myndræna útfærsla þá?</p>
+<p>Ef við eins og í kaflanum hér á undan höfum hraða hlutar A miðað við
+hlut B, <span class="math notranslate nohighlight">\(\vec{v}_{AB}\)</span>, og hraða hlutar B miðað við hlut C,
+<span class="math notranslate nohighlight">\(\vec{v}_{BC}\)</span> þá höfum við eins og við sáum hér á undan:</p>
+<div class="math notranslate nohighlight">
+\[\vec{v}_{AB} + \vec{v}_{BC} = \vec{v}_{AC}\]</div>
+<p>Við leggjum hraðavigrana saman á sama hátt og færslan var lögð saman.
+Jöfnurnar um afstæðan hraða eru bara afleiðing af vigursamlagningu
+hraða.</p>
+<p>Til aðgreiningar frá vigurstærðum höfum við svo kallaðar <strong>„scalar“</strong>
+eða <strong>tölustærðir</strong>. Þetta eru stærðir sem bara er lýst með tölu og
+einingu. Ein slíkra stærða er massi hlutar. Massa er bara lýst með tölu
+og einingu. Massi hefur enga stefnu. Orka er önnur stærð sem hefur bara
+stærð en enga stefnu.</p>
+</section>
+<section id="hnitakerfi-byggt-upp-af-vigrum">
+<h2><span class="section-number">3.5. </span>Hnitakerfi byggt upp af vigrum<a class="headerlink" href="#hnitakerfi-byggt-upp-af-vigrum" title="Permalink to this heading"></a></h2>
+<p>Hnitakerfi er hjálpartæki sem gerir okkur lífið auðveldara. Við verðum
+þó að gera okkur grein fyrir því að það erum við sjálf sem veljum
+hnitakerfið. Það er svolítið eins og reglustika.</p>
+<p>Þegar við erum að tala um vigra og stefnur, þá er mikilvægt að gera sér
+grein fyrir því að við getum hugsað okkur hnitakerfið sem byggt upp af
+einingavigrum. Nú skulum við skoða það nánar.</p>
+<p>Tökum bara einhverja vigra, <span class="math notranslate nohighlight">\(\vec{A}\)</span> og <span class="math notranslate nohighlight">\(\vec{B}\)</span> af
+handahófi. Við getum notað þessa tvo vigra til þess að færa okkur til í
+planinu sem þeir liggja í. Hugsum okkur að við höfum tvo punkta í
+planinu, P og Q. Með því að færa okkur um x <span class="math notranslate nohighlight">\(\vec{A}\)</span> og y
+<span class="math notranslate nohighlight">\(\vec{B}\)</span> getum við komist frá P til Q sbr. mynd:</p>
+<p><a class="reference internal" href="../_images/hnitakerfi.png"><img alt="image4" src="../_images/hnitakerfi.png" style="width: 100%;" /></a></p>
+<p>Það gæti verið heppilegt að draga lauslega línur samsíða <span class="math notranslate nohighlight">\(\vec{A}\)</span>
+um oddpunkta <span class="math notranslate nohighlight">\(\vec{B}\)</span> og línur samsíða <span class="math notranslate nohighlight">\(\vec{B}\)</span> um
+oddpunkta A. Ef við gerum það fáum við grind sem minnir svolítið á
+hnitakerfi. Í þessarri grind er auðvelt að telja hversu mörg
+<span class="math notranslate nohighlight">\(\vec{A}\)</span> og hversu mörg <span class="math notranslate nohighlight">\(\vec{B}\)</span> við þurfum til þess að ná
+frá P til Q <span class="math notranslate nohighlight">\(\vec{PQ} = x\vec{A} + y\vec{B}\)</span></p>
+<p>Ef við ætlum að reikna út stærðina á vigrinum frá P til Q, þá gætum við
+lent í vandræðum.</p>
+<div class="math notranslate nohighlight">
+\[\vec{PQ} = x\vec{A} + y\vec{B}\]</div>
+<p>Við munum að lengd vigurs er kvaðratrótin af innfeldi vigursins með
+sjálfum sér:</p>
+<div class="math notranslate nohighlight">
+\[|\vec{PQ}| = \sqrt{\vec{PQ}\cdot \vec{PQ}} = \sqrt{(x\vec{A} + y\vec{B})\cdot(x\vec{A} + y\vec{B})} = \sqrt{x^2|A|^2 +y^2|B|^2 + 2xy\vec{A}\cdot \vec{B}}\]</div>
+<p>Ef lengdirnar á <span class="math notranslate nohighlight">\(\vec{A}\)</span> og <span class="math notranslate nohighlight">\(\vec{B}\)</span> væru 1 og ef
+<span class="math notranslate nohighlight">\(\vec{A}\)</span> væri hornrétt á <span class="math notranslate nohighlight">\(\vec{B}\)</span>, þá væri greinilega
+mikið einfaldara að reikna lengd vigranna. Auk þess væri einfaldara að
+reikna innfeldi allra mögulegra vigra sem væru táknaðir við
+<span class="math notranslate nohighlight">\(\vec{A}\)</span> og <span class="math notranslate nohighlight">\(\vec{B}\)</span>.</p>
+<p>Þegar við erum að nota hnitakerfi, eða grind þá veljum við í stað
+almennra vigra <span class="math notranslate nohighlight">\(\vec{A}\)</span> og <span class="math notranslate nohighlight">\(\vec{B}\)</span>, vigra sem eru
+hornréttir hvor á annan og hafa lengdina 1. Slíkir vigrar hafa yfirleitt
+sérstök nöfn og algengust nöfn þeirra eru <span class="math notranslate nohighlight">\(\vec{i}\)</span> og
+<span class="math notranslate nohighlight">\(\vec{j}\)</span> eða <span class="math notranslate nohighlight">\(\vec{e}_x\)</span> og <span class="math notranslate nohighlight">\(\vec{e}_y\)</span>. Vigurinn
+<span class="math notranslate nohighlight">\(\vec{i}=\vec{e}_x\)</span> táknar eina einingu í stefnu <span class="math notranslate nohighlight">\(x\)</span>-áss og
+vigurinn <span class="math notranslate nohighlight">\(\vec{j}=\vec{e}_y\)</span> táknar eina einingu í stefnu y-áss.
+Hér er bara átt við eitt skref. Vigrarnir okkar hafa stærð og stefnu.
+Það er stærðin sem hefur einingu. Stefnan hefur ekki einingu.
+<strong>Einingavigrar hafa ekki einingu</strong>. Þeir eru bara eitt skref af þeirri
+einingu sem við erum með á stærðunum. Við göngum út frá þvi að
+<span class="math notranslate nohighlight">\(x\)</span>- og <span class="math notranslate nohighlight">\(y\)</span>-ásar séu hornréttir.</p>
+<p>Stundum getur verið heppilegt að skrifa vigra með einingavigrum í stað
+þess að skrifa vigrana á dálkformi. Við þurfum að skilja að þessir
+rithættir eru jafngildir:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}x \cdot\vec{i} + y\cdot \vec{j} =  \left( \begin{array}{c} x  \\ y  \end{array}\right)\end{split}\]</div>
+<p>Hér eru einingavigrarnir greinilega einingalausir en stærðirnar x og y
+hafa einingu. Einingavigrarnir hafa formið:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{equation}
+\vec{i} = \left( \begin{array}{c} 1  \\ 0  \end{array}\right); \hspace{1.5 cm} \vec{j} =  \left( \begin{array}{c} 0  \\ 1  \end{array}\right)
+\end{equation}\end{split}\]</div>
+<p>Stundum þurfum við að nota einingavigur í stefnu sem ekki er er eftir
+ásum kerfisins heldur í stefnu einhvers ákveðins vigurs. Það tilfelli
+sem oftast kemur fyrir, og kemur fyrir fljótlega hjá okkur er stefna inn
+að miðju hrings. Vegna þess að stefnan er alltaf að breytast getur verið
+erfitt að velja hnitakerfi sem alltaf er inn að miðju hringsins. Við
+getum þó alltaf fundið einingavigur sem er í stefnu út frá miðju
+hringsins með því að taka stöðuvigur sem byrjar í miðju hringsins,
+<span class="math notranslate nohighlight">\(\vec{r}\)</span>, og deila í hann með lengd vigursins, <span class="math notranslate nohighlight">\(|\vec{r}|\)</span>.
+Almennt er einingavigur í stefnu vigurs <span class="math notranslate nohighlight">\(\vec{A}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+\vec{e}_A = \frac{\vec{A}}{|\vec{A}|}
+\end{equation}\]</div>
+<p>Yfirleitt dugir okkur þó að nota einingavigrana <span class="math notranslate nohighlight">\(\vec{i}\)</span>,
+<span class="math notranslate nohighlight">\(\vec{j}\)</span> og svo ef við bætum einni vídd við þá einnig
+<span class="math notranslate nohighlight">\(\vec{k}\)</span>, þ.e. í 3-víddum:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{equation}
+\vec{i} = \left( \begin{array}{c} 1  \\ 0 \\0 \end{array}\right); \hspace{1.5 cm} \vec{j} =  \left( \begin{array}{c} 0  \\ 1\\0  \end{array}\right); \hspace{1.5 cm} \vec{k} =  \left( \begin{array}{c} 0  \\ 0\\1  \end{array}\right)
+\end{equation}\end{split}\]</div>
+<section id="margfoldun-vigra-upprifjun">
+<h3><span class="section-number">3.5.1. </span>Margföldun vigra, upprifjun<a class="headerlink" href="#margfoldun-vigra-upprifjun" title="Permalink to this heading"></a></h3>
+<p>Við vitum að þegar við leggjum saman vigra þá leggjum við saman hnitin
+hvert fyrir sig. Margföldun vigra er svolítið flóknari. Við höfum þrjár
+tegundir margföldunar vigra.</p>
+<p><em>1. Margföldun með fasta.</em></p>
+<p>Þegar við margföldum vigur með fasta þá margfaldast öll hnitin með sama
+fasta:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{equation}
+a \cdot \left( \begin{array}{c} x  \\ y \\z \end{array}\right) =  \left( \begin{array}{c} ax  \\ ay \\az \end{array}\right)
+\end{equation}\end{split}\]</div>
+<p><em>2. Innfeldi.</em></p>
+<div class="line-block">
+<div class="line">Innfeldi er margfeldi tveggja vigra sem gefur tölu. Það er mjög
+mikilvægt í eðlisfræði. Innfeldi er t.d. notað í skilgreiningu á
+vinnu.</div>
+<div class="line">Skilgreinum vigrana:</div>
+</div>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[\begin{split}\vec{A} = \left( \begin{array}{c} r  \\s \\w \end{array}\right); \hspace{0.2 cm} \vec{B} = \left( \begin{array}{c} x  \\ y \\z \end{array}\right)\end{split}\]</div>
+</div></blockquote>
+<p>Innfeldi þeirra er:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{equation}
+\vec{A} \cdot \vec{B} =  \left( \begin{array}{c} r  \\s \\w \end{array}\right)\cdot \left( \begin{array}{c} x  \\ y \\z \end{array}\right)= rx+sy+wz
+\end{equation}\end{split}\]</div>
+<p>Við getum einnig skrifað innfeldi sem:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+\vec{A} \cdot \vec{B} = |\vec{A}||\vec{B}|\cos(\theta)
+\end{equation}\]</div>
+<p>þar sem <span class="math notranslate nohighlight">\(\theta\)</span> er hornið á milli vigranna <span class="math notranslate nohighlight">\(\vec{A}\)</span> og
+<span class="math notranslate nohighlight">\(\vec{B}\)</span>. Greinilegt er út frá þessarri skilgreiningu að innfeldi
+hornréttra vigra er alltaf 0.</p>
+<p>Ef við skoðum þetta form margfeldisins þá sjáum við að
+<span class="math notranslate nohighlight">\(|\vec{B}|\cos(\theta) = |\vec{B}|_{||A}\)</span> er ofanvarp
+<span class="math notranslate nohighlight">\(\vec{B}\)</span> á <span class="math notranslate nohighlight">\(\vec{A}\)</span> eða alveg jafngilt
+<span class="math notranslate nohighlight">\(|\vec{A}|\cos(\theta) = |\vec{A}|_{||B}\)</span> er ofanvarp
+<span class="math notranslate nohighlight">\(\vec{A}\)</span> á <span class="math notranslate nohighlight">\(\vec{B}\)</span>. Tölugildi innfeldis má því einnig
+skrifa:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+|\vec{A} \cdot \vec{B}|  = |\vec{A}||\vec{B}|_{||A} =  |\vec{B}||\vec{A}|_{||B}
+\end{equation}\]</div>
+<p><a class="reference internal" href="../_images/innfeldi.png"><img alt="image5" src="../_images/innfeldi.png" style="width: 100%;" /></a></p>
+<p>Vinna er skilgreind sem <span class="math notranslate nohighlight">\(\vec{F} \cdot \vec{\Delta s}\)</span>. Vinna er
+því margfaldi krafts í stefnu færslu og færslu. Krafturinn sem er
+hornréttur á færsluna nýtist ekki sem vinna. Sá kraftur er ekki að færa
+hlutinn áfram.</p>
+<p><em>3. Krossfeldi.</em></p>
+<p>Krossfeldi er margfeldi tveggja vigra sem gefur aftur vigur. Þetta
+margfeldi er mikilvægt vegna þess að við notum það í skilgreiningu á
+kraftvægi og einnig í skilgreiningu á segulkrafti. Formúlan fyrir
+krossfeldi er fremur flókin og við komum ekki til með að nota
+hnitaframsetninguna mikið. Við skulum samt skrifa hana hér fyrir sömu
+vigra <span class="math notranslate nohighlight">\(\vec{A}\)</span> og <span class="math notranslate nohighlight">\(\vec{B}\)</span> og við skilgreindum hér á
+undan.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{equation}
+\vec{A} \times \vec{B} =  \left( \begin{array}{c} r  \\s \\w \end{array}\right)\times \left( \begin{array}{c} x  \\ y \\z \end{array}\right)= (sz - wy)\left( \begin{array}{c} 1  \\ 0 \\0 \end{array}\right)-(rz-wx)\left( \begin{array}{c} 0 \\ 1 \\0 \end{array}\right)+(ry-sx)\left( \begin{array}{c} 0  \\ 0 \\1 \end{array}\right)
+\end{equation}\end{split}\]</div>
+<p>Krossfeldið hefur eiginleika sem eru nokkuð sérstakir. Einn þeirra er að
+<span class="math notranslate nohighlight">\(\vec{A} \times \vec{B}\)</span> er alltaf hornrétt bæði á <span class="math notranslate nohighlight">\(\vec{A}\)</span>
+og <span class="math notranslate nohighlight">\(\vec{B}\)</span>. Auk þess gildir að</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+|\vec{A} \times \vec{B}| = |\vec{A}||\vec{B}||\sin(\theta)|
+\end{equation}\]</div>
+<p>hér er hornið <span class="math notranslate nohighlight">\(\theta\)</span> hornið frá <span class="math notranslate nohighlight">\(\vec{A}\)</span> til
+<span class="math notranslate nohighlight">\(\vec{B}\)</span>.</p>
+<p>Ef við skoðum vigra eins og <span class="math notranslate nohighlight">\(\vec{A}\)</span> og <span class="math notranslate nohighlight">\(\vec{B}\)</span>, en sem
+bara hafa hnit í tveimur víddum, þá getum við hugsað okkur að
+<span class="math notranslate nohighlight">\(w\)</span> = 0 og að <span class="math notranslate nohighlight">\(z\)</span> = 0. Þá verður krossfeldið:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{equation}
+\vec{A} \times \vec{B} =  \left( \begin{array}{c} r  \\s \\0 \end{array}\right)\times \left( \begin{array}{c} x  \\ y \\0 \end{array}\right)= (ry-sx)\left( \begin{array}{c} 0  \\ 0 \\1 \end{array}\right)
+\end{equation}\end{split}\]</div>
+<p>Í því tilfelli sjáum við að:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{equation}
+\vec{A} \times \vec{B} = |\vec{A}||\vec{B}|\sin(\theta)\left( \begin{array}{c} 0  \\ 0 \\1 \end{array}\right)
+\end{equation}\end{split}\]</div>
+<div class="line-block">
+<div class="line">Við sjáum hér að ef við hugsum okkur að stefnuhorn vigursins
+<span class="math notranslate nohighlight">\(\vec{A}\)</span> sé minna en stefnuhorn vigursins <span class="math notranslate nohighlight">\(\vec{B}\)</span> þá er
+hornið <span class="math notranslate nohighlight">\(\theta\)</span> jákvætt og krossfeldið verður jákvætt, þ.e. í
+stefnu <span class="math notranslate nohighlight">\(\left( \begin{array}{c} 0  \\ 0 \\1 \end{array}\right)\)</span>.
+Þessu er oft lýst með svokallaðri <em>hægrihandarreglu</em> sem er eitthvað á
+þá leið að ef við setjum fingur hægri handar í stefnu fyrri vigursins
+í krossfeldinu og beygjum þá í átt að seinni vigrinum, þá vísar
+þumalfingurinn í stefnu krossfeldisins.</div>
+<div class="line">Við vorum búin að sjá að innfeldi hornréttra vigra er alltaf 0. Á sama
+hátt er krossfeldi samsíða vigra alltaf núll. Stærð krossfeldis er
+margfeldi af stærð annars vigursins og stærð þess hluta hins vigursins
+sem er hornréttur á hann. Þ.e.:</div>
+</div>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[|\vec{A} \times \vec{B}| = |\vec{A}|\cdot|\vec{B}_{\bot A}| = |\vec{A}_ {\bot B}|\cdot|\vec{B}|\]</div>
+</div></blockquote>
+<p><a class="reference internal" href="../_images/krossfeldi.png"><img alt="image6" src="../_images/krossfeldi.png" style="width: 100%;" /></a></p>
+<p>Þessi eiginleiki verður mjög mikilvægur þegar við förum að reikna
+kraftvægi og segulkraft.</p>
+</section>
+<section id="hornafoll">
+<h3><span class="section-number">3.5.2. </span>Hornaföll<a class="headerlink" href="#hornafoll" title="Permalink to this heading"></a></h3>
+<p>Þegar verið er að skoða þríhyrninga eru réttir þríhyrningar sérlega
+mikilvægir. Alli þekkja reglu Pýþagórasar:</p>
+<div class="math notranslate nohighlight">
+\[a^2 = b^2 + c^2\]</div>
+<p>Hér er <span class="math notranslate nohighlight">\(a\)</span> lengd hliðarinnar sem er á móti
+<span class="math notranslate nohighlight">\(90\ensuremath{^\circ}\)</span> horninu, og <span class="math notranslate nohighlight">\(b\)</span> og <span class="math notranslate nohighlight">\(c\)</span> lengdir
+hinna hliðanna.</p>
+<p>Hugsum okkur réttan þríhyrning með langhlið, <span class="math notranslate nohighlight">\(a = 1\)</span>. Skoðum
+þríhyrninginn á myndinni</p>
+<p><a class="reference internal" href="../_images/sincos.png"><img alt="image7" src="../_images/sincos.png" style="width: 100%;" /></a></p>
+<p>Ef við höldum <span class="math notranslate nohighlight">\(a = 1\)</span> föstu og breytum horninu <span class="math notranslate nohighlight">\(\theta\)</span> þá
+breytast lengdir <span class="math notranslate nohighlight">\(b\)</span> og <span class="math notranslate nohighlight">\(c\)</span>. Það hvernig þær breytast er
+einungis háð horninu og því er eðlilegt að skrá lengd þeirra sem fall af
+horninu. Við köllum <span class="math notranslate nohighlight">\(b = \sin(\theta)\)</span> eða <em>sínus</em> af
+<span class="math notranslate nohighlight">\(\theta\)</span>. Vegna þess að hliðarnar eru tengdar í gegnum lögmál
+Pýþagórasar er <span class="math notranslate nohighlight">\(c\)</span> tengd <span class="math notranslate nohighlight">\(b\)</span> og því einnig aðeins fall af
+<span class="math notranslate nohighlight">\(\theta\)</span>, við segjum <span class="math notranslate nohighlight">\(c = \cos(\theta)\)</span> eða <em>cósínus</em> af
+<span class="math notranslate nohighlight">\(\theta\)</span>.</p>
+<p>Nú getum við skoðað hvað gerist ef <span class="math notranslate nohighlight">\(a\)</span> er ekki 1 heldur einhver
+stærð eins og t.d. 25 m/s.</p>
+<p><a class="reference internal" href="../_images/sincosexp.png"><img alt="image8" src="../_images/sincosexp.png" style="width: 5in;" /></a></p>
+<p>Ef langhlið rétts þríhyrnings er <span class="math notranslate nohighlight">\(A\)</span> þá er hliðin sem er á móti
+horninu <span class="math notranslate nohighlight">\(\theta\)</span>, <span class="math notranslate nohighlight">\(A\sin(\theta)\)</span> og hliðin sem liggur upp
+að horninu er <span class="math notranslate nohighlight">\(A\cos(\theta)\)</span>. Þetta er nokkuð sem við komum til
+með að nota mikið þegar við skrifum vigra í hnitakerfi. Þegar við notum
+hnitakerfi þarf alltaf að liða vigrana eftir ásum hnitakerfisins og
+vigur <span class="math notranslate nohighlight">\(\vec{A}\)</span> sem hefur lengdina A og myndar hornið
+<span class="math notranslate nohighlight">\(\theta\)</span> við x-ás er þá:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\vec{A} = \left( \begin{array}{c} Acos(\theta) \\Asin(\theta) \end{array}\right)\end{split}\]</div>
+</section>
+</section>
+<section id="daemi">
+<h2><span class="section-number">3.6. </span>Dæmi<a class="headerlink" href="#daemi" title="Permalink to this heading"></a></h2>
+<div class="line-block">
+<div class="line">Tvær lestar mætast á samsíða lestarteinum. Lest A er að ferðast austur
+á hraðanum 13 m/s og lest B er að ferðast vestur á hraðanum 28 m/s.</div>
+<div class="line">(a) Hver er hraðavigur (stærð og stefna) lestar A séð frá farþegum í
+lest B?</div>
+<div class="line">(b) Hver er hraðavigur (stærð og stefna) lestar B séð frá farþegum í
+lest A?</div>
+</div>
+<div class="line-block" id="section-1">
+<div class="line">Sundmaður getur synt á hraðanum 1,4 m/s miðað við kyrrt vatn. Hann
+leggur af stað beint yfir á sem er 2,8 km á breidd. Í ánni er
+straumhraði 0,91 m/s og ber hann sundmanninn því niður ána.</div>
+<div class="line">(a) Hversu lengi er maðurinn að synda yfir ána?</div>
+<div class="line">(b) Hversu lang niður ána er sundmaðurinn kominn þegar hann nær
+bakkanum hinum megin árinnar.</div>
+</div>
+<p id="section-2">Flygildi er að fljúga beinnt í austur í kyrru lofti. Flygildið flýgur á
+jafna hraðanum 22,6 m/s miðað við loftið. Allt í einu byrjar vindur að
+blása úr norðri til suðurs með hraðanum 8,70 m/s. Finnið hraðavigur
+flygildisins miðað áhorfanda á jörðu á meðan vindurinn blæs. Gefið upp
+hverstefna flygildisins er miðað við austur.</p>
+<div class="line-block" id="section-3">
+<div class="line">Ferja ferðast í stefnu 35,1<span class="math notranslate nohighlight">\(\ensuremath{^\circ}\)</span> norður af
+austri með hraðanum 5,12 m/s miðað við vatnið. Farþegi gengur með
+hraðanum 2,71 m/s beint í austur miðað við bátinn.</div>
+<div class="line">(a) Hver er hraðavigur ferjunnar?</div>
+<div class="line">(b) Hver er hraðavigur farþegans miðað við bátinn?</div>
+<div class="line">(c) Hver er hraðavigur farþegans miðað við vatnið?</div>
+</div>
+<p id="section-4">Tvíburar Arnar og Bjarki ætla að synda yfir á. Þeir synda báðir á sama
+hraða, en Arnar stefnir beint yfir ána og berst því niður ána með
+straumnum en Bjarki stefnir 45<span class="math notranslate nohighlight">\(\ensuremath{^\circ}\)</span> upp ána og
+lendir nákvæmlega beint á móti staðnum sem þeir byrjuðu frá. Finnið
+hlutfall tímans sem það tekur Arnar að fara yfir ána og tímans sem það
+tekur Bjarka að fara yfir ána.</p>
+<p id="section-5">Skip landhelgisgæslunnar ferðast á jöfnum hraða 4,20 m/s beint í austur
+miðað við vatnið. Á radarnum sést hlutur sem ferðast með jöfnum hraða.
+Hluturinn er í fjarlægðinni 2310 m frá skipinu
+32,0<span class="math notranslate nohighlight">\(\ensuremath{^\circ}\)</span> suður af austri. Sex mínútum seinna
+sést að hluturinn er í fjarlægð 1120 m,
+57,0<span class="math notranslate nohighlight">\(\ensuremath{^\circ}\)</span> suður af vestri. Hver er hraðavigur
+hlutarins miðað mið vatnið?</p>
+<div class="line-block">
+<div class="line">1) a. 41 m/s í austur   b. 41 m/s í vestur</div>
+<div class="line">2) a. <span class="math notranslate nohighlight">\(\begin{pmatrix}0,91\\1,4 \end{pmatrix}\)</span>m/s,    b.
+1820 m</div>
+<div class="line">3) <span class="math notranslate nohighlight">\(21\ensuremath{^\circ}\)</span> suður af austri</div>
+<div class="line">4) a.
+<span class="math notranslate nohighlight">\(\begin{pmatrix}4,19\\2,94\end{pmatrix}\text{m}/\text{s},\)</span>   b.
+<span class="math notranslate nohighlight">\(\begin{pmatrix} 2,71\\0\end{pmatrix}\text{m}/\text{s},\)</span>   c.
+<span class="math notranslate nohighlight">\(\begin{pmatrix}6,90\\2,94\end{pmatrix}\text{m}/\text{s}\)</span></div>
+<div class="line">5) <span class="math notranslate nohighlight">\(\frac{\sqrt{2}}{2}\)</span></div>
+<div class="line">6) <span class="math notranslate nohighlight">\(\begin{pmatrix}-2,94\\0,79\end{pmatrix}\)</span></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../kafli02/" class="btn btn-neutral float-left" title="2. Hreyfing í einni vídd" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../kafli04/" class="btn btn-neutral float-right" title="4. Hreyfing í fleiri víddum" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p></p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+<script>
+    window.addEventListener("load", function () {
+        for (var i in ggbAppletId) {
+            ggbAppletId[i].inject(i);
+        }
+    });
+</script>
+
+
+ 
+
+<style>
+    /* Sidebar header (and topbar for mobile) */
+    .wy-side-nav-search,
+    .wy-nav-top {
+       /* HI: #10099F, VoN: #EB7125, orginal #01447B */
+       background: #321c4a;
+    }
+
+    /* Sidebar */
+    .wy-nav-side {
+      /* orginal #343131, HÍ grár dekkri: #EEEEEE, HÍ svartur: #262626 */
+      background: #262626;
+    }
+</style>
+
+
+</body>
+</html>

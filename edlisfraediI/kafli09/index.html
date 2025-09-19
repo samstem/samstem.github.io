@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="is" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>9. Vinna og orka &mdash; Eðlisfræði I </title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/eqt.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/datacamp-custom.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/edbook.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/samstem.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+        <script src="../_static/js/eqt.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script src="https://cdn.datacamp.com/datacamp-light-latest.min.js"></script>
+        <script async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../_static/js/theme.js"></script>
+
+<!-- hoverrole.py css code -->
+<style type="text/css">
+    a.tooltip {
+        outline: none;
+        border-bottom: thin dotted;
+        background: #ffeedd
+    }
+
+    a.tooltip strong {
+        line-height: 30px;
+    }
+
+    a.tooltip:hover {
+        text-decoration: none;
+    }
+
+    a.tooltip span {
+        z-index: 10;
+        display: none;
+        padding: 14px 20px;
+        margin-top: -30px;
+        margin-left: 12px;
+        width: 310px;
+        line-height: 16px;
+    }
+
+    a.tooltip:hover span {
+        display: inline;
+        position: absolute;
+        color: #111;
+        border: 1px solid #DCA;
+        background: #fffAF0;
+    }
+
+    .callout {
+        z-index: 20;
+        position: absolute;
+        top: 30px;
+        border: 0;
+        left: -12px;
+    }
+
+    /*CSS3*/
+    a.tooltip span {
+        border-radius: 4px;
+        box-shadow: 5px 5px 8px #CCC;
+    }
+</style>
+<!-- End hoverrole.py css code -->
+
+<style type="text/css">
+    .sagecell .CodeMirror-scroll {
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+
+    .sagecell .CodeMirror {
+        height: auto;
+    }
+
+    /* - Begin equation reference style - */
+    h6.eqno {
+        display: inline-block;
+        padding-left: 10px;
+    }
+
+    h6 .headerlink {
+        display: inline-block !important;
+    }
+
+    h6 .headerlink:after {
+        visibility: hidden !important;
+    }
+
+    h6 .headerlink:hover:after {
+        visibility: visible !important;
+    }
+
+    .eqno:hover>.headerlink:after {
+        visibility: visible !important;
+    }
+
+    table>caption>.headerlink {
+        visibility: hidden !important;
+    }
+
+    table>caption>.headerlink {
+        visibility: hidden !important;
+    }
+
+    /* - End - */
+</style>
+
+
+
+    <link rel="index" title="Atriðaskrá" href="../genindex/" />
+    <link rel="search" title="Leit" href="../search/" />
+    <link rel="next" title="10. Atlag og skriðþungi" href="../kafli10/" />
+    <link rel="prev" title="8. Þyngdarkraftur" href="../kafli08/" />
+
+
+
+<!--	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
+<script type="text/javascript" src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+<script>ggbAppletId = [];</script>
+
+
+ 
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../" class="icon icon-home">
+            Eðlisfræði I
+              <img src="../_static/samstem.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../kafli01/">1. Mælingar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli02/">2. Hreyfing í einni vídd</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli03/">3. Afstæð hreyfing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli04/">4. Hreyfing í fleiri víddum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli05/">5. Tregða og núningur</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli06/">6. Verkan og gagnverkan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli07/">7. Notkun á lögmálum Newtons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli08/">8. Þyngdarkraftur</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">9. Vinna og orka</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#vinna">9.1. Vinna</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#vinna-ymissa-krafta">9.1.1. Vinna ýmissa krafta</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#verkraftur">9.1.1.1. Þverkraftur</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#nuningskraftur">9.1.1.2. Núningskraftur</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#kraftur-i-hringhreyfingu">9.1.1.3. Kraftur í hringhreyfingu</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#yngdarkraftur">9.1.1.4. Þyngdarkraftur</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#hreyfiorka">9.2. Hreyfiorka</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#stouorka-og-geymnir-kraftar">9.3. Stöðuorka og geymnir kraftar</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#stouorka-yngdarkrafts-vi-yfirbor-jarar">9.3.1. Stöðuorka þyngdarkrafts við yfirborð jarðar</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#daemi-fall-ur-hae-h">9.3.1.1. Dæmi: Fall úr hæð h</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#stouorka-fjaurkrafts">9.3.2. Stöðuorka fjaðurkrafts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#velraen-orka">9.3.3. Vélræn orka</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#stouorka-almenna-yngdarkraftsins">9.3.4. Stöðuorka almenna þyngdarkraftsins</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#stouorka-vi-yfirbor-jarar">9.3.5. Stöðuorka við yfirborð jarðar</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#vinnulogmali">9.4. Vinnulögmálið</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#stouorkugrof">9.5. Stöðuorkugröf</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#daemi">9.6. Dæmi</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../kafli10/">10. Atlag og skriðþungi</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ordaskra/">Orðaskrá</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../">Eðlisfræði I</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><span class="section-number">9. </span>Vinna og orka</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/edbook/haskoli-islands/blob/master/projects/edlisfraediI/kafli09.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="vinna-og-orka">
+<h1><span class="section-number">9. </span>Vinna og orka<a class="headerlink" href="#vinna-og-orka" title="Permalink to this heading"></a></h1>
+<p><a class="reference internal" href="../_images/vinna.png"><img alt="image" src="../_images/vinna.png" style="width: 5in;" /></a></p>
+<p>Eitt mikilvægasta hugtakið í eðlisfræði er hugtakið orka. Orka er það
+sem þarf, til þess að hægt sé að framkvæma vinnu eða hafa áhrif á
+eitthvern eða eitthvað. Í daglegu tali notum við orðin orka og vinna án
+þess að skilgreina nákvæmlega hvað við eigum við. Stundu kemur meira að
+segja fyrir að fólk rugli saman orku og krafti. Til þess að hægt sé að
+nota hugtök í eðlisfræði þarf hins vegar að skilgreina nákvæmlega hvað
+við er átt.</p>
+<section id="vinna">
+<h2><span class="section-number">9.1. </span>Vinna<a class="headerlink" href="#vinna" title="Permalink to this heading"></a></h2>
+<p>Þegar vinna er framkvæmd felst það oftast í því að krafti er beitt til
+þess að færa eitthvað. Vegna þess að krafturinn sem notaður er er ekki
+alltaf í þá stefnu sem hluturinn færist verður að reikna bara með þeim
+krafti sem í raun færir hlutinn, þ.e. þeim krafti sem verkar í stefnu
+færslunnar. Stundum verka kraftar á móti færslu og þá segjum við að þeir
+framkvæmi neikvæða vinnu því þá þarf jákvæða vinnu bara til að yfirvinna
+þessa neikvæðu.</p>
+<p>Eðlisfræðin skilgreinir vinnu sem innfeldi krafts og færslu. Ef við
+beitum krafti skáhallt niður og færum hlut eftir gólfi eins og á
+myndinni til vinstri hér að ofan, þá er vinnan sem við framkvæmum
+margfeldi þess hluta kraftsins sem er samsíða gólfinu og færslunnar
+eftir gólfinu. Ef við togum hlut upp skábretti með léttum kaðli sem
+festur er yfir trissu eins og á myndinni til hægri, þá framkvæmum við
+vinnu sem er jöfn togkraftinum sem við beitum sinnum vegalengdinni sem
+við togum kaðalinn. En þyngdarkrafturinn framkvæmir vinnu sem er neikvæð
+og að stærð jöfn margfeldi stærðar þyngdarkraftsins og hæðarinnar sem
+hluturinn færðist upp um.</p>
+<p>Skilgreining vinnu er:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+ W = \vec{F}\cdot\vec{\Delta s}
+\end{equation}\]</div>
+<p>Eins og við vitum er innfeldi tveggja vigra jafnt margfeldi lengda
+vigranna sinnum kósínus af horninu á milli þeirra. Þetta þýðir í raun að
+við margföldum saman samsíða hluta:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+W =  F\cdot\Delta s_{\|F} = F_{\|\Delta s}\cdot \Delta s
+\end{equation}\]</div>
+<p>Þetta er greinilegt því eins og þið munið getum við skrifað</p>
+<div class="math notranslate nohighlight">
+\[\vec{\Delta s} = \vec{\Delta s}_{\|F} +\vec{\Delta s}_{\bot F}\]</div>
+<p>og á sama hátt</p>
+<div class="math notranslate nohighlight">
+\[\vec{F} = \vec{F}_{\|\Delta s} +\vec{F}_{\bot \Delta s}\]</div>
+<p>Það að innfeldi hornréttra vigra er 0, gefur okkur þar með niðurstöðuna
+hér að ofan.</p>
+<p>Við komum oft til með að nota jöfnu 9.2 myndrænt og því skulum við skoða
+hvernig þetta lítur út.</p>
+<p><a class="reference internal" href="../_images/innfeldi1.png"><img alt="image1" src="../_images/innfeldi1.png" style="width: 5in;" /></a></p>
+<p>Þegar við reiknum innfeldi, ber að hafa í huga að við erum alltaf að
+margfalda samsíða þætti vigranna.</p>
+<section id="vinna-ymissa-krafta">
+<h3><span class="section-number">9.1.1. </span>Vinna ýmissa krafta<a class="headerlink" href="#vinna-ymissa-krafta" title="Permalink to this heading"></a></h3>
+<p>Oft er gott að hafa í huga nokkur atriði varðandi þá krafta sem við erum
+að fást við. skoðum því nokkra þeirra:</p>
+<section id="verkraftur">
+<h4><span class="section-number">9.1.1.1. </span>Þverkraftur<a class="headerlink" href="#verkraftur" title="Permalink to this heading"></a></h4>
+<p>Þverkrafturinn vinnur yfirleitt ekki neina vinnu vegna þess að hluturinn
+sem við skoðum er svo til alltaf að færast eftir yfirborðinu og
+þverkrafturinn er hornréttur á yfirborðið. Hér þurfum við þó eins og
+alltaf að muna að það er það að hann er hornréttur á yfirborðið sem er
+aðalatriðið. Ef hlutur af einhverjum ástæðum færist ekki samsíða
+yfirborðinu en er samt í snertingu við það þá þarf að sjálfsögðu að huga
+að vinnu þverkraftsins. Eina tilfellið sem kemur í hugann er hopp. Við
+getum hugsað okkur að í hoppi færist massamiðja mans upp á meðan
+þverkrafturinn ýtir honum upp. Það er þó fremur sérstakt tilfelli. Í
+flestum tilfellum ferðast hlutir hornrétt á þverkraftinn og þá
+framkvæmir hann enga vinnu.</p>
+</section>
+<section id="nuningskraftur">
+<h4><span class="section-number">9.1.1.2. </span>Núningskraftur<a class="headerlink" href="#nuningskraftur" title="Permalink to this heading"></a></h4>
+<p>Hreyfinúningskraftur framkvæmir alltaf neikvæða vinnu því núningur er
+alltaf gagnstæður færslunni. Kyrrstöðunúningur er flóknari vegna þess að
+hann gæti t.d. haldið hlut kyrrum á vörubílspalli og þar með framkvæmt
+jákvæða vinnu á hlutnum þegar vörubíllinn hraðast áfram.</p>
+<p>Almennt erum við þó að skoða vinnu hreyfinúningskraftsins. Þó að við
+höfum almenna reglu ber þó alltaf að hafa í huga ástæðuna fyrir
+reglunni. Vinnan er neikvæð vegna þess að krafturinn er alltaf í öfuga
+stefnu við færsluna.</p>
+</section>
+<section id="kraftur-i-hringhreyfingu">
+<h4><span class="section-number">9.1.1.3. </span>Kraftur í hringhreyfingu<a class="headerlink" href="#kraftur-i-hringhreyfingu" title="Permalink to this heading"></a></h4>
+<p>Ef hlutur er að ferðast í hring þarf kraft inn að miðju hringsins til
+þess að halda honum á hringhreyfingu. Þessi kraftur framkvæmir ekki
+vinnu vegna þess að hann er hornréttur á færsluna í hverjum punkti.</p>
+<p>Aðrir kraftar geta framkvæmt vinnu. Hluturinn gæti verið að fara
+mishratt í hringhreyfingunni og þá er einhver kraftur sem verkar eftir
+hringbrautinni að framkvæma vinnu, en sá kraftur sem verkar inn að miðju
+hringsins framkvæmir enga vinnu.</p>
+</section>
+<section id="yngdarkraftur">
+<h4><span class="section-number">9.1.1.4. </span>Þyngdarkraftur<a class="headerlink" href="#yngdarkraftur" title="Permalink to this heading"></a></h4>
+<p>Þyngdarkrafturinn er alveg sérstakur þegar kemur að vinnu.
+Þyngdarkrafturinn framkvæmir neikvæða vinnu þegar hlut er lyft upp og
+jafnmikla jákvæða vinnu þegar hluturinn fellur aftur niður. Við komum
+til með að ræða hann sérstaklega.</p>
+</section>
+</section>
+</section>
+<section id="hreyfiorka">
+<h2><span class="section-number">9.2. </span>Hreyfiorka<a class="headerlink" href="#hreyfiorka" title="Permalink to this heading"></a></h2>
+<p>Til þess að geta framkvæmt vinnu þurfum við að hafa nokkuð sem við
+köllum orku.</p>
+<p>Það eru til margar tegundir orku og hér ætlum við að tala um orku sem
+tengist hreyfingu hlutar, hreyfiorku. Með því að framkvæma vinnu getum
+við komið kyrrstæðum hlut á hreyfingu. Við skulum skoða hvernig við
+gerum það.</p>
+<p>Hugsum okkur að hlutur með massa <span class="math notranslate nohighlight">\(m\)</span> sé kyrrstæður eða á hraða
+<span class="math notranslate nohighlight">\(v_0\)</span>. Nú verkum við á hann með heildarkraftir
+<span class="math notranslate nohighlight">\(\vec{F}_{heild}\)</span>. Samkvæmt öðru lögmáli Newtons fær þá massinn
+hröðun.</p>
+<div class="math notranslate nohighlight">
+\[\vec{F}_{heild} = m\vec{a}\]</div>
+<p>Athugum nú vinnuna sem þessi kraftur framkvæmir ef við færum hlutinn um
+<span class="math notranslate nohighlight">\(\vec{\Delta s}\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[W_{heild} = \vec{F}_{heild}\cdot \vec{\Delta s} = m\vec{a}\cdot \vec{\Delta s}\]</div>
+<p>Við munum eftir jöfnu sem við höfðum þegar við skoðuðum hreyfifræðina.
+Ef við höfum jafna hröðun, þá gildir:</p>
+<div class="math notranslate nohighlight">
+\[2\vec{a}\cdot \vec{\Delta s} = v^2 - v^2_0\]</div>
+<p>Setjum þetta inn í jöfnuna hér að ofan og þá fáum við:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+W_{heild} = \vec{F}_{heild}\cdot \vec{\Delta s} = m\frac{1}{2}(v^2 - v^2_0) = \frac{1}{2}mv^2- \frac{1}{2}mv^2_0
+\end{equation}\]</div>
+<p>Við gætum hugsanlega haft áhyggjur af því að þetta gildi bara fyrir
+jafnan kraft, en hvað gerist ef við deilum færslunni í bita svo litla að
+krafturinn sé jafn á hverju bili?</p>
+<p>Þá fengjum við:</p>
+<div class="math notranslate nohighlight">
+\[\vec{F}_{heild}\cdot \vec{\Delta s}_1  = \frac{1}{2}mv^2_1- \frac{1}{2}mv^2_0\]</div>
+<p>á fyrsta bilinu,</p>
+<div class="math notranslate nohighlight">
+\[\vec{F}_{heild}\cdot \vec{\Delta s}_2 =  \frac{1}{2}mv^2_2- \frac{1}{2}mv^2_1\]</div>
+<p>þannig að</p>
+<div class="math notranslate nohighlight">
+\[\vec{F}_{heild}\cdot (\vec{\Delta s}_1+\vec{\Delta s}_2) =  \frac{1}{2}mv^2_2- \frac{1}{2}mv^2_0\]</div>
+<p>Þegar við tökum lengri vegalengd þó svo að krafturinn sé ekki jafn þá
+fáum við að jafna 9.1 gildir.</p>
+<p>Við köllum stærðina <span class="math notranslate nohighlight">\(\frac{1}{2}mv^2\)</span> hreyfiorku. Formlega
+skilgreinum við hreyfiorku sem:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+E_{k} = \frac{1}{2}mv^2
+\end{equation}\]</div>
+<p>Hreyfiorka er „orka“ sem hlutur hefur vegna þess að hann er á hreyfingu.
+Á sama hátt og við getum gefið hlut hreyfiorku með því að framkvæma
+vinnu, þá getur hlutur með hreyfiorku framkvæmt vinnu. Jöfnu 9.1 má
+umrita á eftirfarandi hátt:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+E_{k_1} + W_{heild} = E_{k_2}
+\end{equation}\]</div>
+<p>Ef hlutur á hraða <span class="math notranslate nohighlight">\(v_1\)</span> kemur og rekst á annan þannig að hann
+hægir á sér niður í <span class="math notranslate nohighlight">\(v_2\)</span>, þá hefur hann byrjað með hreyfiorku
+<span class="math notranslate nohighlight">\(E_{k_1}\)</span> breytt hluta hennar í vinnu <span class="math notranslate nohighlight">\(W\)</span> og á eftir
+hreyfiorku <span class="math notranslate nohighlight">\(E_{k_2}\)</span>. Athuga ber þó að það er heildarvinnan sem
+breytist.</p>
+<p>Segjum sem svo að maður framkvæmi vinnu við að draga hlut eftir jörðinni
+en vegna núnings dugir það bara til þess að draga hlutinn á jöfnum
+hraða. Þá er <span class="math notranslate nohighlight">\(E_{k_1}\)</span> = <span class="math notranslate nohighlight">\(E_{k_2}\)</span> og því er heildarvinnan
+engin.</p>
+</section>
+<section id="stouorka-og-geymnir-kraftar">
+<h2><span class="section-number">9.3. </span>Stöðuorka og geymnir kraftar<a class="headerlink" href="#stouorka-og-geymnir-kraftar" title="Permalink to this heading"></a></h2>
+<p>Við minndumst á það að þyngdarkrafturinn framkvæmir ákveðna neikvæða
+vinnur þegar hlut er lyft upp en jafnmikla jákvæða vinnu þegar hann
+fellur aftur niður. Sem sagt ef þyngdarkrafturinn framkvæmir neikvæða
+vinnur geymir hann hana og getur gefið hana tilbaka sem jákvæða vinnu.
+Nokkrir kraftar hafa þennan eiginleika. Annar kraftur sem hefur þennan
+eiginleika er fjaðurkrafturinn. Ef við pressum saman gorm framkvæmir
+hann neikvæða vinnu en ef við sleppum framkvæmir gormurinn jákvæða vinnu
+og sprettur út.</p>
+<p>Þessir kraftar eru kallaðir geymnir. Þeir geyma vinnuna og gefa hana
+tilbaka. Til þess að sjá betur muninn á geymnum og ógeymnum kröftum er
+gott að skoða núningskraftinn. Núningskraftur framkvæmir neikvæða vinnu
+þegar kubbur rennur eftir gólfi en við fáum þá vinnu ekki tilbaka.</p>
+<p>Vegna sérstöðu geymnu kraftanna eru þeir skoðaðir sérstaklega. Auk þess
+að „geyma“ vinnuna þá hafa geymnir kraftar þá sérstöðu að vinna þeirra
+er háð stöðu. Við það að flytja hlut á milli ákveðinna staða er vinna
+kraftsins alltaf sú sama hvort sem farið er beint eða farnar einhverjar
+krókaleiðir. Ef við skoðum jöfnuna sem við höfðum fyrir vinnu og
+hreyfiorku: <span class="math notranslate nohighlight">\(E_{k_1} + W_{heild} = E_{k_2}\)</span> þá er greinilegt að
+við getum skoðað vinnu geymins krafts sér. Skiptum <span class="math notranslate nohighlight">\(W_{heild}\)</span> í
+tvo hluta
+<span class="math notranslate nohighlight">\(W_{heild} = W_{adrir} + \vec{F}_{geyminn}\cdot\vec{\Delta s}\)</span></p>
+<p>Sett inn í jöfnuna fáum við þá</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+E_{k_1} + W_{adrir} + \vec{F}_{geyminn}\cdot\vec{\Delta s} = E_{k_2}
+\end{equation}\]</div>
+<p>Nú skilgreinum við fyrir geymna krafta nýja stærð sem við köllum
+stöðuorku (Potential Energy) <span class="math notranslate nohighlight">\(E_p\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+\Delta E_p = E_{p_2} - E_{p_1} = -\vec{F}_{geyminn}\cdot\vec{\Delta s}
+\end{equation}\]</div>
+<p>Með því að nota þessa stærð í stað vinnu geyminna krafta fáum við það
+sem við köllum vinnulögmálið:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+E_{k_1} + E_{p_1}+ W_{adrir}  = E_{k_2}+ E_{p_2}
+\end{equation}\]</div>
+<p>Við skilgreindum í rauninni aðeins breytinguna í stöðuorku,
+<span class="math notranslate nohighlight">\(\Delta E_p\)</span>. Við skilgreindum ekki <span class="math notranslate nohighlight">\(E_{p{1}}\)</span> eða
+<span class="math notranslate nohighlight">\(E_{p{2}}\)</span>, bara muninn. Þess vegna er alltaf um óákveðinn fasta
+að ræða þegar við skoðum stöðuorku í einhverjum ákveðnum punkti. Til
+þess að geta fundið <span class="math notranslate nohighlight">\(E_{p_1}\)</span> t.d. þurfum við að ákveða hvar
+stöðuorkan er 0.</p>
+<section id="stouorka-yngdarkrafts-vi-yfirbor-jarar">
+<h3><span class="section-number">9.3.1. </span>Stöðuorka þyngdarkrafts við yfirborð jarðar<a class="headerlink" href="#stouorka-yngdarkrafts-vi-yfirbor-jarar" title="Permalink to this heading"></a></h3>
+<p>Vinna þyngdarkrafts þegar hlutur með massa <span class="math notranslate nohighlight">\(m\)</span> er fluttur úr hæð
+<span class="math notranslate nohighlight">\(h_1 = 0\)</span> í hæðina <span class="math notranslate nohighlight">\(h_2 = h\)</span> er <span class="math notranslate nohighlight">\(-mgh\)</span> Þá er
+<span class="math notranslate nohighlight">\(E_{p_2} - E_{p_1} = mgh\)</span>. Ef við veljum að segja að
+<span class="math notranslate nohighlight">\(E_p(h_1) = 0\)</span> þegar <span class="math notranslate nohighlight">\(h_1 = 0\)</span> þá getum við skilgreint
+<span class="math notranslate nohighlight">\(E_p(h) = mgh\)</span>. Við hefðum getað sett
+<span class="math notranslate nohighlight">\(E_p(h) = mgh + 5,0\,\text{J}\)</span> (þ.e.
+<span class="math notranslate nohighlight">\(E_p(0) = 5,0\,\text{J}\)</span>) eða eitthvað annað. Það er okkar val.</p>
+<section id="daemi-fall-ur-hae-h">
+<h4><span class="section-number">9.3.1.1. </span>Dæmi: Fall úr hæð h<a class="headerlink" href="#daemi-fall-ur-hae-h" title="Permalink to this heading"></a></h4>
+<p>Skoðum hlut sem er uppi á borði í hæðinni h yfir gólfi.</p>
+<p>Ef við ýtum hlutnum fram af borðinu þá fellur hann til jarðar með
+upphafshraða <span class="math notranslate nohighlight">\(v_1 = 0\)</span>. Hvað kraftar eru að verki hér? Ef við
+skoðum stöðuna eftir að við höfum sleppt hlutnum þá er bara
+þyngdarkrafturinn að verki og kannski smá loftmótstaða.</p>
+<p>Vinnulögmálið gæfi þá:</p>
+<div class="math notranslate nohighlight">
+\[E_{k_1} + E_{p_1}+ W_{loftmotstada}  = E_{k_2}+ E_{p_2}\]</div>
+<p>Við getum valið að <span class="math notranslate nohighlight">\(E_{p_{golf}} = 0\)</span>. þá fæst</p>
+<div class="math notranslate nohighlight">
+\[0 + mgh +W_{loftmotstada} = \frac{1}{2} mv^2_2 + 0\]</div>
+<p>Ef við vitum vinnu loftmótstöðunnar þá gætum við hér reiknað á hvaða
+hraða hluturinn er rétt áður en hann lendir á gólfinu. (Athugið að þegar
+hluturinn lendir á gólfinu verkar gólfið með krafti til að stöðva hann.
+Þá er þyngdarkrafturinn ekki lengur eini krafturinn sem kemur við sögu.)</p>
+<p>Spurning: Framkvæmir loftmótstaðan neikvæða eða jákvæða vinnu?</p>
+<p>Segjum að við höfum lofttæmi—enga loftmótstöðu— og að hluturinn falli úr
+hæðinni 0,9 m niður á gólf. Hver er þá hraði hans rétt áður en hann
+lendir á jörðunni?</p>
+<p>Við höfum:</p>
+<div class="math notranslate nohighlight">
+\[mgh = \frac{1}{2} mv^2_2
+\,\,\,\Rightarrow\,\,\,v_2 = \sqrt{2gh} = 4,2\,\text{m}/\text{s}\]</div>
+</section>
+</section>
+<section id="stouorka-fjaurkrafts">
+<h3><span class="section-number">9.3.2. </span>Stöðuorka fjaðurkrafts<a class="headerlink" href="#stouorka-fjaurkrafts" title="Permalink to this heading"></a></h3>
+<p>Fjaðurkraftur gorms er samkvæmt lögmáli Hooks:
+<span class="math notranslate nohighlight">\(\vec{F} = -k\vec{x}\)</span> þar sem <span class="math notranslate nohighlight">\(\vec{x}\)</span> er færsla frá
+jafnvægisstöðu. Hér er dálítið erfitt að finna vinnu kraftsins þegar við
+drögum hann út eða þjöppum honum saman vegna þess að krafturinn er í
+réttu hlutfalli við færsluna. Við gætum aftur skoðað örlítil færslubil,
+<span class="math notranslate nohighlight">\(\Delta x_i\)</span> sem væru svo lítil að x væri næstum fasti á hverju
+þeirra. Nú skulum við bara líta á stærðir vigranna
+<span class="math notranslate nohighlight">\(F = |\vec{F}|\)</span>, <span class="math notranslate nohighlight">\(x = |\vec{x}|\)</span> og svo framvegis. Þá
+fengist ef við skiptum niður í N bil:</p>
+<div class="math notranslate nohighlight">
+\[\Delta E_p = -W  =  F_1\Delta x_1 +  F_2\Delta x_2+\cdots \cdots+ F_N\Delta x_N\]</div>
+<p>Þetta getum við líka skrifað:</p>
+<div class="math notranslate nohighlight">
+\[\Delta E_p = \sum^N_{i=1} F_i\Delta x_i\]</div>
+<p>Ef við látum N verða óendanlega stórt þá fáum við :</p>
+<div class="math notranslate nohighlight">
+\[\Delta E_p  = \int^{x_2}_{0}F(x)dx =  \int^{x_2}_{0}kxdx = \frac{1}{2}k x^2\]</div>
+<p><a class="reference internal" href="../_images/Fxgraf.png"><img alt="image2" src="../_images/Fxgraf.png" style="width: 5in;" /></a></p>
+<p>Myndrænt sjáum við að þetta fæst með því að finna flatarmál undir ferli
+samanber myndina hér að ofan.</p>
+<p>Nú er langeinfaldast að velja að setja <span class="math notranslate nohighlight">\(E_p(x=0) = 0\)</span>. Þá fæst að:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+E_{p_{fjadur}}(x) = \frac{1}{2}kx^2
+\end{equation}\]</div>
+<p>Við hefðum auðvitað getað valið að setja t.d.
+<span class="math notranslate nohighlight">\(E_{p_{fjadur}}(x) = \frac{1}{2}kx^2 + 5,2 J\)</span> eða eitthvað álíka
+en það hefði ekki hjálpað okkur mikið og bara verið til trafala.</p>
+</section>
+<section id="velraen-orka">
+<h3><span class="section-number">9.3.3. </span>Vélræn orka<a class="headerlink" href="#velraen-orka" title="Permalink to this heading"></a></h3>
+<p>Summa hreyfiorku og stöðuorku er stundum kölluð vélræn orka. Ef engir
+aðrir kraftar en þeir geymnu eru að verki er talað um varðveislu
+vélrænnar orku. Í raunveruleikanum er það þó mjög óalgengt. Við tölum um
+krafta eins og núning og loftmótstöðu sem eyðandi krafta (dissipative
+forces). Þeir „eyða“ vélrænni orku. En hvað verður um vélræna orku sem
+er eytt? Hún getur farið í ýmislegt. Orkan eyðist ekki hún er bara ekki
+lengur eins nýtileg. Hún hefur breytst í varma eða hljóð eða beyglur.
+Allt eru þetta aðrar gerðir orku sem oft eru ekki eins aðgengilegar og
+vélræna orkan. Orka eyðist ekki heldur breytist úr einu formi í annað.</p>
+</section>
+<section id="stouorka-almenna-yngdarkraftsins">
+<h3><span class="section-number">9.3.4. </span>Stöðuorka almenna þyngdarkraftsins<a class="headerlink" href="#stouorka-almenna-yngdarkraftsins" title="Permalink to this heading"></a></h3>
+<p>Þyngdarkraftur milli tveggja massa er:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+\vec{F}_G = -G\frac{Mm}{r^2}\vec{e_r}
+\end{equation}\]</div>
+<p>Þessi kraftur er geyminn, alveg eins og þyngdarkrafturinn við yfirborð
+jarðar, enda er þyngdarkraftur við yfirborð jarðar bara sértilfelli af
+þessum krafti. Eins og alltaf þegar höfum geymna krafta skilgreinum við
+stöðuorku í tengslum við kraftinn.</p>
+<p>Í þessu tilfelli er krafturinn háður fjarlægðinni milli massanna og við
+verðum því að gera eins og með gormkraftinn að skipta niður í mörg lítil
+bil þar sem krafturinn er u.þ.b. fasti á hverju bili.</p>
+<div class="math notranslate nohighlight">
+\[\Delta E_p = -W = -\sum^N_{i=1} \vec{F}_i(r_i)\cdot\Delta \vec{r}_i\]</div>
+<p>Þegar við skiptum niður í óendanlega mörg bil fáum við tegur:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+\Delta E_p = - W =  -\int^{r_2}_{r_1}\vec{F}(r)\cdot d\vec{r} = \int^{r_2}_{r_1}F(r)dr
+\end{equation}\]</div>
+<p>Takið eftir að vigurinn <span class="math notranslate nohighlight">\(d\vec{r}\)</span> er í stefnu <span class="math notranslate nohighlight">\(\vec{e_r}\)</span>.</p>
+<p>Þegar við lærum að diffra lærum við mjög fljótlega að
+<span class="math notranslate nohighlight">\(\frac{d(x^n)}{dx} = nx^{n-1}\)</span>. Við lærum einnig að ef við diffrum
+tegrið af <span class="math notranslate nohighlight">\(f(x)\)</span> þá fáum við <span class="math notranslate nohighlight">\(f(x)\)</span> tilbaka. Þannig verður
+tegrið af <span class="math notranslate nohighlight">\(x^n\)</span> jafnt fallinu sem diffrað gefur <span class="math notranslate nohighlight">\(x^n\)</span>,
+nefnilega <span class="math notranslate nohighlight">\(\frac{1}{n+1}x^{n+1}\)</span>.</p>
+<p>Tegrið <span class="math notranslate nohighlight">\(\int^{r_2}_{r_1}F(r)dr\)</span> er tegur milli tveggja ákveðinna
+marka og fæst slíkt með því að skoða gildi tegursins í <span class="math notranslate nohighlight">\(r_2\)</span> og
+draga frá gildi tegursins í <span class="math notranslate nohighlight">\(r_1\)</span>.</p>
+<p>Ef við setjum inn jöfnu kraftsins <span class="math notranslate nohighlight">\(F(r) = G\frac{Mm}{r^2}\)</span>
+(athugið að hér erum við að tala stærð <span class="math notranslate nohighlight">\(F(r)\)</span>) þá fæst tegrið:</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+\Delta E_p = \int^{r_2}_{r_1}G\frac{Mm}{r^2}dr = GMm\int^{r_2}_{r_1}\frac{1}{r^2}dr = GMm(\frac{-1}{r_2} - \frac{-1}{r_1} ) = -G\frac{Mm}{r_2} - (-G\frac{Mm}{r_1})
+\end{equation}\]</div>
+<p>Nú gætum við skilgreint stöðuorku sem verandi 0 í hvaða punkti sem er.
+Ef við veljum t.d. að stöðuorka sé 0 við yfirborð jarðar, þá fæst</p>
+<div class="math notranslate nohighlight">
+\[E_p(r) = G\frac{Mm}{R{\oplus}} - G\frac{Mm}{r}\]</div>
+<p>Þetta er svo sem allt í lagin en samt svolítið vesen að draga á eftir
+sér þennan fasta lið <span class="math notranslate nohighlight">\(G\frac{Mm}{R_{\oplus}}\)</span>.</p>
+<p>Ef ekkert annað er tiltekið veljum við því frekar að setja stöðuorkuna 0
+úti í óendanlegu. Við það verður:</p>
+<div class="math notranslate nohighlight">
+\[E_p(r)  = -G\frac{Mm}{r}\]</div>
+<p>Enginn fasti, bara fallið sem sjálft verður 0 þegar r stefnir á
+óendanlegt.</p>
+<p>Það verður þó að passa sig á því að stöðuorkan er þá alltaf neikvæð. Hún
+er neikvæð og í öfugu hlutfalli við fjarlægðina r. Eftir því sem r er
+stærra verður tölugildi <span class="math notranslate nohighlight">\(G\frac{Mm}{r}\)</span> minna, það verður minna og
+minna neikvætt og er því að stækka.</p>
+</section>
+<section id="stouorka-vi-yfirbor-jarar">
+<h3><span class="section-number">9.3.5. </span>Stöðuorka við yfirborð jarðar<a class="headerlink" href="#stouorka-vi-yfirbor-jarar" title="Permalink to this heading"></a></h3>
+<p>Nú skulum við aðeins tengja stöðuorkuna sem við vorum að leiða út við
+<span class="math notranslate nohighlight">\(mgy\)</span>, stöðuorku við yfirborð jarðar í hæð y.</p>
+<p>Við skulum gera ráð fyrir að <span class="math notranslate nohighlight">\(y = 0\)</span> svari til
+<span class="math notranslate nohighlight">\(r = R_{\oplus}\)</span>. Þá svarar <span class="math notranslate nohighlight">\(y = h\)</span> til
+<span class="math notranslate nohighlight">\(r = R_{\oplus} + h\)</span>. Við skulum nú gera ráð fyrir að við
+skilgreinum stöðuorku við yfirborð jarðar sem verandi <span class="math notranslate nohighlight">\(0\)</span> svo
+<span class="math notranslate nohighlight">\(E_p(R_{\oplus}) = 0\)</span> alveg eins og <span class="math notranslate nohighlight">\(mg(y=0) = 0\)</span> við
+yfirborð jarðar. Nú skulum við gera ráð fyrir að
+<span class="math notranslate nohighlight">\(h\,\,\ll\,\,R_{\oplus}\)</span> og notum svo nálgunina</p>
+<div class="math notranslate nohighlight">
+\[(1+x)^a\,\, \approx\,\, 1+ax\]</div>
+<p>þá höfum við:</p>
+<div class="math notranslate nohighlight">
+\[E_p (R_{\oplus}+h) = -G\frac{M_{\oplus}m}{R_{\oplus}+h}+G\frac{M_{\oplus}m}{R_{\oplus}}
+= -G\frac{M_{\oplus}m}{R_{\oplus}}(\frac{1}{1+\frac{h}{R_{\oplus}}}-1)
+= -G\frac{M_{\oplus}m}{R_{\oplus}}(1-\frac{h}{R_{\oplus}}-1)\]</div>
+<div class="math notranslate nohighlight">
+\[=-G\frac{M_{\oplus}m}{R_{\oplus}}(-\frac{h}{R_{\oplus}}) = G\frac{M_{\oplus}m}{R^2_{\oplus}}h\]</div>
+<p>Við getum nú rifjað upp frá kaflanum um þyngdarlögmál Newtons að stærðin</p>
+<div class="math notranslate nohighlight">
+\[G\frac{M_{\oplus}}{R^2_{\oplus}} = g\]</div>
+<p>Þ.e. þyngdarsviðið við yfirborð jarðar. Þá höfum við fengið að ef við
+setjum stöðuorkuna við yfirborð jarðar sem 0, þá er stöðuorkan í hæðinni
+h yfir yfirborði jarðar:</p>
+<div class="math notranslate nohighlight">
+\[E_p (R_{\oplus}+h) = mgh\]</div>
+<p>Alveg eins og við fengum þegar við nálguðum þyngdarkraftinn við yfirborð
+jarðar með <span class="math notranslate nohighlight">\(F_g = mg\)</span>.</p>
+</section>
+</section>
+<section id="vinnulogmali">
+<h2><span class="section-number">9.4. </span>Vinnulögmálið<a class="headerlink" href="#vinnulogmali" title="Permalink to this heading"></a></h2>
+<p>Jafnan</p>
+<div class="math notranslate nohighlight">
+\[E_{k_1} + E_{p_1}+ W_{\textit{aðrir}}  = E_{k_2}+ E_{p_2}\]</div>
+<p>er kölluð vinnulögmálið. Stundum er jafnvel einfaldara að skrifa hana
+bara:</p>
+<div class="math notranslate nohighlight">
+\[E_1 + W_{\textit{aðrir}}  = E_2\]</div>
+<p>Þá tákna <span class="math notranslate nohighlight">\(E_1\)</span> og <span class="math notranslate nohighlight">\(E_2\)</span> bara heildar vélræna orku fyrir og
+eftir.</p>
+<p>Vélræna orkan er summa hreyfiorku og stöðuorku. Við lærum bráðlega að
+það er hægt að tala um hreyfiorku massamiðju og svo hreyfiorku vegna
+snúnings. Við höfum margar tegundir af stöðuorku vegna mismunandi
+geyminna krafta. Allt þetta verður hluti af vélrænu orkunni eftir því
+sem við á. Við söfnum í sarpinn og bætum við eftir því sem við lærum
+meira. Vinnulögmálið gildir hins vegar alltaf því það er bara einföld
+bókhaldsjafna. Það gildir meira að segja þó að við vitum ekki hvað
+vinnuliðurinn er í raun að gera. T.d. getum við reiknað út hversu mikil
+orka fór í beyglur hávaða og varma þegar bílar lenda í árekstri, með því
+að reikna vélrænu orkuna fyrir og eftir og finna mismuninn.</p>
+</section>
+<section id="stouorkugrof">
+<h2><span class="section-number">9.5. </span>Stöðuorkugröf<a class="headerlink" href="#stouorkugrof" title="Permalink to this heading"></a></h2>
+<p>Þegar við skoðum mynd af brekku, t.d. eins og myndina hér að neðan með h
+sem fall af x, getum við hugsað okkur hvað gerist ef brekkan er alhál og
+við sleppum litlum massa einhvers staðar í henni.</p>
+<p><a class="reference internal" href="../_images/hbrekka.png"><img alt="image3" src="../_images/hbrekka.png" style="width: 5in;" /></a></p>
+<p>Massinn myndi renna eftir brekkunni. Ef hann er kyrr uppi myndi hann
+renna niður á við og halda svo áfram upp aftur þar til hann væri kominn
+aftur í sömu hæð. Við höfum tilfinningu fyrir því hvernig massinn
+hreyfist eftir brekkunni. Hæð brekkunnar er í réttu hlutfalli við
+stöðuorkuna í þyngdarsviði jarðar. <span class="math notranslate nohighlight">\(E_p = mgh\)</span> þar sem <span class="math notranslate nohighlight">\(m\)</span>
+og <span class="math notranslate nohighlight">\(g\)</span> eru fastar fyrir ákveðinn massa. Við gætum teiknað graf af
+stöðuorku sem fall af x og fengjum þá:</p>
+<p><a class="reference internal" href="../_images/stoduorkugraf.png"><img alt="image4" src="../_images/stoduorkugraf.png" style="width: 5in;" /></a></p>
+<p>En það lítur út alveg eins og brekkan hér að ofan.</p>
+<p>Alment gildir að hlutir leita frá hárri stöðuorku að lægri stöðuorku.
+Hlutir hreyfast sjálfkrafa í átt að lægri stöðuorku en það þarf orku til
+að koma þeim upp í hærri stöðuorku. Dæmi um þetta er penni sem dettur
+sjálfkrafa niður á gólf eða gormur sem skreppur saman þegar honum er
+sleppt eftir að hann hefur verið strekktur.</p>
+<p>Stöðuorkugraf gefur okkur sams konar tilfinningu fyrir því hvernig
+hluturinn vill hreyfast eins og brekkugrafið gaf. Þess vegna eru
+stöðuorkugröf notuð. Við tölum um stöðuorkubrunna eða stöðuorkuhóla. Ef
+við gerum graf af stöðuorku sem falli af fjarlægð massa m frá massa M
+fáum við:</p>
+<p><a class="reference internal" href="../_images/brunnur.png"><img alt="image5" src="../_images/brunnur.png" style="width: 3in;" /></a></p>
+<p>Í þessu tilfelli er oft talað um stöðuorkubrunn. Massinn m hefur
+tilhneigingu til að falla inn að massa M, niður í brunninn.</p>
+<p>Það er oft gott að nota hliðstæður til þess að fá tilfinningu fyrir
+einhverju sem er ekki kunnuglegt. Það er ekki alltaf auðvelt að finna
+góðar hliðstæður en hæð/stöðuorku—hliðstæðan er góð og nytsamleg. Hún er
+líka mikið notuð.</p>
+</section>
+<section id="daemi">
+<h2><span class="section-number">9.6. </span>Dæmi<a class="headerlink" href="#daemi" title="Permalink to this heading"></a></h2>
+<div class="line-block">
+<div class="line">Helga dregur 50 kg áburðarpoka eftir gólfi. Hún togar pokann upp undir
+<span class="math notranslate nohighlight">\(38\,\ensuremath{^\circ}\)</span> horni. Hún togar með 200 N krafti og
+flytur pokann 1,2 m eftir gólfinu.</div>
+<div class="line">a) Hversu mikla vinnu framkvæmir Helga?</div>
+<div class="line">b) Ef núningsstuðullin milli poka og gólfs er 0,4, hversu mikla vinnu
+framkvæmir núningskrafturinn?</div>
+</div>
+<div class="line-block" id="section-1">
+<div class="line">10 g byssukúla hefur hraðann 1,2,km/s.</div>
+<div class="line">a) Hver er hreyforka kúlunnar?</div>
+<div class="line">b) Hver er hreyfiorka kúlunnar eftir að hún hefur farið í gegnum vegg
+og hraði hennar hefur helmingast?</div>
+<div class="line">c) Hversu mikla vinnu framkvæmdi veggurinn á byssukúlunni?</div>
+</div>
+<div class="line-block" id="section-2">
+<div class="line">5,0 kg kassa er lyft úr kyrrstöðu beint upp um 4,0 m með 80 N krafti.</div>
+<div class="line">a) Finnið vinnu kraftsins.</div>
+<div class="line">b) Finnið vinnu þyngdarkraftsins.</div>
+<div class="line">c) Finnið hreyfiorku kassans þegar hann hefur verið færður þessa
+4,0 m.</div>
+</div>
+<div class="line-block" id="section-3">
+<div class="line">Kassi (20 kg) er togaður úr kyrrstöðu, 120 cm upp skábretti, með 140 N
+krafti. Halli skábrettisins er <span class="math notranslate nohighlight">\(37\ensuremath{^\circ}\)</span> miðað við
+lárétt.</div>
+<div class="line">a) Hver er vinna kraftsins?</div>
+<div class="line">b) Hver er vinna þyngdarkraftsins?</div>
+<div class="line">c) Ef brettið er núningslaust hver verður þá hreyfiorka kassans þegar
+hann er búinn að fara þessa 120 cm?</div>
+</div>
+<p id="section-4"><a class="reference internal" href="myndir/kafli09/grafFx.png"><img alt="image6" src="myndir/kafli09/grafFx.png" style="width: 1.5in;" /></a></p>
+<div class="line-block">
+<div class="line">5,0 kg hlutur er kyrrstæður í <span class="math notranslate nohighlight">\(x = 0\)</span>. Hann verður fyrir einum
+krafti, <span class="math notranslate nohighlight">\(\vec{F}\)</span> í x-stefnu. <span class="math notranslate nohighlight">\(\vec{F} = F_x\vec{i}\)</span>.
+Stærð kraftsins er breytileg eftir stöðu <span class="math notranslate nohighlight">\(x\)</span> og má sjá kraftinn
+<span class="math notranslate nohighlight">\(F_x\)</span> sem fall af <span class="math notranslate nohighlight">\(x\)</span> á grafinu. Finnið vinnu kraftsins á
+meðan hann færir hlutinn frá</div>
+<div class="line">a) <span class="math notranslate nohighlight">\(x = 0\)</span> í <span class="math notranslate nohighlight">\(x = 2\,\)</span>m.</div>
+<div class="line">b) <span class="math notranslate nohighlight">\(x = 2\,\)</span>m í <span class="math notranslate nohighlight">\(x = 3\,\)</span>m.</div>
+<div class="line">c) Finnið hreyfiorku hlutarins þegar hann er í 2 m.</div>
+<div class="line">d) Finnið hreyfiorku hlutarins þegar hann er í 3 m.</div>
+</div>
+<p id="section-5">Maður, sem er 80 kg, klifrar upp stiga upp í 5,0 m hæð. Hversu mikið
+hefur stöðuorka mannsins aukist við þetta?</p>
+<div class="line-block" id="section-6">
+<div class="line">Málmkúlu sem vegur 2,0 kg er haldið í 20 m hæð yfir jörðu. Við tímann
+<span class="math notranslate nohighlight">\(t = 0\)</span> er kúlunni sleppt.</div>
+<div class="line">a) Hver er upphafleg stöðuorka kúlunnar miðað við jörðu?</div>
+<div class="line">b) Notið annað lögmál Newtons til þess að ákvarða hversu langt kúlan
+fellur á fyrstu sekúndunni eftir að henni er sleppt og hver hraði
+hennar er þá.</div>
+<div class="line">c) Finnið stöðuorku og hreyfiorku kúlunnar þegar hún hefur fallið í
+eina sekúndu.</div>
+<div class="line">d) Finnið stöðuorku og hreyfiorku kúlunnar þegar hún er alveg að fara
+að lenda á jörðunni.</div>
+</div>
+<p id="section-7">Hversu hátt þarf að lyfta massa <span class="math notranslate nohighlight">\(m\)</span> svo hann hafi stöðuorku sem er
+jöfn þeirri hreyfiorku sem hann hefur þegar hann ferðast á hraðanum
+20 m/s?</p>
+<div class="line-block" id="section-8">
+<div class="line">Gormur hefur fjaðurstuðul 12000 N/m. Hversu langt þarf að strekkja
+gorminn svo að stöðuorka hans sé</div>
+<div class="line">a) 15 J</div>
+<div class="line">b) 60 J</div>
+</div>
+<p id="section-9">Kubbur (3,0 kg) kemur á jöfnum hraða, 7,0 m/s að núningslausu skáplani
+sem hallar um <span class="math notranslate nohighlight">\(40\ensuremath{^\circ}\)</span> yfir jörðu. Hversu langt fer
+kubburinn upp skáplanið áður en hann stöðvast? (Hann stöðvast um stund
+áður en hann byrjar að renna niður)</p>
+<div class="line-block" id="section-10">
+<div class="line">Kona setur 2,0 kg kubb upp að gormi sem hefur fjaðurstuðul 300 N/m.
+Hún ýtir nú kubbnum þar til gormurinn hefur þjappast saman um 9,0 cm.</div>
+<div class="line">a) Hversu mikla vinnu framkvæmdi konan við að ýta gorminum og hversu
+mikla vinnu framkvæmdi gormurinn?</div>
+<div class="line">b) Nú er kubbnum sleppt og hann yfirgefur gorminn þegar gormurinn er
+kominn í upphaflega stöðu (jafnvægisstöðu). Finnið hraða kubbsins
+þegar hann yfirgefur gorminn.</div>
+</div>
+<div class="line-block" id="section-11">
+<div class="line">2000 kg bíll sem er á hraða 25 m/s eftir láréttum vegi snögghemlar og
+rennur við það 600 m áður en hann stöðvast.</div>
+<div class="line">a) Hver er vinna núningskraftsins?</div>
+<div class="line">b) Hversu stór er núningsstuðullinn milli læstra dekkja og vegar?</div>
+</div>
+<div class="wrapfigure docutils container" id="section-12">
+<p>r0.22</p>
+<div class="center docutils container">
+<p><a class="reference internal" href="../_images/trissaskaeri.png"><img alt="image7" src="../_images/trissaskaeri.png" style="width: 22.0%;" /></a></p>
+</div>
+</div>
+<p>Á myndinni má sjá tvo massa sem eru tengdir saman með léttu bandi yfir
+trissu. Massi <span class="math notranslate nohighlight">\(m_1 = 3,2\,\)</span>kg og massi <span class="math notranslate nohighlight">\(m_2 = 2,1\,\)</span>kg.
+Massi <span class="math notranslate nohighlight">\(m_2\)</span> er festur í gólf með sama létta bandi þannig að
+<span class="math notranslate nohighlight">\(m_1\)</span> situr <span class="math notranslate nohighlight">\(\ell = 1,2\,\)</span>m ofar en <span class="math notranslate nohighlight">\(m_2\)</span>. Nú er
+klippt á bandið sem heldur <span class="math notranslate nohighlight">\(m_2\)</span> við gólfið (sjá mynd). Hver
+verður hraði massanna þegar þeir eru í sömu hæð?</p>
+<div class="line-block" id="section-13">
+<div class="line">Hallvarður er 80 kg. Hann klifrar upp 120 m háa brekku (þ.e. hæsti
+punktur brekkunnar er 120 m hærri en staðurinn þar sem hann byrjaði).</div>
+<div class="line">a) Hversu mikið jókst þyngdarstöðuorka Hallvarðar?</div>
+<div class="line">b) Líkami Hallvarðar nýtir 20% orku sinnar í vélræna orku. Þ.e. fyrir
+hver 100 J af innri orku sem hann notar, fara 20 J í vélræna orku og
+80 J í varma. Hversu mikla innri orku notar Hallvarður?</div>
+</div>
+<div class="line-block" id="section-14">
+<div class="line">Sleði (8,0 kg) er upphaflega kyrrstæður á láréttum vegi.
+Núningsstuðullinn milli vegar og sleða er 0,4. Nú er sleðinn togaður
+áfram 3,0 m með 40 N togkrafti sem vísar <span class="math notranslate nohighlight">\(30\ensuremath{^\circ}\)</span>
+yfir lárétt.</div>
+<div class="line">a) Hver er vinna togkraftsins?</div>
+<div class="line">b) Hver er vinna núningskraftsins?</div>
+<div class="line">c) Hver er breytingin í hreyfiorku sleðans?</div>
+<div class="line">d) Hver er hraði sleðans eftir þessa 3,0 m?</div>
+</div>
+<div class="line-block" id="section-15">
+<div class="line">Maður sveiflar sér í kaðli sem er 4,00 m langur. Kaðallinn er ekki
+sterkur, hann slitnar ef togkrafturinn í honum verður meiri en tvisvar
+þyngd mannsins.</div>
+<div class="line">a) Í hvaða stöðu er liklegast að strengurinn slitni?</div>
+<div class="line">b) Hver er togkrafturinn í bandinu í neðstu stöðu, táknaður við hraða
+mannsins í þeirri stöðu?</div>
+<div class="line">c) Hver er mesti hraði sem maðurinn getur haft án þess að strengurinn
+slitni?</div>
+<div class="line">d) Hvað er stærsta horn frá lóðréttu sem maðurinn getur byrjað
+sveifluna án þess að strengurinn slitni? (Eða sé alveg að slitna.)</div>
+</div>
+<p><strong>Afl (Power táknað með :math:`P`) er mjög mikilvæg stærð í eðlisfræði
+og í allmennri notkun. Afl lýsir því hversu mikil vinna er framkvæmd á
+tímaeiningu. Þannig er afl
+:math:`P = frac{W}{Delta t} = frac{Delta E}{Delta t}`. Afl hugtak
+sem er mikið notað þegar talað er um vélar. Oft er talað um að bílar séu
+svo og svo mörg hestöfl. Það lýsir því þá hversu mikla vinnu þeir geta
+framkvæmt á tímaeiningu. Nú er hestafl gamaldags eining og SI eining
+afls er eins og eðlilegt er [:math:`P`] = J/s = W. Einingin W, watt
+heitir eftir James Watt sem var einn af þeim fyrstu til þess að skoða
+gufuvélar.</strong></p>
+<p><strong>Vegna þess að hestöfl eru enn notuð í ýmsum samböndum þurfum við að
+vita að 1 ha = 746 W.</strong></p>
+<p><strong>Einnig er gott að vita að fyrst :math:`P = frac{W}{Delta t}` þá fæst
+að
+:math:`P = frac{vec{F}cdotDeltavec{ r}}{Delta t}  = vec{F}cdotfrac{Deltavec{ r}}{Delta t} = vec{F}cdotvec{v}`</strong></p>
+<p id="section-16">Bíll (1300 kg) eykur hraðann úr kyrrstöðu í 90 km/klst á 5,0 sek. Ef við
+gerum ráð fyrir að snúningsnúningur hjóla við götu sé hverfandi, hversu
+mikið afl framleiðir vél bílsins? Gefið svarið í hestöflum.</p>
+<p id="section-17">Bíll (1230 kg) ekur eftir láréttum vegi á hraðanum 72 km/klst. Hann
+notar 5 hestöfl á þessum hraða. Hversu stór er snúningsnúningsstuðullinn
+milli hjóla og vegar? (Gerið ráð fyrir að loftmótstaða sé engin.)</p>
+<p id="section-18">Til þess að knýja 800 kg bíl á hraðanum 50 km/klst eftir láréttum vegi
+þarf 30 kW af vélarafli til hjóla. Hversu mikið afl þyrfti til þess að
+knýja bílinn upp 8<span class="math notranslate nohighlight">\(\ensuremath{^\circ}\)</span> halla á sama hraða?
+(Gerið ráð fyrir að núningsstuðullinn sé sá sami á jafnsléttu og í
+hallanum.)</p>
+<p id="section-19">8000 kg af vatni er dælt upp úr 20 m djúpum brinni á einni klst. Hvert
+er afl dælunnar?</p>
+<p id="section-20">Gufa kemur með hraðanum 800 m/s inn í túrbínu sem skilar 10 MW nýtanlegu
+afli. Gufan yfirgefur túrbínuna á hraðanum 100 m/s. Hversu mikill massi
+gufu streymir um túrbínuna á hverri sekúndu ef nýting vélrænnar orku er
+80%?</p>
+<div class="line-block" id="section-21">
+<div class="line">Baunabyssa er búin til úr gormi sem festur er í endann á röri.
+Gorminum er hægt að halda við ákveðna styttingu með pinna sem heldur
+honum föstum. Þegar ýtt er á gikk losnar pinninn og gormurinn skýst í
+jafnvægisstöðu og ýtir á undan sér baun eða einhverju öðru smáu. Gormi
+í slíkri byssu er þrýst saman með 9,5 N krafti og styttist hann við
+það um 5,2 cm.</div>
+<div class="line">a) Hver er kraftstuðull gormsins?</div>
+<div class="line">b) Hvaða hraða myndi 3,0 g lítil steinvala fræðilega fá ef henni væri
+skotið úr þessarri byssu? (Gert ráð fyrir að núningur sé enginn og
+gormurinn massalaus.)</div>
+</div>
+<p id="section-22">1 kg leirklumpur fellur úr kyrrstöðu ofan á enda gorms sem festur er í
+gólfið. Kraftstuðull gormsins er 360 N/m og klessan fellur úr 112 cm
+hæð. Hver verður mesta samþjöppun gormsins við áreksturinn?</p>
+<p id="section-23"><a class="reference internal" href="../_images/skidi.png"><img alt="image8" src="../_images/skidi.png" style="width: 2.5in;" /></a></p>
+<p>Friðbjörg leggur af stað á skíðum úr kyrrstöðu efst í brekku. Hún byrjar
+í hæð H eins og sýnt er. Á vegi Friðbjargar verður hóll, með
+beygjuradíus 4,00 m, sem er þannig að miðja hringsins sem hóllinn er
+hluti af er í hæð 0 (miðað við sama hnitakerfi og H er mælt í, sjá
+mynd). Gera má ráð fyrir að núningur sé enginn. Hver er mesta hæð H, sem
+Friðbjörg getur byrjað í án þess að hún sleppi jörðu efst á hólnum?</p>
+<div class="line-block">
+<div class="line">1) a. 189 J    b. -176 J</div>
+<div class="line">2) a. 7200 J    b. 1800 J    c. -5400 J</div>
+<div class="line">3) a. 320 J    b. -196 J    c. 124 J</div>
+<div class="line">4) a. 168 J    b. 142 J    c. 26 J</div>
+<div class="line">5) a. 6,0 J    b. 4,5 J    c. 6,0 J    d. 10,5 J</div>
+<div class="line">6) 3920 J</div>
+<div class="line">7) a. 392 J    b. 4,9 m; 9,8 m/s<span class="math notranslate nohighlight">\(^2\)</span>    c. 296 J; 96 J    d.
+0 J; 392 J</div>
+<div class="line">8) 20,4 m</div>
+<div class="line">9) a. 15,8 cm    b. 31,6 cm</div>
+<div class="line">10) 3,9 m</div>
+<div class="line">11) a. 1,2 J; -1,2 J    b. 1,1 m/s</div>
+<div class="line">12) a. -625 kJ    b. 0,05</div>
+<div class="line">13) 1,14 m/s</div>
+<div class="line">14. a. 94080 J    b. 470,4 kJ</div>
+<div class="line">15) a. 104 J   b. <span class="math notranslate nohighlight">\(80(\frac{v^2}{4,00}+9,8)\)</span> SI ein.    c.
+6,3 m/s    d. 60<span class="math notranslate nohighlight">\(^\circ\)</span></div>
+<div class="line">17) 8125 W</div>
+<div class="line">18) 0,015</div>
+<div class="line">19) 46,6 kW</div>
+<div class="line">20) 436 W</div>
+<div class="line">21) 39,7 kg á hverri sekúndu</div>
+<div class="line">22) a. 183 N/m    b. 9,9 m/s</div>
+<div class="line">23) 0,28 m</div>
+<div class="line">24) <span class="math notranslate nohighlight">\(H = 1,5r\)</span></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../kafli08/" class="btn btn-neutral float-left" title="8. Þyngdarkraftur" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../kafli10/" class="btn btn-neutral float-right" title="10. Atlag og skriðþungi" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p></p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+<script>
+    window.addEventListener("load", function () {
+        for (var i in ggbAppletId) {
+            ggbAppletId[i].inject(i);
+        }
+    });
+</script>
+
+
+ 
+
+<style>
+    /* Sidebar header (and topbar for mobile) */
+    .wy-side-nav-search,
+    .wy-nav-top {
+       /* HI: #10099F, VoN: #EB7125, orginal #01447B */
+       background: #321c4a;
+    }
+
+    /* Sidebar */
+    .wy-nav-side {
+      /* orginal #343131, HÍ grár dekkri: #EEEEEE, HÍ svartur: #262626 */
+      background: #262626;
+    }
+</style>
+
+
+</body>
+</html>
